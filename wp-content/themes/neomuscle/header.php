@@ -24,9 +24,54 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'neomuscle' ); ?></a>
 
-	<header id="masthead" class="site-header">
+    <header id="masthead" class="site-header">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="top-header-left">
+                            <div class="phone">(068) 208-17-17, (073) 208-17-17, (095) 238-17-17</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="top-header-right">
+                            <ul>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-branding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="logotype">
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri() ?>/images/logotype.svg" alt="Логотип Neomuscle"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <nav id="site-navigation" class="main-navigation">
+                            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'neomuscle' ); ?></button>
+                            <?php
+                            wp_nav_menu( array(
+                                'theme_location' => 'menu-1',
+                                'menu_id'        => 'primary-menu',
+                            ) );
+                            ?>
+                        </nav><!-- #site-navigation -->
+                    </div>
+                </div>
+            </div>
+		</div><!-- .site-branding -->
+    </header>
+
+	<header id="masthead" class="site-headerd">
 		<div class="site-branding">
-			<?php
+			<!-- <?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
@@ -41,17 +86,17 @@
 			if ( $neomuscle_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $neomuscle_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+			<?php endif; ?> -->
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'neomuscle' ); ?></button>
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'neomuscle' ); ?></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
 			) );
-			?>
+			?> -->
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
