@@ -1,11 +1,21 @@
 @font-face {
-    font-family: "OpenSansRegular";
+    font-family: "OpenSans";
     src: url("fonts/OpenSansRegular/OpenSansRegular.eot");
     src: url("fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
     url("fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
     url("fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("fonts/OpenSansBold/OpenSansBold.eot");
+    src: url("fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+    url("fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
 }
 
 @font-face {
@@ -53,7 +63,8 @@ textarea {
 	color: $color__text-main;
 	font-family: $font__main;
 	@include font-size(1);
-	line-height: $font__line-height-body;
+    line-height: $font__line-height-body;
+    font-weight: 400;
 }
 
 @import "headings";

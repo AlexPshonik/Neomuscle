@@ -68,7 +68,12 @@
                         <div class="rightside-nav">
                             <ul>
                                 <li><span class="ui-icon-search"></span></li>
-                                <li><span class="ui-icon-heart"></span></li>
+                                <li>
+                                    <a class="rightside-wishlist" href="<?php echo get_home_url( null, 'wishlist/', 'null' ); ?>">
+                                        <span class="ui-icon-heart"></span>
+                                        <div class="wishlist-count"><?php echo YITH_WCWL()->count_products(); ?></div>
+                                    </a>    
+                                </li>
                                 
                                 <li>
                                     

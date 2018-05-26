@@ -22,7 +22,6 @@
                     a {     
                         color: $color__text-main; 
                         text-decoration: none;
-                        transition: all 0.3s ease 0s;
                         &:hover {
                             color: #34b79d;
                         }
@@ -33,7 +32,11 @@
     }
 
     .site-branding {
-        padding: 25px 0;
+        .logotype,
+        .main-navigation,
+        .rightside-nav {
+            padding: 25px 0; 
+        }
         .logotype {
             img {
                 width: 238px;
@@ -41,24 +44,48 @@
             }
         }
         .rightside-nav {
+            padding: 32px 0;
             text-align: right;
             border-left: 1px solid #eee;
             ul {
                 margin: 0;
                 li {
                     display: inline-block;
-                    padding-left: 15px;
+                    padding-left: 18px;
                     font-size: 18px;
-                    .rightside-cart {
-                        font-size: 13px;
-                        text-decoration: none;
-                        &:hover {
-                            color: $color__text-main;
+                    .rightside {
+                        &-wishlist {
+                            position: relative;
+                            text-decoration: none;
+                            .wishlist-count {
+                                border-radius: 50px;
+                                width: 18px;
+                                height: 18px;
+                                display: block;
+                                position: absolute;
+                                background: #34b79d;
+                                right: -10px;
+                                top: -8px;
+                                text-align: center;
+                                line-height: 18px;
+                                font-size: 10px;
+                                color: #fff;
+                            }
                         }
-                        .cart-icon {
-                            display: inline-block;
-                            font-size: 18px;
-                            padding-right: 5px;
+                        &-cart {
+                            font-size: 13px;
+                            text-decoration: none;
+                            &:hover {
+                                color: $color__text-main;
+                            }
+                            .amount {
+                                font-weight: 700;
+                            }
+                            .cart-icon {
+                                display: inline-block;
+                                font-size: 18px;
+                                padding-right: 5px;
+                            }
                         }
                     }
                 }

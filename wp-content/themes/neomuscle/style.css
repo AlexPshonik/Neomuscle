@@ -348,11 +348,18 @@ template {
 # Typography
 --------------------------------------------------------------*/
 @font-face {
-  font-family: "OpenSansRegular";
+  font-family: "OpenSans";
   src: url("fonts/OpenSansRegular/OpenSansRegular.eot");
   src: url("fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal; }
+  font-weight: 400; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("fonts/OpenSansBold/OpenSansBold.eot");
+  src: url("fonts/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSansBold/OpenSansBold.woff") format("woff"), url("fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
 
 @font-face {
   font-family: 'neomuscle-ui';
@@ -390,10 +397,11 @@ select,
 optgroup,
 textarea {
   color: #333333;
-  font-family: "OpenSansRegular", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
@@ -1667,7 +1675,8 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: royalblue;
+  transition: all 0.3s ease 0s; }
   a:visited {
     color: #333333; }
   a:hover, a:focus, a:active {
@@ -1873,33 +1882,53 @@ a {
             margin-right: 0; }
           .site-header .top-header-right ul li a {
             color: #333333;
-            text-decoration: none;
-            transition: all 0.3s ease 0s; }
+            text-decoration: none; }
             .site-header .top-header-right ul li a:hover {
               color: #34b79d; }
-  .site-header .site-branding {
+  .site-header .site-branding .logotype,
+  .site-header .site-branding .main-navigation,
+  .site-header .site-branding .rightside-nav {
     padding: 25px 0; }
-    .site-header .site-branding .logotype img {
-      width: 238px;
-      height: 35px; }
-    .site-header .site-branding .rightside-nav {
-      text-align: right;
-      border-left: 1px solid #eee; }
-      .site-header .site-branding .rightside-nav ul {
-        margin: 0; }
-        .site-header .site-branding .rightside-nav ul li {
-          display: inline-block;
-          padding-left: 15px;
-          font-size: 18px; }
-          .site-header .site-branding .rightside-nav ul li .rightside-cart {
-            font-size: 13px;
-            text-decoration: none; }
-            .site-header .site-branding .rightside-nav ul li .rightside-cart:hover {
-              color: #333333; }
-            .site-header .site-branding .rightside-nav ul li .rightside-cart .cart-icon {
-              display: inline-block;
-              font-size: 18px;
-              padding-right: 5px; }
+  .site-header .site-branding .logotype img {
+    width: 238px;
+    height: 35px; }
+  .site-header .site-branding .rightside-nav {
+    padding: 32px 0;
+    text-align: right;
+    border-left: 1px solid #eee; }
+    .site-header .site-branding .rightside-nav ul {
+      margin: 0; }
+      .site-header .site-branding .rightside-nav ul li {
+        display: inline-block;
+        padding-left: 18px;
+        font-size: 18px; }
+        .site-header .site-branding .rightside-nav ul li .rightside-wishlist {
+          position: relative;
+          text-decoration: none; }
+          .site-header .site-branding .rightside-nav ul li .rightside-wishlist .wishlist-count {
+            border-radius: 50px;
+            width: 18px;
+            height: 18px;
+            display: block;
+            position: absolute;
+            background: #34b79d;
+            right: -10px;
+            top: -8px;
+            text-align: center;
+            line-height: 18px;
+            font-size: 10px;
+            color: #fff; }
+        .site-header .site-branding .rightside-nav ul li .rightside-cart {
+          font-size: 13px;
+          text-decoration: none; }
+          .site-header .site-branding .rightside-nav ul li .rightside-cart:hover {
+            color: #333333; }
+          .site-header .site-branding .rightside-nav ul li .rightside-cart .amount {
+            font-weight: 700; }
+          .site-header .site-branding .rightside-nav ul li .rightside-cart .cart-icon {
+            display: inline-block;
+            font-size: 18px;
+            padding-right: 5px; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
