@@ -53,7 +53,7 @@
                             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri() ?>/images/logotype.svg" alt="Логотип Neomuscle"></a>
                         </div>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-6">
                         <nav id="site-navigation" class="main-navigation">
                             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'neomuscle' ); ?></button>
                             <?php
@@ -63,6 +63,23 @@
                             ) );
                             ?>
                         </nav><!-- #site-navigation -->
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="rightside-nav">
+                            <ul>
+                                <li><span class="ui-icon-search"></span></li>
+                                <li><span class="ui-icon-heart"></span></li>
+                                
+                                <li>
+                                    
+                                    <a class="rightside-cart" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+                                        <div class="cart-icon"><span class="ui-icon-shopping-bag"></span></i></div>
+                                        <?php echo WC()->cart->get_cart_contents_count(); ?> / <?php echo WC()->cart->get_cart_total(); ?>
+                                    </a>
+                                </li>
+                            </ul>
+                        
+                        </div>
                     </div>
                 </div>
             </div>

@@ -347,14 +347,50 @@ template {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'neomuscle-ui';
+  src: url("fonts/neomuscle-ui/neomuscle-ui.eot?yqvym0");
+  src: url("fonts/neomuscle-ui/neomuscle-ui.eot?yqvym0#iefix") format("embedded-opentype"), url("fonts/neomuscle-ui/neomuscle-ui.ttf?yqvym0") format("truetype"), url("fonts/neomuscle-ui/neomuscle-ui.woff?yqvym0") format("woff"), url("fonts/neomuscle-ui/neomuscle-ui.svg?yqvym0#neomuscle-ui") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="ui-icon-"], [class*=" ui-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'neomuscle-ui' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.ui-icon-search:before {
+  content: "\f002"; }
+
+.ui-icon-heart:before {
+  content: "\f004"; }
+
+.ui-icon-shopping-bag:before {
+  content: "\f290"; }
+
 body,
 button,
 input,
 select,
 optgroup,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #333333;
+  font-family: "OpenSansRegular", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -1633,9 +1669,9 @@ textarea {
 a {
   color: royalblue; }
   a:visited {
-    color: purple; }
+    color: #333333; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #34b79d; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1844,8 +1880,26 @@ a {
   .site-header .site-branding {
     padding: 25px 0; }
     .site-header .site-branding .logotype img {
-      width: 215px;
-      height: 33px; }
+      width: 238px;
+      height: 35px; }
+    .site-header .site-branding .rightside-nav {
+      text-align: right;
+      border-left: 1px solid #eee; }
+      .site-header .site-branding .rightside-nav ul {
+        margin: 0; }
+        .site-header .site-branding .rightside-nav ul li {
+          display: inline-block;
+          padding-left: 15px;
+          font-size: 18px; }
+          .site-header .site-branding .rightside-nav ul li .rightside-cart {
+            font-size: 13px;
+            text-decoration: none; }
+            .site-header .site-branding .rightside-nav ul li .rightside-cart:hover {
+              color: #333333; }
+            .site-header .site-branding .rightside-nav ul li .rightside-cart .cart-icon {
+              display: inline-block;
+              font-size: 18px;
+              padding-right: 5px; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
