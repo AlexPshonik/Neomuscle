@@ -1675,7 +1675,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
+  color: #333333;
   transition: all 0.3s ease 0s; }
   a:visited {
     color: #333333; }
