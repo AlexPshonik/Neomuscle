@@ -4,9 +4,9 @@
 
 <div style="height:500px;"></div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="section-instagram">
+<div class="section-instagram">
+    <div class="container">
+        <div class="row">
             <?php if (is_active_sidebar('homepage-instagram-sidebar')): ?>
                 <?php dynamic_sidebar('homepage-instagram-sidebar');?>
             <?php endif;?>
@@ -15,4 +15,3 @@
 </div>
 
 <?php get_footer();?>
-
