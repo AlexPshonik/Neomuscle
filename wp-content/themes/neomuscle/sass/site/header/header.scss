@@ -8,6 +8,9 @@
         border-bottom: 1px solid #eee;
         &-left {
             text-align: left;
+            .customer-support {
+                padding: 0 5px;
+            }
         }
         &-right {
             text-align: right;
