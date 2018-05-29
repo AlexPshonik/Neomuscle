@@ -20,11 +20,11 @@
 
 @font-face {
     font-family: 'neomuscle-ui';
-    src:  url('fonts/neomuscle-ui/neomuscle-ui.eot?yqvym0');
-    src:  url('fonts/neomuscle-ui/neomuscle-ui.eot?yqvym0#iefix') format('embedded-opentype'),
-    url('fonts/neomuscle-ui/neomuscle-ui.ttf?yqvym0') format('truetype'),
-    url('fonts/neomuscle-ui/neomuscle-ui.woff?yqvym0') format('woff'),
-    url('fonts/neomuscle-ui/neomuscle-ui.svg?yqvym0#neomuscle-ui') format('svg');
+    src:  url('fonts/neomuscle-ui.eot?vd44hk');
+    src:  url('fonts/neomuscle-ui.eot?vd44hk#iefix') format('embedded-opentype'),
+    url('fonts/neomuscle-ui.ttf?vd44hk') format('truetype'),
+    url('fonts/neomuscle-ui.woff?vd44hk') format('woff'),
+    url('fonts/neomuscle-ui.svg?vd44hk#neomuscle-ui') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -43,12 +43,15 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+  
 .ui-icon-search:before {
     content: "\f002";
 }
 .ui-icon-heart:before {
     content: "\f004";
+}
+.ui-icon-phone:before {
+    content: "\f095";
 }
 .ui-icon-shopping-bag:before {
     content: "\f290";
