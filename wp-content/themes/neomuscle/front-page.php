@@ -1,9 +1,8 @@
-<?php get_header(); ?>
+<?php get_header();?>
 
-<img src="<?php echo get_template_directory_uri() ?>/images/aminox.png" alt="Логотип Neomuscle">
+<?php echo do_shortcode('[metaslider id="37"]'); ?>
 
 <div style="height:500px;"></div>
 
-
-<?php get_footer(); ?>
+<?php get_footer();?>
 
