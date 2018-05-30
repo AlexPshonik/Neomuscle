@@ -1864,76 +1864,83 @@ a {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-.site-header {
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15); }
-  .site-header .top-header {
-    padding: 13px 0;
-    font-size: 12px;
-    color: #333333;
-    text-transform: uppercase;
-    border-bottom: 1px solid #eee; }
-    .site-header .top-header-left {
-      text-align: left; }
-      .site-header .top-header-left .customer-support {
-        padding: 0 5px; }
-    .site-header .top-header-right {
-      text-align: right; }
-      .site-header .top-header-right ul {
-        margin: 0; }
-        .site-header .top-header-right ul li {
-          display: inline-block;
-          margin-right: 20px; }
-          .site-header .top-header-right ul li:last-child {
-            margin-right: 0; }
-          .site-header .top-header-right ul li a {
-            color: #333333;
-            text-decoration: none; }
-            .site-header .top-header-right ul li a:hover {
-              color: #34b79d; }
-  .site-header .site-branding .logotype,
-  .site-header .site-branding .main-navigation,
-  .site-header .site-branding .rightside-nav {
-    padding: 25px 0; }
-  .site-header .site-branding .logotype img {
-    width: 238px;
-    height: 35px; }
-  .site-header .site-branding .rightside-nav {
-    padding: 32px 0;
-    text-align: right;
-    border-left: 1px solid #eee; }
-    .site-header .site-branding .rightside-nav ul {
+.site-header .top-header {
+  padding: 13px 0;
+  font-size: 12px;
+  color: #333333;
+  text-transform: uppercase;
+  border-bottom: 1px solid #eee; }
+  .site-header .top-header-left {
+    text-align: left; }
+    .site-header .top-header-left .customer-support {
+      padding: 0 5px; }
+  .site-header .top-header-right {
+    text-align: right; }
+    .site-header .top-header-right ul {
       margin: 0; }
-      .site-header .site-branding .rightside-nav ul li {
+      .site-header .top-header-right ul li {
         display: inline-block;
-        padding-left: 18px;
-        font-size: 18px; }
-        .site-header .site-branding .rightside-nav ul li .rightside-wishlist {
-          position: relative;
+        margin-right: 20px; }
+        .site-header .top-header-right ul li:last-child {
+          margin-right: 0; }
+        .site-header .top-header-right ul li a {
+          color: #333333;
           text-decoration: none; }
-          .site-header .site-branding .rightside-nav ul li .rightside-wishlist .wishlist-count {
-            border-radius: 50px;
-            width: 18px;
-            height: 18px;
-            display: block;
-            position: absolute;
-            background: #34b79d;
-            right: -10px;
-            top: -8px;
-            text-align: center;
-            line-height: 18px;
-            font-size: 10px;
-            color: #fff; }
-        .site-header .site-branding .rightside-nav ul li .rightside-cart {
-          font-size: 13px;
-          text-decoration: none; }
-          .site-header .site-branding .rightside-nav ul li .rightside-cart:hover {
-            color: #333333; }
-          .site-header .site-branding .rightside-nav ul li .rightside-cart .amount {
-            font-weight: 700; }
-          .site-header .site-branding .rightside-nav ul li .rightside-cart .cart-icon {
-            display: inline-block;
-            font-size: 18px;
-            padding-right: 5px; }
+          .site-header .top-header-right ul li a:hover {
+            color: #34b79d; }
+
+.site-header .site-branding .logotype,
+.site-header .site-branding .main-navigation,
+.site-header .site-branding .rightside-nav {
+  padding: 25px 0; }
+
+.site-header .site-branding .logotype img {
+  width: 238px;
+  height: 35px; }
+
+.site-header .site-branding .rightside-nav {
+  padding: 32px 0;
+  text-align: right;
+  border-left: 1px solid #eee; }
+  .site-header .site-branding .rightside-nav ul {
+    margin: 0; }
+    .site-header .site-branding .rightside-nav ul li {
+      display: inline-block;
+      padding-left: 18px;
+      font-size: 18px; }
+      .site-header .site-branding .rightside-nav ul li .rightside-wishlist {
+        position: relative;
+        text-decoration: none; }
+        .site-header .site-branding .rightside-nav ul li .rightside-wishlist .wishlist-count {
+          border-radius: 50px;
+          width: 18px;
+          height: 18px;
+          display: block;
+          position: absolute;
+          background: #34b79d;
+          right: -10px;
+          top: -8px;
+          text-align: center;
+          line-height: 18px;
+          font-size: 10px;
+          color: #fff; }
+      .site-header .site-branding .rightside-nav ul li .rightside-cart {
+        font-size: 13px;
+        text-decoration: none; }
+        .site-header .site-branding .rightside-nav ul li .rightside-cart:hover {
+          color: #333333; }
+        .site-header .site-branding .rightside-nav ul li .rightside-cart .amount {
+          font-weight: 700; }
+        .site-header .site-branding .rightside-nav ul li .rightside-cart .cart-icon {
+          display: inline-block;
+          font-size: 18px;
+          padding-right: 5px; }
+
+.section-site-navigation {
+  background-color: #34b79d;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15); }
+  .section-site-navigation #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
+    padding: 0 20px 0 20px; }
 
 .section-instagram {
   background-color: #f8f8f8;
