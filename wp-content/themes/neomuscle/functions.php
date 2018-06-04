@@ -191,3 +191,11 @@ function change_existing_currency_symbol($currency_symbol, $currency)
     }
     return $currency_symbol;
 }
+
+//
+
+
+add_action( 'wp_print_styles', 'remove_plugin_scripts_styles', 100 );
+function remove_plugin_scripts_styles() {
+    wp_deregister_style( 'dgwt-wcas-style' );
+}

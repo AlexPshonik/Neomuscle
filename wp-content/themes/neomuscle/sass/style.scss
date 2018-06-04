@@ -30,7 +30,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Forms
 # Navigation
 	## Links
-	## Menus
+    ## Menus
+# Search
 # Accessibility
 # Alignments
 # Clearings
@@ -75,6 +76,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Navigation
 --------------------------------------------------------------*/
 @import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Search
+--------------------------------------------------------------*/
+@import "modules/search";
 
 /*--------------------------------------------------------------
 # Accessibility

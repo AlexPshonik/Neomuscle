@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-
+                        <?php echo do_shortcode('[wcas-search-form]'); ?>
                     </div>
                     <div class="col-lg-3">
                         <div class="rightside-nav">
