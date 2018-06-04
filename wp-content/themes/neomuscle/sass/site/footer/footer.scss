@@ -1,0 +1,117 @@
+.site-footer {
+    padding-top: 40px;
+    font-size: 13px;
+    line-height: 1;
+    color: #acacac;  
+    background-color: #252525;
+    .footer-title {
+        margin-bottom: 25px;
+        font-size: 14px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .feedback-contacts {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            padding-bottom: 15px;
+            [class^="ui-icon-"] {
+                margin-right: 5px;
+            }
+            a {
+                color: #acacac;
+                text-decoration: none;
+                &:hover {
+                    color: $color__link-hover;
+                }
+            }
+        }
+    }
+
+    .footer-menu {
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                padding-bottom: 15px;
+                a {
+                    color: #acacac;
+                    text-decoration: none;
+                    &:hover {
+                        color: $color__link-hover;
+                    }
+                }
+            }
+        }
+    }
+
+    .develop {
+        &-block {
+            .codearty-logo {
+                display: block;
+                margin: 32px 0 10px 0;
+            }
+        }
+        &-text {
+            font-size: 10px;
+            line-height: 1.6;
+        }    
+    }
+
+    .payment-block {
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                margin-right: 10px;
+                list-style:  none;
+            }
+        }
+        .mastercard {
+            background: url('images/icon-mastercard.svg') no-repeat;
+            width: 42px;
+            height: 25px;
+        }
+        .visa {
+            background: url('images/icon-visa.svg') no-repeat;
+            width: 49px;
+            height: 16px;
+            padding: 10px;
+        }
+    }
+
+    .social-block {
+        [class^="ui-icon-"] {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 1.8;
+            border: 1px solid #fff;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                color: $color__link-hover;
+                border: 1px solid $color__link-hover;
+            }
+        }
+        a {
+            margin-right: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            
+        }
+    }
+
+    .footer-copytight {
+        width: 100%;
+        padding: 20px 0;
+        margin-top: 60px;
+        background: #333;
+        text-align: center;
+    }
+}

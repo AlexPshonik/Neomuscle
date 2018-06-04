@@ -1,8 +1,8 @@
 <?php get_header();?>
 
-<?php echo do_shortcode('[metaslider id="37"]'); ?>
+<!-- <?php echo do_shortcode('[metaslider id="37"]'); ?> -->
 
-<div style="height:500px;"></div>
+<!-- <div style="height:500px;"></div> -->
 
 <div class="section-instagram">
     <div class="container">
