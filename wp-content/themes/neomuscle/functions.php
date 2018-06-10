@@ -181,19 +181,7 @@ if (class_exists('WooCommerce')) {
     require get_template_directory() . '/inc/woocommerce.php';
 }
 
-// Change WooCommerce Symbol
-add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2);
-function change_existing_currency_symbol($currency_symbol, $currency)
-{
-    switch ($currency) {
-        case 'UAH':$currency_symbol = 'грн';
-            break;
-    }
-    return $currency_symbol;
-}
-
-// Remove Plugins Styles
-add_action( 'wp_print_styles', 'remove_plugin_scripts_styles', 100 );
-function remove_plugin_scripts_styles() {
-    wp_deregister_style( 'dgwt-wcas-style' );
-}
+/**
+ * Custom additions.
+ */
+require get_template_directory() . '/inc/custom.php';
