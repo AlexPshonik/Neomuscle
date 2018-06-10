@@ -492,7 +492,8 @@ big {
   padding-top: 40px; }
 
 .section-padding {
-  padding: 80px 0; }
+  padding-top: 80px;
+  padding-bottom: 80px; }
 
 /*--------------------------------------------------------------
 # Libs
@@ -2691,21 +2692,6 @@ input[type="submit"].dgwt-wcas-search-submit, button.dgwt-wcas-search-submit {
   .section-site-navigation #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
     padding: 0 20px 0 20px; }
 
-.section-instagram {
-  background-color: #f8f8f8;
-  padding: 80px 0; }
-  .section-instagram .widget-title {
-    margin-bottom: 40px;
-    text-align: center;
-    text-transform: uppercase; }
-  .section-instagram ul {
-    text-align: center;
-    margin: 0; }
-    .section-instagram ul li {
-      display: inline-block;
-      margin-right: 1.5%;
-      width: 18%; }
-
 /*--------------------------------------------------------------
 ## Frontpage
 --------------------------------------------------------------*/
@@ -2737,6 +2723,20 @@ section.promo .info {
     margin-top: 0;
     font-size: 12px;
     color: #777; }
+
+section.instagram {
+  background-color: #f8f8f8; }
+  section.instagram .widget-title {
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase; }
+  section.instagram ul {
+    text-align: center;
+    margin: 0; }
+    section.instagram ul li {
+      display: inline-block;
+      margin-right: 1.5%;
+      width: 18%; }
 
 /*--------------------------------------------------------------
 ## Posts and pages

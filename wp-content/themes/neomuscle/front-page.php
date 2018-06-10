@@ -19,23 +19,22 @@
             <div class="col-lg-3">
                 <div class="promo-box">
                     <div class="icon">
-                        <span class="ui-icon-truck"></span>
-                    </div>
-                    <div class="info">
-                        <h6>Бесплатная доставка</h6>
-                        <p>Бесплатная доставка по Украине от 2000 грн</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-3">
-                <div class="promo-box">
-                    <div class="icon">
                         <span class="ui-icon-wallet"></span>
                     </div>
                     <div class="info">
                         <h6>Гарантия лучших цен</h6>
                         <p>Мы уверены в своих ценах!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="promo-box">
+                    <div class="icon">
+                        <span class="ui-icon-truck"></span>
+                    </div>
+                    <div class="info">
+                        <h6>Бесплатная доставка</h6>
+                        <p>Бесплатная доставка по Украине от 2000 грн</p>
                     </div>
                 </div>
             </div>
@@ -54,7 +53,7 @@
     </div>
 </section>
 
-<div class="section-instagram">
+<section class="instagram section-padding">
     <div class="container">
         <div class="row">
             <?php if (is_active_sidebar('homepage-instagram-sidebar')): ?>
@@ -62,6 +61,6 @@
             <?php endif;?>
         </div>
     </div>
-</div>
+</section>
 
 <?php get_footer();?>
