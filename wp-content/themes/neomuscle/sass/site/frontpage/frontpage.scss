@@ -1,0 +1,36 @@
+section {
+    &.promo {
+        .promo-box {
+            text-align: center;
+            border-right: 1px solid #eee;
+            &.last {
+                border: 0;
+            }
+        }
+        .icon {
+            font-size: 34px;
+            display: inline-table;
+            vertical-align: middle;
+        }
+        .info {
+            padding-left: 15px;
+            text-align: left;
+            display: inline-table;
+            vertical-align: middle;
+            h6 {
+                margin: 0 0 5px 0;
+                padding: 0;
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            p {
+                max-width: 180px;
+                margin-bottom: 0;
+                margin-top: 0;
+                font-size: 12px;
+                color: #777;
+            }
+        }
+    }
+}
