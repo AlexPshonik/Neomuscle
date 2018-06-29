@@ -2727,9 +2727,15 @@ section.promo .info {
 section.instagram {
   background-color: #f8f8f8; }
   section.instagram .widget-title {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     text-align: center;
     text-transform: uppercase; }
+  section.instagram .profile-url {
+    display: block;
+    margin-bottom: 50px;
+    text-align: center; }
+    section.instagram .profile-url a {
+      text-decoration: none; }
   section.instagram ul {
     text-align: center;
     margin: 0; }

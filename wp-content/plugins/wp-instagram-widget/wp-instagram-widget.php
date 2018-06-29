@@ -99,6 +99,23 @@ Class null_instagram_widget extends WP_Widget {
 				$imgclass = apply_filters( 'wpiw_img_class', '' );
 				$template_part = apply_filters( 'wpiw_template_part', 'parts/wp-instagram-widget.php' );
 
+                $linkclass = apply_filters( 'wpiw_link_class', 'clear' );
+                $linkaclass = apply_filters( 'wpiw_linka_class', '' );
+
+                switch ( substr( $username, 0, 1 ) ) {
+                    case '#':
+                        $url = '//instagram.com/explore/tags/' . str_replace( '#', '', $username );
+                        break;
+
+                    default:
+                        $url = '//instagram.com/' . str_replace( '@', '', $username );
+                        break;
+                }
+
+                if ( '' !== $link ) {
+                    ?><span class="profile-url"><a href="<?php echo trailingslashit( esc_url( $url ) ); ?>" rel="me" target="<?php echo esc_attr( $target ); ?>" class="<?php echo esc_attr( $linkaclass ); ?>"><?php echo wp_kses_post( $link ); ?></a></span><?php
+                }
+
 				?><ul class="<?php echo esc_attr( $ulclass ); ?>"><?php
 				foreach( $media_array as $item ) {
 					// copy the else line into a new file (parts/wp-instagram-widget.php) within your theme and customise accordingly.
@@ -110,25 +127,8 @@ Class null_instagram_widget extends WP_Widget {
 				}
 				?></ul><?php
 			}
-		}
-
-		$linkclass = apply_filters( 'wpiw_link_class', 'clear' );
-		$linkaclass = apply_filters( 'wpiw_linka_class', '' );
-
-		switch ( substr( $username, 0, 1 ) ) {
-			case '#':
-				$url = '//instagram.com/explore/tags/' . str_replace( '#', '', $username );
-				break;
-
-			default:
-				$url = '//instagram.com/' . str_replace( '@', '', $username );
-				break;
-		}
-
-		if ( '' !== $link ) {
-			?><p class="<?php echo esc_attr( $linkclass ); ?>"><a href="<?php echo trailingslashit( esc_url( $url ) ); ?>" rel="me" target="<?php echo esc_attr( $target ); ?>" class="<?php echo esc_attr( $linkaclass ); ?>"><?php echo wp_kses_post( $link ); ?></a></p><?php
-		}
-
+        }
+        
 		do_action( 'wpiw_after_widget', $instance );
 
 		echo $args['after_widget'];
