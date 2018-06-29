@@ -1,0 +1,143 @@
+# Translation of Plugins - Premmerce WooCommerce Brands - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Premmerce WooCommerce Brands - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-09-18 07:37:44+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Premmerce WooCommerce Brands - Stable (latest release)\n"
+
+#: src/BrandsPlugin.php:94
+msgid "The %s plugin requires %s plugin to be active!"
+msgstr "Для плагина %s необходимо активировать плагин %s!"
+
+#. Author URI of the plugin/theme
+msgid "https://premmerce.com/"
+msgstr "https://premmerce.com/"
+
+#. Author of the plugin/theme
+msgid "premmerce"
+msgstr "premmerce"
+
+#. Description of the plugin/theme
+msgid "This plugin makes it possible to create an unlimited number of brands that can be assigned to the products for better cataloging."
+msgstr "Данный плагин позволяет создавать неограниченное количество брендов для WooCommerce, которые можно назначать товарам для лучшей организации каталога."
+
+#. Plugin URI of the plugin/theme
+msgid "https://premmerce.com/premmerce-woocommerce-brands-free-plugin/"
+msgstr "https://premmerce.com/premmerce-woocommerce-brands-free-plugin/"
+
+#. Plugin Name of the plugin/theme
+msgid "Premmerce WooCommerce Brands"
+msgstr "Premmerce WooCommerce Brands"
+
+#: views/admin/create-brands-fields.php:11
+#: views/admin/edit-brands-fields.php:12
+msgid "Use image"
+msgstr "Использовать картинку"
+
+#: views/admin/create-brands-fields.php:10
+#: views/admin/edit-brands-fields.php:11
+msgid "Choose an image"
+msgstr "Изменить картинку"
+
+#: views/admin/create-brands-fields.php:7 views/admin/edit-brands-fields.php:8
+msgid "Remove image"
+msgstr "Удалить картинку"
+
+#: views/admin/create-brands-fields.php:6 views/admin/edit-brands-fields.php:7
+msgid "Upload/Add image"
+msgstr "Загрузить/Добавить картинку"
+
+#: views/admin/create-brands-fields.php:2 views/admin/edit-brands-fields.php:2
+msgid "Thumbnail"
+msgstr "Иконка"
+
+#: views/admin/brands-widget-form.php:28
+msgid "Selected"
+msgstr "Выбрано"
+
+#: views/admin/brands-widget-form.php:21
+msgid "Limit"
+msgstr "Лимит"
+
+#: views/admin/brands-widget-form.php:18
+msgid "Only with photo"
+msgstr "Только с фото"
+
+#: views/admin/brands-widget-form.php:11
+msgid "Custom"
+msgstr "Ручной"
+
+#: views/admin/brands-widget-form.php:10
+msgid "Auto"
+msgstr "Автоматический"
+
+#: views/admin/brands-widget-form.php:7
+msgid "Mode"
+msgstr "Режим"
+
+#: views/admin/brands-widget-form.php:2
+msgid "Title"
+msgstr "Название"
+
+#: views/admin/brands-quick-edit.php:5 views/admin/brands-select.php:2
+msgid "Not specified"
+msgstr "Не определен"
+
+#: src/Frontend/Widgets/BrandsWidget.php:28
+msgid "Brands Widget from Premmerce Brands"
+msgstr "Виджет брендов от Premmerce Brands"
+
+#: src/Frontend/Widgets/BrandsWidget.php:27
+msgid "Brands Widget"
+msgstr "Виджет брендов"
+
+#: src/BrandsPlugin.php:62
+msgid "New brand name"
+msgstr "Имя нового бренда"
+
+#: src/BrandsPlugin.php:61
+msgid "Add new brand"
+msgstr "Добавить новый бренд"
+
+#: src/BrandsPlugin.php:60
+msgid "Update brand"
+msgstr "Обновить бренд"
+
+#: src/BrandsPlugin.php:59
+msgid "Edit brand"
+msgstr "Редактировать бренд"
+
+#: src/BrandsPlugin.php:58
+msgid "Parent brand:"
+msgstr "Родительский бренд:"
+
+#: src/BrandsPlugin.php:57
+msgid "Parent brand"
+msgstr "Родительский бренд"
+
+#: src/BrandsPlugin.php:56
+msgid "All brands"
+msgstr "Все бренды"
+
+#: src/BrandsPlugin.php:55
+msgid "Search brands"
+msgstr "Поиск брендов"
+
+#: src/BrandsPlugin.php:54 views/frontend/brands-meta.php:1
+msgid "Brand"
+msgstr "Бренд"
+
+#: src/BrandsPlugin.php:53 src/BrandsPlugin.php:63
+#: views/admin/brands-quick-edit.php:3
+msgid "Brands"
+msgstr "Бренды"
+
+#: src/Admin/Admin.php:105 src/Admin/Admin.php:129
+msgid "Image"
+msgstr "Изображение"
