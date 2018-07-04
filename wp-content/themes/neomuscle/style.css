@@ -2695,6 +2695,43 @@ input[type="submit"].dgwt-wcas-search-submit, button.dgwt-wcas-search-submit {
 /*--------------------------------------------------------------
 ## Frontpage
 --------------------------------------------------------------*/
+section.main-slider .owl-carousel .owl-nav .owl-prev,
+section.main-slider .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+  border-radius: 60px;
+  transition: all 0.25s ease 0s;
+  outline: none; }
+  section.main-slider .owl-carousel .owl-nav .owl-prev:hover,
+  section.main-slider .owl-carousel .owl-nav .owl-next:hover {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0; }
+
+section.main-slider .owl-carousel .owl-nav .owl-prev {
+  left: 25px; }
+
+section.main-slider .owl-carousel .owl-nav .owl-next {
+  right: 25px; }
+
+section.main-slider .owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  z-index: 2; }
+  section.main-slider .owl-carousel .owl-dots .owl-dot {
+    outline: none; }
+    section.main-slider .owl-carousel .owl-dots .owl-dot.active span {
+      background: #34b79d; }
+    section.main-slider .owl-carousel .owl-dots .owl-dot span {
+      background: #f8f8f8; }
+
 section.promo .promo-box {
   text-align: center;
   border-right: 1px solid #eee; }

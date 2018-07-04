@@ -1,6 +1,18 @@
 <?php get_header();?>
 
-<!-- <?php echo do_shortcode('[metaslider id="37"]'); ?> -->
+<?php echo do_shortcode( '[ca_slider_shortcode]' ); ?>
+
+
+<!-- <section class="main-slider">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="https://old-neomuscle.codearty.com/wp-content/themes/neomuscle/assets/images/slider/banner_olimp.png" alt="">
+        </div>
+        <div class="item">
+            <img src="https://old-neomuscle.codearty.com/wp-content/themes/neomuscle/assets/images/slider/optimum-nutrition-100-whey-gold-standard.png" alt="">
+        </div>
+    </div>
+</section> -->
 
 <section class="promo section-padding-sm">
     <div class="container">

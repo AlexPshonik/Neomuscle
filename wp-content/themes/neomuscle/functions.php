@@ -117,7 +117,7 @@ function neomuscle_widgets_init()
         'after_title' => '</h2>',
     ));
     register_sidebar(array(
-        'name' => esc_html__('HomePage Instagram Sideber', 'neomuscle'),
+        'name' => esc_html__('Homepage Instagram Sidebar', 'neomuscle'),
         'id' => 'homepage-instagram-sidebar',
         'description' => esc_html__('Add widgets here.', 'neomuscle'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -138,6 +138,8 @@ function neomuscle_scripts()
     wp_enqueue_script('neomuscle-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
 
     wp_enqueue_script('neomuscle-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
+
+    wp_enqueue_script('owl-carousel-main', get_template_directory_uri() . '/libs/owl-carousel/js/owl.carousel.min.js', array('jquery'), '2.3.4', true);
 
     wp_enqueue_script('neomuscle-main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true);
 
