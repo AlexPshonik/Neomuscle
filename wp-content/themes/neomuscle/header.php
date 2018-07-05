@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="top-header-left">
-                            <div class="phone"><span class="ui-icon-phone"></span><span class="customer-support">Служба поддержки:</span> (068) 208-17-17, (073) 208-17-17, (095) 238-17-17</div>
+                            <div class="phone"><span class="ui-icon-phone"></span><strong class="customer-support">Call-центр:</strong> (068) 208-17-17, (073) 208-17-17, (095) 238-17-17</div>
                         </div>
                     </div>
                     <div class="col-lg-6">
