@@ -21,7 +21,6 @@
 </head>
 
 <body <?php body_class();?>>
-<h1>test</h1>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'neomuscle');?></a>
 
