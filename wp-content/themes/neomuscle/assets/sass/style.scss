@@ -1,0 +1,36 @@
+/*!
+Theme Name: neomuscle
+Theme URI: https://codearty.com
+Author: CodeArty
+Author URI: https://codearty.com
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: neomuscle
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Media
+--------------------------------------------------------------*/
+// @import "variables-site/variables-site";
+// @import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "base/normalize";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "base/typography";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "components/media";

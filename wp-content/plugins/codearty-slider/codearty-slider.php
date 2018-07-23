@@ -106,7 +106,7 @@ function ca_function($type='ca_function') {
     
 
     $result = '<section class="main-slider">';
-    $result .= '<div class="owl-carousel owl-theme">';
+    $result .= '<div class="slider owl-carousel owl-theme">';
  
     //the loop
     $loop = new WP_Query($args);

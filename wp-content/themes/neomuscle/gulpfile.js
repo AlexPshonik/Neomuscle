@@ -1,12 +1,15 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer');
 
-//Style paths
-var sassFiles = 'sass/style.scss',
-    cssDest = '.';
 
-gulp.task('build', function(){
-    gulp.src(sassFiles)
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest(cssDest));
+gulp.task('sass', function() {
+  return gulp.src('assets/sass/**/*.scss')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(autoprefixer(['last 15 versions']))
+  .pipe(gulp.dest('.'))
+});
+
+gulp.task('sass:watch', function () {
+  gulp.watch('assets/sass/**/*.scss', ['sass']);
 });
