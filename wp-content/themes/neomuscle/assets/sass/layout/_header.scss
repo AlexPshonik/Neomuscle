@@ -1,0 +1,102 @@
+.site-header {
+  .top-header {
+      padding: 13px 0;
+      font-size: 13px;
+      color: $grey-color;
+      border-bottom: 1px solid #eee;
+      &-left {
+          text-align: left;
+          .customer-support {
+              padding: 0 5px;
+          }
+      }
+      &-right {
+          text-align: right;
+          ul {
+              margin: 0;
+              li {
+                  display: inline-block;
+                  margin-right: 20px;
+                  &:last-child {
+                      margin-right: 0;
+                  }
+                  a {     
+                      color: $grey-color; 
+                      text-decoration: none;
+                  }
+              }
+          }
+      }
+  }
+
+  .site-branding {
+      .logotype,
+      .main-navigation,
+      .rightside-nav {
+          padding: 25px 0; 
+      }
+      .logotype {
+          img {
+              width: 238px;
+              height: 35px;
+          }
+      }
+      .dgwt-wcas-search-wrapp {
+        padding: 24px 0;
+      }
+      .rightside-nav {
+          padding: 32px 0;
+          text-align: right;
+          border-left: 1px solid #eee;
+          ul {
+              margin: 0;
+              li {
+                  display: inline-block;
+                  padding-left: 18px;
+                  font-size: 18px;
+                  .rightside {
+                      &-wishlist {
+                          position: relative;
+                          text-decoration: none;
+                          .wishlist-count {
+                              border-radius: 50px;
+                              width: 18px;
+                              height: 18px;
+                              display: block;
+                              position: absolute;
+                              background: $accent-color;
+                              right: -10px;
+                              top: -8px;
+                              text-align: center;
+                              line-height: 18px;
+                              font-size: 10px;
+                              color: #fff;
+                          }
+                      }
+                      &-cart {
+                          font-size: 13px;
+                          text-decoration: none;
+                          &:hover {
+                              color: $accent-color;
+                          }
+                          .amount {
+                              font-weight: 700;
+                          }
+                          .cart-icon {
+                              display: inline-block;
+                              font-size: 18px;
+                              padding-right: 5px;
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+}
+.section-site-navigation {
+  background-color: $accent-color;
+  #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
+      padding: 0 20px 0 20px;
+  }
+}

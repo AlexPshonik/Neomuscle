@@ -1,0 +1,104 @@
+/**
+* OpenSans Regular
+*/
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("assets/fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+  url("assets/fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/**
+* OpenSans SemiBold
+*/
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
+  src: url("assets/fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+  url("assets/fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+/**
+* OpenSans Bold
+*/
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/fonts/OpenSansBold/OpenSansBold.eot");
+  src: url("assets/fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+  url("assets/fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+/**
+* Neomuscle UI Icons
+*/
+@font-face {
+  font-family: 'neomuscle-ui';
+  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?wrfyig');
+  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?wrfyig#iefix') format('embedded-opentype'),
+  url('assets/fonts/neomuscle-ui/neomuscle-ui.ttf?wrfyig') format('truetype'),
+  url('assets/fonts/neomuscle-ui/neomuscle-ui.woff?wrfyig') format('woff'),
+  url('assets/fonts/neomuscle-ui/neomuscle-ui.svg?wrfyig#neomuscle-ui') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ui-icon-"], [class*=" ui-icon-"] {
+  font-family: 'neomuscle-ui' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ui-icon-wallet:before {
+  content: "\e902";
+}
+.ui-icon-viber:before {
+  content: "\e901";
+}
+.ui-icon-telegram:before {
+  content: "\e900";
+}
+.ui-icon-search:before {
+  content: "\f002";
+}
+.ui-icon-heart:before {
+  content: "\f004";
+}
+.ui-icon-support:before {
+  content: "\f025";
+}
+.ui-icon-phone:before {
+  content: "\f095";
+}
+.ui-icon-facebook:before {
+  content: "\f09a";
+}
+.ui-icon-truck:before {
+  content: "\f0d1";
+}
+.ui-icon-email:before {
+  content: "\f0e0";
+}
+.ui-icon-shield:before {
+  content: "\f132";
+}
+.ui-icon-instagram:before {
+  content: "\f16d";
+}
+.ui-icon-shopping-bag:before {
+  content: "\f290";
+}
