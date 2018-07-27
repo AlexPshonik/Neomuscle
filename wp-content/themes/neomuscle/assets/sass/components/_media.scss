@@ -12,12 +12,20 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+  .feature {
+    &-item {
+      flex-basis: 50%;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+  .feature {
+    &-item {
+      flex-basis: 100%;
+    }
+  }
 }
 
 /* Custom, iPhone Retina */
@@ -39,7 +47,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+  
 }
 
 /* Medium Devices, Desktops */

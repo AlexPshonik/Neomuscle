@@ -2,56 +2,49 @@
 
 <?php echo do_shortcode( '[ca_slider_shortcode]' ); ?>
 
-<!-- <section class="promo section-padding-sm">
+<section class="feature section-padding-sm">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="promo-box">
-                    <div class="icon">
-                        <span class="ui-icon-shield"></span>
-                    </div>
-                    <div class="info">
-                        <h6>Оригинальная продукция</h6>
-                        <p>Гарантируем качество и подлинность товара</p>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="feature-box">
+            
+            <div class="feature-item">
+              <span class="feature-item-icon ui-icon-shield"></span>
+              <div class="feature-item-info">
+                <h6 class="title">Оригинальная продукция</h6>
+                <p class="description">Гарантируем качество товара</p>
+              </div>
             </div>
-            <div class="col-lg-3">
-                <div class="promo-box">
-                    <div class="icon">
-                        <span class="ui-icon-wallet"></span>
-                    </div>
-                    <div class="info">
-                        <h6>Гарантия лучших цен</h6>
-                        <p>Мы уверены в своих ценах!</p>
-                    </div>
-                </div>
+
+            <div class="feature-item">
+              <span class="feature-item-icon ui-icon-wallet"></span>
+              <div class="feature-item-info">
+                <h6 class="title">Гарантия лучших цен</h6>
+                <p class="description">Мы уверены в своих ценах!</p>
+              </div>
             </div>
-            <div class="col-lg-3">
-                <div class="promo-box">
-                    <div class="icon">
-                        <span class="ui-icon-truck"></span>
-                    </div>
-                    <div class="info">
-                        <h6>Бесплатная доставка</h6>
-                        <p>Бесплатная доставка по Украине от 2000 грн</p>
-                    </div>
-                </div>
+
+            <div class="feature-item">
+              <span class="feature-item-icon ui-icon-truck"></span>
+              <div class="feature-item-info">
+                <h6 class="title">Бесплатная доставка</h6>
+                <p class="description">По Украине от 2000 грн</p>
+              </div>
             </div>
-            <div class="col-lg-3">
-                <div class="promo-box last">
-                    <div class="icon">
-                        <span class="ui-icon-support"></span>
-                    </div>
-                    <div class="info">
-                        <h6>Техническая поддержка</h6>
-                        <p>Онлайн поддержка 24/7</p>
-                    </div>
-                </div>
+
+            <div class="feature-item">
+              <span class="feature-item-icon ui-icon-support"></span>
+              <div class="feature-item-info">
+                <h6 class="title">Техническая поддержка</h6>
+                <p class="description">Онлайн поддержка 24/7</p>
+              </div>
             </div>
+
+          </div>
         </div>
+      </div>
     </div>
-</section> -->
+</section>
 
 <!-- <section class="featured-products section-padding">
     <div class="container">
