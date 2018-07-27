@@ -13,11 +13,11 @@
 <!doctype html>
 <html <?php language_attributes();?>>
 <head>
-	<meta charset="<?php bloginfo('charset');?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta charset="<?php bloginfo('charset');?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
 
-	<?php wp_head();?>
+    <?php wp_head();?>
 </head>
 
 <body <?php body_class();?>>
@@ -26,42 +26,43 @@
 
     <div class="top-bar">
       <div class="container">
-        <div class="nav top-bar-left">
-        qdqwdqwdq
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="top-bar-left">
+              <ul class="menu">
+                <strong class="menu-title">Call-центр:</strong>
+                <li class="menu-item">
+                  <a href="tel: +380682081717" class="menu-link">(068) 208-17-17,</a>
+                </li>
+                <li class="menu-item">
+                  <a href="tel: +380732081717" class="menu-link">(073) 208-17-17,</a>
+                </li>
+                <li class="menu-item">
+                  <a href="tel: +380952381717" class="menu-link">(095) 238-17-17</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#" class="menu-link">Отследить ваш заказ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">О нас</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">Контакты</a>
+                </li>
+              </ul>  
+            </div>
+          </div>
         </div>
-
-        <ul class="nav top-bar-right">
-            <li class="menu-item"><a class="top-bar-link" href="#">Отследить ваш заказ</a></li>
-            <li class="menu-item"><a class="top-bar-link" href="#">Доставка и оплата</a></li>
-            <li class="menu-item"><a class="top-bar-link" href="#">О нас</a></li>
-            <li class="menu-item"><a class="top-bar-link" href="#">Контакты</a></li>
-        </ul>
-
-
       </div>
     </div>
 
   <header id="masthead" class="site-header">
-      <!-- <div class="top-header">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-6">
-                      <div class="top-header-left">
-                          <div class="phone"><span class="ui-icon-phone"></span><strong class="customer-support">Call-центр:</strong> (068) 208-17-17, (073) 208-17-17, (095) 238-17-17</div>
-                      </div>
-                  </div>
-                  <div class="col-lg-6">
-                      <div class="top-header-right">
-                          <ul>
-                              <li><a href="#">Доставка и оплата</a></li>
-                              <li><a href="#">О нас</a></li>
-                              <li><a href="#">Контакты</a></li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div> -->
       <div class="site-branding">
           <div class="container">
               <div class="row">
@@ -116,4 +117,4 @@
     </div>
 
 
-	<div id="content" class="site-content">
+    <div id="content" class="site-content">

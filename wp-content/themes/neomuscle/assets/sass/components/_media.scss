@@ -44,7 +44,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+  .top-bar {
+    display: block;
+  }
 }
 
 /* Large Devices, Wide Screens */
