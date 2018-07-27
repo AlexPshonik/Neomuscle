@@ -16,39 +16,58 @@ WooCommerce styles override
  * Shop tables
  */
 table.shop_table_responsive thead {
-  display: none; }
+  display: none;
+}
 
 table.shop_table_responsive tbody th {
-  display: none; }
+  display: none;
+}
 
 table.shop_table_responsive tr td {
   display: block;
   text-align: right;
-  clear: both; }
-  table.shop_table_responsive tr td:before {
-    content: attr(data-title) ": ";
-    float: left; }
-  table.shop_table_responsive tr td.product-remove a {
-    text-align: left; }
-  table.shop_table_responsive tr td.product-remove:before {
-    display: none; }
-  table.shop_table_responsive tr td.actions:before, table.shop_table_responsive tr td.download-actions:before {
-    display: none; }
-  table.shop_table_responsive tr td.download-actions .button {
-    display: block;
-    text-align: center; }
+  clear: both;
+}
+
+table.shop_table_responsive tr td:before {
+  content: attr(data-title) ": ";
+  float: left;
+}
+
+table.shop_table_responsive tr td.product-remove a {
+  text-align: left;
+}
+
+table.shop_table_responsive tr td.product-remove:before {
+  display: none;
+}
+
+table.shop_table_responsive tr td.actions:before, table.shop_table_responsive tr td.download-actions:before {
+  display: none;
+}
+
+table.shop_table_responsive tr td.download-actions .button {
+  display: block;
+  text-align: center;
+}
 
 @media screen and (min-width: 48em) {
   table.shop_table_responsive thead {
-    display: table-header-group; }
+    display: table-header-group;
+  }
   table.shop_table_responsive tbody th {
-    display: table-cell; }
+    display: table-cell;
+  }
   table.shop_table_responsive tr th, table.shop_table_responsive tr td {
-    text-align: left; }
+    text-align: left;
+  }
   table.shop_table_responsive tr td {
-    display: table-cell; }
-    table.shop_table_responsive tr td:before {
-      display: none; } }
+    display: table-cell;
+  }
+  table.shop_table_responsive tr td:before {
+    display: none;
+  }
+}
 
 /**
  * Products

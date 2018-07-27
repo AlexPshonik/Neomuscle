@@ -1,11 +1,12 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    notify = require('gulp-notify');
 
 
 gulp.task('sass', function() {
   return gulp.src('assets/sass/**/*.scss')
-  .pipe(sass().on('error', sass.logError))
+  .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
   .pipe(autoprefixer(['last 15 versions']))
   .pipe(gulp.dest('.'))
 });
