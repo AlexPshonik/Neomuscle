@@ -2,7 +2,7 @@
 
 <?php echo do_shortcode( '[ca_slider_shortcode]' ); ?>
 
-<section class="promo section-padding-sm">
+<!-- <section class="promo section-padding-sm">
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
@@ -51,9 +51,9 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-<section class="featured-products section-padding">
+<!-- <section class="featured-products section-padding">
     <div class="container">
         <div class="row">
             <h2 class="section-title">Новинки</h2>
@@ -81,9 +81,9 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-<section class="instagram section-padding">
+<!-- <section class="instagram section-padding">
     <div class="container">
         <div class="row">
             <?php if (is_active_sidebar('homepage-instagram-sidebar')): ?>
@@ -91,6 +91,6 @@
             <?php endif;?>
         </div>
     </div>
-</section>
+</section> -->
 
 <?php get_footer();?>

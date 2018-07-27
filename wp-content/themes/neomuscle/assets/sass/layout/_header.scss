@@ -1,6 +1,6 @@
 .site-header {
   .top-header {
-      padding: 13px 0;
+      padding: 10px 0;
       font-size: 13px;
       color: $grey-color;
       border-bottom: 1px solid #eee;
@@ -58,19 +58,25 @@
                       &-wishlist {
                           position: relative;
                           text-decoration: none;
+                          color: $grey-color;
+                          transition: all 0.3s ease 0s;
+                          &:hover {
+                            color: $accent-color;
+                          }
                           .wishlist-count {
+                            position: absolute;
+                            font-weight: 700;
                               border-radius: 50px;
                               width: 18px;
                               height: 18px;
                               display: block;
-                              position: absolute;
                               background: $accent-color;
                               right: -10px;
                               top: -8px;
                               text-align: center;
                               line-height: 18px;
                               font-size: 10px;
-                              color: #fff;
+                              color: $grey-color;
                           }
                       }
                       &-cart {
@@ -96,7 +102,7 @@
 }
 .section-site-navigation {
   background-color: $accent-color;
-  #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
-      padding: 0 20px 0 20px;
-  }
+  // #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
+  //     padding: 0 20px 0 20px;
+  // }
 }

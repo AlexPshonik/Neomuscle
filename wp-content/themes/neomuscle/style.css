@@ -2351,7 +2351,7 @@ html {
 # Header
 --------------------------------------------------------------*/
 .site-header .top-header {
-  padding: 13px 0;
+  padding: 10px 0;
   font-size: 13px;
   color: #333e48;
   border-bottom: 1px solid #eee; }
@@ -2396,21 +2396,28 @@ html {
       font-size: 18px; }
       .site-header .site-branding .rightside-nav ul li .rightside-wishlist {
         position: relative;
-        text-decoration: none; }
+        text-decoration: none;
+        color: #333e48;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+        .site-header .site-branding .rightside-nav ul li .rightside-wishlist:hover {
+          color: #fed700; }
         .site-header .site-branding .rightside-nav ul li .rightside-wishlist .wishlist-count {
+          position: absolute;
+          font-weight: 700;
           -webkit-border-radius: 50px;
                   border-radius: 50px;
           width: 18px;
           height: 18px;
           display: block;
-          position: absolute;
           background: #fed700;
           right: -10px;
           top: -8px;
           text-align: center;
           line-height: 18px;
           font-size: 10px;
-          color: #fff; }
+          color: #333e48; }
       .site-header .site-branding .rightside-nav ul li .rightside-cart {
         font-size: 13px;
         text-decoration: none; }
@@ -2425,8 +2432,6 @@ html {
 
 .section-site-navigation {
   background-color: #fed700; }
-  .section-site-navigation #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
-    padding: 0 20px 0 20px; }
 
 /*--------------------------------------------------------------
 # Theme
