@@ -21,64 +21,82 @@
 </head>
 
 <body <?php body_class();?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'neomuscle');?></a>
+  <div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'neomuscle');?></a>
 
-    <header id="masthead" class="site-header">
-        <div class="top-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="top-header-left">
-                            <div class="phone"><span class="ui-icon-phone"></span><strong class="customer-support">Call-центр:</strong> (068) 208-17-17, (073) 208-17-17, (095) 238-17-17</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="top-header-right">
-                            <ul>
-                                <li><a href="#">Доставка и оплата</a></li>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Контакты</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="top-bar">
+      <div class="container">
+        <div class="nav top-bar-left">
+        qdqwdqwdq
         </div>
-        <div class="site-branding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="logotype">
-                            <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logotype.svg" alt="Логотип Neomuscle"></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <?php echo do_shortcode('[wcas-search-form]'); ?>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="rightside-nav">
-                            <ul>
-                                <li><span class="ui-icon-search"></span></li>
-                                <li>
-                                    <a class="rightside-wishlist" href="<?php echo get_home_url(null, 'wishlist/', 'null'); ?>">
-                                        <span class="ui-icon-heart"></span>
-                                        <div class="wishlist-count"><?php echo YITH_WCWL()->count_products(); ?></div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="rightside-cart" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart');?>">
-                                        <div class="cart-icon"><span class="ui-icon-shopping-bag"></span></i></div>
-                                        <?php echo WC()->cart->get_cart_contents_count(); ?> / <?php echo WC()->cart->get_cart_total(); ?>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-		</div><!-- .site-branding -->
-    </header>
+
+        <ul class="nav top-bar-right">
+            <li class="menu-item"><a class="top-bar-link" href="#">Отследить ваш заказ</a></li>
+            <li class="menu-item"><a class="top-bar-link" href="#">Доставка и оплата</a></li>
+            <li class="menu-item"><a class="top-bar-link" href="#">О нас</a></li>
+            <li class="menu-item"><a class="top-bar-link" href="#">Контакты</a></li>
+        </ul>
+
+
+      </div>
+    </div>
+
+  <header id="masthead" class="site-header">
+      <!-- <div class="top-header">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6">
+                      <div class="top-header-left">
+                          <div class="phone"><span class="ui-icon-phone"></span><strong class="customer-support">Call-центр:</strong> (068) 208-17-17, (073) 208-17-17, (095) 238-17-17</div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="top-header-right">
+                          <ul>
+                              <li><a href="#">Доставка и оплата</a></li>
+                              <li><a href="#">О нас</a></li>
+                              <li><a href="#">Контакты</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> -->
+      <div class="site-branding">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-3">
+                      <div class="logotype">
+                          <!-- <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logotype.svg" alt="Логотип Neomuscle"></a> -->
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <?php echo do_shortcode('[wcas-search-form]'); ?>
+                  </div>
+                  <div class="col-lg-3">
+                      <div class="rightside-nav">
+                          <ul>
+                              <li><span class="ui-icon-search"></span></li>
+                              <li>
+                                  <a class="rightside-wishlist" href="<?php echo get_home_url(null, 'wishlist/', 'null'); ?>">
+                                      <span class="ui-icon-heart"></span>
+                                      <div class="wishlist-count"><?php echo YITH_WCWL()->count_products(); ?></div>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a class="rightside-cart" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart');?>">
+                                      <div class="cart-icon"><span class="ui-icon-shopping-bag"></span></i></div>
+                                      <?php echo WC()->cart->get_cart_contents_count(); ?> / <?php echo WC()->cart->get_cart_total(); ?>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  </div><!-- .site-branding -->
+
+  </header>
     <div class="section-site-navigation">
         <div class="container">
             <div class="row">
