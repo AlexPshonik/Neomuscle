@@ -22,8 +22,6 @@
 
 <body <?php body_class();?>>
   <div id="page" class="site">
-    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'neomuscle');?></a>
-
     <div class="top-bar">
       <div class="container">
         <div class="row">
@@ -68,7 +66,7 @@
               <div class="row">
                   <div class="col-lg-3">
                       <div class="logotype">
-                          <!-- <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logotype.svg" alt="Логотип Neomuscle"></a> -->
+                          <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logotype.svg" alt="Логотип Neomuscle"></a>
                       </div>
                   </div>
                   <div class="col-lg-6">
@@ -77,7 +75,6 @@
                   <div class="col-lg-3">
                       <div class="rightside-nav">
                           <ul>
-                              <li><span class="ui-icon-search"></span></li>
                               <li>
                                   <a class="rightside-wishlist" href="<?php echo get_home_url(null, 'wishlist/', 'null'); ?>">
                                       <span class="ui-icon-heart"></span>
