@@ -398,6 +398,9 @@ ul {
 a,
 a:hover {
   text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 ul {
@@ -409,6 +412,11 @@ input {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
+}
+
+.section-padding-sm {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /*--------------------------------------------------------------
@@ -3021,6 +3029,62 @@ html {
 
 .feature-item:last-child {
   border: 0;
+}
+
+/*--------------------------------------------------------------
+# Feature Section
+--------------------------------------------------------------*/
+.instagram {
+  background-color: #f9f9f9;
+}
+
+.instagram .widget-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.instagram .profile-url {
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.instagram .profile-url .profile-link {
+  color: #333e48;
+}
+
+.instagram .profile-url .profile-link:hover {
+  text-decoration: underline;
+}
+
+.instagram-pics {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.instagram-pics-box {
+  -webkit-flex-basis: 19%;
+      -ms-flex-preferred-size: 19%;
+          flex-basis: 19%;
+}
+
+.instagram-pics-box .img {
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------

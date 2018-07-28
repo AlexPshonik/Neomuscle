@@ -113,7 +113,7 @@ Class null_instagram_widget extends WP_Widget {
                 }
 
                 if ( '' !== $link ) {
-                    ?><span class="profile-url"><a href="<?php echo trailingslashit( esc_url( $url ) ); ?>" rel="me" target="<?php echo esc_attr( $target ); ?>" class="<?php echo esc_attr( $linkaclass ); ?>"><?php echo wp_kses_post( $link ); ?></a></span><?php
+                    ?><span class="profile-url"><a class="profile-link" href="<?php echo trailingslashit( esc_url( $url ) ); ?>" rel="me" target="<?php echo esc_attr( $target ); ?>" class="<?php echo esc_attr( $linkaclass ); ?>"><?php echo wp_kses_post( $link ); ?></a></span><?php
                 }
 
 				?><ul class="<?php echo esc_attr( $ulclass ); ?>"><?php
@@ -122,7 +122,7 @@ Class null_instagram_widget extends WP_Widget {
 					if ( locate_template( $template_part ) !== '' ) {
 						include locate_template( $template_part );
 					} else {
-						echo '<li class="' . esc_attr( $liclass ) . '"><a href="' . esc_url( $item['link'] ) . '" target="' . esc_attr( $target ) . '"  class="' . esc_attr( $aclass ) . '"><img src="' . esc_url( $item[$size] ) . '"  alt="' . esc_attr( $item['description'] ) . '" title="' . esc_attr( $item['description'] ) . '"  class="' . esc_attr( $imgclass ) . '"/></a></li>';
+						echo '<li class="instagram-pics-box ' . esc_attr( $liclass ) . '"><a href="' . esc_url( $item['link'] ) . '" target="' . esc_attr( $target ) . '"  class="' . esc_attr( $aclass ) . '"><img class="img" src="' . esc_url( $item[$size] ) . '"  alt="' . esc_attr( $item['description'] ) . '" title="' . esc_attr( $item['description'] ) . '"  class="' . esc_attr( $imgclass ) . '"/></a></li>';
 					}
 				}
 				?></ul><?php
