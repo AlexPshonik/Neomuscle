@@ -2,27 +2,101 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+  .dgwt-wcas-sf-wrapp {
+    .dgwt-wcas-search-input {
+      line-height: 1.4em;
+    }
+  } 
+  .header-user-nav-item {
+    margin-right: 20px;
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+  .site-header {
+    .logo-img {
+      max-width: 100%;
+    }
+  }
+  .dgwt-wcas-search-wrapp {
+    top: -2px;
+  }
+  .header-user-nav {
+    .shopping-bag {
+      position: relative;
+      font-weight: bold;
+      &-count {
+        position: absolute;
+        top: -7px;
+        right: -7px;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background-color: $accent-color;
+        text-align: center;
+        font-weight: 700;
+        line-height: 1.22;
+      }
+    }
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  
+  .site-header {
+    padding: 15px 0;
+    box-shadow: 0px 2px 6px $border-color;
+    background-color: $accent-color;
+    .logo-img {
+      max-width: 70%;
+    }
+  }
+  .header-user-nav {
+    .shopping-bag,
+    .wish-list {
+      &-count {
+        color: #fff;
+        background-color: $main-font-color;
+      }
+    }
+  }
+  .header-user-nav-item {
+    margin-right: 15px;
+  }
+  .section-site-navigation {
+    display: none;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-  
+  .site-header {
+    .logo {
+      &-img {
+        max-width: 80%;
+      }
+    }
+  }
+  .mobile-search {
+    .dgwt-wcas-suggestions-wrapp {
+      padding: 0 15px 10px;
+    }
+    .dgwt-wcas-search-form {
+      padding: 0 15px;
+    }
+  } 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+  .site-header {
+    .logo {
+      &-img {
+        max-width: 100%;
+      }
+    }
+  }
 }
 
 /*==========  Mobile First  ==========*/

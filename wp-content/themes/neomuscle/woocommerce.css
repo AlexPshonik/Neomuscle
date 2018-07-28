@@ -38,7 +38,7 @@ WooCommerce styles override
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 5px 5px 5px 20px;
+  padding: 5px 15px 5px 20px;
   border: 2px solid #fed700;
   -webkit-transition: -webkit-border-radius 0.3s ease;
   transition: -webkit-border-radius 0.3s ease;
@@ -109,6 +109,11 @@ WooCommerce styles override
   -o-transition: background-color .3s ease;
   transition: background-color .3s ease;
   cursor: pointer;
+}
+
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:last-child {
+  -webkit-border-radius: 0 0 10px 10px;
+          border-radius: 0 0 10px 10px;
 }
 
 .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:hover {
