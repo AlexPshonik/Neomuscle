@@ -63,35 +63,44 @@
   <header id="masthead" class="site-header">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
-          <div class="logo">
-            <a class="logo-link" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-              <img class="logo-img" src="<?php echo get_template_directory_uri() ?>/assets/images/logotype.svg" alt="Логотип Neomuscle">
-            </a>
-          </div>
+        <div class="col-8 col-md-3 col-lg-3">
+          <span class="js-menu-toggle d-lg-none"></span> 
+          <a class="logo-link" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+            <img class="logo-img" src="<?php echo get_template_directory_uri() ?>/assets/images/logotype.svg" alt="Логотип Neomuscle">
+          </a>
         </div>
-        <div class="col-lg-6">
+        <div class="col-md-7 col-lg-6 d-none d-md-block">
           <?php echo do_shortcode('[wcas-search-form]'); ?>
         </div>
-        <div class="col-lg-3">
-          <div class="rightside-nav">
-            <ul>
-              <li>
-                <a class="rightside-wishlist" href="<?php echo get_home_url(null, 'wishlist/', 'null'); ?>">
-                  <span class="ui-icon-heart"></span>
-                  <div class="wishlist-count"><?php echo YITH_WCWL()->count_products(); ?></div>
-                </a>
-              </li>
-              <li>
-                <a class="rightside-cart" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart');?>">
-                  <div class="cart-icon"><span class="ui-icon-shopping-bag"></span></i></div>
-                  <?php echo WC()->cart->get_cart_contents_count(); ?> / <?php echo WC()->cart->get_cart_total(); ?>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="col-4 col-md-2 col-lg-3">
+          <ul class="header-user-nav">
+            <li class="header-user-nav-item">
+              <span class="js-open-mobile-search ui-icon-search header-user-nav-link d-md-none"></span>
+            </li>
+            <li class="header-user-nav-item">
+              <a href="#" class="my-account ui-icon-heart header-user-nav-link"></a>
+            </li>
+            <li class="header-user-nav-item d-none d-sm-block">
+              <a href="<?php echo get_home_url(null, 'wishlist/', 'null'); ?>" class="wish-list ui-icon-heart header-user-nav-link">
+                <span class="wish-list-count"><?php echo YITH_WCWL()->count_products(); ?></span>
+              </a>
+            </li>
+            <li class="header-user-nav-item">
+              <a href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart');?>" class="shopping-bag ui-icon-shopping-bag header-user-nav-link">
+                <span class="shopping-bag-count">
+                  <?php echo WC()->cart->get_cart_contents_count(); ?>
+                  <strong class="d-none d-lg-inline">
+                    / <?php echo WC()->cart->get_cart_total(); ?>
+                  </strong>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
+    <div class="mobile-search">
+      <?php echo do_shortcode('[wcas-search-form]'); ?>
     </div>
   </div><!-- .site-branding -->
 

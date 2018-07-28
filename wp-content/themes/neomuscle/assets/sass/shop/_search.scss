@@ -9,7 +9,7 @@
   }
   .dgwt-wcas-search-input {
     flex-grow: 1;
-    padding: 5px 5px 5px 20px;
+    padding: 5px 15px 5px 20px;
     border: 2px solid $accent-color;
     transition: border-radius 0.3s ease;
     border-radius: 25px 0 0 25px;
@@ -59,6 +59,9 @@
     line-height: 28px;
     transition: background-color .3s ease;
     cursor: pointer;
+    &:last-child {
+      border-radius: 0 0 10px 10px;
+    }
     &:hover {
       background-color: $color-gray;
     }
