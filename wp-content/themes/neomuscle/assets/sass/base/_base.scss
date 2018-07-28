@@ -3,7 +3,8 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.65;
-	font-family: $default-font;
+  font-family: $default-font;
+  color: $main-font-color;
 	overflow-x: hidden;
 }
 
@@ -23,10 +24,12 @@ ul {
   padding: 0;
 }
 
-a, 
-a:hover {
+a {
   text-decoration: none;
   transition: all 0.3s ease 0s;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 ul {

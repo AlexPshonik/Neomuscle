@@ -376,6 +376,7 @@ body {
   position: relative;
   line-height: 1.65;
   font-family: "OpenSans", sans-serif;
+  color: #333e48;
   overflow-x: hidden;
 }
 
@@ -395,12 +396,15 @@ ul {
   padding: 0;
 }
 
-a,
-a:hover {
+a {
   text-decoration: none;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 ul {
@@ -2787,6 +2791,17 @@ html {
 # Typography
 --------------------------------------------------------------*/
 /**
+* OpenSans Light
+*/
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/fonts/OpenSansLight/OpenSansLight.eot");
+  src: url("assets/fonts/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"), url("assets/fonts/OpenSansLight/OpenSansLight.woff") format("woff"), url("assets/fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
+}
+
+/**
 * OpenSans Regular
 */
 @font-face {
@@ -2824,8 +2839,8 @@ html {
 */
 @font-face {
   font-family: 'neomuscle-ui';
-  src: url("assets/fonts/neomuscle-ui/neomuscle-ui.eot?u36nfp");
-  src: url("assets/fonts/neomuscle-ui/neomuscle-ui.eot?u36nfp#iefix") format("embedded-opentype"), url("assets/fonts/neomuscle-ui/neomuscle-ui.ttf?u36nfp") format("truetype"), url("assets/fonts/neomuscle-ui/neomuscle-ui.woff?u36nfp") format("woff"), url("assets/fonts/neomuscle-ui/neomuscle-ui.svg?u36nfp#neomuscle-ui") format("svg");
+  src: url("assets/fonts/neomuscle-ui/neomuscle-ui.eot?rrbp6x");
+  src: url("assets/fonts/neomuscle-ui/neomuscle-ui.eot?rrbp6x#iefix") format("embedded-opentype"), url("assets/fonts/neomuscle-ui/neomuscle-ui.ttf?rrbp6x") format("truetype"), url("assets/fonts/neomuscle-ui/neomuscle-ui.woff?rrbp6x") format("woff"), url("assets/fonts/neomuscle-ui/neomuscle-ui.svg?rrbp6x#neomuscle-ui") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2840,6 +2855,14 @@ html {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.ui-icon-facebook:before {
+  content: "\e908";
+}
+
+.ui-icon-support:before {
+  content: "\e906";
 }
 
 .ui-icon-user:before {
@@ -2859,23 +2882,19 @@ html {
 }
 
 .ui-icon-wallet:before {
-  content: "\e902";
+  content: "\e907";
 }
 
 .ui-icon-viber:before {
   content: "\e901";
 }
 
-.ui-icon-support:before {
-  content: "\f025";
+.ui-icon-telegram:before {
+  content: "\e902";
 }
 
 .ui-icon-phone:before {
   content: "\f095";
-}
-
-.ui-icon-facebook:before {
-  content: "\f09a";
 }
 
 .ui-icon-truck:before {
@@ -3089,6 +3108,189 @@ html {
   margin: 0;
   max-width: 100%;
   text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-footer {
+  margin-top: 80px;
+}
+
+.site-footer .footer-widgets {
+  padding: 60px 0 60px 0;
+  background-color: #f9f9f9;
+}
+
+.site-footer .footer-widgets .footer-call-us {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-footer .footer-widgets .footer-call-us .media {
+  margin-right: 20px;
+  font-size: 55px;
+  color: #fed700;
+}
+
+.site-footer .footer-widgets .footer-call-us .call-us-text {
+  display: block;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.site-footer .footer-widgets .footer-call-us .call-us-number {
+  display: block;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.site-footer .footer-widgets .footer-work {
+  font-size: 14px;
+}
+
+.site-footer .footer-widgets .footer-work-title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.site-footer .footer-widgets .footer-email {
+  font-size: 14px;
+  margin: 10px 0 20px 0;
+}
+
+.site-footer .footer-widgets .footer-email-title {
+  font-weight: 600;
+}
+
+.site-footer .footer-widgets .footer-email-link {
+  color: #333e48;
+}
+
+.site-footer .footer-widgets .footer-email-link:hover {
+  text-decoration: underline;
+}
+
+.site-footer .footer-widgets .footer-social-icons .social-icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+}
+
+.site-footer .footer-widgets .footer-social-icons .social-icons .icon {
+  color: #7c7c7c;
+  padding-right: 20px;
+}
+
+.site-footer .footer-widgets .footer-social-icons .social-icons .ui-icon-facebook {
+  font-weight: 600;
+}
+
+.site-footer .footer-widgets .footer-social-icons .social-icons .ui-icon-facebook:hover {
+  color: #3b5998;
+}
+
+.site-footer .footer-widgets .footer-social-icons .social-icons .ui-icon-instagram:hover {
+  color: #f25a00;
+}
+
+.site-footer .footer-widgets .footer-social-icons .social-icons .ui-icon-telegram:hover {
+  color: #0088cc;
+}
+
+.site-footer .footer-widgets .footer-social-icons .social-icons .ui-icon-viber {
+  font-size: 22px;
+}
+
+.site-footer .footer-widgets .footer-social-icons .social-icons .ui-icon-viber:hover {
+  color: #665cac;
+}
+
+.site-footer .footer-widgets .footer-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-footer .footer-widgets .footer-menu-item {
+  -webkit-flex-basis: 33.33%;
+      -ms-flex-preferred-size: 33.33%;
+          flex-basis: 33.33%;
+}
+
+.site-footer .footer-widgets .footer-menu-title {
+  margin-bottom: 15px;
+}
+
+.site-footer .footer-widgets .footer-menu .menu-item {
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.site-footer .footer-widgets .footer-menu .menu-item a {
+  color: #333e48;
+}
+
+.site-footer .footer-widgets .footer-menu .menu-item a:hover {
+  text-decoration: underline;
+}
+
+.site-footer .footer-widgets .develop-section .develop-text {
+  font-weight: 100;
+  font-size: 13px;
+  display: block;
+}
+
+.site-footer .copyright-bar {
+  padding: 10px 0;
+  font-size: 14px;
+  background-color: #eaeaea;
+}
+
+.site-footer .payment {
+  text-align: right;
+}
+
+.site-footer .payment-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-footer .payment-list-item {
+  padding-left: 10px;
+}
+
+.site-footer .payment-list-item .mastercard {
+  background: url("assets/images/icon-mastercard.svg") no-repeat;
+  width: 42px;
+  height: 25px;
+}
+
+.site-footer .payment-list-item .visa {
+  background: url("assets/images/icon-visa.svg") no-repeat;
+  width: 49px;
+  height: 16px;
 }
 
 /*--------------------------------------------------------------

@@ -48,7 +48,7 @@
                   <a href="#" class="menu-link">Отследить ваш заказ</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link">О нас</a>
+                  <a href="#" class="menu-link">Наша команда</a>
                 </li>
                 <li class="menu-item">
                   <a href="#" class="menu-link">Контакты</a>

@@ -1,4 +1,17 @@
 /**
+* OpenSans Light
+*/
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/fonts/OpenSansLight/OpenSansLight.eot");
+  src: url("assets/fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+  url("assets/fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
+}
+
+/**
 * OpenSans Regular
 */
 @font-face {
@@ -42,11 +55,11 @@
 */
 @font-face {
   font-family: 'neomuscle-ui';
-  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?u36nfp');
-  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?u36nfp#iefix') format('embedded-opentype'),
-  url('assets/fonts/neomuscle-ui/neomuscle-ui.ttf?u36nfp') format('truetype'),
-  url('assets/fonts/neomuscle-ui/neomuscle-ui.woff?u36nfp') format('woff'),
-  url('assets/fonts/neomuscle-ui/neomuscle-ui.svg?u36nfp#neomuscle-ui') format('svg');
+  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?rrbp6x');
+  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?rrbp6x#iefix') format('embedded-opentype'),
+  url('assets/fonts/neomuscle-ui/neomuscle-ui.ttf?rrbp6x') format('truetype'),
+  url('assets/fonts/neomuscle-ui/neomuscle-ui.woff?rrbp6x') format('woff'),
+  url('assets/fonts/neomuscle-ui/neomuscle-ui.svg?rrbp6x#neomuscle-ui') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -63,6 +76,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ui-icon-facebook:before {
+  content: "\e908";
+}
+.ui-icon-support:before {
+  content: "\e906";
+}
 .ui-icon-user:before {
   content: "\e900";
 }
@@ -76,19 +95,16 @@
   content: "\e905";
 }
 .ui-icon-wallet:before {
-  content: "\e902";
+  content: "\e907";
 }
 .ui-icon-viber:before {
   content: "\e901";
 }
-.ui-icon-support:before {
-  content: "\f025";
+.ui-icon-telegram:before {
+  content: "\e902";
 }
 .ui-icon-phone:before {
   content: "\f095";
-}
-.ui-icon-facebook:before {
-  content: "\f09a";
 }
 .ui-icon-truck:before {
   content: "\f0d1";
