@@ -12,12 +12,12 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+  
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+  
 }
 
 /* Custom, iPhone Retina */
@@ -34,18 +34,34 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+  .feature {
+    &-item {
+      flex-basis: 50%;
+      border-right: 1px solid $border-color;
+      &:nth-child(2) {
+        border: 0;
+      } 
+    }
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+  
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
   .top-bar {
     display: block;
+  }
+  .feature {
+    &-item {
+      flex-basis: 25%;
+      &:nth-child(2) {
+        border-right: 1px solid $border-color;
+      }
+    }
   }
 }
 

@@ -2952,6 +2952,78 @@ html {
 # Theme
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# Front page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Feature Section
+--------------------------------------------------------------*/
+.feature {
+  margin-top: 40px;
+}
+
+.feature-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.feature-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  padding: 15px 0;
+}
+
+.feature-item-icon {
+  font-size: 34px;
+}
+
+.feature-item-info {
+  padding-left: 15px;
+  text-align: left;
+  display: inline-table;
+  vertical-align: middle;
+}
+
+.feature-item-info .title {
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.feature-item-info .description {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 12px;
+  color: #777;
+}
+
+.feature-item:last-child {
+  border: 0;
+}
+
+/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 /*==========  Desktop First  ==========*/
@@ -2963,11 +3035,31 @@ html {
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .feature-item {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    border-right: 1px solid #dddddd;
+  }
+  .feature-item:nth-child(2) {
+    border: 0;
+  }
+}
+
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   .top-bar {
     display: block;
+  }
+  .feature-item {
+    -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+  }
+  .feature-item:nth-child(2) {
+    border-right: 1px solid #dddddd;
   }
 }
 
