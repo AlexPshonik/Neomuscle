@@ -113,3 +113,9 @@ function edit_taxonomies() {
     unregister_taxonomy('product_tag');
 }
 add_action( 'init', 'edit_taxonomies', 0 );
+
+/**  * Remove Plugins Styles.  */ 
+add_action( 'wp_print_styles', 'remove_plugin_scripts_styles', 100 ); 
+function remove_plugin_scripts_styles() {
+   wp_deregister_style( 'dgwt-wcas-style' ); 
+}

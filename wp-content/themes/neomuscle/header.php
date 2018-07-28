@@ -61,37 +61,38 @@
     </div>
 
   <header id="masthead" class="site-header">
-      <div class="site-branding">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-3">
-                      <div class="logotype">
-                          <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logotype.svg" alt="Логотип Neomuscle"></a>
-                      </div>
-                  </div>
-                  <div class="col-lg-6">
-                      <?php echo do_shortcode('[wcas-search-form]'); ?>
-                  </div>
-                  <div class="col-lg-3">
-                      <div class="rightside-nav">
-                          <ul>
-                              <li>
-                                  <a class="rightside-wishlist" href="<?php echo get_home_url(null, 'wishlist/', 'null'); ?>">
-                                      <span class="ui-icon-heart"></span>
-                                      <div class="wishlist-count"><?php echo YITH_WCWL()->count_products(); ?></div>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a class="rightside-cart" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart');?>">
-                                      <div class="cart-icon"><span class="ui-icon-shopping-bag"></span></i></div>
-                                      <?php echo WC()->cart->get_cart_contents_count(); ?> / <?php echo WC()->cart->get_cart_total(); ?>
-                                  </a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="logo">
+            <a class="logo-link" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+              <img class="logo-img" src="<?php echo get_template_directory_uri() ?>/assets/images/logotype.svg" alt="Логотип Neomuscle">
+            </a>
           </div>
+        </div>
+        <div class="col-lg-6">
+          <?php echo do_shortcode('[wcas-search-form]'); ?>
+        </div>
+        <div class="col-lg-3">
+          <div class="rightside-nav">
+            <ul>
+              <li>
+                <a class="rightside-wishlist" href="<?php echo get_home_url(null, 'wishlist/', 'null'); ?>">
+                  <span class="ui-icon-heart"></span>
+                  <div class="wishlist-count"><?php echo YITH_WCWL()->count_products(); ?></div>
+                </a>
+              </li>
+              <li>
+                <a class="rightside-cart" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart');?>">
+                  <div class="cart-icon"><span class="ui-icon-shopping-bag"></span></i></div>
+                  <?php echo WC()->cart->get_cart_contents_count(); ?> / <?php echo WC()->cart->get_cart_total(); ?>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div><!-- .site-branding -->
 
   </header>

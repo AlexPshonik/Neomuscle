@@ -7,6 +7,10 @@ body {
 	overflow-x: hidden;
 }
 
+* {
+  outline: none;
+}
+
 h1,
 h2,
 h3,
@@ -19,10 +23,17 @@ ul {
   padding: 0;
 }
 
-a, a:hover {
+a, 
+a:hover {
   text-decoration: none;
 }
 
 ul {
   list-style-type: none;
+}
+
+button,
+input {
+  box-shadow: none;
+  border: none;
 }

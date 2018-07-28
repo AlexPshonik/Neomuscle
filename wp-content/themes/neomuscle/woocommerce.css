@@ -7,6 +7,115 @@ WooCommerce styles override
  * WooCommerce color variables
  */
 /**
+ * Neomuscle color variables
+ */
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+/**
+ * Search
+ */
+.dgwt-wcas-search-wrapp {
+  position: relative;
+}
+
+.dgwt-wcas-sf-wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dgwt-wcas-sf-wrapp .screen-reader-text {
+  display: none;
+}
+
+.dgwt-wcas-sf-wrapp .dgwt-wcas-search-input {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 5px 5px 5px 20px;
+  border: 2px solid #fed700;
+  -webkit-transition: -webkit-border-radius 0.3s ease;
+  transition: -webkit-border-radius 0.3s ease;
+  -o-transition: border-radius 0.3s ease;
+  transition: border-radius 0.3s ease;
+  transition: border-radius 0.3s ease, -webkit-border-radius 0.3s ease;
+  -webkit-border-radius: 25px 0 0 25px;
+          border-radius: 25px 0 0 25px;
+  font-size: 15px;
+  line-height: 1.8em;
+  font-weight: normal;
+  color: #818181;
+}
+
+.dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit {
+  -webkit-flex-basis: 13%;
+      -ms-flex-preferred-size: 13%;
+          flex-basis: 13%;
+  background-color: #fed700;
+  -webkit-border-radius: 0 25px 25px 0;
+          border-radius: 0 25px 25px 0;
+  -webkit-transition: -webkit-border-radius 0.3s ease;
+  transition: -webkit-border-radius 0.3s ease;
+  -o-transition: border-radius 0.3s ease;
+  transition: border-radius 0.3s ease;
+  transition: border-radius 0.3s ease, -webkit-border-radius 0.3s ease;
+}
+
+.dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit::before {
+  content: "\f002";
+  position: relative;
+  left: -2px;
+  font-family: 'neomuscle-ui' !important;
+  font-size: 18px;
+}
+
+.dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit svg {
+  display: none;
+}
+
+.dgwt-wcas-open .dgwt-wcas-search-input {
+  -webkit-border-radius: 10px 0 0 0;
+          border-radius: 10px 0 0 0;
+}
+
+.dgwt-wcas-open .dgwt-wcas-search-submit {
+  -webkit-border-radius: 0 10px 0 0;
+          border-radius: 0 10px 0 0;
+}
+
+.dgwt-wcas-suggestions-wrapp {
+  width: 100% !important;
+  border: 1px solid #dddddd;
+  border-top: none;
+  -webkit-border-radius: 0 0 10px 10px;
+          border-radius: 0 0 10px 10px;
+  background-color: #fff;
+}
+
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-st {
+  padding: 0 30px 0 20px;
+}
+
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion {
+  font-size: 14px;
+  line-height: 28px;
+  -webkit-transition: background-color .3s ease;
+  -o-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  cursor: pointer;
+}
+
+.dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:hover {
+  background-color: #dddddd;
+}
+
+/**
  * Imports
  */
 /**
