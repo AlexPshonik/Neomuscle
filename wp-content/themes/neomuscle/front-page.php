@@ -2,12 +2,12 @@
 
 <?php echo do_shortcode( '[ca_slider_shortcode]' ); ?>
 
+<!-- Feature Section -->
 <section class="feature section-padding-sm">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="feature-box">
-            
             <div class="feature-item">
               <span class="feature-item-icon ui-icon-shield"></span>
               <div class="feature-item-info">
@@ -39,12 +39,12 @@
                 <p class="description">Онлайн поддержка 24/7</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
 </section>
+<!-- End Feature Section -->
 
 <!-- <section class="featured-products section-padding">
     <div class="container">
@@ -76,14 +76,18 @@
     </div>
 </section> -->
 
-<!-- <section class="instagram section-padding">
-    <div class="container">
-        <div class="row">
-            <?php if (is_active_sidebar('homepage-instagram-sidebar')): ?>
-                <?php dynamic_sidebar('homepage-instagram-sidebar');?>
-            <?php endif;?>
-        </div>
+<!-- Instagram Section -->
+<section class="instagram section-padding-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <?php if (is_active_sidebar('homepage-instagram-sidebar')): ?>
+          <?php dynamic_sidebar('homepage-instagram-sidebar');?>
+        <?php endif;?>
+      </div>
     </div>
-</section> -->
+  </div>
+</section>
+<!-- End Instagram Section -->
 
 <?php get_footer();?>

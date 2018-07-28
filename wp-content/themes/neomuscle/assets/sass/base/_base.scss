@@ -26,6 +26,7 @@ ul {
 a, 
 a:hover {
   text-decoration: none;
+  transition: all 0.3s ease 0s;
 }
 
 ul {
@@ -40,4 +41,9 @@ input {
 
 .disableScroll {
   overflow: hidden;
+}
+
+.section-padding-sm {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
