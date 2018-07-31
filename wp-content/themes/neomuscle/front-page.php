@@ -90,4 +90,27 @@
 </section>
 <!-- End Instagram Section -->
 
+<!-- Food Purpose Section -->
+  <section class="food-purpose section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <h2 class="food-purpose-title">Подберите для себя спортивное питание в три шага!</h2>
+            <p class="food-purpose-description">Если Вы не уверены какое спортивное питание вам лучше подходит, выберите свой пол и цель тренировок для получения дальнейших рекомендаций.</p>
+            <div class="food-purpose-select">
+              <select>
+                <option value="0">Выбирите пол</option>
+                <option value="1">Мужчина</option>
+                <option value="2">Женщина</option>
+              <select>
+              <select disabled="disabled"></select>
+              <button class="btn-primary">Найти товар</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End Food Purpose Section -->
+
 <?php get_footer();?>

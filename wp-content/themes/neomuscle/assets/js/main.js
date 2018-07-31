@@ -1,4 +1,13 @@
 jQuery(document).ready(function ($) {
+
+  // Select
+
+  // $('select').selectize({
+  //   create: true,
+  //   sortField: 'text'
+  // });
+
+
   // Fix search width
   // $('.dgwt-wcas-search-input').on('keyup', function(){
     // $('.dgwt-wcas-suggestions-wrapp').css('width', '100%');

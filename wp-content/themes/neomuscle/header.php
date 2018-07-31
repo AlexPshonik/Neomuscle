@@ -75,10 +75,10 @@
         <div class="col-4 col-md-2 col-lg-3">
           <ul class="header-user-nav">
             <li class="header-user-nav-item">
-              <span class="js-open-mobile-search ui-icon-search header-user-nav-link d-md-none"></span>
+              <span class="js-open-mobile-search icon ui-icon-search header-user-nav-link d-md-none"></span>
             </li>
             <li class="header-user-nav-item">
-              <a href="#" class="my-account ui-icon-user header-user-nav-link"></a>
+              <a href="#" class="my-account icon ui-icon-user header-user-nav-link"></a>
             </li>
             <li class="header-user-nav-item d-none d-sm-block">
               <a href="<?php echo get_home_url(null, 'wishlist/', 'null'); ?>" class="wish-list ui-icon-heart header-user-nav-link">
@@ -86,7 +86,7 @@
               </a>
             </li>
             <li class="header-user-nav-item">
-              <a href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart');?>" class="shopping-bag ui-icon-shopping-bag header-user-nav-link">
+              <a href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart');?>" class="shopping-bag icon ui-icon-shopping-bag header-user-nav-link">
                 <span class="shopping-bag-count">
                   <?php echo WC()->cart->get_cart_contents_count(); ?>
                   <strong class="d-none d-lg-inline">

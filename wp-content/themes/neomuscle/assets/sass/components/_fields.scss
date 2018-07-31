@@ -1,0 +1,35 @@
+input, 
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="number"], 
+input[type="password"], 
+input[type="radio"], 
+input[type="checkbox"], 
+textarea, 
+select {
+  appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background: #fff;
+  border-radius: 55px;
+  color: #333;
+  outline: none;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: inline-block;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+input, 
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="number"], 
+input[type="password"], 
+select {
+  padding: 13px 25px;
+  height: 44px;
+}
