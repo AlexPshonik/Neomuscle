@@ -78,7 +78,7 @@
               <span class="js-open-mobile-search icon ui-icon-search header-user-nav-link d-md-none"></span>
             </li>
             <li class="header-user-nav-item">
-              <a href="#" class="my-account icon ui-icon-user header-user-nav-link"></a>
+              <a href="<?php echo get_permalink(wc_get_page_id('myaccount')); ?>" class="my-account icon ui-icon-user header-user-nav-link"></a>
             </li>
             <li class="header-user-nav-item d-none d-sm-block">
               <a href="<?php echo get_home_url(null, 'wishlist/', 'null'); ?>" class="wish-list ui-icon-heart header-user-nav-link">
