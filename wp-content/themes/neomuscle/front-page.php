@@ -9,7 +9,7 @@
         <div class="col-12">
           <div class="feature-box">
             <div class="feature-item">
-              <span class="feature-item-icon ui-icon-shield"></span>
+              <span class="feature-item-icon ui-icon-security"></span>
               <div class="feature-item-info">
                 <h6 class="title">Оригинальная продукция</h6>
                 <p class="description">Гарантируем качество товара</p>
@@ -20,12 +20,12 @@
               <span class="feature-item-icon ui-icon-wallet"></span>
               <div class="feature-item-info">
                 <h6 class="title">Гарантия лучших цен</h6>
-                <p class="description">Мы уверены в своих ценах!</p>
+                <p class="description">Мы уверены в своих ценах</p>
               </div>
             </div>
 
             <div class="feature-item">
-              <span class="feature-item-icon ui-icon-truck"></span>
+              <span class="feature-item-icon ui-icon-delivery"></span>
               <div class="feature-item-info">
                 <h6 class="title">Бесплатная доставка</h6>
                 <p class="description">По Украине от 2000 грн</p>

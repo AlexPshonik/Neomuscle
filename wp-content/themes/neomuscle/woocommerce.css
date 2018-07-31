@@ -68,7 +68,7 @@ WooCommerce styles override
 }
 
 .dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit::before {
-  content: "\f002";
+  content: "\e903";
   position: relative;
   left: -2px;
   font-family: 'neomuscle-ui' !important;

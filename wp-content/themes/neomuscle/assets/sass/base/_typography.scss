@@ -55,11 +55,11 @@
 */
 @font-face {
   font-family: 'neomuscle-ui';
-  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?rrbp6x');
-  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?rrbp6x#iefix') format('embedded-opentype'),
-  url('assets/fonts/neomuscle-ui/neomuscle-ui.ttf?rrbp6x') format('truetype'),
-  url('assets/fonts/neomuscle-ui/neomuscle-ui.woff?rrbp6x') format('woff'),
-  url('assets/fonts/neomuscle-ui/neomuscle-ui.svg?rrbp6x#neomuscle-ui') format('svg');
+  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?vmjhyr');
+  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?vmjhyr#iefix') format('embedded-opentype'),
+  url('assets/fonts/neomuscle-ui/neomuscle-ui.ttf?vmjhyr') format('truetype'),
+  url('assets/fonts/neomuscle-ui/neomuscle-ui.woff?vmjhyr') format('woff'),
+  url('assets/fonts/neomuscle-ui/neomuscle-ui.svg?vmjhyr#neomuscle-ui') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -76,6 +76,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ui-icon-delivery:before {
+  content: "\e909";
+}
+.ui-icon-wallet:before {
+  content: "\e907";
+}
+.ui-icon-security:before {
+  content: "\e90a";
+}
 .ui-icon-facebook:before {
   content: "\e908";
 }
@@ -94,9 +103,6 @@
 .ui-icon-heart:before {
   content: "\e905";
 }
-.ui-icon-wallet:before {
-  content: "\e907";
-}
 .ui-icon-viber:before {
   content: "\e901";
 }
@@ -106,14 +112,8 @@
 .ui-icon-phone:before {
   content: "\f095";
 }
-.ui-icon-truck:before {
-  content: "\f0d1";
-}
 .ui-icon-email:before {
   content: "\f0e0";
-}
-.ui-icon-shield:before {
-  content: "\f132";
 }
 .ui-icon-instagram:before {
   content: "\f16d";
