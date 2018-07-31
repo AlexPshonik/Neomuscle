@@ -1,5 +1,13 @@
 jQuery(document).ready(function ($) {
 
+  // Main Slider
+  $('.slider').owlCarousel({
+    autoplay: true,
+    loop: true,
+    items: 1,
+    nav: true
+  });
+
   // Select
 
   // $('select').selectize({
