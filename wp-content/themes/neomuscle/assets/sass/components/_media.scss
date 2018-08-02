@@ -14,7 +14,11 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+  #page.site {
+    padding-top: 95px;
+  }
   .site-header {
+    top: 0;
     .logo-img {
       max-width: 100%;
     }
@@ -40,10 +44,16 @@
       }
     }
   }
+  .section-site-navigation {
+    margin-top: 0;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  #page.site {
+    padding-top: 72px;
+  }
   .site-header {
     padding: 15px 0;
     box-shadow: 0px 2px 6px $border-color;

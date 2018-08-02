@@ -1,4 +1,21 @@
 jQuery(document).ready(function ($) {
+
+  // Main Slider
+  $('.slider').owlCarousel({
+    autoplay: true,
+    loop: true,
+    items: 1,
+    nav: true
+  });
+
+  // Select
+
+  // $('select').selectize({
+  //   create: true,
+  //   sortField: 'text'
+  // });
+
+
   // Fix search width
   // $('.dgwt-wcas-search-input').on('keyup', function(){
     // $('.dgwt-wcas-suggestions-wrapp').css('width', '100%');
@@ -8,12 +25,13 @@ jQuery(document).ready(function ($) {
 
   // Sicky header
   let stickyHeader = $('.site-header');
+  let siteNavigation = $('.section-site-navigation');
   $(window).scroll(function() {
     if(window.innerWidth > 768) {
-      if($(this).scrollTop() > stickyHeader.height()) {
+      if($(this).scrollTop() > siteNavigation.offset().top + siteNavigation.innerHeight()) {
         stickyHeader.addClass('sticky');
       }
-      else {
+      else if($(this).scrollTop() < siteNavigation.offset().top ){
         stickyHeader.removeClass('sticky');
       }
     }

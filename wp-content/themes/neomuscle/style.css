@@ -427,6 +427,11 @@ input {
   padding-bottom: 40px;
 }
 
+.section-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 /*--------------------------------------------------------------
 # Grid
 --------------------------------------------------------------*/
@@ -2921,11 +2926,15 @@ html {
 # Header
 --------------------------------------------------------------*/
 .site-header {
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
   padding: 30px 0;
-  -webkit-transition: padding .2s ease;
-  -o-transition: padding .2s ease;
-  transition: padding .2s ease;
+  -webkit-transition: padding .3s ease;
+  -o-transition: padding .3s ease;
+  transition: padding .3s ease;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 .site-header.sticky {
@@ -2957,6 +2966,7 @@ html {
 
 .site-header .logo-img {
   max-width: 80%;
+  max-height: 30px;
 }
 
 .top-bar {
@@ -3048,6 +3058,10 @@ html {
   font-weight: bold;
 }
 
+.header-user-nav-link:hover {
+  color: #000000;
+}
+
 .header-user-nav-link span {
   font-family: "OpenSans", sans-serif;
   font-size: 14px;
@@ -3064,6 +3078,7 @@ html {
   right: -7px;
   width: 17px;
   height: 17px;
+  padding-right: 1px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background-color: #fed700;
@@ -3073,6 +3088,8 @@ html {
 }
 
 .header-user-nav .shopping-bag-count {
+  position: relative;
+  top: -2px;
   margin-left: -5px;
   font-weight: normal;
 }
@@ -3086,6 +3103,7 @@ html {
 }
 
 .section-site-navigation {
+  margin-top: 101px;
   background-color: #fed700;
 }
 
@@ -3175,6 +3193,68 @@ html {
 # Front page
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.btn-primary {
+  padding: 13px 35px;
+  font-weight: 600;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  color: #333e48;
+  background-color: #fed700;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #eac600;
+}
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+input,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="radio"],
+input[type="checkbox"],
+textarea,
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  -webkit-border-radius: 55px;
+          border-radius: 55px;
+  color: #333;
+  outline: none;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: inline-block;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+input,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select {
+  padding: 13px 25px;
+  height: 44px;
+}
+
+/*--------------------------------------------------------------
 # Feature Section
 --------------------------------------------------------------*/
 .feature {
@@ -3244,7 +3324,7 @@ html {
 }
 
 /*--------------------------------------------------------------
-# Feature Section
+# Instagram Section
 --------------------------------------------------------------*/
 .instagram {
   background-color: #f9f9f9;
@@ -3297,6 +3377,55 @@ html {
   margin: 0;
   max-width: 100%;
   text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Food purpose Section
+--------------------------------------------------------------*/
+.food-purpose {
+  position: relative;
+  background-color: #000;
+  background-image: url("assets/images/purpose-background.jpg");
+  -webkit-background-size: 70% 70%;
+          background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  color: #fff;
+}
+
+.food-purpose::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.food-purpose-title, .food-purpose-description {
+  text-align: center;
+}
+
+.food-purpose-title {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.food-purpose-description {
+  margin-bottom: 40px;
+}
+
+.food-purpose-select {
+  text-align: center;
+}
+
+.food-purpose select {
+  margin-right: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -3498,6 +3627,12 @@ html {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  #page.site {
+    padding-top: 95px;
+  }
+  .site-header {
+    top: 0;
+  }
   .site-header .logo-img {
     max-width: 100%;
   }
@@ -3521,10 +3656,16 @@ html {
     font-weight: 700;
     line-height: 1.22;
   }
+  .section-site-navigation {
+    margin-top: 0;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  #page.site {
+    padding-top: 72px;
+  }
   .site-header {
     padding: 15px 0;
     -webkit-box-shadow: 0px 2px 6px #dddddd;
