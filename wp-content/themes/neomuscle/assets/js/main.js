@@ -50,6 +50,8 @@ jQuery(document).ready(function ($) {
   let searchLine = $('.mobile-search');
   $(searchBtn).click(function() {
     $(this).toggleClass('opened');
+    $(this).toggleClass('ui-icon-search');
+    $(this).toggleClass('ui-icon-close');
     $(searchLine).toggleClass('visible');
     setTimeout(function() {
       $('body').toggleClass('disableScroll');
