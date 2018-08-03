@@ -1,10 +1,19 @@
+#page.site {
+  overflow: hidden;
+  position: relative;
+  &.menu-visible {
+   left: 50%;
+  }
+}
+
 .site-header {
 	position: absolute;
 	left: 0;
 	right: 0;
 	padding: 30px 0;
 	transition: padding .3s ease;
-	transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 2;
 	&.sticky {
 		position: fixed;
 		top: 0;
@@ -23,7 +32,7 @@
 		}
 		&-img {
 			max-width: 80%;
-			max-height: 30px;
+			height: 40px;
 		}
 	}
 }
@@ -83,7 +92,10 @@
 	display: flex;
 	height: 100%; //fix
 	align-items: center;
-	justify-content: flex-end;
+  justify-content: flex-end;
+  &-left {
+    justify-content: flex-start;
+  }
 	&-item {
 		margin-right: 30px;
 		&:last-child {
@@ -132,7 +144,53 @@
 	}
 	.js-open-mobile-search {
 		cursor: pointer;
-	}
+  }
+}
+
+.menu-toggle {
+  position: relative;
+  top: -3px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  .icon {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $main-font-color;
+    transition: background-color .5s ease;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $main-font-color;
+      transition: transform .5s ease, top .3s ease;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+  }
+  &.toggled {
+    .icon {
+      background-color: transparent;
+      &::before {
+        top: 45%;
+        transform: rotate(45deg);
+      }
+      &::after {
+        bottom: 45%;
+        transform: rotate(-45deg);
+      }
+    }
+  }
 }
 
 .section-site-navigation {
@@ -152,7 +210,17 @@
 	z-index: 5;
 	&.visible {
 		opacity: 1;
-		top: 100%;
+    top: 100%;
+    &::before {
+      content: '';
+      display: block;
+      height: 100vh;
+      background-color: #333; // push to variable
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      opacity: 0.8;
+    }
 	}
 	.dgwt-wcas-search-wrapp {
 		top: 0;
@@ -184,7 +252,7 @@
 		padding-bottom: 10px;
 		border: none;
 		border-radius: 0;
-		box-shadow: 0px 5px 6px $border-color;
+		box-shadow: 0px 5px 6px #383838; // push to variable
 		.dgwt-wcas-suggestion {
 			max-width: 430px;
 			margin: 0 auto;

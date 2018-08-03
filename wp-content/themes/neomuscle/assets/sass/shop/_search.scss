@@ -3,7 +3,7 @@
 }
 
 .dgwt-wcas-search-form {
-  max-width: 430px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -72,6 +72,7 @@
     flex-basis: 13%;
     background-color: $accent-color;
     border-radius: 0 25px 25px 0;
+    text-align: center;
     transition: border-radius 0.3s ease;
     &::before {
       content: "\e903";

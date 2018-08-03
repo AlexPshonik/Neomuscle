@@ -2925,6 +2925,15 @@ html {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+#page.site {
+  overflow: hidden;
+  position: relative;
+}
+
+#page.site.menu-visible {
+  left: 50%;
+}
+
 .site-header {
   position: absolute;
   left: 0;
@@ -2935,6 +2944,7 @@ html {
   transition: padding .3s ease;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
+  z-index: 2;
 }
 
 .site-header.sticky {
@@ -2966,7 +2976,7 @@ html {
 
 .site-header .logo-img {
   max-width: 80%;
-  max-height: 30px;
+  height: 40px;
 }
 
 .top-bar {
@@ -3044,6 +3054,13 @@ html {
           justify-content: flex-end;
 }
 
+.header-user-nav-left {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .header-user-nav-item {
   margin-right: 30px;
 }
@@ -3102,6 +3119,72 @@ html {
   cursor: pointer;
 }
 
+.menu-toggle {
+  position: relative;
+  top: -3px;
+  height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.menu-toggle .icon {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #333e48;
+  -webkit-transition: background-color .5s ease;
+  -o-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+}
+
+.menu-toggle .icon::before, .menu-toggle .icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333e48;
+  -webkit-transition: top .3s ease, -webkit-transform .5s ease;
+  transition: top .3s ease, -webkit-transform .5s ease;
+  -o-transition: transform .5s ease, top .3s ease;
+  transition: transform .5s ease, top .3s ease;
+  transition: transform .5s ease, top .3s ease, -webkit-transform .5s ease;
+}
+
+.menu-toggle .icon::before {
+  top: 0;
+}
+
+.menu-toggle .icon::after {
+  bottom: 0;
+}
+
+.menu-toggle.toggled .icon {
+  background-color: transparent;
+}
+
+.menu-toggle.toggled .icon::before {
+  top: 45%;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu-toggle.toggled .icon::after {
+  bottom: 45%;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .section-site-navigation {
   margin-top: 101px;
   background-color: #fed700;
@@ -3125,6 +3208,17 @@ html {
 .mobile-search.visible {
   opacity: 1;
   top: 100%;
+}
+
+.mobile-search.visible::before {
+  content: '';
+  display: block;
+  height: 100vh;
+  background-color: #333;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  opacity: 0.8;
 }
 
 .mobile-search .dgwt-wcas-search-wrapp {
@@ -3164,8 +3258,8 @@ html {
   border: none;
   -webkit-border-radius: 0;
           border-radius: 0;
-  -webkit-box-shadow: 0px 5px 6px #dddddd;
-          box-shadow: 0px 5px 6px #dddddd;
+  -webkit-box-shadow: 0px 5px 6px #383838;
+          box-shadow: 0px 5px 6px #383838;
 }
 
 .mobile-search .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion {
@@ -3664,7 +3758,7 @@ select {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   #page.site {
-    padding-top: 72px;
+    padding-top: 60px;
   }
   .site-header {
     padding: 15px 0;
@@ -3672,8 +3766,17 @@ select {
             box-shadow: 0px 2px 6px #dddddd;
     background-color: #fed700;
   }
+  .site-header.sticky {
+    background-color: #fed700;
+  }
+  .site-header .logo-link {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .site-header .logo-img {
-    max-width: 70%;
+    height: 30px;
   }
   .header-user-nav .shopping-bag-count,
   .header-user-nav .wish-list-count {
@@ -3681,7 +3784,7 @@ select {
     background-color: #333e48;
   }
   .header-user-nav-item {
-    margin-right: 15px;
+    margin-right: 30px;
   }
   .section-site-navigation {
     display: none;

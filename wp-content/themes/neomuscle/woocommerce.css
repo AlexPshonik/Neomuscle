@@ -23,7 +23,7 @@ WooCommerce styles override
 }
 
 .dgwt-wcas-search-form {
-  max-width: 430px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -119,6 +119,7 @@ WooCommerce styles override
   background-color: #fed700;
   -webkit-border-radius: 0 25px 25px 0;
           border-radius: 0 25px 25px 0;
+  text-align: center;
   -webkit-transition: -webkit-border-radius 0.3s ease;
   transition: -webkit-border-radius 0.3s ease;
   -o-transition: border-radius 0.3s ease;

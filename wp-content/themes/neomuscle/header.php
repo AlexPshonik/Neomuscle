@@ -63,24 +63,31 @@
   <header id="masthead" class="site-header">
     <div class="container">
       <div class="row">
-        <div class="col-8 col-md-3 col-lg-3">
-          <span class="js-menu-toggle d-lg-none"></span> 
+        <div class="col-3 d-md-none">
+          <ul class="header-user-nav header-user-nav-left">
+              <li class="header-user-nav-item menu-toggle">
+                <span class="js-open-mobile-menu icon header-user-nav-link"></span>
+              </li>
+              <li class="header-user-nav-item">
+                <span class="js-open-mobile-search icon ui-icon-search header-user-nav-link"></span>
+              </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
           <a class="logo-link" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-            <img class="logo-img" src="<?php echo get_template_directory_uri() ?>/assets/images/logotype.svg" alt="Логотип Neomuscle">
+            <img class="logo-img d-none d-sm-block" src="<?php echo get_template_directory_uri() ?>/assets/images/logotype.svg" alt="Логотип Neomuscle">
+            <img class="logo-img d-sm-none" src="<?php echo get_template_directory_uri() ?>/assets/images/logotype-mobile.png" alt="Логотип Neomuscle">
           </a>
         </div>
         <div class="col-md-7 col-lg-6 d-none d-md-block">
           <?php echo do_shortcode('[wcas-search-form]'); ?>
         </div>
-        <div class="col-4 col-md-2 col-lg-3">
+        <div class="col-3 col-md-2 col-lg-3">
           <ul class="header-user-nav">
-            <li class="header-user-nav-item">
-              <span class="js-open-mobile-search icon ui-icon-search header-user-nav-link d-md-none"></span>
-            </li>
             <li class="header-user-nav-item">
               <a href="<?php echo get_permalink(wc_get_page_id('myaccount')); ?>" class="my-account icon ui-icon-user header-user-nav-link"></a>
             </li>
-            <li class="header-user-nav-item d-none d-sm-block">
+            <li class="header-user-nav-item d-none d-md-block">
               <a href="<?php echo get_home_url(null, 'wishlist/', 'null'); ?>" class="wish-list ui-icon-heart header-user-nav-link">
                 <span class="wish-list-count"><?php echo YITH_WCWL()->count_products(); ?></span>
               </a>
