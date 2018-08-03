@@ -161,6 +161,9 @@ if ( ! function_exists( 'neomuscle_woocommerce_wrapper_before' ) ) {
 		?>
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
 			<?php
 	}
 }
@@ -175,7 +178,10 @@ if ( ! function_exists( 'neomuscle_woocommerce_wrapper_after' ) ) {
 	 * @return void
 	 */
 	function neomuscle_woocommerce_wrapper_after() {
-			?>
+      ?>
+            </div>
+          </div>
+        </div>
 			</main><!-- #main -->
 		</div><!-- #primary -->
 		<?php

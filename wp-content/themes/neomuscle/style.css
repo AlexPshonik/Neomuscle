@@ -2848,8 +2848,8 @@ html {
 */
 @font-face {
   font-family: 'neomuscle-ui';
-  src: url("assets/fonts/neomuscle-ui/neomuscle-ui.eot?vmjhyr");
-  src: url("assets/fonts/neomuscle-ui/neomuscle-ui.eot?vmjhyr#iefix") format("embedded-opentype"), url("assets/fonts/neomuscle-ui/neomuscle-ui.ttf?vmjhyr") format("truetype"), url("assets/fonts/neomuscle-ui/neomuscle-ui.woff?vmjhyr") format("woff"), url("assets/fonts/neomuscle-ui/neomuscle-ui.svg?vmjhyr#neomuscle-ui") format("svg");
+  src: url("assets/fonts/neomuscle-ui/neomuscle-ui.eot?51i209");
+  src: url("assets/fonts/neomuscle-ui/neomuscle-ui.eot?51i209#iefix") format("embedded-opentype"), url("assets/fonts/neomuscle-ui/neomuscle-ui.ttf?51i209") format("truetype"), url("assets/fonts/neomuscle-ui/neomuscle-ui.woff?51i209") format("woff"), url("assets/fonts/neomuscle-ui/neomuscle-ui.svg?51i209#neomuscle-ui") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2864,6 +2864,18 @@ html {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.ui-icon-down-arrow:before {
+  content: "\e90b";
+}
+
+.ui-icon-right-arrow:before {
+  content: "\e90c";
+}
+
+.ui-icon-close:before {
+  content: "\e90d";
 }
 
 .ui-icon-delivery:before {
