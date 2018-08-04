@@ -114,8 +114,20 @@ function edit_taxonomies() {
 }
 add_action( 'init', 'edit_taxonomies', 0 );
 
-/**  * Remove Plugins Styles.  */ 
+/**
+ * Remove Plugins Styles.
+ */
 add_action( 'wp_print_styles', 'remove_plugin_scripts_styles', 100 ); 
 function remove_plugin_scripts_styles() {
-   wp_deregister_style( 'dgwt-wcas-style' ); 
+  wp_deregister_style( 'dgwt-wcas-style' ); 
+}
+
+/**
+ * Change the breadcrumb separator
+ */
+add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter' );
+function wcc_change_breadcrumb_delimiter( $defaults ) {
+	// Change the breadcrumb delimeter from '/' to '>'
+	$defaults['delimiter'] = ' <span class="delimiter ui-icon-right-arrow"></span> ';
+	return $defaults;
 }

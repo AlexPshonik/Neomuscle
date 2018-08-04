@@ -15,9 +15,18 @@ Text Domain: neomuscle
 ----------------------------------------------------------------
 # Variables
 # Normalize
+# Base
+# Grid
 # Typography
 # Header
 # Theme
+# Front page
+# Buttons
+# Fields
+# Feature
+# Instagram
+# Food purpose
+# Footer
 # Media
 --------------------------------------------------------------*/
 // @import "variables-site/variables-site";
@@ -69,7 +78,7 @@ Text Domain: neomuscle
 @import "components/buttons";
 
 /*--------------------------------------------------------------
-# Buttons
+# Fields
 --------------------------------------------------------------*/
 @import "components/fields";
 
@@ -89,7 +98,7 @@ Text Domain: neomuscle
 @import "components/food-purpose";
 
 /*--------------------------------------------------------------
-# Header
+# Footer
 --------------------------------------------------------------*/
 @import "layout/footer";
 

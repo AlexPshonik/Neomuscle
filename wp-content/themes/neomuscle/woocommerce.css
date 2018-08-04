@@ -159,6 +159,34 @@ WooCommerce styles override
           border-radius: 0 10px 0 0;
 }
 
+/*--------------------------------------------------------------
+# Breadcrumb
+--------------------------------------------------------------*/
+.woocommerce-breadcrumb {
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+.woocommerce-breadcrumb a {
+  color: #333e48;
+}
+
+.woocommerce-breadcrumb .delimiter {
+  margin: 0 15px;
+  font-size: 10px;
+}
+
+.woocommerce-breadcrumb .delimiter + a {
+  padding: 7px 12px;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.woocommerce-breadcrumb .delimiter + a:hover {
+  background-color: #e8e8e8;
+}
+
 /**
  * Imports
  */
