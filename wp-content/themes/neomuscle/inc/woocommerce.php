@@ -96,7 +96,7 @@ add_filter( 'woocommerce_product_thumbnails_columns', 'neomuscle_woocommerce_thu
  * @return integer products per row.
  */
 function neomuscle_woocommerce_loop_columns() {
-	return 3;
+	return 4;
 }
 add_filter( 'loop_shop_columns', 'neomuscle_woocommerce_loop_columns' );
 
