@@ -35,25 +35,32 @@ jQuery(document).ready(function ($) {
         stickyHeader.removeClass('sticky');
       }
     }
+    else {
+      stickyHeader.addClass('sticky');
+    }
+  });
+
+  // Mobile menu
+  let siteContent = $('body');
+  let menuTogge = $('.menu-toggle');
+  $(menuTogge).click(function() {
+    $(this).toggleClass('toggled');
+    $(siteContent).toggleClass('menu-open');
+    $(siteContent).toggleClass('disableScroll');
   });
 
   // Mobile search line
   let searchBtn = $('.js-open-mobile-search');
   let searchLine = $('.mobile-search');
-  // $('body').on('click', function() {
-  //   if($(searchLine).hasClass('visible')){
-  //     $(searchBtn).removeClass('opened');
-  //     $('body').removeClass('disableScroll');
-  //     $(searchLine).removeClass('visible');
-  //     searchLineVisible = false;
-  //   }
-  // });
   $(searchBtn).click(function() {
     $(this).toggleClass('opened');
     $(searchLine).toggleClass('visible');
     setTimeout(function() {
       $('body').toggleClass('disableScroll');
     }, 500);
+    $(menuTogge).removeClass('toggled');
+    $(siteContent).removeClass('menu-open');
+    $(menuTogge).removeClass('toggled');
   });
 
   // Disble mobile elements on desctop
