@@ -1,69 +1,49 @@
 /**
-* OpenSans Light
-*/
-@font-face {
-  font-family: "OpenSans";
-  src: url("assets/fonts/OpenSansLight/OpenSansLight.eot");
-  src: url("assets/fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
-  url("assets/fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
-  url("assets/fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 100;
+ * Heading Styles
+ */
+h1, 
+h2,
+h3, 
+h4, 
+h5, 
+h6,
+.h1, 
+.h2, 
+.h3, 
+.h4, 
+.h5, 
+.h6 {
+  font-family: $default-font;
+	font-weight: 500;
+	color: $main-font-color;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+h1 {
+	font-size: 51px;
+	line-height: normal;
+}
+h2 {
+	font-size: 28px;
+	line-height: 1.3;
+}
+h3 {
+	font-size: 20px;
+}
+h4 {
+	font-size: 18px;
+}
+h5 {
+	font-size: 16px;
+}
+h6 {
+	font-size: 14px;
 }
 
 /**
-* OpenSans Regular
-*/
-@font-face {
-  font-family: "OpenSans";
-  src: url("assets/fonts/OpenSansRegular/OpenSansRegular.eot");
-  src: url("assets/fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
-  url("assets/fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
-  url("assets/fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
-}
-
-/**
-* OpenSans SemiBold
-*/
-@font-face {
-  font-family: "OpenSans";
-  src: url("assets/fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
-  src: url("assets/fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
-  url("assets/fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
-  url("assets/fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 600;
-}
-
-/**
-* OpenSans Bold
-*/
-@font-face {
-  font-family: "OpenSans";
-  src: url("assets/fonts/OpenSansBold/OpenSansBold.eot");
-  src: url("assets/fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
-  url("assets/fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
-  url("assets/fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 700;
-}
-
-/**
-* Neomuscle UI Icons
-*/
-@font-face {
-  font-family: 'neomuscle-ui';
-  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?51i209');
-  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?51i209#iefix') format('embedded-opentype'),
-  url('assets/fonts/neomuscle-ui/neomuscle-ui.ttf?51i209') format('truetype'),
-  url('assets/fonts/neomuscle-ui/neomuscle-ui.woff?51i209') format('woff'),
-  url('assets/fonts/neomuscle-ui/neomuscle-ui.svg?51i209#neomuscle-ui') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
+ * UI Icons
+ */
 [class^="ui-icon-"], [class*=" ui-icon-"] {
   font-family: 'neomuscle-ui' !important;
   speak: none;

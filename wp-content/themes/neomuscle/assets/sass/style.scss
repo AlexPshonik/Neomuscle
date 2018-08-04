@@ -17,6 +17,7 @@ Text Domain: neomuscle
 # Normalize
 # Base
 # Grid
+# Fonts
 # Typography
 # Header
 # Theme
@@ -51,6 +52,11 @@ Text Domain: neomuscle
 # Grid
 --------------------------------------------------------------*/
 @import "vendors/bootstrap/scss/bootstrap-grid";
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@import "base/fonts";
 
 /*--------------------------------------------------------------
 # Typography
