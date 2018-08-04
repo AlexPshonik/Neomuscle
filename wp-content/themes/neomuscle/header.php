@@ -68,8 +68,9 @@
               <li class="header-user-nav-item menu-toggle">
                 <span class="js-open-mobile-menu icon header-user-nav-link"></span>
               </li>
-              <li class="header-user-nav-item">
-                <span class="js-open-mobile-search icon ui-icon-search header-user-nav-link"></span>
+              <li class="header-user-nav-item js-open-mobile-search">
+                <span class="icon ui-icon-search header-user-nav-link"></span>
+                <span class="icon ui-icon-close header-user-nav-link"></span>
               </li>
           </ul>
         </div>
@@ -111,7 +112,6 @@
     </div>
   </header>
 
-  </header>
     <div class="section-site-navigation">
         <div class="container">
             <div class="row">

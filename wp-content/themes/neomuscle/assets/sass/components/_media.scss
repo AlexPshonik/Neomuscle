@@ -83,7 +83,26 @@
     margin-right: 30px;
   }
   .section-site-navigation {
-    display: none;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 52%;
+    height: 100vh;
+    margin-top: 0;
+    z-index: 5;
+    background-color: #333333;
+    transition: transition .3s ease;
+  }
+  .dgwt-wcas-search {
+    &-wrapp {
+      top: 0;
+      width: 470px;
+      margin: 0 auto;
+    }
+    &-submit {
+      border-radius: 0;
+      background-color: transparent;
+    }
   }
 }
 
@@ -95,6 +114,9 @@
         max-width: 80%;
       }
     }
+  }
+  .section-site-navigation {
+    width: 250px;
   }
   .mobile-search {
     .dgwt-wcas-suggestions-wrapp {

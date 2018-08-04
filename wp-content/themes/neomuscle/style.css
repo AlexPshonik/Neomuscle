@@ -2937,13 +2937,16 @@ html {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#page.site {
-  overflow: hidden;
-  position: relative;
+body.menu-open {
+  left: 250px;
 }
 
-#page.site.menu-visible {
-  left: 50%;
+body.menu-open .site-header.sticky {
+  left: 250px;
+}
+
+body.menu-open .section-site-navigation {
+  left: 0;
 }
 
 .site-header {
@@ -3131,9 +3134,25 @@ html {
   cursor: pointer;
 }
 
+.header-user-nav .js-open-mobile-search .ui-icon-close {
+  display: none;
+}
+
+.header-user-nav .js-open-mobile-search .ui-icon-search {
+  position: relative;
+  top: 2px;
+}
+
+.header-user-nav .js-open-mobile-search.opened .ui-icon-search {
+  display: none;
+}
+
+.header-user-nav .js-open-mobile-search.opened .ui-icon-close {
+  display: block;
+}
+
 .menu-toggle {
   position: relative;
-  top: -3px;
   height: 18px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3152,9 +3171,11 @@ html {
   width: 25px;
   height: 2px;
   background-color: #333e48;
-  -webkit-transition: background-color .5s ease;
-  -o-transition: background-color .5s ease;
-  transition: background-color .5s ease;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-transition: background-color .2s ease;
+  -o-transition: background-color .2s ease;
+  transition: background-color .2s ease;
 }
 
 .menu-toggle .icon::before, .menu-toggle .icon::after {
@@ -3164,19 +3185,21 @@ html {
   width: 100%;
   height: 2px;
   background-color: #333e48;
-  -webkit-transition: top .3s ease, -webkit-transform .5s ease;
-  transition: top .3s ease, -webkit-transform .5s ease;
-  -o-transition: transform .5s ease, top .3s ease;
-  transition: transform .5s ease, top .3s ease;
-  transition: transform .5s ease, top .3s ease, -webkit-transform .5s ease;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-transition: top .3s ease, -webkit-transform .3s ease;
+  transition: top .3s ease, -webkit-transform .3s ease;
+  -o-transition: transform .3s ease, top .3s ease;
+  transition: transform .3s ease, top .3s ease;
+  transition: transform .3s ease, top .3s ease, -webkit-transform .3s ease;
 }
 
 .menu-toggle .icon::before {
-  top: 0;
+  top: 1px;
 }
 
 .menu-toggle .icon::after {
-  bottom: 0;
+  bottom: 1px;
 }
 
 .menu-toggle.toggled .icon {
@@ -3226,70 +3249,11 @@ html {
   content: '';
   display: block;
   height: 100vh;
-  background-color: #333;
+  background-color: #333e48;
   position: absolute;
   top: 100%;
   width: 100%;
   opacity: 0.8;
-}
-
-.mobile-search .dgwt-wcas-search-wrapp {
-  top: 0;
-}
-
-.mobile-search .dgwt-wcas-search-form {
-  max-width: 430px;
-  margin: 0 auto;
-}
-
-.mobile-search .dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit,
-.mobile-search .dgwt-wcas-sf-wrapp .dgwt-wcas-search-input {
-  padding-left: 0;
-  border: none;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  background-color: #fff;
-}
-
-.mobile-search .dgwt-wcas-sf-wrapp .dgwt-wcas-search-input {
-  padding-right: 10px;
-  line-height: 2.6;
-}
-
-.mobile-search .dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit {
-  -webkit-flex-basis: 5%;
-      -ms-flex-preferred-size: 5%;
-          flex-basis: 5%;
-  padding-right: 0;
-  text-align: right;
-}
-
-.mobile-search .dgwt-wcas-suggestions-wrapp {
-  position: relative;
-  padding-bottom: 10px;
-  border: none;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  -webkit-box-shadow: 0px 5px 6px #383838;
-          box-shadow: 0px 5px 6px #383838;
-}
-
-.mobile-search .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion {
-  max-width: 430px;
-  margin: 0 auto;
-}
-
-.mobile-search .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:hover {
-  background-color: #f9f9f9;
-}
-
-.mobile-search .dgwt-wcas-suggestions-wrapp .dgwt-wcas-suggestion:last-child {
-  -webkit-border-radius: 0;
-          border-radius: 0;
-}
-
-.mobile-search .dgwt-wcas-st {
-  padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -3799,7 +3763,29 @@ select {
     margin-right: 30px;
   }
   .section-site-navigation {
-    display: none;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 52%;
+    height: 100vh;
+    margin-top: 0;
+    z-index: 5;
+    background-color: #333333;
+    -webkit-transition: -webkit-transition .3s ease;
+    transition: -webkit-transition .3s ease;
+    -o-transition: -o-transition .3s ease;
+    transition: transition .3s ease;
+    transition: transition .3s ease, -webkit-transition .3s ease, -o-transition .3s ease;
+  }
+  .dgwt-wcas-search-wrapp {
+    top: 0;
+    width: 470px;
+    margin: 0 auto;
+  }
+  .dgwt-wcas-search-submit {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    background-color: transparent;
   }
 }
 
@@ -3807,6 +3793,9 @@ select {
 @media only screen and (max-width: 480px) {
   .site-header .logo-img {
     max-width: 80%;
+  }
+  .section-site-navigation {
+    width: 250px;
   }
   .mobile-search .dgwt-wcas-suggestions-wrapp {
     padding: 0 15px 10px;

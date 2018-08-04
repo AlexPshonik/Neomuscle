@@ -40,9 +40,13 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  // Mobile menu
+  let siteContent = $('body');
   let menuTogge = $('.menu-toggle');
   $(menuTogge).click(function() {
-    $(menuTogge).toggleClass('toggled');
+    $(this).toggleClass('toggled');
+    $(siteContent).toggleClass('menu-open');
+    $(siteContent).toggleClass('disableScroll');
   });
 
   // Mobile search line
@@ -50,12 +54,12 @@ jQuery(document).ready(function ($) {
   let searchLine = $('.mobile-search');
   $(searchBtn).click(function() {
     $(this).toggleClass('opened');
-    $(this).toggleClass('ui-icon-search');
-    $(this).toggleClass('ui-icon-close');
     $(searchLine).toggleClass('visible');
     setTimeout(function() {
       $('body').toggleClass('disableScroll');
     }, 500);
+    $(menuTogge).removeClass('toggled');
+    $(siteContent).removeClass('menu-open');
     $(menuTogge).removeClass('toggled');
   });
 

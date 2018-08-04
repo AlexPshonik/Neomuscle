@@ -1,9 +1,11 @@
-#page.site {
-  overflow: hidden;
-  position: relative;
-  &.menu-visible {
-   left: 50%;
-  }
+body.menu-open {
+	left: 250px;
+	.site-header.sticky {
+		left: 250px;
+	}
+	.section-site-navigation {
+		left: 0;
+	}
 }
 
 .site-header {
@@ -143,13 +145,27 @@
 		}
 	}
 	.js-open-mobile-search {
+		.ui-icon-close {
+			display: none;
+		}
+		.ui-icon-search {
+			position: relative;
+			top: 2px;
+		}
 		cursor: pointer;
+		&.opened {
+			.ui-icon-search {
+				display: none;
+			}
+			.ui-icon-close {
+				display: block;
+			}
+		}
   }
 }
 
 .menu-toggle {
   position: relative;
-  top: -3px;
   height: 18px;
   display: flex;
   align-items: center;
@@ -159,8 +175,9 @@
     display: block;
     width: 25px;
     height: 2px;
-    background-color: $main-font-color;
-    transition: background-color .5s ease;
+		background-color: $main-font-color;
+		border-radius: 2px;
+    transition: background-color .2s ease;
     &::before,
     &::after {
       content: '';
@@ -168,15 +185,16 @@
       left: 0;
       width: 100%;
       height: 2px;
-      background-color: $main-font-color;
-      transition: transform .5s ease, top .3s ease;
+			background-color: $main-font-color;
+			border-radius: 2px;
+      transition: transform .3s ease, top .3s ease;
     }
     &::before {
-      top: 0;
+      top: 1px;
     }
     &::after {
-      bottom: 0;
-    }
+      bottom: 1px;
+		}
   }
   &.toggled {
     .icon {
@@ -215,56 +233,11 @@
       content: '';
       display: block;
       height: 100vh;
-      background-color: #333; // push to variable
+      background-color: $main-font-color; // push to variable
       position: absolute;
       top: 100%;
       width: 100%;
       opacity: 0.8;
     }
 	}
-	.dgwt-wcas-search-wrapp {
-		top: 0;
-	}
-	.dgwt-wcas-search-form {
-		max-width: 430px;
-		margin: 0 auto;
-	}
-	.dgwt-wcas-sf-wrapp {
-		.dgwt-wcas-search-submit,
-		.dgwt-wcas-search-input {
-			padding-left: 0;
-			border: none;
-			border-radius: 0;
-			background-color: #fff;
-		}
-		.dgwt-wcas-search-input {
-			padding-right: 10px;
-			line-height: 2.6;
-		}
-		.dgwt-wcas-search-submit {
-			flex-basis: 5%;
-			padding-right: 0;
-			text-align: right;
-		}
-	}
-	.dgwt-wcas-suggestions-wrapp {
-		position: relative;
-		padding-bottom: 10px;
-		border: none;
-		border-radius: 0;
-		box-shadow: 0px 5px 6px #383838; // push to variable
-		.dgwt-wcas-suggestion {
-			max-width: 430px;
-			margin: 0 auto;
-				&:hover {
-					background-color: #f9f9f9;
-				}
-				&:last-child {
-					border-radius: 0;
-				}
-			}
-		}
-		.dgwt-wcas-st {
-			padding: 0;
-		}
-	}
+}
