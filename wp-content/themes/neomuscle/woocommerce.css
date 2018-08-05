@@ -71,7 +71,7 @@ WooCommerce styles override
 }
 
 .dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit {
-  padding-right: 0;
+  padding: 10px 0;
   text-align: right;
   -webkit-flex-basis: 13%;
       -ms-flex-preferred-size: 13%;
@@ -250,9 +250,80 @@ table.shop_table_responsive tr td.download-actions .button {
   }
 }
 
-/**
- * Products
- */
+/*--------------------------------------------------------------
+# Products
+--------------------------------------------------------------*/
+.category-content {
+  float: right;
+  width: 73%;
+  margin-left: 20px;
+}
+
+.category-content .products {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.category-content .products .product {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-basis: 23.5%;
+      -ms-flex-preferred-size: 23.5%;
+          flex-basis: 23.5%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  border: 1px solid #ddd;
+}
+
+.category-content .products .product:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product .woocommerce-loop-product__link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product .wp-post-image {
+  width: 100%;
+  height: auto;
+}
+
+.widget-area {
+  float: left;
+  width: 25%;
+  height: 100%;
+  padding-right: 20px;
+  border-right: 1px solid;
+}
+
 /*--------------------------------------------------------------
 # Single product
 --------------------------------------------------------------*/
