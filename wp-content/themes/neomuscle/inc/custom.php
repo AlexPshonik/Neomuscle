@@ -9,14 +9,26 @@
  * Change WooCommerce Symbol.
  */
 add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2);
-function change_existing_currency_symbol($currency_symbol, $currency)
-{
-    switch ($currency) {
-        case 'UAH':$currency_symbol = 'грн';
-            break;
+function change_existing_currency_symbol($currency_symbol, $currency) {
+  switch ($currency) {
+    case 'UAH':$currency_symbol = 'грн';
+      break;
     }
-    return $currency_symbol;
+  return $currency_symbol;
 }
+
+/**
+ * Change Add to Cart Text.
+ */
+
+// Single Product
+add_filter('woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text');
+function woo_custom_cart_button_text() {
+  return __('Купить', 'woocommerce');
+}
+// Variable Product
+
+
 
 /**
  * Add additional fields in product.
