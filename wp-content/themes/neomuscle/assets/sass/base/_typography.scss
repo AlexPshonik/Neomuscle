@@ -56,6 +56,9 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ui-icon-shopping-cart:before {
+  content: "\e90e";
+}
 .ui-icon-down-arrow:before {
   content: "\e90b";
 }
