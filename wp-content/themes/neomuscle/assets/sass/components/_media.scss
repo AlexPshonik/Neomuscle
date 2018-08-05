@@ -47,6 +47,18 @@
   .section-site-navigation {
     margin-top: 0;
   }
+  // .category-content {
+  //   width: 67%;
+  //   .products .product {
+  //     flex-basis: 32%;
+  //     &:nth-child(3n) {
+  //       margin-right: 0;
+  //     }
+  //     &:nth-child(4n) {
+  //       margin-right: 2%;
+  //     }
+  //   }
+  // }
 }
 
 /* Small Devices, Tablets */
@@ -104,6 +116,10 @@
       background-color: transparent;
     }
   }
+  // .category-content {
+  //   width: 100%;
+  //   margin-left: 0;
+  // }
 }
 
 /* Extra Small Devices, Phones */
@@ -126,6 +142,21 @@
       padding: 0 15px;
     }
   } 
+//   .category-content {
+//     .products .product {
+//       flex-basis: 48%;
+//       margin-right: 4%; 
+//       &:nth-child(2n) {
+//         margin-right: 0;
+//       }
+//       &:nth-child(3n) {
+//         margin-right: 4%;
+//       }
+//       &:nth-child(4n) {
+//         margin-right: 0;
+//       }
+// }
+//   }
 }
 
 /* Custom, iPhone Retina */
@@ -157,11 +188,37 @@
       } 
     }
   }
+  .category-content {
+    .products {
+      justify-content: space-between;
+      .product {
+        width: auto;
+        flex-basis: 47%;
+      }
+    }
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  
+  .category-content {
+    .products {
+      justify-content: flex-start;
+      .product {
+        flex-basis: 32%;
+        margin-right: 2%;
+        &:nth-child(3n){
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .widget-area {
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding-right: 20px;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -177,9 +234,30 @@
       }
     }
   }
+  .category-content {
+    float: right;
+    width: 73%;
+  }
+  .widget-area {
+    float: left;
+    width: 25%;
+  }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+  .category-content {
+    .products {
+      .product {
+        flex-basis: 23%;
+        margin-right: 2.5%;
+        &:nth-child(3n){
+          margin-right: 2.5%;
+        }
+        &:nth-child(4n) {
+          margin-right: 0%;
+        }
+      }
+    }
+  }
 }
