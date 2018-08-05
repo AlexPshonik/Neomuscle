@@ -1,63 +1,41 @@
-/**
- * Products
- */
-ul.products {
-	@include clearfix;
-	margin: 0;
-	padding: 0;
-
-	li.product {
-		list-style: none;
-		position: relative;
-		margin-bottom: 2em;
-
-		.woocommerce-loop-product__title {
-			font-size: 1rem;
-		}
-
-		img {
-			display: block;
-		}
-
-		.button {
-			display: block;
-		}
+.category-content {
+	float: right;
+	width: 73%;
+	margin-left: 20px;
+	.products {
+		display: flex;
+    flex-wrap: wrap;
+    .product {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-basis: 23.5%;
+      margin-right: 2%;
+      margin-bottom: 2%;
+      border: 1px solid #ddd;
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
 	}
 }
 
-@media screen and (min-width: 48em) {
-	ul.products {
-		li.product {
-			@include column-width(3);
-			float: left;
-			margin-right: $columns__margin;
+.product {
+  .woocommerce-loop-product__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wp-post-image {
+    width: 100%;
+    height: auto;
+  }
+}
 
-			&.first {
-				clear: both;
-			}
-
-			&.last {
-				margin-right: 0;
-			}
-		}
-	}
-
-	.columns-1 {
-		ul.products {
-			li.product {
-				float: none;
-				width: 100%;
-			}
-		}
-	}
-
-	@for $i from 2 through 6 {
-		.columns-#{$i} {
-			ul.products {
-				li.product {
-					@include column-width( $i );
-				}
-			}
-		}
-	}
+.widget-area {
+	float: left;
+	width: 25%;
+	height: 100%;
+	padding-right: 20px;
+	border-right: 1px solid;
 }
