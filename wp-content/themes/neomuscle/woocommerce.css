@@ -448,14 +448,12 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .widget-area .widget {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
 }
 
 .widget-area .widget:last-child {
   margin-bottom: 0;
-  border-bottom: none;
 }
 
 .widget-area .widget.toggled {
@@ -511,7 +509,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .wcapf-price-filter-wrapper .noUi-horizontal {
-  width: 98%;
+  width: 97%;
   height: 4px;
   padding-right: 10px;
   background-color: #dcdcdc;

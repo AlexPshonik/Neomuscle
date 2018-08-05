@@ -103,11 +103,18 @@ jQuery(document).ready(function ($) {
     $(this).next().slideToggle(400);
   });
 
+  if(window.innerWidth < 768) {
+    $("h2.widget-title").parent().removeClass('toggled');
+    $("h2.widget-title").next().slideUp(400);
+  }
+
   // Disble mobile elements on desctop
   $(window).resize(function() {
     if(window.innerWidth < 768) {
       $(stickyHeader).removeClass('sticky');
       $(searchLine).removeClass('visible');
+      $("h2.widget-title").parent().removeClass('toggled');
+      $("h2.widget-title").next().slideUp(400);
     }
   });
 });

@@ -3957,6 +3957,12 @@ select {
     height: 100%;
     padding-right: 20px;
   }
+  .widget-area .widget {
+    margin-bottom: 20px;
+  }
+  .widget-area .widget:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* Medium Devices, Desktops */

@@ -1,12 +1,10 @@
 .widget-area {
 	font-weight: lighter;
 	.widget {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		padding-bottom: 10px;
-		border-bottom: 1px solid #ddd;
 		&:last-child {
 			margin-bottom: 0;
-			border-bottom: none;
 		}
 		&.toggled {
 			border-bottom: none;
@@ -49,7 +47,7 @@
 .wcapf-price-filter-wrapper {
 	padding-top: 20px;
 	.noUi-horizontal {
-		width: 98%;
+		width: 97%;
 		height: 4px;
 		padding-right: 10px;
 		background-color: #dcdcdc;
