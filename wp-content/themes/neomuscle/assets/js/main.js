@@ -70,4 +70,11 @@ jQuery(document).ready(function ($) {
       $(searchLine).removeClass('visible');
     }
   });
+
+  // Sidebar accordeon
+  $(document).on("click", "h2.widget-title", function (e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('toggled');
+    $(this).next().slideToggle(400);
+  });
 });

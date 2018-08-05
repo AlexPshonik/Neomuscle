@@ -1,64 +1,155 @@
-/**
- * WooCommerce Price Filter
- */
-.widget_price_filter {
-	.price_slider {
-		margin-bottom: 1.5em;
-	}
-
-	.price_slider_amount {
-		text-align: right;
-		line-height: 2.4em;
-
-		.button {
-			float: left;
-		}
-	}
-
-	.ui-slider {
-		position: relative;
-		text-align: left;
-	}
-
-	.ui-slider .ui-slider-handle {
-		position: absolute;
-		z-index: 2;
-		width: 1em;
-		height: 1em;
-		cursor: ew-resize;
-		outline: none;
-		background: $color__link;
-		box-sizing: border-box;
-		margin-top: -.25em;
-		opacity: 1;
-
+.widget-area {
+	font-weight: lighter;
+	.widget {
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #ddd;
 		&:last-child {
-			margin-left: -1em;
+			margin-bottom: 0;
+			border-bottom: none;
 		}
-
-		&:hover,
-		&.ui-state-active {
-			box-shadow: 0 0 0 .25em rgba(#000, 0.1);
+		&.toggled {
+			border-bottom: none;
+			.widget-title::after {
+				transform: rotateZ(0deg);
+			}
 		}
 	}
-
-	.ui-slider .ui-slider-range {
-		position: absolute;
-		z-index: 1;
-		display: block;
-		border: 0;
-		background: $color__link;
+	.widget-title {
+		position: relative;
+		padding-bottom: 20px;
+		margin-bottom: 0; 
+		font-size: 18px;
+		color: rgb(51, 62, 72);
+		border-bottom: 1px solid rgb(218, 218, 218);
+		cursor: pointer;
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -1px;
+			display: block;
+			width: 70px;
+			height: 2px;
+			background-color: $accent-color;
+		}
+		&::after {
+			position: absolute;
+			top: 5px;
+			right: 0;
+			font-family: 'neomuscle-ui' !important;
+			font-size: 14px;
+			line-height: 1;
+			transition: transform .4s ease;
+			transform: rotateZ(180deg);
+			content: "\e90b";
+		}
 	}
+}
 
-	.price_slider_wrapper .ui-widget-content {
-		background: rgba(0,0,0,0.1);
+.wcapf-price-filter-wrapper {
+	padding-top: 20px;
+	.noUi-horizontal {
+		width: 98%;
+		height: 4px;
+		padding-right: 10px;
+		background-color: #dcdcdc;
 	}
-
-	.ui-slider-horizontal {
-		height: .5em;
-	}
-
-	.ui-slider-horizontal .ui-slider-range {
+	.noUi-base {
+		position: relative;
 		height: 100%;
+	}
+	.noUi-origin {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		&:first-child {
+			background-color: #a7a7a7;
+		}
+		&:last-child {
+			background-color: #dcdcdc;
+			.noUi-handle {
+				&::before {
+					position: absolute;
+					left: 3px;
+					top: 3px;
+					display: block;
+					width: 10px;
+					height: 10px;
+					background-color: #ffffff;
+					border-radius: 50%;
+					content: '';
+				}
+			}
+		}
+		.noUi-handle {
+			position: relative;
+			top: -6px;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #fed700;
+			cursor: ew-resize;
+			z-index: 1;
+		}
+	}
+	.slider-values {
+		margin-top: 15px;
+		font-size: 14px;
+		color: rgb(104, 104, 104);
+		.wcapf-slider-value {
+			font-weight: normal;
+		}
+		.wcapf-slider-splitter {
+			margin: 0 5px;
+		}
+	}
+}
+
+.wcapf-layered-nav {
+	margin-top: 10px;
+}
+
+.wcapf-ajax-term-filter {
+	li {
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding-right: 15px;
+		&.chosen {
+			a::before {
+				background-color: #fed700;
+				border-color: #fed700;
+			}
+		}
+		a {
+			font-size: 16px;
+			color: rgb(51, 62, 72);
+			&::before {
+				position: relative;
+				top: 1px;
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				margin-right: 8px;
+				background-color: #ffffff;
+				border: 1px solid #dfdfdf;
+				border-radius: 2px;
+				transition: background-color .2s ease, border-color .2s ease;
+				content: '';
+			}
+			&:hover {
+				&::before {
+					background-color: #fed700;
+					border-color: #fed700;
+				}
+			}
+		}
+		span {
+			margin-left: 5px;
+			font-size: 13px;
+			color: rgb(172, 172, 172);
+		}
 	}
 }
