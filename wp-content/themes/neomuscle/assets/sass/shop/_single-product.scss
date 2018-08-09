@@ -78,6 +78,20 @@
   }
 }
 
+.woocommerce-product-gallery {
+  display: flex;
+  flex-direction: column;
+  .flex-viewport {
+    margin-bottom: 20px;
+  }
+  .flex-control-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
 /**
  * Single Product
  */

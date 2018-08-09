@@ -128,7 +128,9 @@ add_action( 'init', 'edit_taxonomies', 0 );
  */
 add_action( 'wp_print_styles', 'remove_plugin_scripts_styles', 100 ); 
 function remove_plugin_scripts_styles() {
-  wp_deregister_style( 'dgwt-wcas-style' ); 
+  wp_deregister_style( 'dgwt-wcas-style' );
+  wp_deregister_style('wcapf-nouislider-style');
+  wp_deregister_style('wcapf-style');
 }
 
 /**

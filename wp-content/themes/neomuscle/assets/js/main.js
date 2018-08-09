@@ -96,11 +96,25 @@ jQuery(document).ready(function ($) {
     $(menuTogge).removeClass('toggled');
   });
 
+  // Sidebar accordeon
+  $(document).on("click", "h2.widget-title", function (e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('toggled');
+    $(this).next().slideToggle(400);
+  });
+
+  if(window.innerWidth < 768) {
+    $("h2.widget-title").parent().removeClass('toggled');
+    $("h2.widget-title").next().slideUp(400);
+  }
+
   // Disble mobile elements on desctop
   $(window).resize(function() {
     if(window.innerWidth < 768) {
       $(stickyHeader).removeClass('sticky');
       $(searchLine).removeClass('visible');
+      $("h2.widget-title").parent().removeClass('toggled');
+      $("h2.widget-title").next().slideUp(400);
     }
   });
 });

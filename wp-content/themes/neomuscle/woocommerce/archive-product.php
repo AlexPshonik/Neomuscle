@@ -29,6 +29,16 @@ get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
+
+<?php
+/**
+ * Hook: woocommerce_sidebar.
+ *
+ * @hooked woocommerce_get_sidebar - 10
+ */
+do_action( 'woocommerce_sidebar' );
+?>
+
 <div class="category-content">	
 	<header class="woocommerce-products-header">
 		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
@@ -94,13 +104,6 @@ do_action( 'woocommerce_before_main_content' );
 </div>
 
 <?php
-/**
- * Hook: woocommerce_sidebar.
- *
- * @hooked woocommerce_get_sidebar - 10
- */
-do_action( 'woocommerce_sidebar' );
-
 /**
  * Hook: woocommerce_after_main_content.
  *

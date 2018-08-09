@@ -92,17 +92,19 @@ if (!class_exists('WCAPF_Price_Filter_Widget')) {
 			if ($display_type === 'slider') {
 				$html .= '<div class="wcapf-price-filter-wrapper">';
 					$html .= '<div id="wcapf-noui-slider" class="noUi-extended" data-min="' . $min_val . '" data-max="' . $max_val . '" data-set-min="' . $set_min_val . '" data-set-max="' . $set_max_val . '"></div>';
-					$html .= '<br />';
 					$html .= '<div class="slider-values">';
-						$html .= '<p>' . __('Min Price', 'wcapf') . ': <span class="wcapf-slider-value" id="wcapf-noui-slider-value-min"></span></p>';
-						$html .= '<p>' . __('Max Price', 'wcapf') . ': <span class="wcapf-slider-value" id="wcapf-noui-slider-value-max"></span></p>';
+						$html .= '<p>' . __('Цена: ', 'wcapf');
+							$html .= '<span class="wcapf-slider-value" id="wcapf-noui-slider-value-min"></span>';
+							$html .= '<span class="wcapf-slider-splitter">-</span>';
+							$html .= '<span class="wcapf-slider-value" id="wcapf-noui-slider-value-max"></span>';
+						$html .= '</p>';
 					$html .= '</div>';
 				$html .= '</div>';
 			}
 
 			// List markup
 			elseif ($display_type === 'list') {
-				$html .= '<div class="wcapf-layered-nav">';
+				$html .= '<div class="">';
 					$html .= '<ul>';
 						foreach ($price_lists as $price_list) {
 
