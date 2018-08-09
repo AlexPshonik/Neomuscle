@@ -15,15 +15,20 @@
 	}
 }
 
+.products {
+  .product {
+    .wp-post-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 .product {
   .woocommerce-loop-product__link {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .wp-post-image {
-    width: 100%;
-    height: auto;
   }
 }
 
