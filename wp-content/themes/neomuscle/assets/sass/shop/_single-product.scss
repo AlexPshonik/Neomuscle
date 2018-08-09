@@ -25,7 +25,56 @@
     border-top: 1px solid $border-color;
   }
   .price {
+    margin-bottom: 15px;
     font-size: 28px;
+  }
+  .cart {
+    float: left;
+    margin-right: 18px;
+  }
+  .yith-wcwl-add-to-wishlist {
+    margin-top: 0;
+    font-size: 26px;
+    a {
+      color: $accent-color;
+      &:hover {
+        color: $main-font-color;
+      }
+    }
+    .yith-wcwl-wishlistexistsbrowse.show,
+    .yith-wcwl-wishlistaddedbrowse.show {
+      display: block;
+      padding: 3px 0;
+      font-size: 12px;
+      .feedback {
+        display: block;
+      }
+    } 
+  }
+  .product-meta {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    .specification {
+      flex-basis: 50%;
+      padding-right: 15px;
+      font-size: 14px;
+      .title {
+        border-bottom: 1px solid $border-color;
+      }
+      &-list {
+        .item {
+          border-bottom: 1px solid $border-color;
+          &:last-child {
+            border: 0;
+          }
+          &-title {
+            min-width: 180px;
+            display: inline-block;
+          }
+        }
+      }
+    }
   }
 }
 

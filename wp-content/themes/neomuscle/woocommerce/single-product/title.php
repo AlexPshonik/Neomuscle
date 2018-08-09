@@ -25,5 +25,7 @@ the_title( '<h1 class="product_title entry-title">', '</h1>' );
 ?>
 
 <div class="product-info">
-  <div class="sku">Код товара: <?php echo $product->get_sku(); ?></div>
+  <?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
+    <span class="sku_wrapper"><?php esc_html_e( 'SKU:', 'woocommerce' ); ?> <span class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></span>
+  <?php endif; ?>
 </div>
