@@ -1,0 +1,60 @@
+.product-card {
+  .woocommerce-loop-product {
+    &__link {
+      margin-bottom: 10px;
+    }
+    &__title {
+      height: 30px;
+      margin-bottom: 5px;
+      font-size: 12px;
+      font-weight: bold;
+      color: $main-font-color;
+    }
+  }
+  .wp-post-image {
+    width: 100%;
+    height: auto;
+  }
+  &-buy {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    .price {
+      font-size: 14px;
+    }
+    .woocommerce-loop-product{
+      &__link {
+        display: none;
+      }
+    }
+    .add_to_cart_button {
+      position: relative;
+      padding: 12px 20px;
+      background-color: $accent-color;
+      font-size: 0;
+      &::after {
+        position: absolute;
+        top: 2px;
+        right: 13px;
+        font-size: 12px;
+        font-family: 'neomuscle-ui' !important;
+        content: "\e90e";
+      }
+    }
+  }
+}
+
+.woocommerce-products-header {
+  &__title {
+    font-size: 25px;
+    color: rgb(51, 62, 72);
+  }
+}
+
+.wcapf-before-products {
+  .woocommerce-result-count,
+  .woocommerce-ordering {
+    display: none;
+  }
+}

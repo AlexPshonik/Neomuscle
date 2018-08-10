@@ -321,7 +321,7 @@ table.shop_table_responsive tr td.download-actions .button {
 /*--------------------------------------------------------------
 # Products
 --------------------------------------------------------------*/
-.category-content .products {
+.products {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -329,53 +329,31 @@ table.shop_table_responsive tr td.download-actions .button {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.category-content .products .product {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-  max-width: 310px;
-  margin-bottom: 25px;
-  border: 1px solid #ddd;
+.products .product {
+  position: relative;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
-.products .product .wp-post-image {
-  width: 100%;
-  height: auto;
+.products .product::after {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  display: block;
+  width: 1px;
+  height: 80%;
+  background-color: #ddd;
+  content: '';
 }
 
-.product .woocommerce-loop-product__link {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.products .product:nth-child(2n)::after, .products .product:last-child::after {
+  content: none;
 }
 
 .widget-area {
@@ -460,6 +438,80 @@ table.shop_table_responsive tr td.download-actions .button {
 /**
  * Single Product
  */
+/*--------------------------------------------------------------
+# Single product
+--------------------------------------------------------------*/
+.product-card .woocommerce-loop-product__link {
+  margin-bottom: 10px;
+}
+
+.product-card .woocommerce-loop-product__title {
+  height: 30px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333e48;
+}
+
+.product-card .wp-post-image {
+  width: 100%;
+  height: auto;
+}
+
+.product-card-buy {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-card-buy .price {
+  font-size: 14px;
+}
+
+.product-card-buy .woocommerce-loop-product__link {
+  display: none;
+}
+
+.product-card-buy .add_to_cart_button {
+  position: relative;
+  padding: 12px 20px;
+  background-color: #fed700;
+  font-size: 0;
+}
+
+.product-card-buy .add_to_cart_button::after {
+  position: absolute;
+  top: 2px;
+  right: 13px;
+  font-size: 12px;
+  font-family: 'neomuscle-ui' !important;
+  content: "\e90e";
+}
+
+.woocommerce-products-header__title {
+  font-size: 25px;
+  color: #333e48;
+}
+
+.wcapf-before-products .woocommerce-result-count,
+.wcapf-before-products .woocommerce-ordering {
+  display: none;
+}
+
 /**
  * Checkout
  */
