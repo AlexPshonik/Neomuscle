@@ -25,24 +25,21 @@ global $product, $post;
 $cat_count = sizeof( get_the_terms( $post->ID, 'product_cat' ) );
 $tag_count = sizeof( get_the_terms( $post->ID, 'intention' ) );
 ?>
-<div class="product_meta">
+<div class="product-meta">
 
 	<?php do_action( 'woocommerce_product_meta_start' ); ?>
 
-	<?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
-
-		<span class="sku_wrapper"><?php esc_html_e( 'SKU:', 'woocommerce' ); ?> <span class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></span>
-
-	<?php endif; ?>
-
-  <h4>Спецификация товара:</h4>
+  
+		<div class="specification">
+      <h4 class="title h4">Спецификация товара:</h4>
+      <ul class="specification-list">
+        <li class="item"><span class="item-title">Бренд:</span><?php echo get_the_term_list( $post->ID, 'product_brand', '', ', ', '' ); ?></span></li>
+        <li class="item"><span class="item-title">Страна производитель:</span><span><?php echo get_post_meta( $post->ID, '_country_field', true );?></span></li>
+        <li class="item"><span class="item-title">Фасовка: </span><span><?php echo get_post_meta( $post->ID, '_pre_packing_field', true );?></span></li>
+        <li class="item"><span class="item-title">Количество порций: </span><span><?php echo get_post_meta( $post->ID, '_amount_of_portions', true );?></span></li>
+      </ul>
+    </div>
 		
-		<ul>
-			<li>Страна производитель: <span><?php echo get_post_meta( $post->ID, '_country_field', true );?></span></li>
-      <li>Бренд: <span><?php echo get_the_term_list( $post->ID, 'product_brand', '', ', ', '' ); ?></span></li> 
-			<li>Фасовка: <span><?php echo get_post_meta( $post->ID, '_pre_packing_field', true );?></span></li>
-      <li>Количество порций: <span><?php echo get_post_meta( $post->ID, '_amount_of_portions', true );?></span></li>
-		</ul>
 
 	<!-- <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?> -->
 
