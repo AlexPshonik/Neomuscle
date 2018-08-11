@@ -3614,7 +3614,7 @@ body.menu-open .section-site-navigation {
 .header-user-nav .wish-list-count {
   position: absolute;
   top: -7px;
-  right: -7px;
+  left: 10px;
   width: 17px;
   height: 17px;
   padding-right: 1px;
@@ -4250,7 +4250,7 @@ select {
   .header-user-nav .shopping-bag-count {
     position: absolute;
     top: -7px;
-    right: -7px;
+    left: 15px;
     width: 17px;
     height: 17px;
     -webkit-border-radius: 50%;

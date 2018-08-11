@@ -204,6 +204,7 @@ WooCommerce styles override
   padding-left: 25px;
   border-color: #ddd;
   text-align: center;
+  -moz-appearance: textfield !important;
 }
 
 .quantity .qty::-webkit-inner-spin-button, .quantity .qty::-webkit-outer-spin-button {
@@ -378,6 +379,7 @@ table.shop_table_responsive tr td.download-actions .button {
   -webkit-flex-basis: 40%;
       -ms-flex-preferred-size: 40%;
           flex-basis: 40%;
+  overflow: hidden;
 }
 
 .single-product .product .entry-summary {
