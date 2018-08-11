@@ -11,8 +11,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 ?>
 <li <?php wc_product_class(); ?>>
 	<div class="product-card">
-    <div class="product-card-categories">
-      <?php echo '<span clas="loop">' . wc_get_product_category_list( get_the_id(), ', ', '',  '' ) . '</span>'; ?>
+    <div class="product-card-brand">
+      <?php echo get_the_term_list( $post->ID, 'product_brand', '', ', ', '' ); ?>
     </div>
 		<?php
 			/**
@@ -53,5 +53,13 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 			do_action( 'woocommerce_after_shop_loop_item_title' );
 		?>
 		</div>
+      <ul class="product-description">
+        <li class="item"><span class="item-title">Страна производства:</span><span><?php echo the_field('country_field'); ?></</span></li>
+        <li class="item"><span class="item-title">Фасовка: </span><span><?php echo the_field('pack'); ?></span></li>
+        <li class="item"><span class="item-title">Количество порций: </span><span><?php echo the_field('amount_portions'); ?></span></li>
+        <?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
+          <li class="item"><span class="item-title">Артикул:</span><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></li>
+        <?php endif; ?>
+      </ul>
 	</div>
 </li>
