@@ -10,6 +10,7 @@
     padding-left: 25px;
     border-color: #ddd;
     text-align: center;
+    -moz-appearance: textfield !important;
     &::-webkit-inner-spin-button, 
     &::-webkit-outer-spin-button { 
       margin: 0;

@@ -44,3 +44,4 @@ vendors/
 
 # ignore node/grunt dependency directories
 node_modules/
+package-lock.json
