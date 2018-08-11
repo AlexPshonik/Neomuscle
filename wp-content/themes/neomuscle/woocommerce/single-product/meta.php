@@ -41,6 +41,32 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'intention' ) );
     </div>
 		
 
+<?php 
+
+$posts = get_field('test');
+
+if( $posts ): ?>
+	<ul>
+	<?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+	    <li>
+        <div class="image">
+          <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $p->ID ), 'single-post-thumbnail' );?>
+          <a href="<?php echo get_permalink( $p->ID ); ?>"><img width="50px" src="<?php  echo $image[0]; ?>" data-id="<?php echo $p->ID; ?>"></a>
+        </div>
+
+        <div class="packaging">
+          <?php echo get_post_meta( $p->ID, '_pre_packing_field', true );?>
+        </div>
+        
+        <div class="price">
+          <?php $product = wc_get_product( $p->ID ); ?>
+          <?php echo $product->get_price(); ?>
+        </div>
+	    </li>
+	<?php endforeach; ?>
+	</ul>
+<?php endif; ?>
+
 	<!-- <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?> -->
 
 	<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
