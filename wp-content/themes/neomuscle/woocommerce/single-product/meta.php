@@ -40,38 +40,43 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'intention' ) );
       </ul>
     </div>
 		
-    <div class="product-packaging">
       <?php 
         $posts = get_field('packaging-box');
         if( $posts ): ?>
-          <ul>
-            <?php foreach( $posts as $p ):?>
-                <li>
-                  <div class="image">
-                    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $p->ID ), 'single-post-thumbnail' );?>
-                    <a href="<?php echo get_permalink( $p->ID ); ?>"><img width="50px" src="<?php  echo $image[0]; ?>" data-id="<?php echo $p->ID; ?>"></a>
-                  </div>
-
-                  <div class="packaging">
-                    <?php echo the_field('pack', $p->ID); ?>
-                    <div class="portion">
-                      <?php echo the_field('amount_portions', $p->ID); ?>
-                    </div>
-                  </div>
-
-                  <div class="price">
+          <table class="product-packaging">
+            <thead>
+              <tr>
+                <th class="product-packaging-img">Фото</th>
+                <th class="product-packaging-vals">Фасовка</th>
+                <th class="product-packaging-price">Цена</th>
+                <th class="product-packaging-buy"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php foreach( $posts as $p ):?>
+                <tr class="product-packaging-item">
+                  <td class="product-packaging-img">
+                      <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $p->ID ), 'single-post-thumbnail' );?>
+                      <a href="<?php echo get_permalink( $p->ID ); ?>"><img src="<?php  echo $image[0]; ?>" data-id="<?php echo $p->ID; ?>"></a>
+                  </td>
+                  <td class="product-packaging-vals">
+                    <?php echo the_field('pack', $p->ID); ?> г
+                    <small class="product-packaging-portion">
+                      <?php echo the_field('amount_portions', $p->ID); ?> (порций)
+                    </small>
+                  </td>
+                  <td class="product-packaging-price">
                     <?php $product = wc_get_product( $p->ID ); ?>
                     <?php echo $product->get_price(); ?> грн
-                  </div>
-
-                  <div class="buy">
+                  </td>
+                  <td class="product-packaging-buy">
                     <a href="<?php echo get_permalink( $p->ID ); ?>"><span class="ui-icon-shopping-cart"></span></a>
-                  </div>
-                </li>
-            <?php endforeach; ?>
-          </ul>
-        <?php endif; ?>
-    </div>
+                  </td>
+                </tr>
+              <?php endforeach; ?>
+            </tbody>
+          </table>
+        <?php endif; ?>   
 
 	<!-- <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?> -->
 
