@@ -41,6 +41,7 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'intention' ) );
     </div>
 		
     <div class="product-packaging">
+      <h4 class="title h4">Другие фасовки:</h4>
       <?php 
         $posts = get_field('packaging-box');
         if( $posts ): ?>
