@@ -256,6 +256,184 @@ WooCommerce styles override
   font-size: 18px;
 }
 
+/*--------------------------------------------------------------
+# Fields
+--------------------------------------------------------------*/
+.woocommerce-Reviews .woocommerce-Reviews-title {
+  font-size: 18px;
+  color: #333e48;
+}
+
+.woocommerce-Reviews .commentlist {
+  margin: 0;
+  padding: 0 20px;
+  list-style: none;
+}
+
+.woocommerce-Reviews .commentlist .comment {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.woocommerce-Reviews #review_form_wrapper {
+  width: 50%;
+}
+
+.comment-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+}
+
+.comment-text .meta {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.comment-text .description {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.comment-text .description img {
+  max-height: 100px;
+  width: auto;
+}
+
+.comment .children {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.comment .children .comment {
+  margin-bottom: 0;
+  padding-top: 5px;
+  border-top: 1px solid #dddddd;
+  border-bottom: none;
+}
+
+.comment .children .comment .description {
+  margin-top: 0;
+}
+
+.comment-respond .comment-reply-title {
+  font-size: 18px;
+  color: #333e48;
+}
+
+.comment-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.comment-form .comment-notes {
+  margin: 5px 0;
+  font-weight: lighter;
+  color: #b0b0b0;
+}
+
+.comment-form .required {
+  color: red;
+}
+
+.comment-form-rating {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  margin-bottom: 10px;
+}
+
+.comment-form-rating label {
+  margin-right: 10px;
+}
+
+.comment-form-comment {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  margin-bottom: 10px;
+}
+
+.comment-form-comment textarea {
+  padding: 15px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  resize: none;
+}
+
+.comment-form-attachment {
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+  margin-bottom: 15px;
+}
+
+.comment-form-attachment small {
+  display: none;
+}
+
+.comment-form-attachment input {
+  height: auto;
+  padding: 0;
+  border: none;
+}
+
+.comment-form-author, .comment-form-email {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+
+.comment-form-author input, .comment-form-email input {
+  width: 80%;
+}
+
+.comment-form .form-submit {
+  margin-top: 10px;
+}
+
+.comment-form .form-submit input {
+  background-color: #fed700;
+}
+
 /**
  * Imports
  */
@@ -502,6 +680,28 @@ table.shop_table_responsive tr td.download-actions .button {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.woocommerce-tabs {
+  width: 100%;
+}
+
+.woocommerce-tabs .tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.woocommerce-tabs .tabs li {
+  margin-right: 10px;
+}
+
+.woocommerce-tabs .woocommerce-Tabs-panel {
+  padding: 20px;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
 }
 
 /**

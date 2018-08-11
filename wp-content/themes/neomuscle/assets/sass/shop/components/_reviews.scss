@@ -1,0 +1,118 @@
+.woocommerce-Reviews {
+  .woocommerce-Reviews-title {
+    font-size: 18px;
+    color: $main-font-color;
+  }
+  .commentlist {
+    margin: 0;
+    padding: 0 20px;
+    list-style: none;
+    .comment {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #dddddd;
+    }
+  }
+  #review_form_wrapper {
+    width: 50%;
+  }
+}
+
+.comment {
+  &-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    .meta {
+      order: 1;
+    }
+    .description {
+      margin: 10px 0;
+      font-size: 16px;
+      img {
+        max-height: 100px;
+        width: auto;
+      }
+    }
+  }
+  .children {
+    margin-top: 10px;
+    margin-left: 20px;
+    .comment {
+      margin-bottom: 0;
+      padding-top: 5px;
+      border-top: 1px solid #dddddd;
+      border-bottom: none;
+      .description {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.comment-respond {
+  .comment-reply-title {
+    font-size: 18px;
+    color: $main-font-color;
+  }
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 14px;
+  .comment-notes {
+    margin: 5px 0;
+    font-weight: lighter;
+    color: #b0b0b0;
+  }
+  .required {
+    color: red;
+  }
+  &-rating {
+    display: flex;
+    align-content: center;
+    margin-bottom: 10px;
+    label {
+      margin-right: 10px;
+    }
+  }
+  &-comment {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    textarea {
+      padding: 15px;
+      border-radius: 25px;
+      resize: none;
+    }
+  }
+  &-attachment {
+    flex-basis: 25%;
+    margin-bottom: 15px;
+    small {
+      display: none;
+    }
+    input {
+      height: auto;
+      padding: 0;
+      border: none;
+    }
+  }
+  &-author,
+  &-email {
+    display: flex;
+    flex-basis: 50%;
+    input {
+      width: 80%;
+    }
+  }
+  .form-submit {
+    margin-top: 10px;
+    input {
+      background-color: $accent-color;
+    }
+  }
+}
