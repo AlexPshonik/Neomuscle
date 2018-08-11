@@ -26,13 +26,13 @@ $cat_count = sizeof( get_the_terms( $post->ID, 'product_cat' ) );
 $tag_count = sizeof( get_the_terms( $post->ID, 'intention' ) );
 ?>
 <div class="product-meta">
-
 	<?php do_action( 'woocommerce_product_meta_start' ); ?>
-
-  
 		<div class="specification">
       <h4 class="title h4">Спецификация товара:</h4>
       <ul class="specification-list">
+        <?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
+          <li class="item"><span class="item-title">Артикул:</span><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></li>
+        <?php endif; ?>
         <li class="item"><span class="item-title">Бренд:</span><?php echo get_the_term_list( $post->ID, 'product_brand', '', ', ', '' ); ?></span></li>
         <li class="item"><span class="item-title">Страна производитель:</span><span><?php echo the_field('country_field'); ?></</span></li>
         <li class="item"><span class="item-title">Фасовка: </span><span><?php echo the_field('pack'); ?></span></li>
@@ -61,7 +61,7 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'intention' ) );
 
                   <div class="price">
                     <?php $product = wc_get_product( $p->ID ); ?>
-                    <?php echo $product->get_price(); ?> грн.
+                    <?php echo $product->get_price(); ?> грн
                   </div>
 
                   <div class="buy">
