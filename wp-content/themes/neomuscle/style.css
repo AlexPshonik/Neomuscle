@@ -3297,8 +3297,8 @@ html {
 */
 @font-face {
   font-family: 'neomuscle-ui';
-  src: url("assets/fonts/neomuscle-ui/neomuscle-ui.eot?rmkc93");
-  src: url("assets/fonts/neomuscle-ui/neomuscle-ui.eot?rmkc93#iefix") format("embedded-opentype"), url("assets/fonts/neomuscle-ui/neomuscle-ui.ttf?rmkc93") format("truetype"), url("assets/fonts/neomuscle-ui/neomuscle-ui.woff?rmkc93") format("woff"), url("assets/fonts/neomuscle-ui/neomuscle-ui.svg?rmkc93#neomuscle-ui") format("svg");
+  src: url("assets/fonts/neomuscle-ui/neomuscle-ui.eot?c07fh9");
+  src: url("assets/fonts/neomuscle-ui/neomuscle-ui.eot?c07fh9#iefix") format("embedded-opentype"), url("assets/fonts/neomuscle-ui/neomuscle-ui.ttf?c07fh9") format("truetype"), url("assets/fonts/neomuscle-ui/neomuscle-ui.woff?c07fh9") format("woff"), url("assets/fonts/neomuscle-ui/neomuscle-ui.svg?c07fh9#neomuscle-ui") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -3367,6 +3367,14 @@ h6 {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.ui-icon-filling-right-arrow:before {
+  content: "\e910";
+}
+
+.ui-icon-heart-filling:before {
+  content: "\e90f";
 }
 
 .ui-icon-shopping-cart:before {

@@ -56,6 +56,12 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ui-icon-filling-right-arrow:before {
+  content: "\e910";
+}
+.ui-icon-heart-filling:before {
+  content: "\e90f";
+}
 .ui-icon-shopping-cart:before {
   content: "\e90e";
 }
