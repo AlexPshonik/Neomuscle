@@ -2,7 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-global $product;
+global $product, $post;
 
 // Ensure visibility.
 if ( empty( $product ) || ! $product->is_visible() ) {
@@ -11,6 +11,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 ?>
 <li <?php wc_product_class(); ?>>
 	<div class="product-card">
+    <div class="product-card-categories">
+      <?php echo '<span clas="loop">' . wc_get_product_category_list( get_the_id(), ', ', '',  '' ) . '</span>'; ?>
+    </div>
 		<?php
 			/**
 			 * Hook: woocommerce_before_shop_loop_item.
