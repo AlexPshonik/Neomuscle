@@ -31,7 +31,7 @@ add_action( 'after_setup_theme', 'neomuscle_woocommerce_setup' );
 function neomuscle_woocommerce_scripts() {
 	wp_enqueue_style( 'neomuscle-woocommerce-style', get_template_directory_uri() . '/woocommerce.css' );
 
-	$font_path   = WC()->plugin_url() . '/assets/fonts/';
+	$font_path   = WC()->plugin_url() . '/assets/fonts/star-font/';
 	$inline_font = '@font-face {
 			font-family: "star";
 			src: url("' . $font_path . 'star.eot");

@@ -93,6 +93,21 @@
   }
 }
 
+.woocommerce-tabs {
+  width: 100%;
+  .tabs {
+    display: flex;
+    li {
+      margin-right: 10px;
+    }
+  }
+  .woocommerce-Tabs-panel {
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+  }
+}
+
 /**
  * Single Product
  */
