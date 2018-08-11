@@ -33,68 +33,6 @@ function custom_add_to_cart_text() {
 	return __('Купить', 'woocommerce');
 }
 
-// Variable Product
-
-
-
-/**
- * Add additional fields in product.
- */
-// Display Fields
-add_action( 'woocommerce_product_options_general_product_data', 'woo_add_custom_general_fields' );
-
-// Save Fields
-add_action( 'woocommerce_process_product_meta', 'woo_add_custom_general_fields_save' );
-
-function woo_add_custom_general_fields() {
-	global $woocommerce, $post;
-	echo '<div class="options-group">';
-	// Сountry field
-	woocommerce_wp_text_input( 
-		array( 
-			'id'          => '_country_field', 
-			'label'       => __( 'Страна производитель', 'woocommerce' ), 
-			'placeholder' => '',
-			'desc_tip'    => 'true',
-		)
-	);
-	// Pre-packing field
-	woocommerce_wp_text_input( 
-		array( 
-			'id'          => '_pre_packing_field', 
-			'label'       => __( 'Фасовка', 'woocommerce' ), 
-			'placeholder' => '',
-			'desc_tip'    => 'true',
-		)
-	);
-	// Amount of portions field
-	woocommerce_wp_text_input( 
-		array( 
-			'id'          => '_amount_of_portions', 
-			'label'       => __( 'Количество порций', 'woocommerce' ), 
-			'placeholder' => '',
-			'desc_tip'    => 'true',
-		)
-	);
-
-	echo '</div>';  
-}
-
-function woo_add_custom_general_fields_save( $post_id ){
-	// Country field
-	$woocommerce_country_field = $_POST['_country_field'];
-	if( !empty( $woocommerce_country_field ) )
-		update_post_meta( $post_id, '_country_field', esc_attr( $woocommerce_country_field ) );
-	// Pre-packing field
-	$woocommerce_pre_packing_field = $_POST['_pre_packing_field'];
-	if( !empty( $woocommerce_pre_packing_field ) )
-		update_post_meta( $post_id, '_pre_packing_field', esc_attr( $woocommerce_pre_packing_field ) );
-	// Amount of portions field
-	$woocommerce_amount_of_portions = $_POST['_amount_of_portions'];
-	if( !empty( $woocommerce_amount_of_portions ) )
-		update_post_meta( $post_id, '_amount_of_portions', esc_attr( $woocommerce_amount_of_portions ) );
-}
-
  /**
  * Add intention taxonomies.
  */
