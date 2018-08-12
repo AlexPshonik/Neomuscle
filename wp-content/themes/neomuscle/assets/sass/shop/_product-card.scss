@@ -5,10 +5,10 @@
       margin-bottom: 10px;
     }
     &__title {
-      height: 30px;
+      height: 35px;
       margin-bottom: 5px;
-      font-size: 12px;
-      font-weight: bold;
+      font-size: 13px;
+      font-weight: 700;
       color: $main-font-color;
       word-wrap: break-word;
       overflow: hidden;
@@ -19,12 +19,18 @@
     width: 100%;
     height: auto;
   }
-  &-brand {
+  &-categories {
     height: 25px;
     margin-bottom: 5px;
-    a {
-      font-size: 14px;
-      color: $main-font-color;
+    .loop {
+      color: #878787;
+      a {
+        color: #878787;
+        font-size: 12px;
+        &:hover {
+          color: $main-font-color;
+        }
+      }
     }
   }
   .star-rating {
@@ -105,10 +111,11 @@
     padding-top: 10px;
     border-top: 1px solid #ddd;
     .item {
-      font-size: 12px;
+      font-size: 11px;
       &-title {
         display: inline-block;
-        min-width: 140px;
+        min-width: 135px;
+        color: #818181;
       }
     }
   }

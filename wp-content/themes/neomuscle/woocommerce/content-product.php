@@ -11,8 +11,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 ?>
 <li <?php wc_product_class(); ?>>
 	<div class="product-card">
-    <div class="product-card-brand">
-      <?php echo get_the_term_list( $post->ID, 'product_brand', '', ', ', '' ); ?>
+    <div class="product-card-categories">
+      <?php echo '<span class="loop">' . wc_get_product_category_list( get_the_id(), ', ', '',  '' ) . '</span>'; ?>
     </div>
 		<?php
 			/**
@@ -59,7 +59,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         <li class="item"><span class="item-title">Фасовка: </span><span><?php echo the_field('pack'); ?></span></li>
         <li class="item"><span class="item-title">Количество порций: </span><span><?php echo the_field('amount_portions'); ?></span></li>
         <?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
-          <li class="item"><span class="item-title">Артикул:</span><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></li>
+          <li class="item"><span class="item-title">Артикул:</span><span><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></li>
         <?php endif; ?>
       </ul>
 	</div>

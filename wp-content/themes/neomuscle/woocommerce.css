@@ -838,10 +838,10 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .product-card .woocommerce-loop-product__title {
-  height: 30px;
+  height: 35px;
   margin-bottom: 5px;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 700;
   color: #333e48;
   word-wrap: break-word;
   overflow: hidden;
@@ -854,13 +854,21 @@ table.shop_table_responsive tr td.download-actions .button {
   height: auto;
 }
 
-.product-card-brand {
+.product-card-categories {
   height: 25px;
   margin-bottom: 5px;
 }
 
-.product-card-brand a {
-  font-size: 14px;
+.product-card-categories .loop {
+  color: #878787;
+}
+
+.product-card-categories .loop a {
+  color: #878787;
+  font-size: 12px;
+}
+
+.product-card-categories .loop a:hover {
   color: #333e48;
 }
 
@@ -973,12 +981,13 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .product-card .product-description .item {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .product-card .product-description .item-title {
   display: inline-block;
-  min-width: 140px;
+  min-width: 135px;
+  color: #818181;
 }
 
 .woocommerce-products-header__title {
