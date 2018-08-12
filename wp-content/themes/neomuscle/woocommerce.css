@@ -516,7 +516,6 @@ table.shop_table_responsive tr td.download-actions .button {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
   margin-bottom: 10px;
-  padding: 10px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -775,6 +774,10 @@ table.shop_table_responsive tr td.download-actions .button {
 /*--------------------------------------------------------------
 # Single product
 --------------------------------------------------------------*/
+.product-card {
+  padding: 10px;
+}
+
 .product-card .woocommerce-loop-product__link {
   margin-bottom: 10px;
 }
@@ -785,11 +788,29 @@ table.shop_table_responsive tr td.download-actions .button {
   font-size: 12px;
   font-weight: bold;
   color: #333e48;
+  word-wrap: break-word;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .product-card .wp-post-image {
   width: 100%;
   height: auto;
+}
+
+.product-card-brand {
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+.product-card-brand a {
+  font-size: 14px;
+  color: #333e48;
+}
+
+.product-card .star-rating {
+  display: none;
 }
 
 .product-card-buy {
@@ -814,26 +835,83 @@ table.shop_table_responsive tr td.download-actions .button {
 
 .product-card-buy .price {
   font-size: 14px;
+  font-weight: bold;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.product-card-buy .price .woocommerce-Price-currencySymbol {
+  font-weight: normal;
 }
 
 .product-card-buy .woocommerce-loop-product__link {
   display: none;
 }
 
-.product-card-buy .add_to_cart_button {
+.product-card-buy .added_to_cart,
+.product-card-buy .button {
   position: relative;
-  padding: 12px 20px;
+  margin-right: 10px;
+  padding: 15px;
   background-color: #fed700;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   font-size: 0;
 }
 
-.product-card-buy .add_to_cart_button::after {
+.product-card-buy .added_to_cart::after,
+.product-card-buy .button::after {
   position: absolute;
-  top: 2px;
-  right: 13px;
+  top: 50%;
+  left: 50%;
   font-size: 12px;
   font-family: 'neomuscle-ui' !important;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.product-card-buy .button::after {
   content: "\e90e";
+}
+
+.product-card-buy .button.added {
+  display: none;
+}
+
+.product-card-buy .added_to_cart::after {
+  content: "\e910";
+}
+
+.product-card-buy .yith-wcwl-add-to-wishlist {
+  margin-top: 0;
+}
+
+.product-card-buy .add_to_wishlist .ajax-loading {
+  display: none !important;
+}
+
+.product-card-buy .ui-icon-heart,
+.product-card-buy .ui-icon-heart-filling {
+  color: #fed700;
+}
+
+.product-card .product-description {
+  display: none;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.product-card .product-description .item {
+  font-size: 12px;
+}
+
+.product-card .product-description .item-title {
+  display: inline-block;
+  min-width: 140px;
 }
 
 .woocommerce-products-header__title {

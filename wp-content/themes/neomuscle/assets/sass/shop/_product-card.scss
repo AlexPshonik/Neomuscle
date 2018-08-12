@@ -1,4 +1,5 @@
 .product-card {
+  padding: 10px;
   .woocommerce-loop-product {
     &__link {
       margin-bottom: 10px;
@@ -9,11 +10,25 @@
       font-size: 12px;
       font-weight: bold;
       color: $main-font-color;
+      word-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
   .wp-post-image {
     width: 100%;
     height: auto;
+  }
+  &-brand {
+    height: 25px;
+    margin-bottom: 5px;
+    a {
+      font-size: 14px;
+      color: $main-font-color;
+    }
+  }
+  .star-rating {
+    display: none;
   }
   &-buy {
     display: flex;
@@ -22,24 +37,70 @@
     align-items: center;
     .price {
       font-size: 14px;
+      font-weight: bold;
+      flex-grow: 1;
+      .woocommerce-Price-currencySymbol {
+        font-weight: normal;
+      }
     }
     .woocommerce-loop-product{
       &__link {
         display: none;
       }
     }
-    .add_to_cart_button {
+    .added_to_cart,
+    .button {
       position: relative;
-      padding: 12px 20px;
+      margin-right: 10px;
+      padding: 15px;
       background-color: $accent-color;
+      border-radius: 50%;
       font-size: 0;
       &::after {
         position: absolute;
-        top: 2px;
-        right: 13px;
+        top: 50%;
+        left: 50%;
         font-size: 12px;
         font-family: 'neomuscle-ui' !important;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .button {
+      &::after {
         content: "\e90e";
+      }
+      &.added {
+        display: none;
+      }
+    }
+    .added_to_cart {
+      &::after {
+        content: "\e910";
+      }
+    }
+    .yith-wcwl-add-to-wishlist {
+      margin-top: 0;
+    }
+    .add_to_wishlist {
+      .ajax-loading {
+        display: none !important;
+      }
+    }
+    .ui-icon-heart,
+    .ui-icon-heart-filling {
+      color: $accent-color;
+    }
+  }
+  .product-description {
+    display: none;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    .item {
+      font-size: 12px;
+      &-title {
+        display: inline-block;
+        min-width: 140px;
       }
     }
   }
