@@ -4462,7 +4462,7 @@ select {
     display: block;
   }
   .product-card {
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
   }
   .product-card-buy {
     margin-top: 10px;
