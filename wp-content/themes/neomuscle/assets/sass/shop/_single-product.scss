@@ -100,14 +100,60 @@
   width: 100%;
   .tabs {
     display: flex;
+    justify-content: center;
+    margin-bottom: 11px;
     li {
-      margin-right: 10px;
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        position: relative;
+        padding-bottom: 15px;
+        font-size: 18px;
+        color: $main-font-color;
+        &::before,
+        &::after {
+          position: absolute;
+          display: block;
+          left: 0;
+          bottom: 0;
+          transition: background-color .3s ease;
+          content: '';
+        }
+        &::before {
+          width: 140%;
+          height: 2px;
+          left: -20%;
+        }
+        &::after {
+          height: 4px;
+          width: 10px;
+          bottom: -8px;
+          left: 50%;
+          border-top: 7px solid transparent;
+          border-right: 7px solid transparent;
+          border-bottom: 2px solid transparent;
+          border-left: 7px solid transparent;
+          transform: translateX(-50%);
+        }
+      }
+      &.active {
+        a {
+          &::before {
+            background-color: $accent-color;
+          }
+          &::after {
+            border-top-color: $accent-color;
+          }
+        }
+      }
     }
   }
   .woocommerce-Tabs-panel {
     padding: 20px;
     border: 1px solid #dddddd;
-    border-radius: 30px;
+    border-radius: 10px;
   }
 }
 

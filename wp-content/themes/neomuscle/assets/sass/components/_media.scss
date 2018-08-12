@@ -280,12 +280,23 @@
           }
         }
       }
+      .yith-wcwl-add-to-wishlist {
+        margin-right: 15px;
+      }
       .ui-icon-heart,
       .ui-icon-heart-filling {
         transition: color .3s ease;
         &:hover {
           color: #000000;
         }
+      }
+      .ui-icon-heart {
+        top: 4px;
+        font-size: 21px;
+      }
+      .ui-icon-heart-filling {
+        top: 2px;
+        font-size: 18px;
       }
       .price {
         font-size: 15px;

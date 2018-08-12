@@ -697,17 +697,72 @@ table.shop_table_responsive tr td.download-actions .button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 11px;
 }
 
 .woocommerce-tabs .tabs li {
-  margin-right: 10px;
+  margin-right: 40px;
+}
+
+.woocommerce-tabs .tabs li:last-child {
+  margin-right: 0;
+}
+
+.woocommerce-tabs .tabs li a {
+  position: relative;
+  padding-bottom: 15px;
+  font-size: 18px;
+  color: #333e48;
+}
+
+.woocommerce-tabs .tabs li a::before, .woocommerce-tabs .tabs li a::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: background-color .3s ease;
+  -o-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  content: '';
+}
+
+.woocommerce-tabs .tabs li a::before {
+  width: 140%;
+  height: 2px;
+  left: -20%;
+}
+
+.woocommerce-tabs .tabs li a::after {
+  height: 4px;
+  width: 10px;
+  bottom: -8px;
+  left: 50%;
+  border-top: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-left: 7px solid transparent;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.woocommerce-tabs .tabs li.active a::before {
+  background-color: #fed700;
+}
+
+.woocommerce-tabs .tabs li.active a::after {
+  border-top-color: #fed700;
 }
 
 .woocommerce-tabs .woocommerce-Tabs-panel {
   padding: 20px;
   border: 1px solid #dddddd;
-  -webkit-border-radius: 30px;
-          border-radius: 30px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
 }
 
 .product-packaging {
@@ -853,12 +908,15 @@ table.shop_table_responsive tr td.download-actions .button {
 .product-card-buy .added_to_cart,
 .product-card-buy .button {
   position: relative;
-  margin-right: 10px;
   padding: 15px;
   background-color: #fed700;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   font-size: 0;
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 .product-card-buy .added_to_cart::after,
@@ -887,6 +945,7 @@ table.shop_table_responsive tr td.download-actions .button {
 
 .product-card-buy .yith-wcwl-add-to-wishlist {
   margin-top: 0;
+  margin-right: 10px;
 }
 
 .product-card-buy .add_to_wishlist .ajax-loading {
@@ -895,7 +954,15 @@ table.shop_table_responsive tr td.download-actions .button {
 
 .product-card-buy .ui-icon-heart,
 .product-card-buy .ui-icon-heart-filling {
+  position: relative;
+  top: 2px;
+  font-size: 16px;
   color: #fed700;
+}
+
+.product-card-buy .ui-icon-heart-filling {
+  top: 2px;
+  font-size: 14px;
 }
 
 .product-card .product-description {

@@ -442,6 +442,10 @@ input {
   padding-bottom: 80px;
 }
 
+.site-content {
+  min-height: 100%;
+}
+
 /*--------------------------------------------------------------
 # Grid
 --------------------------------------------------------------*/
@@ -4482,6 +4486,9 @@ select {
   .product-card-buy .added_to_cart:hover::after {
     color: #ffffff;
   }
+  .product-card-buy .yith-wcwl-add-to-wishlist {
+    margin-right: 15px;
+  }
   .product-card-buy .ui-icon-heart,
   .product-card-buy .ui-icon-heart-filling {
     -webkit-transition: color .3s ease;
@@ -4491,6 +4498,14 @@ select {
   .product-card-buy .ui-icon-heart:hover,
   .product-card-buy .ui-icon-heart-filling:hover {
     color: #000000;
+  }
+  .product-card-buy .ui-icon-heart {
+    top: 4px;
+    font-size: 21px;
+  }
+  .product-card-buy .ui-icon-heart-filling {
+    top: 2px;
+    font-size: 18px;
   }
   .product-card-buy .price {
     font-size: 15px;
