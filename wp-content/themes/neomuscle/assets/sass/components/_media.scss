@@ -246,6 +246,7 @@
       }
       &:hover {
         position: relative;
+        min-height: 334.6px;
         &::after {
           display: none;
         }

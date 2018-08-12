@@ -857,6 +857,7 @@ table.shop_table_responsive tr td.download-actions .button {
 .product-card-categories {
   height: 25px;
   margin-bottom: 5px;
+  overflow: hidden;
 }
 
 .product-card-categories .loop {
