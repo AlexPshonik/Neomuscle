@@ -12,6 +12,22 @@
     }
     .related {
       flex-basis: 100%;
+      flex-direction: column;
+    }
+  }
+  .related {
+    .product-card {
+      &-buy {
+        .price {
+          margin-bottom: 0;
+        }
+        .ui-icon-heart {
+          top: -2px;
+        }
+        .ui-icon-heart-filling {
+          top: 4px;
+        }
+      }
     }
   }
   .product_title {

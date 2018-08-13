@@ -569,6 +569,23 @@ table.shop_table_responsive tr td.download-actions .button {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.single-product .related .product-card-buy .price {
+  margin-bottom: 0;
+}
+
+.single-product .related .product-card-buy .ui-icon-heart {
+  top: -2px;
+}
+
+.single-product .related .product-card-buy .ui-icon-heart-filling {
+  top: 4px;
 }
 
 .single-product .product_title {

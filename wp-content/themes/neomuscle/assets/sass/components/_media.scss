@@ -263,6 +263,13 @@
         }
       }
     }
+    &.related {
+      .product {
+        &:hover {
+          min-height: 348.5px;
+        }
+      }
+    }
   }
   .product-card {
     padding: 10px 20px 20px 20px;
@@ -308,6 +315,18 @@
     }
     .wp-post-image {
       min-height: 150px;
+    }
+  }
+  .related {
+    .product-card {
+      &-buy {
+        .ui-icon-heart {
+          top: 0px;
+        }
+        .ui-icon-heart-filling {
+          top: 4px;
+        }
+      }
     }
   }
 }
