@@ -748,9 +748,8 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .woocommerce-tabs .tabs li a::before {
-  width: 140%;
+  width: 100%;
   height: 2px;
-  left: -20%;
 }
 
 .woocommerce-tabs .tabs li a::after {
