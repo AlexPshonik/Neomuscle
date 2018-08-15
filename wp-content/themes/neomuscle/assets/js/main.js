@@ -29,8 +29,7 @@ jQuery(document).ready(function ($) {
   // Select
 
   $('select').selectize({
-    create: true,
-    sortField: 'text'
+    create: false
   });
 
 

@@ -4457,7 +4457,7 @@ select {
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 6px 0 rgba(1, 1, 1, 0.3);
             box-shadow: 0 0 6px 0 rgba(1, 1, 1, 0.3);
-    z-index: 3;
+    z-index: 2;
   }
   .products .product:hover .product-card .product-description {
     display: block;
