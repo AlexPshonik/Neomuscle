@@ -129,7 +129,7 @@ add_action( 'widgets_init', 'neomuscle_widgets_init' );
  * Enqueue scripts and styles.
  */
 function neomuscle_scripts() {
-  wp_enqueue_style( 'neomuscle-selectize-css', get_template_directory_uri() . '/assets/libs/selectize/css/selectize.css', array(), '', true );
+  wp_enqueue_style( 'neomuscle-selectize-css', get_template_directory_uri() . '/assets/libs/selectize/css/selectize.default.css');
 
 	wp_enqueue_style( 'neomuscle-style', get_stylesheet_uri() );
 
