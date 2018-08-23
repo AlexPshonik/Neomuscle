@@ -3484,8 +3484,8 @@ body.menu-open .section-site-navigation {
   padding: 15px 0;
   background-color: #fff;
   z-index: 3;
-  -webkit-box-shadow: 0px 2px 6px #dddddd;
-          box-shadow: 0px 2px 6px #dddddd;
+  -webkit-box-shadow: 0 0 6px 0 rgba(1, 1, 1, 0.3);
+          box-shadow: 0 0 6px 0 rgba(1, 1, 1, 0.3);
 }
 
 .site-header .logo {
@@ -4025,6 +4025,7 @@ select {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
