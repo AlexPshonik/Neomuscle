@@ -12,15 +12,15 @@
               <span class="feature-item-icon ui-icon-security"></span>
               <div class="feature-item-info">
                 <h6 class="title">Оригинальная продукция</h6>
-                <p class="description">Гарантируем качество товара</p>
+                <p class="description">Гарантируем качество товаров</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-item-icon ui-icon-wallet"></span>
               <div class="feature-item-info">
-                <h6 class="title">Гарантия лучших цен</h6>
-                <p class="description">Мы уверены в своих ценах</p>
+                <h6 class="title">Доступные цены</h6>
+                <p class="description">А также скидки и акции</p>
               </div>
             </div>
 
@@ -28,15 +28,15 @@
               <span class="feature-item-icon ui-icon-delivery"></span>
               <div class="feature-item-info">
                 <h6 class="title">Бесплатная доставка</h6>
-                <p class="description">По Украине от 2000 грн</p>
+                <p class="description">При заказе от 2000 грн</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-item-icon ui-icon-support"></span>
               <div class="feature-item-info">
-                <h6 class="title">Техническая поддержка</h6>
-                <p class="description">Онлайн поддержка 24/7</p>
+                <h6 class="title">Бесплатная консультация</h6>
+                <p class="description">Доверьтесь нашим експертам</p>
               </div>
             </div>
           </div>
