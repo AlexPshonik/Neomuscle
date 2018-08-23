@@ -129,7 +129,11 @@ add_action( 'widgets_init', 'neomuscle_widgets_init' );
  * Enqueue scripts and styles.
  */
 function neomuscle_scripts() {
-  wp_enqueue_style( 'neomuscle-selectize-css', get_template_directory_uri() . '/assets/libs/selectize/css/selectize.default.css');
+	wp_enqueue_style( 'neomuscle-selectize-css', get_template_directory_uri() . '/assets/libs/selectize/css/selectize.default.css');
+
+	wp_enqueue_style( 'neomuscle-owl-carousel', get_template_directory_uri() . '/assets/libs/owlcarousel/css/owl.carousel.min.css');
+	
+	wp_enqueue_style( 'neomuscle-owl-carousel-theme', get_template_directory_uri() . '/assets/libs/owlcarousel/css/owl.theme.default.min.css');
 
 	wp_enqueue_style( 'neomuscle-style', get_stylesheet_uri() );
 
@@ -138,6 +142,8 @@ function neomuscle_scripts() {
   wp_enqueue_script( 'neomuscle-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
   
   wp_enqueue_script( 'neomuscle-selectize', get_template_directory_uri() . '/assets/libs/selectize/js/selectize.min.js', array('jquery'), '0.12.6', true );
+
+	wp_enqueue_script( 'neomuscle-owl-carousel', get_template_directory_uri() . '/assets/libs/owlcarousel/js/owl.carousel.min.js', array('jquery'), '0.12.6', true );
 
 	wp_enqueue_script('neomuscle-main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1.0.0', true);
 
