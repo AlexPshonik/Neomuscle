@@ -1,7 +1,5 @@
 <?php get_header();?>
 
-<?php echo do_shortcode( '[ca_slider_shortcode]' ); ?>
-
 <!-- Feature Section -->
 <section class="feature section-padding-sm">
     <div class="container">
