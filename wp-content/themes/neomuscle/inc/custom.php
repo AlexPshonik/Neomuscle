@@ -95,3 +95,13 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
 	$defaults['delimiter'] = ' <span class="delimiter ui-icon-right-arrow"></span> ';
 	return $defaults;
 }
+
+/**
+ * Change the count of related products
+ */
+add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
+function jk_related_products_args( $args ) {
+  $args['posts_per_page'] = 5;
+  $args['columns'] = 5;
+  return $args;
+}

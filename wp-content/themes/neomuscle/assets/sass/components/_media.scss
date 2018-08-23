@@ -208,6 +208,18 @@
       }
     }
   }
+  .related {
+    &.products {
+      width: 101%;  
+      .owl-stage-outer {
+        padding: 10px 2px 80px;
+      }
+    }
+    &-title {
+      font-size: 22px;
+      font-weight: 400;
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -266,7 +278,7 @@
     &.related {
       .product {
         &:hover {
-          min-height: 348.5px;
+          min-height: 337px;
         }
       }
     }
@@ -333,5 +345,4 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
 }

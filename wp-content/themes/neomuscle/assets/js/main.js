@@ -101,4 +101,33 @@ jQuery(document).ready(function ($) {
       $("h2.widget-title").next().slideUp(400);
     }
   });
+
+  $('.related .products').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots: false,
+    touchDrag: true,
+    mouseDrag: true,
+    navText : ["<span class='ui-icon-right-arrow prev'></span>","<span class='ui-icon-right-arrow next'></span>"],
+    responsive:{
+      0:{
+        items:2
+      },
+      576:{
+        items:3
+      },
+      768:{
+        items:4
+      },
+      1200:{
+        items: 5,
+        loop: false,
+        mouseDrag: false,
+        touchDrag: false,
+      }
+    }
+  });
+  $('.related .products').addClass('owl-carousel');
+  
 });

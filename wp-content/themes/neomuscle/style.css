@@ -4409,6 +4409,16 @@ select {
   .widget-area .widget:last-child {
     margin-bottom: 0;
   }
+  .related.products {
+    width: 101%;
+  }
+  .related.products .owl-stage-outer {
+    padding: 10px 2px 80px;
+  }
+  .related-title {
+    font-size: 22px;
+    font-weight: 400;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -4463,7 +4473,7 @@ select {
     display: block;
   }
   .products.related .product:hover {
-    min-height: 348.5px;
+    min-height: 337px;
   }
   .product-card {
     padding: 10px 20px 20px 20px;
