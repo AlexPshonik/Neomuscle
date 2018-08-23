@@ -6,6 +6,11 @@
  */
 
 /**
+* Disable admin bar.
+*/
+show_admin_bar(false);
+
+/**
  * Change WooCommerce Symbol.
  */
 add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2);

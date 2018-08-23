@@ -40,19 +40,20 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'intention' ) );
       </ul>
     </div>
 		
-      <!-- <h4 class="title h4">Другие фасовки:</h4> -->
+    <div class="product-packaging">
+      <h4 class="title h4">Другие фасовки:</h4>      
       <?php 
         $posts = get_field('packaging-box');
         if( $posts ): ?>
-          <table class="product-packaging">
-            <thead>
+          <table>
+            <!-- <thead>
               <tr>
                 <th class="product-packaging-img">Фото</th>
                 <th class="product-packaging-vals">Фасовка</th>
                 <th class="product-packaging-price">Цена</th>
                 <th class="product-packaging-buy"></th>
               </tr>
-            </thead>
+            </thead> -->
             <tbody>
               <?php foreach( $posts as $p ):?>
                 <tr class="product-packaging-item">
@@ -63,7 +64,7 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'intention' ) );
                   <td class="product-packaging-vals">
                     <?php echo the_field('pack', $p->ID); ?> г
                     <small class="product-packaging-portion">
-                      <?php echo the_field('amount_portions', $p->ID); ?> (порций)
+                    (<?php echo the_field('amount_portions', $p->ID); ?> порций)
                     </small>
                   </td>
                   <td class="product-packaging-price">
@@ -71,13 +72,14 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'intention' ) );
                     <?php echo $product->get_price(); ?> грн
                   </td>
                   <td class="product-packaging-buy">
-                    <a href="<?php echo get_permalink( $p->ID ); ?>"><span class="ui-icon-shopping-cart"></span></a>
+                    <a href="<?php echo get_permalink( $p->ID ); ?>" class="buy-button"><span class="ui-icon-shopping-cart"></span></a>
                   </td>
                 </tr>
               <?php endforeach; ?>
             </tbody>
           </table>
-        <?php endif; ?>   
+        <?php endif; ?> 
+      </div>    
 
 	<!-- <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?> -->
 
