@@ -238,6 +238,20 @@
       font-weight: 400;
     }
   }
+  .site-footer {
+    .footer {
+      &-contact {
+        flex-basis: 42%;
+      }
+      &-menu-catalog {
+        flex-basis: 18%;
+      }
+      &-menu-buyer,
+      &-dev {
+        flex-basis: 20%;
+      }
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
