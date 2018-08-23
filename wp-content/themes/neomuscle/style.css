@@ -3855,17 +3855,6 @@ select {
   vertical-align: middle;
 }
 
-input,
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-input[type="password"],
-select {
-  padding: 13px 25px;
-  height: 44px;
-}
-
 /*--------------------------------------------------------------
 # Feature Section
 --------------------------------------------------------------*/
@@ -4034,7 +4023,22 @@ select {
 }
 
 .food-purpose-select {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+}
+
+.food-purpose .selectize-control {
+  -webkit-flex-basis: 30%;
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%;
+  margin-right: 30px;
 }
 
 .food-purpose select {

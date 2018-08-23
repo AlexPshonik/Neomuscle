@@ -76,7 +76,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <div class="copyright">&copy; <strong>Интернет-магазин "Neomuscle"</strong> 2016 – <?php echo date('Y'); ?></div>
+            <div class="copyright">&copy; <strong>Neomuscle</strong>, 2016 – <?php echo date('Y'); ?></div>
           </div>
           <div class="col-lg-4">
             <div class="payment">
