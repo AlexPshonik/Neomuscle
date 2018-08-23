@@ -51,8 +51,8 @@
           <div class="col-lg-7">
             <div class="footer-menu">
               <div class="footer-menu-item">
-                <h4 class="footer-menu-title">Покупателю</h4>
-                <?php wp_nav_menu( array( 'menu' => 'footer-menu') ); ?>
+                <h4 class="footer-menu-title">Каталог</h4>
+                <?php wp_nav_menu( array( 'menu' => 'footer-menu-catalog') ); ?>
               </div>
               <div class="footer-menu-item">
                 <h4 class="footer-menu-title">Покупателю</h4>
