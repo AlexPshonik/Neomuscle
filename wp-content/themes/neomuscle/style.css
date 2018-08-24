@@ -4000,6 +4000,19 @@ select {
   .comment-form-attachment {
     text-align: left;
   }
+  .woocommerce-tabs .tabs {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .woocommerce-tabs .tabs li {
+    margin-right: 20px;
+  }
+  .woocommerce-tabs .tabs li a {
+    font-size: 16px;
+    font-weight: 400;
+  }
   .site-footer .copyright-bar .copyright,
   .site-footer .copyright-bar .payment {
     -webkit-flex-basis: 50%;
@@ -4091,9 +4104,9 @@ select {
     margin-top: 0;
   }
   .woocommerce-Reviews #review_form_wrapper {
-    -webkit-flex-basis: 35%;
-        -ms-flex-preferred-size: 35%;
-            flex-basis: 35%;
+    -webkit-flex-basis: 43%;
+        -ms-flex-preferred-size: 43%;
+            flex-basis: 43%;
   }
   .comment-respond .comment-reply-title {
     line-height: 1.2;
@@ -4112,6 +4125,12 @@ select {
   }
   .woocommerce-product-gallery__image img {
     width: 100%;
+  }
+  .woocommerce-tabs .tabs li {
+    margin-right: 40px;
+  }
+  .woocommerce-tabs .tabs li a {
+    font-size: 18px;
   }
   .site-footer .footer-contact {
     -webkit-flex-basis: 42%;

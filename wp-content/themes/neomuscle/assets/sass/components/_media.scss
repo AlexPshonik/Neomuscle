@@ -187,6 +187,18 @@
       text-align: left;
     }
   }
+  .woocommerce-tabs {
+    .tabs {
+      justify-content: center;
+      li {
+        margin-right: 20px;
+        a {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
   .site-footer {
     .copyright-bar {
       .copyright,
@@ -277,7 +289,7 @@
       margin-top: 0;
     }
     #review_form_wrapper {
-      flex-basis: 35%;
+      flex-basis: 43%;
     }
   }
   .comment-respond {
@@ -299,6 +311,16 @@
     &__image {
       img {
         width: 100%;
+      }
+    }
+  }
+  .woocommerce-tabs {
+    .tabs {
+      li {
+        margin-right: 40px;
+        a {
+          font-size: 18px;
+        }
       }
     }
   }

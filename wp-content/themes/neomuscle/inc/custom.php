@@ -105,3 +105,13 @@ function jk_related_products_args( $args ) {
   $args['columns'] = 5;
   return $args;
 }
+
+/**
+ * Rename product data tabs
+ */
+add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
+function woo_rename_tabs( $tabs ) {
+	$tabs['reviews']['title'] = __( 'Отзывы' );
+
+	return $tabs;
+}
