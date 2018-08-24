@@ -459,6 +459,15 @@
       text-align: right;
     }
   }
+  .single-product {
+    .product-meta {
+      .product-packaging {
+        flex-basis: 60%;
+        margin-top: 0;
+        margin-left: 10px;
+      }
+    }
+  }
 }
 
 /* Large Devices, Wide Screens */
@@ -467,6 +476,13 @@
     &__image {
       img {
         width: 80%;
+      }
+    }
+  }
+  .single-product {
+    .product-meta {
+      .product-packaging {
+        margin-left: 20px;     
       }
     }
   }
