@@ -705,7 +705,6 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .single-product .product-meta .specification {
-  padding-right: 15px;
   font-size: 14px;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -714,6 +713,14 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .single-product .product-meta .specification-list .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: 1px solid #dddddd;
 }
 
@@ -727,10 +734,10 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .single-product .product-meta .product-packaging {
-  -webkit-flex-basis: 55%;
-      -ms-flex-preferred-size: 55%;
-          flex-basis: 55%;
-  padding-left: 15px;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  margin-top: 30px;
 }
 
 .single-product .product-meta .product-packaging .buy-button {
@@ -754,6 +761,10 @@ table.shop_table_responsive tr td.download-actions .button {
   border-collapse: collapse;
   white-space: normal;
   text-align: left;
+}
+
+.single-product .product-meta .product-packaging table {
+  width: 100%;
 }
 
 .single-product .product-meta .product-packaging thead {
@@ -882,18 +893,18 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .woocommerce-tabs .tabs {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
   margin-bottom: 11px;
 }
 
+.woocommerce-tabs .tabs::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .woocommerce-tabs .tabs li {
+  float: left;
   margin-right: 10px;
 }
 

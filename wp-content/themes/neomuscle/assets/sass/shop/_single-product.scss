@@ -75,11 +75,12 @@
       border-bottom: 1px solid $border-color;
     }
     .specification {
-      padding-right: 15px;
       font-size: 14px;
       flex-grow: 1;
       &-list {
         .item {
+          display: flex;
+          justify-content: space-between;
           border-bottom: 1px solid $border-color;
           &:last-child {
             border: 0;
@@ -92,8 +93,8 @@
       }
     }
     .product-packaging {
-      flex-basis: 55%;
-      padding-left: 15px;
+      flex-basis: 100%;
+      margin-top: 30px;
       .buy-button {
         display: block;
         width: 35px;
@@ -113,6 +114,9 @@
       border-collapse: collapse;
       white-space: normal;
       text-align: left;
+      table {
+        width: 100%;
+      }
       thead {
         background-color: $accent-color;
         color: $main-font-color;
@@ -200,10 +204,15 @@
 .woocommerce-tabs {
   width: 100%;
   .tabs {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     margin-bottom: 11px;
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
     li {
+      float: left;
       margin-right: 10px;
       &:last-child {
         margin-right: 0;
