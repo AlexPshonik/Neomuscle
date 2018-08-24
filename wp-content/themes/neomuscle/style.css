@@ -4001,10 +4001,17 @@ select {
     text-align: left;
   }
   .woocommerce-tabs .tabs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .woocommerce-tabs .tabs::after {
+    content: none;
   }
   .woocommerce-tabs .tabs li {
     margin-right: 20px;

@@ -189,7 +189,11 @@
   }
   .woocommerce-tabs {
     .tabs {
+      display: flex;
       justify-content: center;
+      &::after {
+        content: none;
+      }
       li {
         margin-right: 20px;
         a {

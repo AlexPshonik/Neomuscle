@@ -893,18 +893,18 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .woocommerce-tabs .tabs {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
   margin-bottom: 11px;
 }
 
+.woocommerce-tabs .tabs::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .woocommerce-tabs .tabs li {
+  float: left;
   margin-right: 10px;
 }
 
