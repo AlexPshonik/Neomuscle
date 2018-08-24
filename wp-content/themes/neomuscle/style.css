@@ -4361,6 +4361,15 @@ select {
 
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .woocommerce-product-gallery__image img {
+    height: auto;
+  }
+  .woocommerce-product-gallery .flex-control-nav img {
+    height: auto;
+  }
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
   .feature-item {
@@ -4424,6 +4433,16 @@ select {
     font-size: 22px;
     font-weight: 400;
   }
+  .single-product .product .woocommerce-product-gallery {
+    -webkit-flex-basis: 40%;
+        -ms-flex-preferred-size: 40%;
+            flex-basis: 40%;
+  }
+  .single-product .product .entry-summary {
+    -webkit-flex-basis: 60%;
+        -ms-flex-preferred-size: 60%;
+            flex-basis: 60%;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -4478,7 +4497,7 @@ select {
     display: block;
   }
   .products.related .product:hover {
-    min-height: 337px;
+    min-height: 338.19px;
   }
   .product-card {
     padding: 10px 20px 20px 20px;

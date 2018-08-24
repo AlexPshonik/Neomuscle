@@ -143,7 +143,18 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+  .woocommerce-product-gallery {
+    &__image {
+      img {
+        height: auto;
+      }
+    }
+    .flex-control-nav {
+      img {
+        height: auto;
+      }
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -220,6 +231,16 @@
       font-weight: 400;
     }
   }
+  .single-product {
+    .product {
+      .woocommerce-product-gallery {
+        flex-basis: 40%;
+      }
+      .entry-summary {
+        flex-basis: 60%;
+      }
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -278,7 +299,7 @@
     &.related {
       .product {
         &:hover {
-          min-height: 337px;
+          min-height: 338.19px;
         }
       }
     }

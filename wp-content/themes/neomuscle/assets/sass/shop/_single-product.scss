@@ -3,12 +3,11 @@
     display: flex;
     flex-wrap: wrap;
     .woocommerce-product-gallery {
-      width: 40%;
-      flex-basis: 40%;
+      flex-basis: 100%;
       overflow: hidden;
     }
     .entry-summary {
-      flex-basis: 60%;
+      flex-basis: 100%;
     }
     .related {
       flex-basis: 100%;
@@ -157,6 +156,15 @@
 .woocommerce-product-gallery {
   display: flex;
   flex-direction: column;
+  &__wrapper {
+    margin-left: 0;
+  }
+  &__image {
+    img {
+      width: 100%;
+      height: 260px;
+    }
+  }
   .flex-viewport {
     margin-bottom: 20px;
   }
@@ -165,6 +173,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    img {
+      height: 70px;
+    }
   }
 }
 
@@ -274,4 +285,8 @@
       background-color: $accent-color;
     }
   }
+}
+
+.site-footer .footer-widgets .footer-menu-item { // 
+  display: none;
 }
