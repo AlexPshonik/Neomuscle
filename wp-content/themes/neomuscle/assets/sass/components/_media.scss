@@ -316,15 +316,33 @@
   }
   .site-footer {
     .footer {
+      &-widget {
+        padding: 60px 0 60px 0;
+      }
       &-contact {
         flex-basis: 42%;
+        .footer-call-us {
+          justify-content: flex-start;
+        }
+        .footer-work,
+        .footer-email {
+          text-align: left;
+        }
+        .footer-social-icons {
+          justify-content: start;
+        }
       }
       &-menu-catalog {
         flex-basis: 18%;
       }
+      &-menu-catalog,
+      &-menu-buyer {
+        justify-content: start;
+      }
       &-menu-buyer,
       &-dev {
         flex-basis: 20%;
+        text-align: left;
       }
     }
   }
