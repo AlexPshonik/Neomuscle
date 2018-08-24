@@ -143,18 +143,6 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-  .woocommerce-product-gallery {
-    &__image {
-      img {
-        height: auto;
-      }
-    }
-    .flex-control-nav {
-      img {
-        height: auto;
-      }
-    }
-  }
 }
 
 /* Extra Small Devices, Phones */
@@ -176,6 +164,20 @@
         &::after {
           font-size: 14px;
         }
+      }
+    }
+  }
+  .woocommerce-product-gallery {
+    &__image {
+      text-align: center;
+      img {
+        width: auto;
+        height: auto;
+      }
+    }
+    .flex-control-nav {
+      img {
+        height: auto;
       }
     }
   }
@@ -256,6 +258,13 @@
       }
       .entry-summary {
         flex-basis: 60%;
+      }
+    }
+  }
+  .woocommerce-product-gallery {
+    &__image {
+      img {
+        width: 100%;
       }
     }
   }
@@ -398,4 +407,11 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+  .woocommerce-product-gallery {
+    &__image {
+      img {
+        width: 80%;
+      }
+    }
+  }
 }
