@@ -151,6 +151,24 @@
       }
     }
   }
+  .woocommerce-product-rating {
+    display: flex;
+    align-items: flex-end;
+    .star-rating {
+      margin-right: 10px;
+    }
+    .woocommerce-review-link {
+      font-size: 14px;
+      color: #333e48;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .woocommerce-Reviews {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .woocommerce-product-gallery {

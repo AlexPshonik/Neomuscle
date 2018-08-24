@@ -181,6 +181,12 @@
       }
     }
   }
+  .comment-form {
+    justify-content: flex-start;
+    &-attachment {
+      text-align: left;
+    }
+  }
   .site-footer {
     .copyright-bar {
       .copyright,
@@ -259,6 +265,34 @@
       .entry-summary {
         flex-basis: 60%;
       }
+    }
+    .woocommerce-Reviews {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .woocommerce-Reviews {
+    #comments {
+      flex-basis: 50%;
+      margin-top: 0;
+    }
+    #review_form_wrapper {
+      flex-basis: 35%;
+    }
+  }
+  .comment-respond {
+    .comment-reply-title {
+      line-height: 1.2;
+    }
+  }
+  .comment-form {
+    &-attachment {
+      flex-basis: 50%;
+    }
+    .form-submit {
+      flex-basis: 50%;
+      margin-top: -9px;
+      text-align: right;
     }
   }
   .woocommerce-product-gallery {

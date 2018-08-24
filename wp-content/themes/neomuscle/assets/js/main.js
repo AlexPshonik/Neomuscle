@@ -28,9 +28,9 @@ jQuery(document).ready(function ($) {
 
   // Select
 
-  $('select').selectize({
-    create: false
-  });
+  // $('select').selectize({
+  //   create: false
+  // });
 
 
   // Fix search width
