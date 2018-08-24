@@ -297,16 +297,6 @@
       line-height: 1.2;
     }
   }
-  .comment-form {
-    &-attachment {
-      flex-basis: 50%;
-    }
-    .form-submit {
-      flex-basis: 50%;
-      margin-top: -9px;
-      text-align: right;
-    }
-  }
   .woocommerce-product-gallery {
     &__image {
       img {
@@ -457,6 +447,16 @@
           top: 4px;
         }
       }
+    }
+  }
+  .comment-form {
+    &-attachment {
+      flex-basis: 50%;
+    }
+    .form-submit {
+      flex-basis: 50%;
+      margin-top: -9px;
+      text-align: right;
     }
   }
 }

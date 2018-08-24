@@ -4111,18 +4111,6 @@ select {
   .comment-respond .comment-reply-title {
     line-height: 1.2;
   }
-  .comment-form-attachment {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-  }
-  .comment-form .form-submit {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-    margin-top: -9px;
-    text-align: right;
-  }
   .woocommerce-product-gallery__image img {
     width: 100%;
   }
@@ -4259,6 +4247,18 @@ select {
   }
   .related .product-card-buy .ui-icon-heart-filling {
     top: 4px;
+  }
+  .comment-form-attachment {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+  }
+  .comment-form .form-submit {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    margin-top: -9px;
+    text-align: right;
   }
 }
 
