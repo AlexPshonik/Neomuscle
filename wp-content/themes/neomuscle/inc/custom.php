@@ -38,6 +38,18 @@ function custom_add_to_cart_text() {
 	return __('Купить', 'woocommerce');
 }
 
+/**
+ * Reorder product data tabs
+ */
+add_filter( 'woocommerce_product_tabs', 'woo_reorder_tabs', 98 );
+function woo_reorder_tabs( $tabs ) {
+  $tabs['description']['priority'] = 1;
+  $tabs['sostav-i-instrukcija']['priority'] = 2;	
+  $tabs['reviews']['priority'] = 3;
+  
+	return $tabs;
+}
+
  /**
  * Add intention taxonomies.
  */
