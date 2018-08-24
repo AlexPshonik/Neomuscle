@@ -125,7 +125,7 @@
     .dgwt-wcas-search-form {
       padding: 0 15px;
     }
-  } 
+  }
 }
 
 /* Custom, iPhone Retina */
@@ -175,6 +175,24 @@
         padding: 18px;
         &::after {
           font-size: 14px;
+        }
+      }
+    }
+  }
+  .site-footer {
+    .copyright-bar {
+      .copyright,
+      .payment {
+        flex-basis: 50%;
+      }
+      .copyright {
+        text-align: left;
+        margin-bottom: 0;
+      }
+      .payment {
+        text-align: right;
+        &-list {
+          justify-content: flex-end;
         }
       }
     }
@@ -238,6 +256,20 @@
       }
       .entry-summary {
         flex-basis: 60%;
+      }
+    }
+  }
+  .site-footer {
+    .footer {
+      &-contact {
+        flex-basis: 42%;
+      }
+      &-menu-catalog {
+        flex-basis: 18%;
+      }
+      &-menu-buyer,
+      &-dev {
+        flex-basis: 20%;
       }
     }
   }
