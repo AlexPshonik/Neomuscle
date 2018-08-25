@@ -1,0 +1,63 @@
+/*--------------------------------------------------------------
+# Description store in homepage
+--------------------------------------------------------------*/
+.description-store {
+  &-text {
+    position: relative;
+    overflow: hidden;
+    max-height: 11em;
+    color: #999;
+    transition: .2s;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 4em;
+      background: linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);
+    }
+    &.open {
+      max-height: 100%;
+      &::before {
+        display: none;
+      }
+      &+.description-store-more {
+        display: none;
+      }
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: normal;
+      color: $search-text-color;
+    }
+    strong.title {
+      margin-bottom: 14px;
+      font-weight: normal;
+    }
+    p {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+    ol {
+      font-size: 13px;
+      padding-left: 15px;
+      li {
+        padding-bottom: 5px;
+      }
+    }
+  }
+  &-more {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    &-link {
+      color: #9d9c9c;
+      font-size: 15px;
+      &:hover {
+        color: $main-font-color;
+      }
+    }
+  }
+}

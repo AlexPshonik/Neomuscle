@@ -3339,6 +3339,85 @@ body.menu-open .section-site-navigation {
 # Front page
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# Description store in homepage
+--------------------------------------------------------------*/
+.description-store-text {
+  position: relative;
+  overflow: hidden;
+  max-height: 11em;
+  color: #999;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.description-store-text::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 4em;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), to(#fff));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, #fff 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, #fff 100%);
+  background: linear-gradient(top, rgba(255, 255, 255, 0) 0, #fff 100%);
+}
+
+.description-store-text.open {
+  max-height: 100%;
+}
+
+.description-store-text.open::before {
+  display: none;
+}
+
+.description-store-text.open + .description-store-more {
+  display: none;
+}
+
+.description-store-text h2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #818181;
+}
+
+.description-store-text strong.title {
+  margin-bottom: 14px;
+  font-weight: normal;
+}
+
+.description-store-text p {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.description-store-text ol {
+  font-size: 13px;
+  padding-left: 15px;
+}
+
+.description-store-text ol li {
+  padding-bottom: 5px;
+}
+
+.description-store-more {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.description-store-more-link {
+  color: #9d9c9c;
+  font-size: 15px;
+}
+
+.description-store-more-link:hover {
+  color: #333e48;
+}
+
+/*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
 .btn,
@@ -3609,10 +3688,6 @@ select {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.site-footer {
-  margin-top: 80px;
-}
-
 .site-footer .footer-widgets {
   padding: 60px 0 30px 0;
   background-color: #f9f9f9;
@@ -4152,6 +4227,12 @@ select {
   }
   .woocommerce-tabs .tabs li a {
     font-size: 18px;
+  }
+  .description-store-text ol {
+    padding-left: 30px;
+  }
+  .description-store-more {
+    text-align: right;
   }
   .site-footer .footer-widget {
     padding: 60px 0 60px 0;

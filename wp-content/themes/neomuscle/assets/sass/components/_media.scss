@@ -318,6 +318,16 @@
       }
     }
   }
+  .description-store {
+    &-text {
+      ol {
+        padding-left: 30px;
+      }
+    }
+    &-more {
+      text-align: right;
+    }
+  }
   .site-footer {
     .footer {
       &-widget {
