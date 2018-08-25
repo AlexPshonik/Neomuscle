@@ -985,7 +985,7 @@ table.shop_table_responsive tr td.download-actions .button {
 .related.products .owl-nav {
   position: absolute;
   top: 4px;
-  right: 0;
+  right: 8px;
   font-size: 14px;
 }
 
@@ -1000,6 +1000,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .related-header {
+  width: 99%;
   border-bottom: 1px solid #dadada;
 }
 

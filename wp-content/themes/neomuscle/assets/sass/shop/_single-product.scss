@@ -282,7 +282,7 @@
     .owl-nav {
       position: absolute;
       top: 4px;
-      right: 0;
+      right: 8px;
       font-size: 14px;
     }
     .ui-icon-right-arrow {
@@ -294,6 +294,7 @@
     }
   }
   &-header {
+    width: 99%;
     border-bottom: 1px solid #dadada;
   }
   &-title {

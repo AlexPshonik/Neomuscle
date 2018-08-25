@@ -318,6 +318,14 @@
       }
     }
   }
+  .comment-form-attachment label,
+  .comment-form .form-submit input {
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+      &:hover {
+        background-color: $accent-color-hover;
+    }
+  }
   .site-footer {
     .footer {
       &-widget {
@@ -483,10 +491,19 @@
   }
   .single-product {
     .product-meta {
+      .specification {
+        flex-basis: 35%;
+      }
       .product-packaging {
-        flex-basis: 60%;
+        flex-basis: 55%;
         margin-top: 0;
         margin-left: 10px;
+        &-vals {
+          text-align: center;
+          small {
+            display: block;
+          }
+        }
       }
     }
   }
