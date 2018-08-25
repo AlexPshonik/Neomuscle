@@ -44,9 +44,59 @@
     margin-bottom: 15px;
     font-size: 28px;
   }
+  .variations {
+    width: 100%;
+    margin-bottom: 15px;
+    .label {
+      width: 15%;
+    }
+    .value {
+      position: relative;
+      select {
+        width: 90%;
+        height: 44px;
+      }
+      .ui-icon-close {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        color: red;
+        transform: translateY(-50%);
+      }
+    }
+    &_form {
+      & + .yith-wcwl-add-to-wishlist  {
+        display: none;
+      }
+    }
+  }
   .cart {
-    float: left;
-    margin-right: 18px;
+    display: flex;
+    justify-content: space-between;
+    .quantity {
+      flex-basis: 35%;
+    }
+    .btn-add-to-cart {
+      flex-basis: 40%;
+      padding: 6px 12px;
+    }
+    .clear {
+      display: none;
+    }
+    .yith-wcwl-add-to-wishlist {
+      display: flex;
+      align-content: center;
+      .ajax-loading {
+        display: none !important;
+      }
+      .yith-wcwl-wishlistaddedbrowse.show {
+        padding: 0;
+        font-size: 26px;
+      } 
+    }
+    & + .yith-wcwl-add-to-wishlist {
+      display: none;
+    }
   }
   .yith-wcwl-add-to-wishlist {
     margin-top: 0;
@@ -175,6 +225,36 @@
   }
 }
 
+.single_variation_wrap {
+  .variations_button {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+  .quantity {
+    display: inline-block;
+    flex-basis: 35%;
+  }
+  .button {
+    flex-basis: 45%;
+    background-color: $accent-color;
+  }
+  .yith-wcwl-add-to-wishlist {
+    display: flex;
+    align-items: center;
+    .ajax-loading {
+      display: none !important;
+    }
+    .yith-wcwl-wishlistaddedbrowse.show {
+      padding: 0;
+      font-size: 26px;
+    } 
+  }
+  .clear {
+    display: none;
+  }
+}
+
 .woocommerce-product-gallery {
   display: flex;
   flex-direction: column;
@@ -282,7 +362,7 @@
     .owl-nav {
       position: absolute;
       top: 4px;
-      right: 0;
+      right: 8px;
       font-size: 14px;
     }
     .ui-icon-right-arrow {
@@ -294,6 +374,7 @@
     }
   }
   &-header {
+    width: 99%;
     border-bottom: 1px solid #dadada;
   }
   &-title {

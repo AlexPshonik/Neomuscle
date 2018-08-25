@@ -318,6 +318,14 @@
       }
     }
   }
+  .comment-form-attachment label,
+  .comment-form .form-submit input {
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+      &:hover {
+        background-color: $accent-color-hover;
+      }
+    }
   .description-store {
     &-text {
       ol {
@@ -493,11 +501,24 @@
   }
   .single-product {
     .product-meta {
+      .specification {
+        flex-basis: 35%;
+      }
       .product-packaging {
-        flex-basis: 60%;
+        flex-basis: 55%;
         margin-top: 0;
         margin-left: 10px;
+        &-vals {
+          text-align: center;
+          small {
+            display: block;
+          }
+        }
       }
+    }
+    .variations_form,
+    .cart {
+      width: 70%;
     }
   }
 }
@@ -516,6 +537,10 @@
       .product-packaging {
         margin-left: 20px;     
       }
+    }
+    .variations_form,
+    .cart {
+      width: 50%;
     }
   }
 }
