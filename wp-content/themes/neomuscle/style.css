@@ -428,6 +428,10 @@ input {
   border: none;
 }
 
+.home .site-footer {
+  margin-top: 0;
+}
+
 .disableScroll {
   overflow: hidden;
 }
@@ -440,10 +444,6 @@ input {
 .section-padding {
   padding-top: 80px;
   padding-bottom: 80px;
-}
-
-.post-type-archive .site-content {
-  margin-bottom: 100px;
 }
 
 /*--------------------------------------------------------------
@@ -3692,6 +3692,10 @@ select {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.site-footer {
+  margin-top: 80px;
+}
+
 .site-footer .footer-widgets {
   padding: 60px 0 30px 0;
   background-color: #f9f9f9;
