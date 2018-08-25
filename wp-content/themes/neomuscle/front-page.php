@@ -104,7 +104,6 @@
               <select disabled="disabled"></select>
               <button class="btn-primary">Найти товар</button>
             </div> -->
-          </div>
         </div>
       </div>
     </div>
