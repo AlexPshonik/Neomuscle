@@ -45,6 +45,8 @@ if ( $product->is_in_stock() ) : ?>
 		?>
 
 		<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="btn-add-to-cart single_add_to_cart_button button alt"><span class="icon ui-icon-shopping-cart"></span><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+	
+		<?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>

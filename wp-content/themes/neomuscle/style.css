@@ -4348,6 +4348,10 @@ select {
   .single-product .product-meta .product-packaging-vals small {
     display: block;
   }
+  .single-product .variations_form,
+  .single-product .cart {
+    width: 70%;
+  }
 }
 
 /* Large Devices, Wide Screens */
@@ -4357,5 +4361,9 @@ select {
   }
   .single-product .product-meta .product-packaging {
     margin-left: 20px;
+  }
+  .single-product .variations_form,
+  .single-product .cart {
+    width: 50%;
   }
 }

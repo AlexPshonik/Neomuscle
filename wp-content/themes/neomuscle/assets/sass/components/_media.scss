@@ -506,6 +506,10 @@
         }
       }
     }
+    .variations_form,
+    .cart {
+      width: 70%;
+    }
   }
 }
 
@@ -523,6 +527,10 @@
       .product-packaging {
         margin-left: 20px;     
       }
+    }
+    .variations_form,
+    .cart {
+      width: 50%;
     }
   }
 }
