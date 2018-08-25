@@ -508,12 +508,6 @@
         flex-basis: 55%;
         margin-top: 0;
         margin-left: 10px;
-        &-vals {
-          text-align: center;
-          small {
-            display: block;
-          }
-        }
       }
     }
     .variations_form,
@@ -535,7 +529,11 @@
   .single-product {
     .product-meta {
       .product-packaging {
-        margin-left: 20px;     
+        margin-left: 20px;   
+        &-vals,
+        &-price {
+          font-size: 16px;
+        }  
       }
     }
     .variations_form,

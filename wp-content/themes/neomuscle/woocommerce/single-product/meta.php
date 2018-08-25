@@ -47,14 +47,6 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'intention' ) );
           $posts = get_field('packaging-box');
           if( $posts ): ?>
             <table>
-              <!-- <thead>
-                <tr>
-                  <th class="product-packaging-img">Фото</th>
-                  <th class="product-packaging-vals">Фасовка</th>
-                  <th class="product-packaging-price">Цена</th>
-                  <th class="product-packaging-buy"></th>
-                </tr>
-              </thead> -->
               <tbody>
                 <?php foreach( $posts as $p ):?>
                   <tr class="product-packaging-item">

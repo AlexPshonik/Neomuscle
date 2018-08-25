@@ -4431,12 +4431,6 @@ select {
     margin-top: 0;
     margin-left: 10px;
   }
-  .single-product .product-meta .product-packaging-vals {
-    text-align: center;
-  }
-  .single-product .product-meta .product-packaging-vals small {
-    display: block;
-  }
   .single-product .variations_form,
   .single-product .cart {
     width: 70%;
@@ -4450,6 +4444,9 @@ select {
   }
   .single-product .product-meta .product-packaging {
     margin-left: 20px;
+  }
+  .single-product .product-meta .product-packaging-vals, .single-product .product-meta .product-packaging-price {
+    font-size: 16px;
   }
   .single-product .variations_form,
   .single-product .cart {
