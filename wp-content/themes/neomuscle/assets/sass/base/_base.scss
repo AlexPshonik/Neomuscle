@@ -42,6 +42,12 @@ input {
   border: none;
 }
 
+.home {
+  .site-footer {
+    margin-top: 0;
+  }
+}
+
 .disableScroll {
   overflow: hidden;
 }
@@ -56,8 +62,4 @@ input {
   padding-bottom: 80px;
 }
 
-.post-type-archive {
-  .site-content {
-    margin-bottom: 100px;
-  }
-}
+
