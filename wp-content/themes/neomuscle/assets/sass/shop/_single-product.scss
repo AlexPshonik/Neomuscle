@@ -139,6 +139,12 @@
           &:last-child {
             border: 0;
           }
+          a {
+            color: $main-font-color;
+            &:hover {
+              color: $accent-color;
+            }
+          }
           &-title {
             min-width: 180px;
             display: inline-block;

@@ -806,6 +806,14 @@ table.shop_table_responsive tr td.download-actions .button {
   border: 0;
 }
 
+.single-product .product-meta .specification-list .item a {
+  color: #333e48;
+}
+
+.single-product .product-meta .specification-list .item a:hover {
+  color: #fed700;
+}
+
 .single-product .product-meta .specification-list .item-title {
   min-width: 180px;
   display: inline-block;
