@@ -89,6 +89,10 @@
       .ajax-loading {
         display: none !important;
       }
+      .yith-wcwl-wishlistaddedbrowse.show {
+        padding: 0;
+        font-size: 26px;
+      } 
     }
     & + .yith-wcwl-add-to-wishlist {
       display: none;
