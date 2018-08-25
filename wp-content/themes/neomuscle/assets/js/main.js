@@ -1,8 +1,6 @@
 jQuery(document).ready(function ($) {
 
-  /**
-   * QTY
-  */
+  // QTY 
   $('.quantityPlus').click(function(e){
     e.preventDefault();
     fieldName = $(this).attr('field');
@@ -25,6 +23,10 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  // Read more button
+  $(".description-store-more-link").click(function(){
+    $(".description-store-text").addClass("open");
+  });
 
   // Select
 

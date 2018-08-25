@@ -12,7 +12,12 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 <li <?php wc_product_class(); ?>>
 	<div class="product-card">
     <div class="product-card-categories">
-      <?php echo '<span class="loop">' . wc_get_product_category_list( get_the_id(), ', ', '',  '' ) . '</span>'; ?>
+			<?php $category = wp_get_post_terms( $post->ID, 'product_cat' ); 
+				foreach( $category as $cat ):
+					if( 0 == $cat->parent )
+						echo '<span class="loop">' . '<a href="'. get_site_url() . '/' . $cat->slug . '/' .'">' . $cat->name . '</a>' . '</span>';
+				endforeach;
+			?>
     </div>
 		<?php
 			/**

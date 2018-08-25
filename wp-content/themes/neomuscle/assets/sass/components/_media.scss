@@ -324,6 +324,16 @@
     cursor: pointer;
       &:hover {
         background-color: $accent-color-hover;
+      }
+    }
+  .description-store {
+    &-text {
+      ol {
+        padding-left: 30px;
+      }
+    }
+    &-more {
+      text-align: right;
     }
   }
   .site-footer {
