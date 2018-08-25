@@ -1148,6 +1148,10 @@ table.shop_table_responsive tr td.download-actions .button {
   background-color: #fed700;
 }
 
+.site-header {
+  display: none !important;
+}
+
 /*--------------------------------------------------------------
 # Single product
 --------------------------------------------------------------*/
@@ -1420,6 +1424,47 @@ p.stars.selected a:not(.active):before {
   content: "\53";
   color: #fed700;
   opacity: 1;
+}
+
+.woocommerce-message {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  background-color: #fed700;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.woocommerce-message .button {
+  position: relative;
+  background-color: transparent;
+  border-top: 1px solid #e7c400;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.woocommerce-message .button::after {
+  position: relative;
+  top: 2px;
+  right: -5px;
+  margin-left: 5px;
+  font-family: 'neomuscle-ui' !important;
+  content: "\e910";
 }
 
 /*--------------------------------------------------------------
