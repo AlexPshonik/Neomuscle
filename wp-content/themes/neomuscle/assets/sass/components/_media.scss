@@ -528,8 +528,11 @@
   }
   .single-product {
     .product-meta {
+      .specification {
+        margin-right: 15px;
+      }
       .product-packaging {
-        margin-left: 20px;   
+        margin-left: 15px;   
         &-vals,
         &-price {
           font-size: 16px;

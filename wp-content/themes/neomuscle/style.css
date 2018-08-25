@@ -4442,8 +4442,11 @@ select {
   .woocommerce-product-gallery__image img {
     width: 80%;
   }
+  .single-product .product-meta .specification {
+    margin-right: 15px;
+  }
   .single-product .product-meta .product-packaging {
-    margin-left: 20px;
+    margin-left: 15px;
   }
   .single-product .product-meta .product-packaging-vals, .single-product .product-meta .product-packaging-price {
     font-size: 16px;
