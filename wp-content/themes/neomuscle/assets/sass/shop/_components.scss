@@ -31,8 +31,7 @@
 		color: #fed700;
 	}
 }
-$color__text-main: yellow;
-$color__link: red;
+
 p.stars {
 	a {
 		position: relative;
@@ -99,6 +98,36 @@ p.stars {
 				color: #fed700;
 				opacity: 1;
 			}
+		}
+	}
+}
+
+.woocommerce-message {
+	display: flex;
+	margin-bottom: 20px;
+    flex-direction: column-reverse;
+    background-color: #fed700;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+	font-weight: 600;
+	.button {
+		position: relative;
+		background-color: transparent;
+		border-top: 1px solid #e7c400;
+		border-radius: 0;
+		margin-top: 10px;
+		padding: 5px;
+		font-size: 14px;
+		font-weight: 700;
+		&::after {
+			position: relative;
+			top: 2px;
+			right: -5px;
+			margin-left: 5px;
+			font-family: 'neomuscle-ui' !important;  
+			content: "\e910";
 		}
 	}
 }

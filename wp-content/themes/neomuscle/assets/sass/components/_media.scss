@@ -336,6 +336,20 @@
       text-align: right;
     }
   }
+  .woocommerce-message {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    text-align: left;
+    .button {
+      min-width: 22%;
+      border-top: none;
+      border-left: 1px solid #e7c400;
+      margin-top: 0;
+      padding-left: 15px;
+    }
+  }
   .site-footer {
     .footer {
       &-widget {
