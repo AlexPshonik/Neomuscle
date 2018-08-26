@@ -4227,9 +4227,6 @@ select {
   .comment-respond .comment-reply-title {
     line-height: 1.2;
   }
-  .woocommerce-product-gallery__image img {
-    width: 100%;
-  }
   .woocommerce-tabs .tabs li {
     margin-right: 40px;
   }
@@ -4439,9 +4436,6 @@ select {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-  .woocommerce-product-gallery__image img {
-    width: 80%;
-  }
   .single-product .product-meta .specification {
     margin-right: 15px;
   }
