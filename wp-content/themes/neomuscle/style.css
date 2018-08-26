@@ -4096,6 +4096,7 @@ select {
   .woocommerce-product-gallery__image img {
     width: auto;
     height: auto;
+    max-width: 350px;
   }
   .woocommerce-product-gallery .flex-control-nav img {
     height: auto;

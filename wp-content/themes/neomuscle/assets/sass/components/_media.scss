@@ -173,6 +173,7 @@
       img {
         width: auto;
         height: auto;
+        max-width: 350px;
       }
     }
     .flex-control-nav {
@@ -301,13 +302,6 @@
       line-height: 1.2;
     }
   }
-  // .woocommerce-product-gallery {
-  //   &__image {
-  //     img {
-  //       width: 100%;
-  //     }
-  //   }
-  // }
   .woocommerce-tabs {
     .tabs {
       li {
@@ -533,13 +527,6 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-  // .woocommerce-product-gallery {
-  //   &__image {
-  //     img {
-  //       width: 80%;
-  //     }
-  //   }
-  // }
   .single-product {
     .product-meta {
       .specification {
