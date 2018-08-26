@@ -1,102 +1,46 @@
 .dgwt-wcas-search-form {
-  max-width: 100%;
-  margin: 0 auto;
+	.dgwt-wcas-sf-wrapp {
+		display: flex;
+	}
   .screen-reader-text {
     display: none;
   }
-}
-
-.dgwt-wcas-search-wrapp {
-  position: relative;
-}
-
-.dgwt-wcas-sf-wrapp {
-  position: relative;
-  display: flex;
-  .dgwt-wcas-search-submit,
   .dgwt-wcas-search-input {
-    padding-left: 0;
-    border: none;
-    border-radius: 0;
-    background-color: #fff;
-  }
-  .dgwt-wcas-search-input {
-    padding-right: 10px;
-    line-height: 2.6;
     flex-grow: 1;
-    padding: 5px 15px 5px 20px;
-    border: 2px solid $accent-color;
-    transition: border-radius 0.3s ease;
-    border-radius: 25px 0 0 25px;
-    font-size: 15px;
-    line-height: 1.8em;
-    font-weight: normal;
-    color: $search-text-color;
+    padding: 10px 0 10px 15px;
+    border-radius: 0;
+    border: none;
   }
   .dgwt-wcas-search-submit {
-    padding: 10px 0;
-    text-align: right;
-    flex-basis: 13%;
-    background-color: $accent-color;
-    border-radius: 0 25px 25px 0;
-    text-align: center;
-    transition: border-radius 0.3s ease;
-    &::before {
-      content: "\e903";
-      position: relative;
-      left: -2px;
-      font-family: 'neomuscle-ui' !important;
-      font-size: 18px;
-    }
+    position: relative;
+		width: 15%;
+		padding: 0;
+		border-radius: 0;
+    background-color: #ffffff;
     svg {
       display: none;
     }
-  }
-}
-
-.dgwt-wcas-suggestions-wrapp {
-  position: relative;
-  border: none;
-  border-radius: 0;
-  box-shadow: 0px 2px 6px $border-color;
-  .dgwt-wcas-suggestion {
-    max-width: 100%;
-    margin: 0 auto;
-      &:hover {
-        background-color: #f9f9f9;
-      }
-      &:last-child {
-        border-radius: 0;
-      }
+    &::before {
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			transform: translateY(-50%);
+      font-family: 'neomuscle-ui' !important;
+			font-size: 18px;
+			color: $main-font-color;
+			content: "\e903";
     }
+  }
 }
 
 .dgwt-wcas-suggestions-wrapp {
   width: 100% !important;
-  border: 1px solid $color-gray;
-  border-top: none;
-  border-radius: 0 0 10px 10px;
-  background-color: #fff;
-  .dgwt-wcas-st {
-    padding: 0 30px 0 20px;
-  }
-  .dgwt-wcas-suggestion {
-    font-size: 14px;
-    line-height: 28px;
-    transition: background-color .3s ease;
-    cursor: pointer;
-    &:hover {
-      background-color: $color-gray;
-    }
-  }
+  border-top: 1px solid $border-color;
+  box-shadow: 0px 3px 3px $border-color;
+  background-color: #ffffff;
 }
 
-.dgwt-wcas-open {
-  .dgwt-wcas-search-input {
-    border-radius: 10px 0 0 0;
-  }
-  .dgwt-wcas-search-submit {
-    border-radius: 0 10px 0 0;
-  }
+.dgwt-wcas-suggestion {
+  padding: 5px 15px;
+  font-size: 14px;
 }
-
