@@ -50,9 +50,23 @@ function woo_reorder_tabs( $tabs ) {
 	return $tabs;
 }
 
- /**
- * Add intention taxonomies.
- */
+/**
+* Change default text in variation select
+*/
+add_filter( 'woocommerce_dropdown_variation_attribute_options_args', 'neomuscle_wc_filter_dropdown_args', 10 );
+function neomuscle_wc_filter_dropdown_args( $args ) {
+  $variation_tax = get_taxonomy( $args['attribute'] );
+	if( $variation_tax ) {
+		$args['show_option_none'] = 'Выберите ' . apply_filters( 'the_title', $variation_tax->labels->singular_name );
+	} else {
+		$args['show_option_none'] = 'Выберите ' . $args['attribute'];
+	}
+  return $args;
+}
+
+/**
+* Add intention taxonomies.
+*/
 function edit_taxonomies() {         
     register_taxonomy( 'intention',
         array('product'),
