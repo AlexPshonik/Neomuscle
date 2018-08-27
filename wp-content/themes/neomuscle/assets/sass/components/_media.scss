@@ -28,12 +28,36 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
   .feature {
+    &-box {
+      flex-direction: row;
+      flex-wrap: wrap;
+      border: 1px solid $border-color;
+      border-radius: 5px;
+    }
     &-item {
-      flex-basis: 50%;
-      border-right: 1px solid $border-color;
+      width: 50%;
+      margin: 0;
+      padding-right: 5px;
+      border: none;
+      border-radius: 0;
+      &:first-child,
       &:nth-child(2) {
-        border: 0;
-      } 
+        border-bottom: 1px solid $border-color;
+      }
+      &:first-child,
+      &:nth-child(3) {
+        border-right: 1px solid $border-color;
+      }
+      &-icon {
+        padding-top: 7px;
+        font-size: 26px;
+      }
+      &-info {
+        .title,
+        .description {
+          font-size: 10px;
+        }
+      }
     }
   }
   .product-card {
@@ -180,6 +204,16 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+  .feature {
+    &-item {
+      &-icon {
+        flex-basis: 23%;
+        padding-top: 4px;
+        font-size: 31px;
+        text-align: right;
+      }
+    }
+  }
   .site {
     padding-top: 0;
   }
@@ -480,14 +514,25 @@
       border-radius: 0 0 10px 10px; 
     }
   }
-  .top-bar {
-    display: block;
-  }
   .feature {
     &-item {
-      flex-basis: 25%;
+      width: 25%;
+      border-right: 1px solid $border-color;
+      &:first-child,
       &:nth-child(2) {
-        border-right: 1px solid $border-color;
+        border-bottom: none;
+      }
+      &:last-child {
+        border-right: 0;
+      }
+      &-icon {
+        flex-basis: 15%;
+      }
+      &-info {
+        .title,
+        .description {
+          font-size: 10px;
+        }
       }
     }
   }
@@ -631,6 +676,16 @@
     width: 1110px;
     &-search {
       padding-right: 0;
+    }
+  }
+  .feature {
+    &-item {
+      &-info {
+        .title,
+        .description {
+          font-size: 12px;
+        }
+      }
     }
   }
   .single-product {
