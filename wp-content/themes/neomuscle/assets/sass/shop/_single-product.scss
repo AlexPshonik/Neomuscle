@@ -32,13 +32,28 @@
   .product_title {
     font-size: 1.786em;
     line-height: 1.28em;
-    margin-bottom: .48em;
+    margin-bottom: 0;
   }
   .product-info {
+    display: flex;
+    flex-direction: column;
     padding: 10px 0;
+    margin-bottom: 20px;
     font-size: 14px;
     color: #8f8e94; 
-    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    &-stock {
+      margin-bottom: 5px;
+      .stock-icon {
+        margin-right: 5px;
+      }
+      .in-stock {
+        color: $alert-success;
+      }
+      .out-of-stock {
+        color: $alert-danger;
+      }
+    }
   }
   .price {
     margin-bottom: 15px;

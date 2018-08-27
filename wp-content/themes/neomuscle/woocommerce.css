@@ -560,14 +560,40 @@ table.shop_table_responsive tr td.download-actions .button {
 .single-product .product_title {
   font-size: 1.786em;
   line-height: 1.28em;
-  margin-bottom: .48em;
+  margin-bottom: 0;
 }
 
 .single-product .product-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 10px 0;
+  margin-bottom: 20px;
   font-size: 14px;
   color: #8f8e94;
-  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+.single-product .product-info-stock {
+  margin-bottom: 5px;
+}
+
+.single-product .product-info-stock .stock-icon {
+  margin-right: 5px;
+}
+
+.single-product .product-info-stock .in-stock {
+  color: #155724;
+}
+
+.single-product .product-info-stock .out-of-stock {
+  color: #721c24;
 }
 
 .single-product .price {
