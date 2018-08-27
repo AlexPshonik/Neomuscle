@@ -42,7 +42,7 @@ jQuery(document).ready(function ($) {
   
   // Mobile search line
   $('.js-open-mobile-search').click(function() {
-    $(this).toggleClass('open');
+    $('.js-open-mobile-search').toggleClass('open');
     $('.site-header-search-mobile').toggleClass('open');
     $('body').toggleClass('noscroll');
   });
