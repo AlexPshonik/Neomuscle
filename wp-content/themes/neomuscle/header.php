@@ -60,7 +60,7 @@
       </div>
     </div>
 
-    <header id="masthead" class="site-header-wrapper sticky">
+    <header id="masthead" class="site-header-wrapper">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -109,25 +109,23 @@
         <?php echo do_shortcode('[wcas-search-form]'); ?>
         <div class="search-placeholder"></div>
       </div>
-    </header>
-
-    <div class="section-site-navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <nav id="site-navigation" class="main-navigation">
-              <?php
-                wp_nav_menu(array(
-                  'theme_location' => 'menu-1',
-                  'menu_id' => 'primary-menu',
-                ));
-              ?>
-            </nav>
+      <div class="section-site-navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav id="site-navigation" class="main-navigation">
+                <?php
+                      wp_nav_menu(array(
+                        'theme_location' => 'menu-1',
+                        'menu_id' => 'primary-menu',
+                      ));
+                    ?>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
       <div class="section-site-navigation-placeholder"></div>
-    </div>
-
+    </header>
 
     <div id="content" class="site-content">
