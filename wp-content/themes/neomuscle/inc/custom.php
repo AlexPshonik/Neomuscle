@@ -39,18 +39,6 @@ function custom_add_to_cart_text() {
 }
 
 /**
- * Reorder product data tabs
- */
-add_filter( 'woocommerce_product_tabs', 'woo_reorder_tabs', 98 );
-function woo_reorder_tabs( $tabs ) {
-  $tabs['description']['priority'] = 1;
-  $tabs['sostav-i-instrukcija']['priority'] = 2;	
-  $tabs['reviews']['priority'] = 3;
-  
-	return $tabs;
-}
-
-/**
 * Change default text in variation select
 */
 add_filter( 'woocommerce_dropdown_variation_attribute_options_args', 'neomuscle_wc_filter_dropdown_args', 10 );
@@ -132,12 +120,43 @@ function jk_related_products_args( $args ) {
   return $args;
 }
 
+
+/**
+ * Reorder product data tabs
+ */
+add_filter( 'woocommerce_product_tabs', 'neomuscle_reorder_tabs', 98 );
+function neomuscle_reorder_tabs( $tabs ) {
+  $tabs['description']['priority'] = 1;
+  $tabs['composition_application']['priority'] = 2;	
+  $tabs['reviews']['priority'] = 3;
+	return $tabs;
+}
+
 /**
  * Rename product data tabs
  */
-add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
-function woo_rename_tabs( $tabs ) {
+add_filter( 'woocommerce_product_tabs', 'neomuscle_rename_tabs', 98 );
+function neomuscle_rename_tabs( $tabs ) {
 	$tabs['reviews']['title'] = __( 'Отзывы' );
-
 	return $tabs;
+}
+
+/**
+ * Add the custom tab
+ */
+function neomuscle_custom_product_tab( $tabs ) {
+	$tabs['composition_application'] = array(
+		'title'    => __( 'Состав и применение', 'textdomain' ),
+		'callback' => 'neomuscle_product_tab_content',
+		'priority' => 2,
+	);
+	return $tabs;
+}
+add_filter( 'woocommerce_product_tabs', 'neomuscle_custom_product_tab' );
+
+/**
+ * Function that displays output for the shipping tab.
+ */
+function neomuscle_product_tab_content()  {
+  echo the_field('composition_application');
 }
