@@ -107,6 +107,13 @@
 @media only screen and (min-width : 576px) {
   .site-header {
     padding: 15px 0;
+    &-wrapper {
+      &.menu-open {
+        .container {
+          margin-left: 0;
+        }
+      }
+    }
     .logo {
       &-link {
         flex-basis: 40%;
@@ -152,9 +159,6 @@
     width: 510px;
     margin: 0 auto;
     padding: 5px 0;
-  }
-  .section-site-navigation {
-    width: 50%;
   }
   .products {
     .product {
@@ -215,6 +219,9 @@
         display: none;
       }
     }
+  }
+  .section-site-navigation {
+    height: auto;
   }
   .dgwt-wcas-search-wrapp {
     position: relative;

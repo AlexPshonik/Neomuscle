@@ -100,7 +100,7 @@
 		}
 		&-link {
 			position: relative;
-			font-size: 20px;
+			font-size: 19px;
 			font-weight: 700;
 			color: $main-font-color;
 		}
@@ -137,7 +137,7 @@
 	}
 	&-menu-toggle {
 		position: relative;
-		top: 2px;
+		top: 1px;
 		height: 18px;
 		cursor: pointer;
 		.icon {
@@ -168,7 +168,6 @@
 			}
 		}
 		&.open {
-			top: 3px;
 			.icon {
 				background-color: transparent;
 				&::before {
@@ -239,39 +238,37 @@
 		transition: left 0.5s ease;
 		&.menu-open {
 			left: 265px;
+			.section-site-navigation-placeholder {
+				display: block;
+				opacity: 0.4;
+			}
 		}
 	}
 }
 
 .section-site-navigation {
-	position: fixed;
+	position: absolute;
   width: 265px;
   background-color: #222222;
   top: 0;
-  left: -100%;
-  height: 100%;
+  right: 100%;
+  height: 100vh;
 	z-index: 6;
+	overflow-y: scroll;
 	transition: left 0.5s ease;
-	&.open {
-		left: 0;
-		.section-site-navigation-placeholder {
-			display: block;
-			opacity: 0.4;
-		}
-	}
 	.main-navigation {
 		margin: 0 -15px;
 	}
 	&-placeholder {
 		position: absolute;
 		top: 0;
-		left: 100%;
+		left: 0;
 		display: none;
-		width: 1000px;
+		width: 100%;
     height: 100vh;
     background-color: #222222;
 		opacity: 0;
-		transition: opacity 0.5s ease;
+		transition: opacity .5s ease;
 		content: '';
 	}
 }
