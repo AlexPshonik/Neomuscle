@@ -25,5 +25,33 @@ the_title( '<h1 class="product_title entry-title">', '</h1>' );
 ?>
 
 <div class="product-info">
-  
+	<div class="product-info-stock">
+		<?php 
+			if ( $product->is_in_stock() ) {
+				echo '<div class="in-stock"><span class="stock-icon ui-icon-check"></span>'. __( 'Есть в наличии', 'envy' ) . '</div>';
+			} else {
+				echo '<div class="out-of-stock"><span class="stock-icon ui-icon-cancel"></span>' . __( 'Нет в наличии', 'envy' ) . '</div>';
+			}
+		?>
+	</div>
+	<div class="rating">
+		<?php 
+			if ( 'no' === get_option( 'woocommerce_enable_review_rating' ) ) {
+				return;
+			}
+			
+			$rating_count = $product->get_rating_count();
+			$review_count = $product->get_review_count();
+			$average      = $product->get_average_rating();
+			
+			if ( $rating_count > 0 ) : ?>
+			
+				<div class="woocommerce-product-rating">
+					<?php echo wc_get_rating_html( $average, $rating_count ); ?>
+					<?php if ( comments_open() ) : ?><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<?php printf( _n( '%s customer review', '%s customer reviews', $review_count, 'woocommerce' ), '<span class="count">' . esc_html( $review_count ) . '</span>' ); ?>)</a><?php endif ?>
+				</div>
+			
+			<?php endif; ?>
+
+	</div>
 </div>

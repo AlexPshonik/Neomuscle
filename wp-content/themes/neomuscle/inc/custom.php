@@ -120,7 +120,6 @@ function jk_related_products_args( $args ) {
   return $args;
 }
 
-
 /**
  * Reorder product data tabs
  */
@@ -160,3 +159,8 @@ add_filter( 'woocommerce_product_tabs', 'neomuscle_custom_product_tab' );
 function neomuscle_product_tab_content()  {
   echo the_field('composition_application');
 }
+
+/**
+ * Remove standart rating template in pdp page
+ */
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );

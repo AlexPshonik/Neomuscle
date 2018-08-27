@@ -103,6 +103,15 @@
       }
     }
   }
+  .single-product {
+    .product-info {
+      flex-direction: row;
+      justify-content: space-between;
+      &-stock {
+        margin-bottom: 0;
+      }
+    }
+  }
   .site-footer {
     .copyright-bar {
       .copyright,
