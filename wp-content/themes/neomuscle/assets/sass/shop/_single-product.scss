@@ -10,7 +10,7 @@
       flex-basis: 100%;
     }
     .related {
-      flex-basis: 100%;
+      width: 101%;
       flex-direction: column;
     }
   }
@@ -382,7 +382,7 @@
     .owl-nav {
       position: absolute;
       top: 4px;
-      right: 8px;
+      right: 0;
       font-size: 14px;
     }
     .ui-icon-right-arrow {

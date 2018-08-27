@@ -539,9 +539,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .single-product .product .related {
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
+  width: 101%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1060,7 +1058,7 @@ table.shop_table_responsive tr td.download-actions .button {
 .related.products .owl-nav {
   position: absolute;
   top: 4px;
-  right: 8px;
+  right: 0;
   font-size: 14px;
 }
 
