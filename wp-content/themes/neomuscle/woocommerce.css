@@ -18,6 +18,10 @@ WooCommerce styles override
 /**
  * Search
  */
+.dgwt-wcas-search-form {
+  background-color: #ffffff;
+}
+
 .dgwt-wcas-search-form .dgwt-wcas-sf-wrapp {
   display: -webkit-box;
   display: -webkit-flex;

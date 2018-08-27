@@ -3307,7 +3307,6 @@ h6 {
   top: -100px;
   width: 100%;
   border-bottom: 1px solid #dddddd;
-  background-color: #ffffff;
   opacity: 0;
   -webkit-transition: top 0.5s ease, opacity .3s ease;
   -o-transition: top 0.5s ease, opacity .3s ease;
