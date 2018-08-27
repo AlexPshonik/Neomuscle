@@ -283,8 +283,12 @@
     margin-left: 0;
   }
   &__image {
+    a {
+      display: block;
+      text-align: center;
+    }
     img {
-      width: 100%;
+      width: auto;
       height: 260px;
     }
   }

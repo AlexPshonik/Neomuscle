@@ -4297,6 +4297,9 @@ select {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .woocommerce-product-gallery__image img {
+    width: 100%;
+  }
   .woocommerce-Reviews #comments {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;

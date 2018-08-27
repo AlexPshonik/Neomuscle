@@ -336,6 +336,13 @@
       justify-content: space-between;
     }
   }
+  .woocommerce-product-gallery {
+    &__image {
+      img {
+        width: 100%;
+      }
+    } 
+  }
   .woocommerce-Reviews {
     #comments {
       flex-basis: 50%;

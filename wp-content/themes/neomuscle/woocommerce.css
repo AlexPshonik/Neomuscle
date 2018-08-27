@@ -941,8 +941,13 @@ table.shop_table_responsive tr td.download-actions .button {
   margin-left: 0;
 }
 
+.woocommerce-product-gallery__image a {
+  display: block;
+  text-align: center;
+}
+
 .woocommerce-product-gallery__image img {
-  width: 100%;
+  width: auto;
   height: 260px;
 }
 
