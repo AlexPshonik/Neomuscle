@@ -2,42 +2,46 @@ jQuery(document).ready(function ($) {
   
   // Sicky header
   if(window.innerWidth >= 768) {
+    $('.site-header-wrapper').removeClass('sticky');
     if($(window).scrollTop() > $('.section-site-navigation').offset().top + $('.site-header').innerHeight()){
-      if(!$('.site-header-wrapper').hasClass('sticky')){
-        $('.site-header-wrapper').addClass('sticky');
+      if(!$('.site-header').hasClass('sticky')){
+        $('.site-header').addClass('sticky');
       }
     }
-    else {
-      $('.site-header-wrapper').removeClass('sticky');
-    }
   }
-  else {
+  else if(window.innerWidth < 768) {
     $('.site-header-wrapper').addClass('sticky');
   };
   $(window).resize(function() {
-    if(window.innerWidth >= 768) {
-      if($(window).scrollTop() < $('.section-site-navigation').innerHeight() + $('.site-header').innerHeight()){
-        if($('.site-header-wrapper').hasClass('sticky')){
-          $('.site-header-wrapper').removeClass('sticky');
-        }
+    if(window.innerWidth < 768) {
+      if(!$('.site-header-wrapper').hasClass('sticky')){
+        $('.site-header-wrapper').addClass('sticky');
+      }
+      if($('.site-header').hasClass('sticky')){
+        $('.site-header').removeClass('sticky');
       }
     }
-    else {
-      if(!$('.site-header-wrapper').hasClass('sticky')){
-         $('.site-header-wrapper').addClass('sticky');
+    else if(window.innerWidth >= 768) {
+      if($('.site-header-wrapper').hasClass('sticky')){
+        $('.site-header-wrapper').removeClass('sticky');
+      }
+      if($(window).scrollTop() < $('.section-site-navigation').innerHeight() + $('.site-header').innerHeight()){
+        if($('.site-header').hasClass('sticky')){
+          $('.site-header').removeClass('sticky');
+        }
       }
     }
   });
   $(window).scroll(function() {
     if(window.innerWidth >= 768) {
       if($(window).scrollTop() > $('.section-site-navigation').offset().top + $('.site-header').innerHeight()){
-        if(!$('.site-header-wrapper').hasClass('sticky')){
-          $('.site-header-wrapper').addClass('sticky');
+        if(!$('.site-header').hasClass('sticky')){
+          $('.site-header').addClass('sticky');
         }
       }
       else {
-        if($('.site-header-wrapper').hasClass('sticky')){
-          $('.site-header-wrapper').removeClass('sticky');
+        if($('.site-header').hasClass('sticky')){
+          $('.site-header').removeClass('sticky');
         }
       }
     }
