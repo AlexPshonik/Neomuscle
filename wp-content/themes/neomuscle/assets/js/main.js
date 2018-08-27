@@ -118,11 +118,7 @@ jQuery(document).ready(function ($) {
   });
 
   // Select
-
-  // $('select').selectize({
-  //   create: false
-  // });
-
+  // $('#vkus').selectize();
 
   // Fix search width
   // $('.dgwt-wcas-search-input').on('keyup', function(){
