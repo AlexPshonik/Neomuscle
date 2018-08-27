@@ -2,6 +2,8 @@
   padding: 25px 0;
   font-size: 14px;
   a {
+    display: inline-block;
+    margin-bottom: 10px;
     color: $main-font-color;
   }
   .delimiter {

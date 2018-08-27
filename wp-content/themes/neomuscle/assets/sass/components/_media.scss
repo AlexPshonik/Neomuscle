@@ -364,6 +364,11 @@
       }
     }
   }
+  .woocommerce-breadcrumb {
+    a {
+      margin-bottom: 0;
+    }
+  }
   .comment-form-attachment label,
   .comment-form .form-submit input {
     transition: background-color 0.3s ease;

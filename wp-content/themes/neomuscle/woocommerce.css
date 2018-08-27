@@ -92,6 +92,8 @@ WooCommerce styles override
 }
 
 .woocommerce-breadcrumb a {
+  display: inline-block;
+  margin-bottom: 10px;
   color: #333e48;
 }
 

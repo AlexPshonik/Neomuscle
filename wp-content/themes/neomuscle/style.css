@@ -4329,6 +4329,9 @@ select {
   .woocommerce-tabs .tabs li a {
     font-size: 18px;
   }
+  .woocommerce-breadcrumb a {
+    margin-bottom: 0;
+  }
   .comment-form-attachment label,
   .comment-form .form-submit input {
     -webkit-transition: background-color 0.3s ease;
