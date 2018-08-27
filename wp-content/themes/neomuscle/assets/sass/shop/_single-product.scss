@@ -43,6 +43,9 @@
   .price {
     margin-bottom: 15px;
     font-size: 28px;
+    .woocommerce-Price-currencySymbol {
+      font-size: 18px;
+    }
   }
   .variations {
     width: 100%;

@@ -575,6 +575,10 @@ table.shop_table_responsive tr td.download-actions .button {
   font-size: 28px;
 }
 
+.single-product .price .woocommerce-Price-currencySymbol {
+  font-size: 18px;
+}
+
 .single-product .variations {
   width: 100%;
   margin-bottom: 15px;
