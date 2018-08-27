@@ -200,9 +200,12 @@
   .site-header {
     position: absolute;
     width: 690px;
+    padding: 20px 0;
+    transition: padding 0.3s ease;
     &.sticky {
       position: fixed;
       top: 0;
+      padding: 15px 0;
       border-bottom: 1px solid $border-color;
       background-color: #ffffff;
       z-index: 6;
@@ -257,7 +260,7 @@
     }
   }
   .section-site-navigation {
-    margin-top: 76px;
+    margin-top: 86px;
     height: auto;
     overflow: hidden;
   }

@@ -390,10 +390,22 @@ body {
 }
 
 body.noscroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
   overflow-y: hidden;
 }
 
 body.menu-open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -4156,10 +4168,15 @@ select {
   .site-header {
     position: absolute;
     width: 690px;
+    padding: 20px 0;
+    -webkit-transition: padding 0.3s ease;
+    -o-transition: padding 0.3s ease;
+    transition: padding 0.3s ease;
   }
   .site-header.sticky {
     position: fixed;
     top: 0;
+    padding: 15px 0;
     border-bottom: 1px solid #dddddd;
     background-color: #ffffff;
     z-index: 6;
@@ -4214,7 +4231,7 @@ select {
     display: none;
   }
   .section-site-navigation {
-    margin-top: 76px;
+    margin-top: 86px;
     height: auto;
     overflow: hidden;
   }
