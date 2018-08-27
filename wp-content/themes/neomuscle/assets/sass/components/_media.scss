@@ -70,11 +70,6 @@
   }
   .woocommerce-tabs {
     .tabs {
-      display: flex;
-      justify-content: center;
-      &::after {
-        content: none;
-      }
       li {
         margin-right: 20px;
         a {
@@ -330,6 +325,7 @@
     .product {
       .woocommerce-product-gallery {
         flex-basis: 40%;
+        margin-bottom: 50px;
       }
       .entry-summary {
         flex-basis: 60%;

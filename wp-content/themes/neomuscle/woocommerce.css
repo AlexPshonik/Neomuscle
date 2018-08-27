@@ -968,7 +968,14 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .woocommerce-tabs .tabs {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 11px;
 }
 
@@ -979,7 +986,6 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .woocommerce-tabs .tabs li {
-  float: left;
   margin-right: 10px;
 }
 
@@ -990,7 +996,7 @@ table.shop_table_responsive tr td.download-actions .button {
 .woocommerce-tabs .tabs li a {
   position: relative;
   padding-bottom: 15px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   color: #333e48;
 }

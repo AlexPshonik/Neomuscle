@@ -4032,19 +4032,6 @@ select {
   .comment-form-attachment {
     text-align: left;
   }
-  .woocommerce-tabs .tabs {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .woocommerce-tabs .tabs::after {
-    content: none;
-  }
   .woocommerce-tabs .tabs li {
     margin-right: 20px;
   }
@@ -4292,6 +4279,7 @@ select {
     -webkit-flex-basis: 40%;
         -ms-flex-preferred-size: 40%;
             flex-basis: 40%;
+    margin-bottom: 50px;
   }
   .single-product .product .entry-summary {
     -webkit-flex-basis: 60%;
