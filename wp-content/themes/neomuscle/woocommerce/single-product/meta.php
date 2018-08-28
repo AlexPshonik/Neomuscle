@@ -35,11 +35,14 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'intention' ) );
         <?php endif; ?>
         <li class="item"><span class="item-title">Бренд:</span><?php echo get_the_term_list( $post->ID, 'product_brand', '', ', ', '' ); ?></span></li>
         <li class="item"><span class="item-title">Страна производства:</span><span><?php echo the_field('country_field'); ?></</span></li>
-        <li class="item"><span class="item-title">Фасовка: </span><span><?php echo the_field('pack'); ?></span></li>
-        <li class="item"><span class="item-title">Количество порций: </span><span><?php echo the_field('amount_portions'); ?></span></li>
+        
+        <?php if (!strripos($product->get_categories(), 'Аксессуары')) : ?>
+          <li class="item"><span class="item-title">Фасовка: </span><span><?php echo the_field('pack'); ?></span></li>
+          <li class="item"><span class="item-title">Количество порций: </span><span><?php echo the_field('amount_portions'); ?></span></li>
+        <?php endif; ?>      
       </ul>
     </div>
-    
+  
     <?php if (get_field('packaging-box') == true): ?>
       <div class="product-packaging">
         <h4 class="title h4">Другие фасовки:</h4>
