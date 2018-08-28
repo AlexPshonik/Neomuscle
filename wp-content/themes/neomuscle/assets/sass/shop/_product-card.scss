@@ -74,7 +74,7 @@
     }
     .button {
       &::after {
-        content: "\e90e";
+        content: "\e910";
       }
       &.added {
         display: none;
@@ -82,7 +82,7 @@
     }
     .added_to_cart {
       &::after {
-        content: "\e910";
+        content: "\e912";
       }
     }
     .yith-wcwl-add-to-wishlist {

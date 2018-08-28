@@ -67,7 +67,7 @@ WooCommerce styles override
   font-family: 'neomuscle-ui' !important;
   font-size: 18px;
   color: #333e48;
-  content: "\e903";
+  content: "\e905";
 }
 
 .dgwt-wcas-suggestions-wrapp {
@@ -1251,7 +1251,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .product-card-buy .button::after {
-  content: "\e90e";
+  content: "\e910";
 }
 
 .product-card-buy .button.added {
@@ -1259,7 +1259,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .product-card-buy .added_to_cart::after {
-  content: "\e910";
+  content: "\e912";
 }
 
 .product-card-buy .yith-wcwl-add-to-wishlist {
