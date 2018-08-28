@@ -4255,7 +4255,7 @@ select {
   .section-site-navigation {
     margin-top: 86px;
     height: auto;
-    overflow: hidden;
+    overflow: unset;
   }
   .dgwt-wcas-search-wrapp {
     position: relative;
