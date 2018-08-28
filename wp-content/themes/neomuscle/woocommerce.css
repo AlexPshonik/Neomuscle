@@ -92,6 +92,8 @@ WooCommerce styles override
 }
 
 .woocommerce-breadcrumb a {
+  display: inline-block;
+  margin-bottom: 10px;
   color: #333e48;
 }
 
@@ -529,6 +531,7 @@ table.shop_table_responsive tr td.download-actions .button {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
+  margin-bottom: 30px;
   overflow: hidden;
 }
 
@@ -539,9 +542,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .single-product .product .related {
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
+  width: 101%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -966,8 +967,13 @@ table.shop_table_responsive tr td.download-actions .button {
   margin-left: 0;
 }
 
+.woocommerce-product-gallery__image a {
+  display: block;
+  text-align: center;
+}
+
 .woocommerce-product-gallery__image img {
-  width: 100%;
+  width: auto;
   height: 260px;
 }
 
@@ -994,7 +1000,14 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .woocommerce-tabs .tabs {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 11px;
 }
 
@@ -1005,7 +1018,6 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .woocommerce-tabs .tabs li {
-  float: left;
   margin-right: 10px;
 }
 
@@ -1016,7 +1028,7 @@ table.shop_table_responsive tr td.download-actions .button {
 .woocommerce-tabs .tabs li a {
   position: relative;
   padding-bottom: 15px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   color: #333e48;
 }
@@ -1086,7 +1098,7 @@ table.shop_table_responsive tr td.download-actions .button {
 .related.products .owl-nav {
   position: absolute;
   top: 4px;
-  right: 8px;
+  right: 0;
   font-size: 14px;
 }
 
