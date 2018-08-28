@@ -144,12 +144,20 @@ function neomuscle_rename_tabs( $tabs ) {
  * Add the custom tab
  */
 function neomuscle_custom_product_tab( $tabs ) {
-	$tabs['composition_application'] = array(
-		'title'    => __( 'Состав и применение', 'textdomain' ),
-		'callback' => 'neomuscle_product_tab_content',
-		'priority' => 2,
-	);
-	return $tabs;
+  global $post;
+
+  $terms = wp_get_post_terms( $post->ID, 'product_cat' );
+  foreach ( $terms as $term ) $categories[] = $term->slug;
+
+  if ( !(in_array( 'aksessuary', $categories )) ) {
+    $tabs['composition_application'] = array(
+      'title'    => __( 'Состав и применение', 'textdomain' ),
+      'callback' => 'neomuscle_product_tab_content',
+      'priority' => 2,
+    );
+  }
+  
+  return $tabs;
 }
 add_filter( 'woocommerce_product_tabs', 'neomuscle_custom_product_tab' );
 
