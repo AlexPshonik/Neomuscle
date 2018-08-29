@@ -447,6 +447,17 @@
       padding-left: 15px;
     }
   }
+  .woocommerce-cart {
+    .return-to-shop {
+      .button {
+        transition: background-color 0.3s ease, color 0.3s ease;
+        &:hover {
+          background-color: $main-font-color;
+          color: #ffffff;
+        }
+      }
+    }
+  }
   .site-footer {
     .footer {
       &-widget {

@@ -4421,6 +4421,15 @@ select {
     margin-top: 0;
     padding-left: 15px;
   }
+  .woocommerce-cart .return-to-shop .button {
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+    -o-transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .woocommerce-cart .return-to-shop .button:hover {
+    background-color: #333e48;
+    color: #ffffff;
+  }
   .site-footer .footer-widget {
     padding: 60px 0 60px 0;
   }

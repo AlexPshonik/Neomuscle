@@ -1,0 +1,25 @@
+.woocommerce-cart {
+  .entry-header {
+    .entry-title {
+      margin: 50px 0 30px;
+      text-align: center;
+      font-size: 40px;
+      line-height: 1.1;
+    }
+  }
+  .entry-content {
+    .cart-empty {
+      margin-bottom: 22.5px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 45px;
+      font-weight: 300;
+    }
+    .return-to-shop {
+      text-align: center;
+      .button {
+        background-color: $accent-color;
+      }
+    }
+  }
+}

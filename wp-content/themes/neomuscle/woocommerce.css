@@ -1311,6 +1311,32 @@ table.shop_table_responsive tr td.download-actions .button {
   display: none;
 }
 
+/*--------------------------------------------------------------
+# Single product
+--------------------------------------------------------------*/
+.woocommerce-cart .entry-header .entry-title {
+  margin: 50px 0 30px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.woocommerce-cart .entry-content .cart-empty {
+  margin-bottom: 22.5px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 300;
+}
+
+.woocommerce-cart .entry-content .return-to-shop {
+  text-align: center;
+}
+
+.woocommerce-cart .entry-content .return-to-shop .button {
+  background-color: #fed700;
+}
+
 /**
  * Checkout
  */
