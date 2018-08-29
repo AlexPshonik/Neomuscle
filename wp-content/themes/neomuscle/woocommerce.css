@@ -771,7 +771,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .single-product .product-meta .specification-list .item-title {
-  min-width: 180px;
+  min-width: 150px;
   display: inline-block;
   color: #818181;
 }
