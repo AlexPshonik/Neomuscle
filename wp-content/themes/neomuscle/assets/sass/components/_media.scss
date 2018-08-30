@@ -158,7 +158,7 @@
       }
       &-img {
         display: block;
-        max-height: 55px;
+        height: 30px;
         &-small {
           display: none;
         }
@@ -286,6 +286,9 @@
     .logo {
       &-link {
         flex-basis: 25%;
+      }
+      &-img {
+        height: 35px;
       }
     }
     &-search{

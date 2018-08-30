@@ -4129,7 +4129,7 @@ select {
   }
   .site-header .logo-img {
     display: block;
-    max-height: 55px;
+    height: 30px;
   }
   .site-header .logo-img-small {
     display: none;
@@ -4246,6 +4246,9 @@ select {
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
+  }
+  .site-header .logo-img {
+    height: 35px;
   }
   .site-header-search {
     -webkit-flex-basis: 50%;
