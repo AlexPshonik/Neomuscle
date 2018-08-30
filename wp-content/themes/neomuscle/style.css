@@ -4485,6 +4485,9 @@ select {
   table.shop_table_responsive tr td.product-name {
     width: 35%;
   }
+  table.shop_table_responsive tr td.product-name a {
+    word-break: break-word;
+  }
   table.shop_table_responsive tr td.product-price {
     width: 15%;
   }

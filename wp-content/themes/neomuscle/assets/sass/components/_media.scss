@@ -516,6 +516,9 @@
           }
           &-name {
             width: 35%;
+            a {
+              word-break: break-word;
+            }
           }
           &-price {
             width: 15%;
