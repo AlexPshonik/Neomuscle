@@ -546,6 +546,15 @@
       }
     }
   }
+  .cart-collaterals {
+    float: right;
+    width: 50%;
+    table.shop_table_responsive {
+      td {
+        text-align: right;
+      }
+    }
+  }
   .site-footer {
     .footer {
       &-widget {
@@ -803,6 +812,9 @@
       }
     }
   }
+  .cart-collaterals {
+    width: 40%;
+  }
 }
 
 /* Large Devices, Wide Screens */
@@ -853,5 +865,8 @@
         }
       }
     }
+  }
+  .cart-collaterals {
+    width: 30%;
   }
 }

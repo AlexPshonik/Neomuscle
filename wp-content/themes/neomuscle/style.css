@@ -4513,6 +4513,13 @@ select {
     float: right;
     width: auto;
   }
+  .cart-collaterals {
+    float: right;
+    width: 50%;
+  }
+  .cart-collaterals table.shop_table_responsive td {
+    text-align: right;
+  }
   .site-footer .footer-widget {
     padding: 60px 0 60px 0;
   }
@@ -4760,6 +4767,9 @@ select {
   table.shop_table_responsive .actions .coupon {
     width: 60%;
   }
+  .cart-collaterals {
+    width: 40%;
+  }
 }
 
 /* Large Devices, Wide Screens */
@@ -4789,5 +4799,8 @@ select {
   }
   table.shop_table_responsive tr td.product-quantity .quantity {
     width: 70%;
+  }
+  .cart-collaterals {
+    width: 30%;
   }
 }
