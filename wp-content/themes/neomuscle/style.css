@@ -4430,6 +4430,56 @@ select {
     background-color: #333e48;
     color: #ffffff;
   }
+  table.shop_table_responsive thead th {
+    padding: 0 10px 10px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #747474;
+  }
+  table.shop_table_responsive tr {
+    border-bottom: none;
+  }
+  table.shop_table_responsive tr td {
+    display: table-cell;
+    padding: 10px;
+  }
+  table.shop_table_responsive tr td .title {
+    display: none;
+  }
+  table.shop_table_responsive tr td .value {
+    width: 100%;
+  }
+  table.shop_table_responsive tr td.product-remove {
+    padding-left: 10px;
+  }
+  table.shop_table_responsive tr td.product-remove a {
+    color: #a7a7a7;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+  }
+  table.shop_table_responsive tr td.product-remove a:hover {
+    color: red;
+  }
+  table.shop_table_responsive tr td.product-thumbnail {
+    padding: 20px 20px 20px 0;
+  }
+  table.shop_table_responsive tr td.product-thumbnail a {
+    padding: 5px;
+    border: 1px solid #dddddd;
+  }
+  table.shop_table_responsive tr td.product-thumbnail img {
+    width: 110px;
+    height: auto;
+  }
+  table.shop_table_responsive tr td.product-name {
+    width: 35%;
+  }
+  table.shop_table_responsive tr td.product-quantity .quantity {
+    width: 100%;
+  }
   .site-footer .footer-widget {
     padding: 60px 0 60px 0;
   }
@@ -4664,6 +4714,19 @@ select {
   .single-product .cart {
     width: 70%;
   }
+  table.shop_table_responsive {
+    width: 100%;
+  }
+  table.shop_table_responsive th.product-quantity {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  table.shop_table_responsive tr td.product-thumbnail {
+    padding: 20px 50px;
+  }
+  table.shop_table_responsive tr td.product-quantity {
+    padding: 0 35px;
+  }
 }
 
 /* Large Devices, Wide Screens */
@@ -4690,5 +4753,8 @@ select {
   .single-product .variations_form,
   .single-product .cart {
     width: 50%;
+  }
+  table.shop_table_responsive tr td.product-quantity .quantity {
+    width: 70%;
   }
 }
