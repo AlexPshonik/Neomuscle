@@ -1125,6 +1125,12 @@ table.shop_table_responsive tr td.download-actions .button {
           border-radius: 5px;
 }
 
+.wc-tab ul {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
 .related {
   margin-top: 30px;
 }
