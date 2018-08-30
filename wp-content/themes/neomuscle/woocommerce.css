@@ -670,6 +670,14 @@ table.shop_table_responsive tr td.download-actions .button {
   position: relative;
 }
 
+.single-product .variations .value::before {
+  content: "\e90d";
+  font-family: 'neomuscle-ui';
+  position: absolute;
+  right: 18%;
+  top: 22%;
+}
+
 .single-product .variations .value select {
   width: 90%;
   height: 44px;
