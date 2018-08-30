@@ -179,6 +179,53 @@ WooCommerce styles override
 }
 
 /*--------------------------------------------------------------
+# Pagination
+--------------------------------------------------------------*/
+.woocommerce-pagination {
+  margin-top: 10px;
+}
+
+.woocommerce-pagination ul.page-numbers {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.woocommerce-pagination ul.page-numbers span.current,
+.woocommerce-pagination ul.page-numbers a.page-numbers {
+  display: block;
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2.5;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.woocommerce-pagination ul.page-numbers span.current {
+  line-height: 2.6;
+  background: #fed700;
+}
+
+.woocommerce-pagination ul.page-numbers a.page-numbers {
+  font-weight: 400;
+  color: #7e7e7e;
+  border: 1px solid #dddddd;
+}
+
+.woocommerce-pagination ul.page-numbers a.page-numbers:hover {
+  background: #dddddd;
+}
+
+/*--------------------------------------------------------------
 # Fields
 --------------------------------------------------------------*/
 .woocommerce-Reviews .woocommerce-Reviews-title {
@@ -771,7 +818,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .single-product .product-meta .specification-list .item-title {
-  min-width: 180px;
+  min-width: 150px;
   display: inline-block;
   color: #818181;
 }
@@ -1652,7 +1699,7 @@ p.stars.selected a:not(.active):before {
   -webkit-transform: rotateZ(180deg);
       -ms-transform: rotate(180deg);
           transform: rotateZ(180deg);
-  content: "\e90b";
+  content: "\e90d";
 }
 
 .wcapf-price-filter-wrapper {
