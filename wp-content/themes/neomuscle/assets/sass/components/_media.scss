@@ -508,7 +508,6 @@
             padding: 20px 20px 20px 0;
             a {
               padding: 5px;
-              border: 1px solid $border-color;
             }
             img {
               width: 110px;
@@ -853,8 +852,8 @@
     th {
       &.product {
         &-quantity {
-          padding-left: 35px;
           padding-right: 35px;
+          padding-left: 0;
         }
       }
     }
@@ -862,14 +861,14 @@
       td {
         &.product {
           &-thumbnail {
-            padding: 20px 50px;
+            padding: 20px 0;
           }
           &-price,
           &-subtotal {
             width: 10%;
           }
           &-quantity {
-            padding: 0 35px;
+            padding: 0;
           }
         }
       }
@@ -947,7 +946,7 @@
         &.product {
           &-quantity {
             .quantity {
-              width: 70%;
+              width: 60%;
             }
           }
         }

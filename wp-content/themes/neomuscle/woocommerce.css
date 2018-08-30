@@ -1366,7 +1366,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .woocommerce-cart .entry-header .entry-title {
-  margin: 50px 0 30px;
+  margin: 50px 0 40px;
   text-align: center;
   font-size: 40px;
   line-height: 1.1;
@@ -1432,7 +1432,7 @@ table.wishlist_table tr td .title {
   width: 45%;
   margin-bottom: 0;
   text-align: left;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -1514,22 +1514,32 @@ table.wishlist_table .actions .coupon input {
 table.shop_table_responsive .actions .coupon .button,
 table.wishlist_table .actions .coupon .button {
   width: 100%;
-  background-color: #333e48;
+  padding: 14px 35px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: #ffffff;
+  opacity: 1;
+  background-color: #333e48;
+}
+
+table.shop_table_responsive .actions .coupon .button:hover,
+table.wishlist_table .actions .coupon .button:hover {
+  background-color: #20272d;
 }
 
 table.shop_table_responsive .actions .button,
 table.wishlist_table .actions .button {
   width: 100%;
-  background-color: #fed700;
-  font-weight: 700;
+  font-size: 14px;
+  opacity: .65;
+  background-color: #efecec;
 }
 
 .cart-collaterals .cart_totals h2 {
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  font-size: 25px;
+  font-weight: 400;
   border-bottom: 1px solid #dddddd;
 }
 
@@ -1562,6 +1572,7 @@ table.wishlist_table .actions .button {
       -ms-flex-positive: 1;
           flex-grow: 1;
   display: block;
+  font-size: 14px;
   text-align: left;
 }
 
@@ -1603,11 +1614,15 @@ table.wishlist_table .actions .button {
 }
 
 .cart-collaterals .wc-proceed-to-checkout .button {
-  width: 90%;
+  width: 100%;
   background-color: #fed700;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1;
+}
+
+.cart-collaterals .wc-proceed-to-checkout .button:hover {
+  color: #ffffff;
+  background-color: #000;
 }
 
 /**

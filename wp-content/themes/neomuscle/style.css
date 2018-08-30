@@ -4477,7 +4477,6 @@ select {
   }
   table.shop_table_responsive tr td.product-thumbnail a {
     padding: 5px;
-    border: 1px solid #dddddd;
   }
   table.shop_table_responsive tr td.product-thumbnail img {
     width: 110px;
@@ -4806,17 +4805,17 @@ select {
     width: 70%;
   }
   table.shop_table_responsive th.product-quantity {
-    padding-left: 35px;
     padding-right: 35px;
+    padding-left: 0;
   }
   table.shop_table_responsive tr td.product-thumbnail {
-    padding: 20px 50px;
+    padding: 20px 0;
   }
   table.shop_table_responsive tr td.product-price, table.shop_table_responsive tr td.product-subtotal {
     width: 10%;
   }
   table.shop_table_responsive tr td.product-quantity {
-    padding: 0 35px;
+    padding: 0;
   }
   table.shop_table_responsive .actions .coupon {
     width: 60%;
@@ -4861,7 +4860,7 @@ select {
     width: 50%;
   }
   table.shop_table_responsive tr td.product-quantity .quantity {
-    width: 70%;
+    width: 60%;
   }
   .cart-collaterals {
     width: 30%;
