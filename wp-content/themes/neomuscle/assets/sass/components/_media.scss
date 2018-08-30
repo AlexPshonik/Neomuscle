@@ -130,6 +130,16 @@
       }
     }
   }
+  table.shop_table_responsive {
+    .actions {
+      .coupon {
+        width: 90%;
+      }
+      .button {
+        width: 90%;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width : 576px) {
@@ -513,6 +523,28 @@
         }
       }
     }
+    .actions {
+      border-top: 1px solid $border-color;
+      .coupon {
+        float: left;
+        display: flex;
+        width: auto;
+        input {
+          width: 55%;
+          margin-bottom: 0;
+          border-radius: 55px 0 0 55px;
+        }
+        .button {
+          width: auto;
+          padding: 13px 15px;
+          border-radius: 0 55px 55px 0;
+        }
+      }
+      .button {
+        float: right;
+        width: auto;
+      }
+    }
   }
   .site-footer {
     .footer {
@@ -745,7 +777,6 @@
     }
   }
   table.shop_table_responsive {
-    width: 100%;
     th {
       &.product {
         &-quantity {
@@ -764,6 +795,11 @@
             padding: 0 35px;
           }
         }
+      }
+    }
+    .actions {
+      .coupon {
+        width: 60%;
       }
     }
   }

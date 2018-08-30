@@ -4107,6 +4107,12 @@ select {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  table.shop_table_responsive .actions .coupon {
+    width: 90%;
+  }
+  table.shop_table_responsive .actions .button {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 576px) {
@@ -4480,6 +4486,33 @@ select {
   table.shop_table_responsive tr td.product-quantity .quantity {
     width: 100%;
   }
+  table.shop_table_responsive .actions {
+    border-top: 1px solid #dddddd;
+  }
+  table.shop_table_responsive .actions .coupon {
+    float: left;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+  }
+  table.shop_table_responsive .actions .coupon input {
+    width: 55%;
+    margin-bottom: 0;
+    -webkit-border-radius: 55px 0 0 55px;
+            border-radius: 55px 0 0 55px;
+  }
+  table.shop_table_responsive .actions .coupon .button {
+    width: auto;
+    padding: 13px 15px;
+    -webkit-border-radius: 0 55px 55px 0;
+            border-radius: 0 55px 55px 0;
+  }
+  table.shop_table_responsive .actions .button {
+    float: right;
+    width: auto;
+  }
   .site-footer .footer-widget {
     padding: 60px 0 60px 0;
   }
@@ -4714,9 +4747,6 @@ select {
   .single-product .cart {
     width: 70%;
   }
-  table.shop_table_responsive {
-    width: 100%;
-  }
   table.shop_table_responsive th.product-quantity {
     padding-left: 35px;
     padding-right: 35px;
@@ -4726,6 +4756,9 @@ select {
   }
   table.shop_table_responsive tr td.product-quantity {
     padding: 0 35px;
+  }
+  table.shop_table_responsive .actions .coupon {
+    width: 60%;
   }
 }
 

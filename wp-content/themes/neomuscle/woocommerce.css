@@ -1338,6 +1338,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 table.shop_table_responsive {
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -1373,6 +1374,11 @@ table.shop_table_responsive tr td .title {
   font-weight: 700;
 }
 
+table.shop_table_responsive tr td .value {
+  width: 50%;
+  text-align: left;
+}
+
 table.shop_table_responsive tr td.product-remove {
   padding-top: 20px;
 }
@@ -1406,6 +1412,43 @@ table.shop_table_responsive tr td.product-name a {
 
 table.shop_table_responsive tr td.product-quantity .quantity {
   width: 70%;
+}
+
+table.shop_table_responsive .actions {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+}
+
+table.shop_table_responsive .actions .coupon {
+  margin-bottom: 15px;
+}
+
+table.shop_table_responsive .actions .coupon label {
+  display: none;
+}
+
+table.shop_table_responsive .actions .coupon input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+}
+
+table.shop_table_responsive .actions .coupon .button {
+  width: 100%;
+  background-color: #333e48;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+table.shop_table_responsive .actions .button {
+  width: 100%;
+  background-color: #fed700;
+  font-weight: 700;
 }
 
 /**
