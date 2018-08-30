@@ -860,7 +860,11 @@
     tr {
       td {
         &.product {
+          &-remove {
+            width: 2%;
+          }
           &-thumbnail {
+            width: 15%;
             padding: 20px 0;
           }
           &-price,
@@ -869,6 +873,9 @@
           }
           &-quantity {
             padding: 0;
+            .quantity {
+              width: 70%;
+            }
           }
         }
       }

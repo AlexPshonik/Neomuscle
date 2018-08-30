@@ -4808,7 +4808,11 @@ select {
     padding-right: 35px;
     padding-left: 0;
   }
+  table.shop_table_responsive tr td.product-remove {
+    width: 2%;
+  }
   table.shop_table_responsive tr td.product-thumbnail {
+    width: 15%;
     padding: 20px 0;
   }
   table.shop_table_responsive tr td.product-price, table.shop_table_responsive tr td.product-subtotal {
@@ -4816,6 +4820,9 @@ select {
   }
   table.shop_table_responsive tr td.product-quantity {
     padding: 0;
+  }
+  table.shop_table_responsive tr td.product-quantity .quantity {
+    width: 70%;
   }
   table.shop_table_responsive .actions .coupon {
     width: 60%;
