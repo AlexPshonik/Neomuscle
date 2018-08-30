@@ -4483,8 +4483,17 @@ select {
   table.shop_table_responsive tr td.product-name {
     width: 35%;
   }
+  table.shop_table_responsive tr td.product-price {
+    width: 15%;
+  }
+  table.shop_table_responsive tr td.product-quantity {
+    width: 20%;
+  }
   table.shop_table_responsive tr td.product-quantity .quantity {
     width: 100%;
+  }
+  table.shop_table_responsive tr td.product-subtotal {
+    width: 15%;
   }
   table.shop_table_responsive .actions {
     border-top: 1px solid #dddddd;
@@ -4760,6 +4769,9 @@ select {
   }
   table.shop_table_responsive tr td.product-thumbnail {
     padding: 20px 50px;
+  }
+  table.shop_table_responsive tr td.product-price, table.shop_table_responsive tr td.product-subtotal {
+    width: 10%;
   }
   table.shop_table_responsive tr td.product-quantity {
     padding: 0 35px;

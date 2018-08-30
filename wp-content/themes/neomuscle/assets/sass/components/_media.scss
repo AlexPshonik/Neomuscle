@@ -515,10 +515,17 @@
           &-name {
             width: 35%;
           }
+          &-price {
+            width: 15%;
+          }
           &-quantity {
+            width: 20%;
             .quantity {
               width: 100%;
             }
+          }
+          &-subtotal {
+            width: 15%;
           }
         }
       }
@@ -799,6 +806,10 @@
         &.product {
           &-thumbnail {
             padding: 20px 50px;
+          }
+          &-price,
+          &-subtotal {
+            width: 10%;
           }
           &-quantity {
             padding: 0 35px;
