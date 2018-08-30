@@ -92,23 +92,25 @@ jQuery(document).ready(function ($) {
   // QTY 
   $('.quantityPlus').click(function(e){
     e.preventDefault();
-    fieldName = $(this).attr('field');
-    var currentVal = parseInt($('input[name='+fieldName+']').val());
+    var qtyClass = '.qty';
+    var field = $(this).parent().children('input'+qtyClass);
+    var currentVal = parseInt(field.val());
     if (!isNaN(currentVal)) {
-      $('input[name='+fieldName+']').val(currentVal + 1);
+      field.val(currentVal + 1);
     } else {
-      $('input[name='+fieldName+']').val(0);
+      field.val(0);
     }
   });
 
   $(".quantityMinus").click(function(e) {
     e.preventDefault();
-    fieldName = $(this).attr('field');
-    var currentVal = parseInt($('input[name='+fieldName+']').val());
+    var qtyClass = '.qty';
+    var field = $(this).parent().children('input'+qtyClass);
+    var currentVal = parseInt(field.val());
     if (!isNaN(currentVal) && currentVal > 0) {
-      $('input[name='+fieldName+']').val(currentVal - 1);
+      field.val(currentVal - 1);
     } else {
-      $('input[name='+fieldName+']').val(0);
+      field.val(0);
     }
   });
 

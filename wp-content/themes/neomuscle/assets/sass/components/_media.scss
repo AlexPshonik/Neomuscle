@@ -158,7 +158,7 @@
       }
       &-img {
         display: block;
-        max-height: 55px;
+        height: 30px;
         &-small {
           display: none;
         }
@@ -286,6 +286,9 @@
     .logo {
       &-link {
         flex-basis: 25%;
+      }
+      &-img {
+        height: 35px;
       }
     }
     &-search{
@@ -514,10 +517,17 @@
           &-name {
             width: 35%;
           }
+          &-price {
+            width: 15%;
+          }
           &-quantity {
+            width: 20%;
             .quantity {
               width: 100%;
             }
+          }
+          &-subtotal {
+            width: 15%;
           }
         }
       }
@@ -583,6 +593,60 @@
       &-dev {
         flex-basis: 20%;
         text-align: left;
+      }
+    }
+  }
+  .woocommerce {
+    #content table.wishlist_table.cart a.remove:hover {
+      background-color: transparent;
+      color: red;
+    }
+    table.wishlist_table {
+      thead {
+        tr {
+          display: table-row;
+        }
+        th {
+          padding: 5px 0;
+          border-top: none;
+          border-bottom: 1px solid $border-color;
+          text-align: left;
+          font-size: 14px;
+          font-weight: 400;
+          color: #747474;
+        }
+      }
+      tr {
+        td {
+          display: table-cell;
+          &.product {
+            &-remove {
+              a {
+                &:hover {
+                  background-color: transparent;
+                  color: red;
+                }
+              }
+            }
+            &-thumbnail {
+              width: 25%;
+              padding: 20px 30px;
+              a {
+                padding: 5px;
+                border: 1px solid $border-color;
+              }
+            }
+            &-name {
+              width: 30%;
+              padding-right: 20px;
+            }
+            &-price,
+            &-stock-status {
+              width: 15%;
+              text-align: left;
+            }
+          }
+        }
       }
     }
   }
@@ -796,11 +860,22 @@
     tr {
       td {
         &.product {
+          &-remove {
+            width: 2%;
+          }
           &-thumbnail {
+            width: 15%;
             padding: 20px 0;
+          }
+          &-price,
+          &-subtotal {
+            width: 10%;
           }
           &-quantity {
             padding: 0;
+            .quantity {
+              width: 70%;
+            }
           }
         }
       }
@@ -813,6 +888,26 @@
   }
   .cart-collaterals {
     width: 40%;
+  }
+  .woocommerce {
+    table.wishlist_table {
+      tr {
+        td {
+          &.product{
+            &-price,
+            &-stock-status {
+              width: 10%;
+            }
+            &-add-to-cart {
+              width: 30%;
+              .button {
+                padding: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
