@@ -4801,6 +4801,7 @@ select {
     position: absolute;
     left: 50%;
     top: 50%;
+    display: block;
     padding: 10px 15px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
@@ -4830,6 +4831,40 @@ select {
   .woocommerce-ResetPassword .button:hover {
     background-color: #333e48;
     color: #ffffff;
+  }
+  .woocommerce-account .woocommerce::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+  .woocommerce-account .woocommerce-MyAccount-navigation {
+    float: left;
+    width: 30%;
+  }
+  .woocommerce-account .woocommerce-MyAccount-content {
+    float: right;
+    width: 65%;
+  }
+  .woocommerce-account .woocommerce-MyAccount-content table.shop_table_responsive tr td {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+  .woocommerce-account .woocommerce-MyAccount-content table.shop_table_responsive tr td:first-child {
+    padding-top: 10px;
+  }
+  .woocommerce-account .woocommerce-MyAccount-content table.shop_table_responsive tr td .button {
+    padding: 10px 12px;
+  }
+  .woocommerce-account .woocommerce-order-details {
+    width: 100%;
+  }
+  .woocommerce-account .woocommerce-orders-table__cell-order-total {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .woocommerce-account .woocommerce-orders-table__cell-order-total .woocommerce-Price-amount {
+    display: block;
   }
 }
 
@@ -5068,6 +5103,72 @@ select {
     -webkit-flex-basis: 40%;
         -ms-flex-preferred-size: 40%;
             flex-basis: 40%;
+  }
+  .woocommerce-account .woocommerce::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+  .woocommerce-account .woocommerce-MyAccount-navigation {
+    width: 25%;
+  }
+  .woocommerce-account .woocommerce-MyAccount-content {
+    width: 70%;
+  }
+  .woocommerce-account .woocommerce-MyAccount-content table.shop_table_responsive tr td {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .woocommerce-account .woocommerce-MyAccount-content table.shop_table_responsive tr td:first-child {
+    padding-top: 10px;
+  }
+  .woocommerce-account .woocommerce-MyAccount-content table.shop_table_responsive tr td .button {
+    padding: 10px 25px;
+  }
+  .woocommerce-account .woocommerce-Addresses,
+  .woocommerce-account .woocommerce-columns--addresses {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .woocommerce-account .woocommerce-Addresses .woocommerce-column,
+  .woocommerce-account .woocommerce-columns--addresses .woocommerce-column {
+    width: 48%;
+  }
+  .woocommerce-account .woocommerce-EditAccountForm {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .woocommerce-account .woocommerce-EditAccountForm .main-fields,
+  .woocommerce-account .woocommerce-EditAccountForm .reset-password {
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
+  }
+  .woocommerce-account .woocommerce-EditAccountForm .reset-password {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+  }
+  .woocommerce-account .woocommerce-EditAccountForm p {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
   }
 }
 

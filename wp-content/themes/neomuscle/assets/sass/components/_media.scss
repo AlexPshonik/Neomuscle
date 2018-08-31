@@ -798,6 +798,7 @@
       position: absolute;
       left: 50%;
       top: 50%;
+      display: block;
       padding: 10px 15px;
       border-radius: 50%;
       background-color: #ffffff;
@@ -821,6 +822,46 @@
       &:hover {
         background-color: $main-font-color;
         color: #ffffff;
+      }
+    }
+  }
+  .woocommerce-account {
+    .woocommerce {
+      &::after {
+        display: block;
+        clear: both;
+        content: '';
+      }
+    }
+    .woocommerce-MyAccount-navigation {
+      float: left;
+      width: 30%;
+    }
+    .woocommerce-MyAccount-content {
+      float: right;
+      width: 65%;
+      table.shop_table_responsive {
+        tr {
+          td {
+            padding: 10px 5px;
+            font-size: 14px;
+            &:first-child {
+              padding-top: 10px;
+            }
+            .button {
+              padding: 10px 12px;
+            }
+          }
+        }
+      }
+    }
+    .woocommerce-order-details {
+      width: 100%;
+    }
+    .woocommerce-orders-table__cell-order-total {
+      width: max-content;
+      .woocommerce-Price-amount {
+        display: block;
       }
     }
   }
@@ -1089,6 +1130,60 @@
     }
     .order_review_wrapper {
       flex-basis: 40%;
+    }
+  }
+  .woocommerce-account {
+    .woocommerce {
+      &::after {
+        display: block;
+        clear: both;
+        content: '';
+      }
+    }
+    .woocommerce-MyAccount-navigation {
+      width: 25%;
+    }
+    .woocommerce-MyAccount-content {
+      width: 70%;
+      table.shop_table_responsive {
+        tr {
+          td {
+            padding: 10px;
+            font-size: 16px;
+            &:first-child {
+              padding-top: 10px;
+            }
+            .button {
+              padding: 10px 25px;
+            }
+          }
+        }
+      }
+    }
+    .woocommerce-Addresses,
+    .woocommerce-columns--addresses {
+      display: flex;
+      justify-content: space-between;
+      .woocommerce-column {
+        width: 48%;
+      }
+    }
+    .woocommerce-EditAccountForm {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .main-fields,
+      .reset-password {
+        flex-basis: 48%;
+      }
+      .reset-password {
+        padding: 10px;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+      }
+      p {
+        flex-basis: 100%;
+      }
     }
   }
 }

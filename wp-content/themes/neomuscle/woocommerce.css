@@ -1791,7 +1791,8 @@ form.checkout input[type="checkbox"]:checked::after {
           border-radius: 10px;
 }
 
-.woocommerce-checkout-review-order-table {
+.woocommerce-checkout-review-order-table,
+.woocommerce-table--order-details {
   margin-bottom: 10px;
   border-collapse: collapse;
   font-size: 14px;
@@ -1799,12 +1800,16 @@ form.checkout input[type="checkbox"]:checked::after {
 
 .woocommerce-checkout-review-order-table thead,
 .woocommerce-checkout-review-order-table tbody,
-.woocommerce-checkout-review-order-table tfoot {
+.woocommerce-checkout-review-order-table tfoot,
+.woocommerce-table--order-details thead,
+.woocommerce-table--order-details tbody,
+.woocommerce-table--order-details tfoot {
   display: block;
   width: 100%;
 }
 
-.woocommerce-checkout-review-order-table tr {
+.woocommerce-checkout-review-order-table tr,
+.woocommerce-table--order-details tr {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1817,37 +1822,44 @@ form.checkout input[type="checkbox"]:checked::after {
   border-top: 1px solid #dddddd;
 }
 
-.woocommerce-checkout-review-order-table tr:first-child {
+.woocommerce-checkout-review-order-table tr:first-child,
+.woocommerce-table--order-details tr:first-child {
   border-top: none;
 }
 
-.woocommerce-checkout-review-order-table th {
+.woocommerce-checkout-review-order-table th,
+.woocommerce-table--order-details th {
   padding-bottom: 5px;
   line-height: 21px;
   font-weight: 700;
 }
 
-.woocommerce-checkout-review-order-table .product-name {
+.woocommerce-checkout-review-order-table .product-name,
+.woocommerce-table--order-details .product-name {
   width: 70%;
   text-align: left;
 }
 
-.woocommerce-checkout-review-order-table .product-total {
+.woocommerce-checkout-review-order-table .product-total,
+.woocommerce-table--order-details .product-total {
   text-align: right;
 }
 
-.woocommerce-checkout-review-order-table .cart_item td {
+.woocommerce-checkout-review-order-table .cart_item td,
+.woocommerce-table--order-details .cart_item td {
   vertical-align: top;
   font-size: 14px;
   line-height: 1.4;
 }
 
-.woocommerce-checkout-review-order-table tfoot {
+.woocommerce-checkout-review-order-table tfoot,
+.woocommerce-table--order-details tfoot {
   border-top: 2px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 }
 
-.woocommerce-checkout-review-order-table tfoot tr {
+.woocommerce-checkout-review-order-table tfoot tr,
+.woocommerce-table--order-details tfoot tr {
   padding: 5px 0;
 }
 
@@ -2218,12 +2230,15 @@ p.stars.selected a:not(.active):before {
 }
 
 .customer_login_form,
-.customer_registration_form {
+.customer_registration_form,
+.woocommerce-EditAccountForm {
+  width: 100%;
   margin-bottom: 30px;
 }
 
 .customer_login_form label,
-.customer_registration_form label {
+.customer_registration_form label,
+.woocommerce-EditAccountForm label {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2235,13 +2250,15 @@ p.stars.selected a:not(.active):before {
 }
 
 .customer_login_form input,
-.customer_registration_form input {
+.customer_registration_form input,
+.woocommerce-EditAccountForm input {
   width: 100%;
   padding: 8px 15px;
 }
 
 .customer_login_form input[type="checkbox"],
-.customer_registration_form input[type="checkbox"] {
+.customer_registration_form input[type="checkbox"],
+.woocommerce-EditAccountForm input[type="checkbox"] {
   position: relative;
   top: 1px;
   width: 15px;
@@ -2254,7 +2271,9 @@ p.stars.selected a:not(.active):before {
 
 .customer_login_form input[type="checkbox"]:checked::before, .customer_login_form input[type="checkbox"]:checked::after,
 .customer_registration_form input[type="checkbox"]:checked::before,
-.customer_registration_form input[type="checkbox"]:checked::after {
+.customer_registration_form input[type="checkbox"]:checked::after,
+.woocommerce-EditAccountForm input[type="checkbox"]:checked::before,
+.woocommerce-EditAccountForm input[type="checkbox"]:checked::after {
   position: absolute;
   display: block;
   height: 2px;
@@ -2263,7 +2282,8 @@ p.stars.selected a:not(.active):before {
 }
 
 .customer_login_form input[type="checkbox"]:checked::before,
-.customer_registration_form input[type="checkbox"]:checked::before {
+.customer_registration_form input[type="checkbox"]:checked::before,
+.woocommerce-EditAccountForm input[type="checkbox"]:checked::before {
   top: 6px;
   width: 7px;
   -webkit-transform: rotate(45deg);
@@ -2272,7 +2292,8 @@ p.stars.selected a:not(.active):before {
 }
 
 .customer_login_form input[type="checkbox"]:checked::after,
-.customer_registration_form input[type="checkbox"]:checked::after {
+.customer_registration_form input[type="checkbox"]:checked::after,
+.woocommerce-EditAccountForm input[type="checkbox"]:checked::after {
   left: 4px;
   top: 5px;
   width: 10px;
@@ -2282,12 +2303,14 @@ p.stars.selected a:not(.active):before {
 }
 
 .customer_login_form .woocommerce-form-row,
-.customer_registration_form .woocommerce-form-row {
+.customer_registration_form .woocommerce-form-row,
+.woocommerce-EditAccountForm .woocommerce-form-row {
   margin-bottom: 20px;
 }
 
 .customer_login_form .form-actions,
-.customer_registration_form .form-actions {
+.customer_registration_form .form-actions,
+.woocommerce-EditAccountForm .form-actions {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2304,19 +2327,22 @@ p.stars.selected a:not(.active):before {
 }
 
 .customer_login_form .form-actions label,
-.customer_registration_form .form-actions label {
+.customer_registration_form .form-actions label,
+.woocommerce-EditAccountForm .form-actions label {
   margin-bottom: 0;
 }
 
 .customer_login_form .button,
-.customer_registration_form .button {
+.customer_registration_form .button,
+.woocommerce-EditAccountForm .button {
   background-color: #fed700;
   font-size: 14px;
   font-weight: 700;
 }
 
 .customer_login_form .lost_password a,
-.customer_registration_form .lost_password a {
+.customer_registration_form .lost_password a,
+.woocommerce-EditAccountForm .lost_password a {
   color: #333e48;
   text-decoration: underline;
 }
@@ -2330,6 +2356,10 @@ p.stars.selected a:not(.active):before {
 .customer_registration_form .woocommerce-privacy-policy-text a {
   color: #333e48;
   text-decoration: underline;
+}
+
+.customer_registration_form .or-text {
+  display: none;
 }
 
 .woocommerce-ResetPassword {
@@ -2351,6 +2381,110 @@ p.stars.selected a:not(.active):before {
 .woocommerce-ResetPassword .button {
   background-color: #fed700;
   font-weight: 700;
+}
+
+.woocommerce-account .entry-title {
+  margin: 30px 0 50px;
+  text-align: center;
+}
+
+.woocommerce-MyAccount-navigation {
+  margin-bottom: 30px;
+  border-top: 1px solid #dddddd;
+}
+
+.woocommerce-MyAccount-navigation-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.woocommerce-MyAccount-navigation-link a {
+  font-size: 14px;
+  color: #333e48;
+}
+
+.woocommerce-MyAccount-navigation-link.is-active a {
+  font-weight: 700;
+}
+
+.woocommerce-MyAccount-content a {
+  color: #333e48;
+  text-decoration: underline;
+}
+
+.woocommerce-MyAccount-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.woocommerce-MyAccount-content table.shop_table_responsive tr td:first-child,
+.woocommerce-MyAccount-content table.wishlist_table tr td:first-child {
+  padding-top: 20px;
+}
+
+.woocommerce-MyAccount-content table.shop_table_responsive tr td span,
+.woocommerce-MyAccount-content table.wishlist_table tr td span {
+  margin-right: 3px;
+}
+
+.woocommerce-MyAccount-content table.shop_table_responsive tr td .button,
+.woocommerce-MyAccount-content table.wishlist_table tr td .button {
+  background-color: #fed700;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.woocommerce-MyAccount-content mark {
+  background-color: rgba(0, 0, 0, 0.15);
+  line-height: 1.6;
+}
+
+.woocommerce-MyAccount-content h2 {
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+  font-size: 24px;
+}
+
+.woocommerce-MyAccount-content h2::before {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #fed700;
+  content: '';
+}
+
+.woocommerce-MyAccount-content .woocommerce-table--order-details {
+  width: 100%;
+}
+
+.woocommerce-MyAccount-content .woocommerce-table--order-details thead {
+  border-bottom: 1px solid #dddddd;
+}
+
+.woocommerce-MyAccount-content .woocommerce-table--order-details a {
+  color: #333e48;
+}
+
+.woocommerce-MyAccount-content .woocommerce-Address {
+  margin-bottom: 30px;
 }
 
 /*--------------------------------------------------------------

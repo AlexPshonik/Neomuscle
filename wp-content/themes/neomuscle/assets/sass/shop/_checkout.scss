@@ -128,7 +128,8 @@ form.checkout {
   border-radius: 10px;
 }
 
-.woocommerce-checkout-review-order-table {
+.woocommerce-checkout-review-order-table,
+.woocommerce-table--order-details {
   margin-bottom: 10px;
   border-collapse: collapse;
   font-size: 14px;
