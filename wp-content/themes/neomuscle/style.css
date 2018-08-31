@@ -4614,6 +4614,63 @@ select {
     width: 15%;
     text-align: left;
   }
+  form.woocommerce-checkout {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  form.woocommerce-checkout .checkout_fields {
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
+  }
+  form.woocommerce-checkout .order_review_wrapper {
+    padding-top: 0;
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
+  }
+  form.woocommerce-checkout .order_review_wrapper h3 {
+    margin-bottom: 20px;
+  }
+  form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper,
+  form.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
+  form.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row {
+    width: 100%;
+  }
+  form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_first_name_field, form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_last_name_field,
+  form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #shipping_first_name_field,
+  form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #shipping_last_name_field,
+  form.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper #billing_first_name_field,
+  form.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper #billing_last_name_field,
+  form.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper #shipping_first_name_field,
+  form.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper #shipping_last_name_field {
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -4841,6 +4898,16 @@ select {
   }
   .woocommerce table.wishlist_table tr td.product-add-to-cart .button {
     padding: 15px;
+  }
+  form.woocommerce-checkout .checkout_fields {
+    -webkit-flex-basis: 55%;
+        -ms-flex-preferred-size: 55%;
+            flex-basis: 55%;
+  }
+  form.woocommerce-checkout .order_review_wrapper {
+    -webkit-flex-basis: 40%;
+        -ms-flex-preferred-size: 40%;
+            flex-basis: 40%;
   }
 }
 

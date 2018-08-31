@@ -1,21 +1,209 @@
-/**
- * Checkout
- */
-@media screen and (min-width: 768px) {
-	.col2-set {
-		.form-row-first {
-			float: left;
-			margin-right: $columns__margin;
-		}
+.woocommerce-checkout {
+	.entry-title {
+    margin: 30px 0;
+    text-align: center;
+  }
+  .woocommerce-form-coupon-toggle {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: $accent-color;
+    border-radius: 5px;
+    line-height: 24px;
+    a {
+      font-size: 14px;
+      font-weight: bold;
+      color: $main-font-color;
+    }
+  }
+}
 
-		.form-row-last {
-			float: right;
-			margin-right: 0;
-		}
+.checkout_coupon.woocommerce-form-coupon {
+  margin-bottom: 60px;
+  p {
+    display: none;
+    &.form-row {
+      display: block;
+      input {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px 35px;
+      }
+      .button {
+        background-color: $main-font-color;
+        font-size: 14px;
+        color: #ffffff;
+      }
+    }
+  }
+}
 
-		.form-row-first,
-		.form-row-last {
-			@include column-width(2);
-		}
-	}
+form.checkout {
+  h3 {
+    width: 100%;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid $border-color;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 500;
+    &::before {
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 50px;
+      height: 2px;
+      display: block;
+      background-color: $accent-color;
+      content: '';
+    }
+    label {
+      margin-bottom: 0;
+    }
+  }
+  .form-row {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+  .woocommerce-input-wrapper {
+    display: block;
+    input,
+    select {
+      width: 100%;
+      padding: 8px 15px;
+    }
+    select {
+      line-height: 1.4;
+    }
+    textarea {
+      display: block;
+      width: 100%;
+      height: 150px;
+      padding: 15px;
+      border-radius: 20px;
+      resize: none;
+    }
+  }
+  input[type="checkbox"] {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    padding: 0;
+    border-radius: 2px;
+  }
+  input[type="checkbox"]:checked {
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      height: 2px;
+      background-color: $accent-color;
+      content: '';
+    }
+    &::before {
+      top: 6px;
+      width: 7px;
+      transform: rotate(45deg);
+    }
+    &::after {
+      left: 4px;
+      top: 5px;
+      width: 10px;
+      transform: rotate(-55deg);
+    }
+  }
+}
+
+.order_review_wrapper {
+  background-color: #f5f5f5;
+  padding: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+
+.woocommerce-checkout-review-order-table {
+  margin-bottom: 10px;
+  border-collapse: collapse;
+  font-size: 14px;
+  thead,
+  tbody,
+  tfoot {
+    display: block;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid $border-color;
+    &:first-child {
+      border-top: none;
+    }
+  }
+  th {
+    padding-bottom: 5px;
+    line-height: 21px;
+    font-weight: 700;
+  }
+  .product {
+    &-name {
+      width: 70%;
+      text-align: left;
+    }
+    &-total {
+      text-align: right;
+    }
+  }
+  .cart_item {
+    td {
+      vertical-align: top;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+  tfoot {
+    border-top: 2px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    tr {
+      padding: 5px 0;
+    }
+  }
+}
+
+.woocommerce-checkout-payment {
+  .payment_method_cod {
+    p {
+      padding: 10px;
+      background: rgba(0,0,0,.035);
+      border-top: 1px dotted #ddd;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+  }
+  .place-order {
+    text-align: center;
+    .woocommerce-privacy-policy-text {
+      margin: 15px 0;
+      font-size: 12px;
+      line-height: 1.2;
+      text-align: left;
+      a {
+        color: $main-font-color;
+        text-decoration: underline;
+      }
+    }
+    .button {
+      margin: 0 auto;
+      background-color: $accent-color;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
 }

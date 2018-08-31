@@ -653,6 +653,37 @@
       }
     }
   }
+  form.woocommerce-checkout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .checkout_fields {
+      flex-basis: 48%;
+    }
+    .order_review_wrapper {
+      padding-top: 0;
+      flex-basis: 48%;
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+    .woocommerce-billing-fields__field-wrapper,
+    .woocommerce-shipping-fields__field-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .form-row {
+        width: 100%;
+      }
+      #billing,
+      #shipping {
+        &_first_name_field,
+        &_last_name_field {
+          flex-basis: 48%;
+        }
+      }
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -910,6 +941,14 @@
           }
         }
       }
+    }
+  }
+  form.woocommerce-checkout {
+    .checkout_fields {
+      flex-basis: 55%;
+    }
+    .order_review_wrapper {
+      flex-basis: 40%;
     }
   }
 }
