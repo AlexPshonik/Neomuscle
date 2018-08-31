@@ -71,6 +71,13 @@
     }
     .value {
       position: relative;
+      &::before {
+        content: "\e90d";
+        font-family: 'neomuscle-ui';
+        position: absolute;
+        right: 18%;
+        top: 22%;
+      }
       select {
         width: 90%;
         height: 44px;
@@ -390,8 +397,8 @@
 .wc-tab {
   ul {
     margin-bottom: 10px;
-    padding-left: 20px;
-    list-style: disc;
+    padding-left: 35px;
+    list-style: square;
   }
 }
 
