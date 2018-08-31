@@ -176,17 +176,19 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 /**
  * Remove billing fields
  */
+add_filter( 'woocommerce_checkout_fields' , 'neomuscle_woocommerce_remote_billing_fields' );
 function neomuscle_woocommerce_remote_billing_fields( $fields ) {
-	unset( $fields['billing_address_1'] );
-	unset( $fields['billing_address_2'] );
-	unset( $fields['billing_city'] );
-	unset( $fields['billing_postcode'] );
-	unset( $fields['billing_state'] );
-	unset( $fields['billing_country'] );
-	unset( $fields['billing_company'] );
-	return $fields;
+	unset($fields['billing']['billing_postcode']);
+	unset($fields['billing']['billing_country']);
+	unset($fields['billing']['billing_state']);
+	unset($fields['billing']['billing_address_1']);
+	unset($fields['billing']['billing_address_2']);
+	unset($fields['billing']['billing_city']);
+	unset($fields['billing']['billing_company']);
+	unset($fields['shipping']['shipping_country']);
+	unset($fields['shipping']['shipping_company']);
+    return $fields;
 }
-add_filter( 'woocommerce_billing_fields', 'neomuscle_woocommerce_remote_billing_fields' );
 
 /**
  * Remove cost in free delivery
