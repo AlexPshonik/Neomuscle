@@ -1,0 +1,105 @@
+.woocommerce-account {
+  .entry-title {
+    margin: 30px 0 50px;
+  }
+}
+
+.customer_login {
+  h2 {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border-color;
+    &::before {
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: $accent-color;
+      content: '';
+    }
+  }
+}
+
+.customer_login_form,
+.customer_registration_form {
+  margin-bottom: 30px;
+  label {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+  input {
+    width: 100%;
+    padding: 8px 15px;
+  }
+  input[type="checkbox"] {
+    position: relative;
+    top: 1px;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    padding: 0;
+    border-radius: 2px;
+  }
+  input[type="checkbox"]:checked {
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      height: 2px;
+      background-color: $accent-color;
+      content: '';
+    }
+    &::before {
+      top: 6px;
+      width: 7px;
+      transform: rotate(45deg);
+    }
+    &::after {
+      left: 4px;
+      top: 5px;
+      width: 10px;
+      transform: rotate(-55deg);
+    }
+  }
+  .woocommerce-form-row {
+    margin-bottom: 20px;
+  }
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    label {
+      margin-bottom: 0;
+    }
+  }
+  .button {
+    background-color: $accent-color;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .lost_password {
+    a {
+      color: $main-font-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+.customer_registration_form {
+  .woocommerce-privacy-policy-text {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    a {
+      color: $main-font-color;
+      text-decoration: underline;
+    }
+  }
+}

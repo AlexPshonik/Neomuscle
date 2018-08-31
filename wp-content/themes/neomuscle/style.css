@@ -4764,6 +4764,53 @@ select {
     width: 48%;
     margin-bottom: 30px;
   }
+  .customer_login {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .customer_login .customer_login_form,
+  .customer_login .customer_registration_form {
+    width: 48%;
+    margin-bottom: 0;
+  }
+  .customer_login .customer_login_form {
+    padding-right: 40px;
+  }
+  .customer_login .customer_registration_form {
+    padding-left: 40px;
+  }
+  .customer_login .or-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 10px 15px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .customer_login::before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #dddddd;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    content: '';
+  }
 }
 
 /* Medium Devices, Desktops */

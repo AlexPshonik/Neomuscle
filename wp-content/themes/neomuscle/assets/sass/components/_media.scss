@@ -772,6 +772,42 @@
       }
     }
   }
+  .customer_login {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .customer_login_form,
+    .customer_registration_form {
+      width: 48%;
+      margin-bottom: 0;
+    }
+    .customer_login_form {
+      padding-right: 40px;
+    }
+    .customer_registration_form {
+      padding-left: 40px;
+    }
+    .or-text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      padding: 10px 15px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      border: 1px solid $border-color;
+      transform: translate(-50%, -50%);
+    }
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background-color: $border-color;
+      transform: translateX(-50%);
+      content: '';
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
