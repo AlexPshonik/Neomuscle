@@ -187,3 +187,27 @@ function neomuscle_woocommerce_remote_billing_fields( $fields ) {
 	return $fields;
 }
 add_filter( 'woocommerce_billing_fields', 'neomuscle_woocommerce_remote_billing_fields' );
+
+/**
+ * Remove cost in free delivery
+ */
+add_filter ('woocommerce_cart_shipping_method_full_label', 'neomuscle_cart_totals_shipping_method_label_nofree', 10, 2);
+function neomuscle_cart_totals_shipping_method_label_nofree( $label, $method ) {
+  $label = $method->label;
+  if ( $method->cost > 0 ) {
+    if ( WC()->cart->tax_display_cart == 'excl' ) {
+      $label .= ': ' . wc_price( $method->cost );
+      if ( $method->get_shipping_tax() > 0 && WC()->cart->prices_include_tax ) {
+        $label .= ' <small>' . WC()->countries->ex_tax_or_vat() . '</small>';
+      }
+    } else {
+      $label .= ': ' . wc_price( $method->cost + $method->get_shipping_tax() );
+      if ( $method->get_shipping_tax() > 0 && ! WC()->cart->prices_include_tax ) {
+        $label .= ' <small>' . WC()->countries->inc_tax_or_vat() . '</small>';
+      }
+    }
+  } elseif ( $method->id !== 'free_shipping' ) {
+    $label .= ' ';
+  }
+  return $label;
+}
