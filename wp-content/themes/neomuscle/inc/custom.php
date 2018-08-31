@@ -172,3 +172,18 @@ function neomuscle_product_tab_content()  {
  * Remove standart rating template in pdp page
  */
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+
+/**
+ * Remove billing fields
+ */
+function neomuscle_woocommerce_remote_billing_fields( $fields ) {
+	unset( $fields['billing_address_1'] );
+	unset( $fields['billing_address_2'] );
+	unset( $fields['billing_city'] );
+	unset( $fields['billing_postcode'] );
+	unset( $fields['billing_state'] );
+	unset( $fields['billing_country'] );
+	unset( $fields['billing_company'] );
+	return $fields;
+}
+add_filter( 'woocommerce_billing_fields', 'neomuscle_woocommerce_remote_billing_fields' );
