@@ -103,3 +103,20 @@
     }
   }
 }
+
+.woocommerce-ResetPassword {
+  line-height: 1.4;
+  p {
+    margin-bottom: 20px;
+  }
+  label {
+    margin-right: 10px;
+  }
+  input {
+    padding: 8px 15px;
+  }
+  .button {
+    background-color: $accent-color;
+    font-weight: 700;
+  }
+}

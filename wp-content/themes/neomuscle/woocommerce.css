@@ -2332,6 +2332,27 @@ p.stars.selected a:not(.active):before {
   text-decoration: underline;
 }
 
+.woocommerce-ResetPassword {
+  line-height: 1.4;
+}
+
+.woocommerce-ResetPassword p {
+  margin-bottom: 20px;
+}
+
+.woocommerce-ResetPassword label {
+  margin-right: 10px;
+}
+
+.woocommerce-ResetPassword input {
+  padding: 8px 15px;
+}
+
+.woocommerce-ResetPassword .button {
+  background-color: #fed700;
+  font-weight: 700;
+}
+
 /*--------------------------------------------------------------
 # SWooCommerce widgets
 --------------------------------------------------------------*/
