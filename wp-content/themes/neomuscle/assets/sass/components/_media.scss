@@ -288,7 +288,7 @@
         flex-basis: 25%;
       }
       &-img {
-        height: 35px;
+        height: 30px;
       }
     }
     &-search{
@@ -653,6 +653,60 @@
       }
     }
   }
+  .woocommerce {
+    #content table.wishlist_table.cart a.remove:hover {
+      background-color: transparent;
+      color: red;
+    }
+    table.wishlist_table {
+      thead {
+        tr {
+          display: table-row;
+        }
+        th {
+          padding: 5px 0;
+          border-top: none;
+          border-bottom: 1px solid $border-color;
+          text-align: left;
+          font-size: 14px;
+          font-weight: 400;
+          color: #747474;
+        }
+      }
+      tr {
+        td {
+          display: table-cell;
+          &.product {
+            &-remove {
+              a {
+                &:hover {
+                  background-color: transparent;
+                  color: red;
+                }
+              }
+            }
+            &-thumbnail {
+              width: 25%;
+              padding: 20px 30px;
+              a {
+                padding: 5px;
+                border: 1px solid $border-color;
+              }
+            }
+            &-name {
+              width: 30%;
+              padding-right: 20px;
+            }
+            &-price,
+            &-stock-status {
+              width: 15%;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
   form.woocommerce-checkout {
     display: flex;
     justify-content: space-between;
@@ -681,6 +735,40 @@
         &_last_name_field {
           flex-basis: 48%;
         }
+      }
+    }
+  }
+  .woocommerce-order {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    td.product-name {
+      width: 85%;
+    }
+    &-info {
+      order: 2;
+      width: 40%;
+    }
+    &-details {
+      order: 1;
+      width: 55%;
+    }
+    &-overview {
+      padding: 0 15px;
+    }
+    .woocommerce-customer-details {
+      order: 3;
+      width: 100%;
+    }
+    .woocommerce-columns--addresses {
+      display: flex;
+      justify-content: space-between;
+    }
+    .woocommerce-column {
+      &--billing-address,
+      &--shipping-address {
+        width: 48%;
+        margin-bottom: 30px;
       }
     }
   }

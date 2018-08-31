@@ -2069,6 +2069,122 @@ p.stars.selected a:not(.active):before {
 }
 
 /*--------------------------------------------------------------
+# Thank you
+--------------------------------------------------------------*/
+.woocommerce-order-overview {
+  margin-bottom: 30px;
+  padding: 0 5px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.woocommerce-order-overview li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.woocommerce-order-overview li:last-child {
+  border-bottom: 0;
+}
+
+.woocommerce-order-overview li strong {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+.woocommerce-order-overview strong {
+  margin-left: 10px;
+}
+
+.woocommerce-order-details {
+  margin-bottom: 30px;
+}
+
+.woocommerce-order .woocommerce-table--order-details {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.woocommerce-order .woocommerce-table--order-details thead,
+.woocommerce-order .woocommerce-table--order-details tbody,
+.woocommerce-order .woocommerce-table--order-details tfoot {
+  display: block;
+  width: 100%;
+}
+
+.woocommerce-order .woocommerce-table--order-details tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.woocommerce-order td.product-name {
+  width: 70%;
+}
+
+.woocommerce-order td.product-name a {
+  color: #333e48;
+}
+
+.woocommerce-order td.product-total {
+  font-weight: 700;
+}
+
+.woocommerce-order tfoot tr:last-child {
+  border-bottom: none;
+}
+
+.woocommerce-order tfoot th {
+  width: 55%;
+  text-align: left;
+  font-weight: 600;
+}
+
+.woocommerce-order tfoot td {
+  text-align: right;
+  font-weight: 700;
+}
+
+.woocommerce-order h2 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+  font-size: 24px;
+}
+
+.woocommerce-order h2::before {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 55px;
+  height: 2px;
+  background-color: #fed700;
+  content: '';
+}
+
+.woocommerce-column--billing-address {
+  margin-bottom: 30px;
+}
+
+/*--------------------------------------------------------------
 # SWooCommerce widgets
 --------------------------------------------------------------*/
 .widget-area {
