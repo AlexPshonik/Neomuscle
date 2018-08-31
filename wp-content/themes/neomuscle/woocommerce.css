@@ -1639,9 +1639,249 @@ table.wishlist_table .actions .button {
   background-color: #000;
 }
 
-/**
- * Checkout
- */
+/*--------------------------------------------------------------
+# Checkout
+--------------------------------------------------------------*/
+.woocommerce-checkout .entry-title {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.woocommerce-checkout .woocommerce-form-coupon-toggle {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fed700;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  line-height: 24px;
+}
+
+.woocommerce-checkout .woocommerce-form-coupon-toggle a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333e48;
+}
+
+.checkout_coupon.woocommerce-form-coupon {
+  margin-bottom: 60px;
+}
+
+.checkout_coupon.woocommerce-form-coupon p {
+  display: none;
+}
+
+.checkout_coupon.woocommerce-form-coupon p.form-row {
+  display: block;
+}
+
+.checkout_coupon.woocommerce-form-coupon p.form-row input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 35px;
+}
+
+.checkout_coupon.woocommerce-form-coupon p.form-row .button {
+  background-color: #333e48;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+form.checkout h3 {
+  width: 100%;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #dddddd;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+form.checkout h3::before {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 50px;
+  height: 2px;
+  display: block;
+  background-color: #fed700;
+  content: '';
+}
+
+form.checkout h3 label {
+  margin-bottom: 0;
+}
+
+form.checkout .form-row {
+  margin-bottom: 20px;
+}
+
+form.checkout label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+form.checkout .woocommerce-input-wrapper {
+  display: block;
+}
+
+form.checkout .woocommerce-input-wrapper input,
+form.checkout .woocommerce-input-wrapper select {
+  width: 100%;
+  padding: 8px 15px;
+}
+
+form.checkout .woocommerce-input-wrapper select {
+  line-height: 1.4;
+}
+
+form.checkout .woocommerce-input-wrapper textarea {
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  resize: none;
+}
+
+form.checkout input[type="checkbox"] {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  padding: 0;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+form.checkout input[type="checkbox"]:checked::before, form.checkout input[type="checkbox"]:checked::after {
+  position: absolute;
+  display: block;
+  height: 2px;
+  background-color: #fed700;
+  content: '';
+}
+
+form.checkout input[type="checkbox"]:checked::before {
+  top: 6px;
+  width: 7px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+form.checkout input[type="checkbox"]:checked::after {
+  left: 4px;
+  top: 5px;
+  width: 10px;
+  -webkit-transform: rotate(-55deg);
+      -ms-transform: rotate(-55deg);
+          transform: rotate(-55deg);
+}
+
+.order_review_wrapper {
+  background-color: #f5f5f5;
+  padding: 15px;
+  padding-bottom: 15px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.woocommerce-checkout-review-order-table {
+  margin-bottom: 10px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.woocommerce-checkout-review-order-table thead,
+.woocommerce-checkout-review-order-table tbody,
+.woocommerce-checkout-review-order-table tfoot {
+  display: block;
+  width: 100%;
+}
+
+.woocommerce-checkout-review-order-table tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #dddddd;
+}
+
+.woocommerce-checkout-review-order-table tr:first-child {
+  border-top: none;
+}
+
+.woocommerce-checkout-review-order-table th {
+  padding-bottom: 5px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.woocommerce-checkout-review-order-table .product-name {
+  width: 70%;
+  text-align: left;
+}
+
+.woocommerce-checkout-review-order-table .product-total {
+  text-align: right;
+}
+
+.woocommerce-checkout-review-order-table .cart_item td {
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.woocommerce-checkout-review-order-table tfoot {
+  border-top: 2px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+.woocommerce-checkout-review-order-table tfoot tr {
+  padding: 5px 0;
+}
+
+.woocommerce-checkout-payment .payment_method_cod p {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.035);
+  border-top: 1px dotted #ddd;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.woocommerce-checkout-payment .place-order {
+  text-align: center;
+}
+
+.woocommerce-checkout-payment .place-order .woocommerce-privacy-policy-text {
+  margin: 15px 0;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.woocommerce-checkout-payment .place-order .woocommerce-privacy-policy-text a {
+  color: #333e48;
+  text-decoration: underline;
+}
+
+.woocommerce-checkout-payment .place-order .button {
+  margin: 0 auto;
+  background-color: #fed700;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 /*--------------------------------------------------------------
 # Wish list
 --------------------------------------------------------------*/
@@ -1834,6 +2074,122 @@ p.stars.selected a:not(.active):before {
   margin-left: 5px;
   font-family: 'neomuscle-ui' !important;
   content: "\e910";
+}
+
+/*--------------------------------------------------------------
+# Thank you
+--------------------------------------------------------------*/
+.woocommerce-order-overview {
+  margin-bottom: 30px;
+  padding: 0 5px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.woocommerce-order-overview li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.woocommerce-order-overview li:last-child {
+  border-bottom: 0;
+}
+
+.woocommerce-order-overview li strong {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+.woocommerce-order-overview strong {
+  margin-left: 10px;
+}
+
+.woocommerce-order-details {
+  margin-bottom: 30px;
+}
+
+.woocommerce-order .woocommerce-table--order-details {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.woocommerce-order .woocommerce-table--order-details thead,
+.woocommerce-order .woocommerce-table--order-details tbody,
+.woocommerce-order .woocommerce-table--order-details tfoot {
+  display: block;
+  width: 100%;
+}
+
+.woocommerce-order .woocommerce-table--order-details tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.woocommerce-order td.product-name {
+  width: 70%;
+}
+
+.woocommerce-order td.product-name a {
+  color: #333e48;
+}
+
+.woocommerce-order td.product-total {
+  font-weight: 700;
+}
+
+.woocommerce-order tfoot tr:last-child {
+  border-bottom: none;
+}
+
+.woocommerce-order tfoot th {
+  width: 55%;
+  text-align: left;
+  font-weight: 600;
+}
+
+.woocommerce-order tfoot td {
+  text-align: right;
+  font-weight: 700;
+}
+
+.woocommerce-order h2 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+  font-size: 24px;
+}
+
+.woocommerce-order h2::before {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 55px;
+  height: 2px;
+  background-color: #fed700;
+  content: '';
+}
+
+.woocommerce-column--billing-address {
+  margin-bottom: 30px;
 }
 
 /*--------------------------------------------------------------

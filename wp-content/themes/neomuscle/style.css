@@ -4266,7 +4266,7 @@ select {
             flex-basis: 25%;
   }
   .site-header .logo-img {
-    height: 35px;
+    height: 30px;
   }
   .site-header-search {
     -webkit-flex-basis: 50%;
@@ -4503,6 +4503,9 @@ select {
   table.shop_table_responsive tr td.product-name {
     width: 35%;
   }
+  table.shop_table_responsive tr td.product-name a {
+    word-break: break-word;
+  }
   table.shop_table_responsive tr td.product-price {
     width: 15%;
   }
@@ -4643,6 +4646,156 @@ select {
   .woocommerce table.wishlist_table tr td.product-price, .woocommerce table.wishlist_table tr td.product-stock-status {
     width: 15%;
     text-align: left;
+  }
+  .woocommerce #content table.wishlist_table.cart a.remove:hover {
+    background-color: transparent;
+    color: red;
+  }
+  .woocommerce table.wishlist_table thead tr {
+    display: table-row;
+  }
+  .woocommerce table.wishlist_table thead th {
+    padding: 5px 0;
+    border-top: none;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: #747474;
+  }
+  .woocommerce table.wishlist_table tr td {
+    display: table-cell;
+  }
+  .woocommerce table.wishlist_table tr td.product-remove a:hover {
+    background-color: transparent;
+    color: red;
+  }
+  .woocommerce table.wishlist_table tr td.product-thumbnail {
+    width: 25%;
+    padding: 20px 30px;
+  }
+  .woocommerce table.wishlist_table tr td.product-thumbnail a {
+    padding: 5px;
+    border: 1px solid #dddddd;
+  }
+  .woocommerce table.wishlist_table tr td.product-name {
+    width: 30%;
+    padding-right: 20px;
+  }
+  .woocommerce table.wishlist_table tr td.product-price, .woocommerce table.wishlist_table tr td.product-stock-status {
+    width: 15%;
+    text-align: left;
+  }
+  form.woocommerce-checkout {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  form.woocommerce-checkout .checkout_fields {
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
+  }
+  form.woocommerce-checkout .order_review_wrapper {
+    padding-top: 0;
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
+  }
+  form.woocommerce-checkout .order_review_wrapper h3 {
+    margin-bottom: 20px;
+  }
+  form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper,
+  form.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
+  form.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row {
+    width: 100%;
+  }
+  form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_first_name_field, form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_last_name_field,
+  form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #shipping_first_name_field,
+  form.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #shipping_last_name_field,
+  form.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper #billing_first_name_field,
+  form.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper #billing_last_name_field,
+  form.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper #shipping_first_name_field,
+  form.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper #shipping_last_name_field {
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
+  }
+  .woocommerce-order {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .woocommerce-order td.product-name {
+    width: 85%;
+  }
+  .woocommerce-order-info {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 40%;
+  }
+  .woocommerce-order-details {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 55%;
+  }
+  .woocommerce-order-overview {
+    padding: 0 15px;
+  }
+  .woocommerce-order .woocommerce-customer-details {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+  }
+  .woocommerce-order .woocommerce-columns--addresses {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .woocommerce-order .woocommerce-column--billing-address, .woocommerce-order .woocommerce-column--shipping-address {
+    width: 48%;
+    margin-bottom: 30px;
   }
 }
 
@@ -4871,6 +5024,16 @@ select {
   }
   .woocommerce table.wishlist_table tr td.product-add-to-cart .button {
     padding: 15px;
+  }
+  form.woocommerce-checkout .checkout_fields {
+    -webkit-flex-basis: 55%;
+        -ms-flex-preferred-size: 55%;
+            flex-basis: 55%;
+  }
+  form.woocommerce-checkout .order_review_wrapper {
+    -webkit-flex-basis: 40%;
+        -ms-flex-preferred-size: 40%;
+            flex-basis: 40%;
   }
 }
 
