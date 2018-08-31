@@ -95,15 +95,15 @@
         <div class="col-12">
             <h2 class="food-purpose-title">Подберите для себя спортивное питание в три шага!</h2>
             <p class="food-purpose-description">Если Вы не уверены какое спортивное питание вам лучше подходит, выберите свой пол и цель тренировок для получения дальнейших рекомендаций.</p>
-            <!-- <div class="food-purpose-select">
-              <select>
+            <div class="food-purpose-select">
+              <select id="gender">
                 <option value="0">Выбирите пол</option>
-                <option value="1">Мужчина</option>
-                <option value="2">Женщина</option>
+                <option value="male">Мужчина</option>
+                <option value="female">Женщина</option>
               <select>
-              <select disabled="disabled"></select>
-              <button class="btn-primary">Найти товар</button>
-            </div> -->
+              <select id="intention" disabled="disabled"></select>
+              <button id="intention-btn" class="food-purpose-select-btn btn-primary">Найти товар</button>
+            </div>
         </div>
       </div>
     </div>

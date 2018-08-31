@@ -128,6 +128,38 @@ jQuery(document).ready(function ($) {
     // $('.dgwt-wcas-suggestions-wrapp').width = 100 + '%';
   // })
 
+  // Food Purpose
+	var intention = {
+    'male': ['Выбирите цель', 'Набор мышечной массы', 'Восстановление после тренировок', 'Увеличение выносливости', 'Снижение веса', 'Улучшение иммунитета'],
+    'female': ['Выбирите цель', 'Восстановление после тренировок', 'Снижение веса', 'Улучшение иммунитета'],
+  };
+
+  $('#gender').change(function() {
+    var value = $('#gender').val();
+    if (value != '0') {
+      var subItems = intention[value];
+      var html = '';
+      for (var i = 0; i < subItems.length; i++) {
+        html += '<option value="' + value + '.' + i +'">' + subItems[i] + '</option>'
+      }
+      $('#intention').html(html);
+      $('#intention').removeAttr('disabled');
+    } else {
+      $('#intention').attr('disabled', 'disabled');
+    }
+  });
+
+  $('#intention').change(function() {
+    var value = $('#intention').val();
+    if (value != 'male.0') {
+      if(value == 'male.1'){
+        $('#intention-btn').click(function() {
+          window.location = "/test/";
+        });
+      }
+    }
+  });
+
   // Sidebar accordeon
   $(document).on("click", "h2.widget-title", function (e) {
     e.preventDefault();
