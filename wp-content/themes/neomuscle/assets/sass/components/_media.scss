@@ -1039,6 +1039,22 @@
       min-height: 150px;
     }
   }
+  .wcapf-before-products {
+    align-items: center;
+    .woocommerce-result-count,
+    .woocommerce-ordering {
+      flex-basis: 50%;
+    }
+    .woocommerce-ordering {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      select {
+        margin-top: 0;
+        margin-left: 10px;
+      }
+    }
+  }
   .related {
     .product-card {
       &-buy {
