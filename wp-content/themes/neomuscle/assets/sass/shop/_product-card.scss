@@ -130,6 +130,7 @@
 }
 
 .wcapf-before-products {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   background-color: #f5f5f5;
@@ -149,6 +150,7 @@
     }
   }
   .columns-4 {
+    width: 100%;
     background-color: #FFFFFF;
   }
 }
