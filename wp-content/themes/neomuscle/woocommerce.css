@@ -2603,6 +2603,28 @@ p.stars.selected a:not(.active):before {
   content: "\e90d";
 }
 
+.wcapf-active-filters a {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  color: #333e48;
+}
+
+.wcapf-active-filters a:first-child {
+  margin-top: 10px;
+}
+
+.wcapf-active-filters a::before {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  display: block;
+  color: red;
+  font-family: 'neomuscle-ui' !important;
+  font-size: 14px;
+  content: "\e90f";
+}
+
 .wcapf-price-filter-wrapper {
   padding-top: 20px;
 }
