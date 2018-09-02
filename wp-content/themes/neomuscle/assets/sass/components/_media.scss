@@ -312,7 +312,6 @@
   }
   .dgwt-wcas-search-form {
     .dgwt-wcas-search-input {
-      padding-right: 10px;
       padding-left: 15px;
       border: 2px solid $accent-color;
       border-radius: 25px 0 0 25px;
@@ -327,6 +326,10 @@
         transform: translate(-50%, -50%);
       }
     }
+  }
+  .dgwt-wcas-preloader {
+    top: 3px;
+    right: 70px;
   }
   .dgwt-wcas-suggestion {
     width: auto;

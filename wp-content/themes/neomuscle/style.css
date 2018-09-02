@@ -447,6 +447,13 @@ input {
   border: none;
 }
 
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
 .home .site-footer {
   margin-top: 0;
 }
@@ -4289,7 +4296,6 @@ select {
     width: auto;
   }
   .dgwt-wcas-search-form .dgwt-wcas-search-input {
-    padding-right: 10px;
     padding-left: 15px;
     border: 2px solid #fed700;
     -webkit-border-radius: 25px 0 0 25px;
@@ -4309,6 +4315,10 @@ select {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+  .dgwt-wcas-preloader {
+    top: 3px;
+    right: 70px;
   }
   .dgwt-wcas-suggestion {
     width: auto;

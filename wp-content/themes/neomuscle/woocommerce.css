@@ -38,7 +38,7 @@ WooCommerce styles override
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 10px 0 10px 15px;
+  padding: 10px 50px 10px 15px;
   -webkit-border-radius: 0;
           border-radius: 0;
   border: none;
@@ -81,6 +81,32 @@ WooCommerce styles override
 .dgwt-wcas-suggestion {
   padding: 5px 15px;
   font-size: 14px;
+}
+
+.dgwt-wcas-preloader {
+  visibility: hidden;
+  position: absolute;
+  right: 50px;
+  top: 1px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.dgwt-wcas-inner-preloader {
+  visibility: visible;
+  background-image: url("assets/images/preloader.png");
+}
+
+.dgwt-wcas-close {
+  visibility: visible;
+  background-image: url("assets/images/close.svg");
+  -webkit-background-size: 55% 55%;
+          background-size: 55%;
 }
 
 /*--------------------------------------------------------------
