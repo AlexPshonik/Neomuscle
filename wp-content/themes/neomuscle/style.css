@@ -4072,6 +4072,12 @@ select {
   .product-card-buy .added_to_cart::after {
     font-size: 14px;
   }
+  .product-card-buy .price {
+    font-size: 16px;
+  }
+  .product-card-buy .price .woocommerce-Price-currencySymbol {
+    font-size: 14px;
+  }
   .woocommerce-product-gallery__image {
     text-align: center;
   }
@@ -4201,7 +4207,6 @@ select {
   }
   .products .product-card {
     margin-bottom: 15px;
-    padding-bottom: 15px;
   }
 }
 
@@ -4318,7 +4323,7 @@ select {
   }
   .dgwt-wcas-preloader {
     top: 3px;
-    right: 70px;
+    right: 16%;
   }
   .dgwt-wcas-suggestion {
     width: auto;
@@ -4998,7 +5003,6 @@ select {
   }
   .products .product:hover {
     position: relative;
-    min-height: 334.6px;
   }
   .products .product:hover::after {
     display: none;
@@ -5014,9 +5018,6 @@ select {
   }
   .products .product:hover .product-card .product-description {
     display: block;
-  }
-  .products.related .product:hover {
-    min-height: 338.19px;
   }
   .product-card {
     padding: 10px 20px 20px 20px;

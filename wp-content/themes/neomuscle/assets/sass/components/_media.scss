@@ -211,12 +211,9 @@
           content: none;
         }
       }
-    }
-  }
-  .products {
-    .product-card {
-      margin-bottom: 15px;
-      padding-bottom: 15px;
+      &-card {
+        margin-bottom: 15px;
+      }
     }
   }
 }
@@ -329,7 +326,7 @@
   }
   .dgwt-wcas-preloader {
     top: 3px;
-    right: 70px;
+    right: 16%;
   }
   .dgwt-wcas-suggestion {
     width: auto;
@@ -969,7 +966,6 @@
       }
       &:hover {
         position: relative;
-        min-height: 334.6px;
         &::after {
           display: none;
         }
@@ -983,13 +979,6 @@
           .product-description {
             display: block;
           }
-        }
-      }
-    }
-    &.related {
-      .product {
-        &:hover {
-          min-height: 338.19px;
         }
       }
     }
