@@ -3480,6 +3480,78 @@ h6 {
   color: #333e48;
 }
 
+.homepage-slider {
+  position: relative;
+}
+
+.homepage-slider .owl-theme .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.homepage-slider .owl-theme .owl-dots .owl-dot span {
+  -webkit-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+.homepage-slider .owl-theme .owl-dots .owl-dot.active span, .homepage-slider .owl-theme .owl-dots .owl-dot:hover span {
+  background: #fed700;
+}
+
+.homepage-slider .owl-theme .owl-nav {
+  margin-top: 0;
+}
+
+.homepage-slider .owl-theme .owl-nav .owl-prev,
+.homepage-slider .owl-theme .owl-nav .owl-next {
+  position: absolute;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.homepage-slider .owl-theme .owl-nav .owl-prev .ui-icon-right-arrow,
+.homepage-slider .owl-theme .owl-nav .owl-next .ui-icon-right-arrow {
+  font-size: 36px;
+  color: #333e48;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.homepage-slider .owl-theme .owl-nav .owl-prev:hover,
+.homepage-slider .owl-theme .owl-nav .owl-next:hover {
+  background-color: rgba(134, 151, 145, 0.3);
+}
+
+.homepage-slider .owl-theme .owl-nav .owl-prev:hover .ui-icon-right-arrow,
+.homepage-slider .owl-theme .owl-nav .owl-next:hover .ui-icon-right-arrow {
+  color: #fed700;
+}
+
+.homepage-slider .owl-theme .owl-nav .owl-prev {
+  left: 0%;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.homepage-slider .owl-theme .owl-nav .owl-next {
+  right: 0%;
+}
+
 /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
