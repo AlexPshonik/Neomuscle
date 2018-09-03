@@ -4201,7 +4201,6 @@ select {
   }
   .products .product-card {
     margin-bottom: 15px;
-    padding-bottom: 15px;
   }
 }
 
@@ -4998,7 +4997,6 @@ select {
   }
   .products .product:hover {
     position: relative;
-    min-height: 334.6px;
   }
   .products .product:hover::after {
     display: none;
@@ -5014,9 +5012,6 @@ select {
   }
   .products .product:hover .product-card .product-description {
     display: block;
-  }
-  .products.related .product:hover {
-    min-height: 338.19px;
   }
   .product-card {
     padding: 10px 20px 20px 20px;
