@@ -213,9 +213,3 @@ function neomuscle_cart_totals_shipping_method_label_nofree( $label, $method ) {
   }
   return $label;
 }
-
-function cart_subtotal_func_unset( $total ) {
-  unset($totals['cart_subtotal']);
-  return $totals;
-  }
-  add_filter('woocommerce_cart_item_subtotal', 'cart_subtotal_func_unset', 10, 2);
