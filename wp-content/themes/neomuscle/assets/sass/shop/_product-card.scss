@@ -94,11 +94,6 @@
       margin-top: 0;
       margin-right: 10px;
     }
-    .add_to_wishlist {
-      .ajax-loading {
-        display: none !important;
-      }
-    }
     .ui-icon-heart,
     .ui-icon-heart-filling {
       position: relative;
@@ -124,6 +119,17 @@
         color: #818181;
       }
     }
+  }
+}
+
+.yith-wcwl-add-to-wishlist {
+  position: relative;
+  .ajax-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 0;
+    transform: translate(-50%, -50%);
   }
 }
 

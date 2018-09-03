@@ -4072,6 +4072,12 @@ select {
   .product-card-buy .added_to_cart::after {
     font-size: 14px;
   }
+  .product-card-buy .price {
+    font-size: 16px;
+  }
+  .product-card-buy .price .woocommerce-Price-currencySymbol {
+    font-size: 14px;
+  }
   .woocommerce-product-gallery__image {
     text-align: center;
   }
