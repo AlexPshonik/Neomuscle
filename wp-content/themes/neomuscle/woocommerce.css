@@ -784,10 +784,14 @@ table.shop_table_responsive tr td.download-actions .button {
 
 .single-product .yith-wcwl-add-to-wishlist {
   margin-top: 0;
-  font-size: 26px;
 }
 
 .single-product .yith-wcwl-add-to-wishlist a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
   color: #fed700;
 }
 

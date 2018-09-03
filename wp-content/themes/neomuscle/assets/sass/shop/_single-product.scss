@@ -123,8 +123,9 @@
   }
   .yith-wcwl-add-to-wishlist {
     margin-top: 0;
-    font-size: 26px;
     a {
+      display: flex;
+      font-size: 24px;
       color: $accent-color;
       &:hover {
         color: $main-font-color;
