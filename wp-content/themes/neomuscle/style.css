@@ -4159,6 +4159,12 @@ input[type="checkbox"]:checked::after {
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .woocommerce-checkout .woocommerce-form-coupon-toggle a {
+    display: block;
+  }
+}
+
 /* Custom, iPhone Retina */
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
@@ -4272,9 +4278,6 @@ input[type="checkbox"]:checked::after {
   }
   table.shop_table_responsive .actions .button {
     width: 90%;
-  }
-  .woocommerce-checkout .woocommerce-form-coupon-toggle a {
-    display: initial;
   }
 }
 

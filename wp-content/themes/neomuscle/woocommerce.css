@@ -1715,7 +1715,6 @@ table.wishlist_table .actions .button {
 }
 
 .woocommerce-checkout .woocommerce-form-coupon-toggle a {
-  display: block;
   font-weight: 700;
   color: #333e48;
 }
