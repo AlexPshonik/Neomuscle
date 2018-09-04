@@ -81,6 +81,11 @@
       &::after {
         content: "\e910";
       }
+      &.product_type_variable {
+        &::after {
+          content: '\e912';
+        }
+      }
       &.added {
         display: none;
       }
