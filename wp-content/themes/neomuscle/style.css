@@ -4273,9 +4273,6 @@ input[type="checkbox"]:checked::after {
   table.shop_table_responsive .actions .button {
     width: 90%;
   }
-  .woocommerce-checkout .woocommerce-form-coupon-toggle a {
-    display: initial;
-  }
 }
 
 @media only screen and (min-width: 576px) {
@@ -4714,9 +4711,6 @@ input[type="checkbox"]:checked::after {
     margin-bottom: 0;
     margin-right: 20px;
   }
-  .woocommerce-checkout-review-order {
-    padding-bottom: 0;
-  }
   .site-footer .footer-widget {
     padding: 60px 0 60px 0;
   }
@@ -5092,6 +5086,7 @@ input[type="checkbox"]:checked::after {
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     margin-bottom: 0;
+    min-height: 330px;
   }
   .products .product:nth-child(3n)::after {
     content: '';
@@ -5176,7 +5171,6 @@ input[type="checkbox"]:checked::after {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
-    font-size: 14px;
   }
   .wcapf-before-products .woocommerce-ordering {
     display: -webkit-box;
@@ -5266,14 +5260,14 @@ input[type="checkbox"]:checked::after {
     padding: 15px;
   }
   form.woocommerce-checkout .checkout_fields {
-    -webkit-flex-basis: 60%;
-        -ms-flex-preferred-size: 60%;
-            flex-basis: 60%;
+    -webkit-flex-basis: 55%;
+        -ms-flex-preferred-size: 55%;
+            flex-basis: 55%;
   }
   form.woocommerce-checkout .order_review_wrapper {
-    -webkit-flex-basis: 35%;
-        -ms-flex-preferred-size: 35%;
-            flex-basis: 35%;
+    -webkit-flex-basis: 40%;
+        -ms-flex-preferred-size: 40%;
+            flex-basis: 40%;
   }
   .woocommerce-account .woocommerce::after {
     display: block;
@@ -5379,8 +5373,5 @@ input[type="checkbox"]:checked::after {
   }
   .cart-collaterals {
     width: 30%;
-  }
-  .woocommerce-checkout-payment .wc_payment_method p {
-    margin-left: 25px;
   }
 }
