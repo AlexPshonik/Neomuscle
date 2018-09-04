@@ -4272,7 +4272,7 @@ select {
     content: none;
   }
   .products .product-card {
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
 }
 
@@ -4435,7 +4435,7 @@ select {
     width: 101%;
   }
   .related.products .owl-stage-outer {
-    padding: 10px 2px 80px;
+    padding: 10px 2px 110px;
   }
   .related-title {
     font-size: 22px;
@@ -5059,6 +5059,7 @@ select {
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
+    margin-bottom: 0;
   }
   .products .product:nth-child(3n)::after {
     content: '';

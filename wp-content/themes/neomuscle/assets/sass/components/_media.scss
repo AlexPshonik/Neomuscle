@@ -212,7 +212,7 @@
         }
       }
       &-card {
-        margin-bottom: 15px;
+        margin-bottom: 0;
       }
     }
   }
@@ -370,7 +370,7 @@
     &.products {
       width: 101%;  
       .owl-stage-outer {
-        padding: 10px 2px 80px;
+        padding: 10px 2px 110px;
       }
     }
     &-title {
@@ -953,6 +953,7 @@
   .products {
     .product {
       flex-basis: 25%;
+      margin-bottom: 0;
       &:nth-child(3n){
         &::after {
           content: '';
