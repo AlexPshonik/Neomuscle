@@ -23,9 +23,7 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-  .woocommerce-checkout .woocommerce-form-coupon-toggle a {
-    display: initial;
-  }
+
 }
 
 /* Extra Small Devices, Phones */
@@ -142,6 +140,9 @@
         width: 90%;
       }
     }
+  }
+  .woocommerce-checkout .woocommerce-form-coupon-toggle a {
+    display: initial;
   }
 }
 

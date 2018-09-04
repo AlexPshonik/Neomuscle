@@ -4162,12 +4162,6 @@ input[type="checkbox"]:checked::after {
 /* Custom, iPhone Retina */
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  .woocommerce-checkout .woocommerce-form-coupon-toggle a {
-    display: initial;
-  }
-}
-
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
   .feature-box {
@@ -4278,6 +4272,9 @@ input[type="checkbox"]:checked::after {
   }
   table.shop_table_responsive .actions .button {
     width: 90%;
+  }
+  .woocommerce-checkout .woocommerce-form-coupon-toggle a {
+    display: initial;
   }
 }
 
