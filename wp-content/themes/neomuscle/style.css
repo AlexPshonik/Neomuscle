@@ -5358,6 +5358,9 @@ input[type="checkbox"]:checked::after {
   .product-card-buy .price {
     font-size: 16px;
   }
+  .product-card-buy .price .woocommerce-Price-currencySymbol {
+    font-size: 16px;
+  }
   table.shop_table_responsive tr td.product-quantity .quantity {
     width: 60%;
   }

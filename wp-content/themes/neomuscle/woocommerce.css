@@ -786,7 +786,7 @@ table.shop_table_responsive tr td.download-actions .button {
   margin-top: 0;
 }
 
-.single-product .yith-wcwl-add-to-wishlist a {
+.single-product .yith-wcwl-add-to-wishlist .add_to_wishlist {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -800,7 +800,7 @@ table.shop_table_responsive tr td.download-actions .button {
   color: #fed700;
 }
 
-.single-product .yith-wcwl-add-to-wishlist a:hover {
+.single-product .yith-wcwl-add-to-wishlist .add_to_wishlist:hover {
   color: #333e48;
 }
 

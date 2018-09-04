@@ -1194,6 +1194,9 @@
       &-buy {
         .price {
           font-size: 16px;
+          .woocommerce-Price-currencySymbol {
+            font-size: 16px;
+          }
         }
       }
     }
