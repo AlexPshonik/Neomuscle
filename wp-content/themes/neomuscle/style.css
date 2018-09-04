@@ -4524,7 +4524,6 @@ select {
     text-align: left;
   }
   .woocommerce-message .button {
-    min-width: 22%;
     border-top: none;
     border-left: 1px solid #e7c400;
     margin-top: 0;
