@@ -1744,11 +1744,10 @@ table.wishlist_table .actions .button {
 form.checkout h3 {
   width: 100%;
   position: relative;
-  padding-bottom: 10px;
+  padding: 10px 0;
   margin-bottom: 35px;
   border-bottom: 1px solid #dddddd;
   font-size: 25px;
-  line-height: 40px;
   font-weight: 500;
 }
 
@@ -1777,6 +1776,7 @@ form.checkout label {
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 form.checkout .woocommerce-input-wrapper {
@@ -1805,14 +1805,14 @@ form.checkout .woocommerce-input-wrapper textarea {
 
 .order_review_wrapper {
   background-color: #f5f5f5;
-  padding: 15px;
-  padding-bottom: 15px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  padding: 0 15px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .woocommerce-checkout-review-order-table,
 .woocommerce-table--order-details {
+  width: 100%;
   margin-bottom: 10px;
   border-collapse: collapse;
   font-size: 14px;
@@ -1838,8 +1838,6 @@ form.checkout .woocommerce-input-wrapper textarea {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 0;
-  border-top: 1px solid #dddddd;
 }
 
 .woocommerce-checkout-review-order-table tr:first-child,
@@ -1856,7 +1854,6 @@ form.checkout .woocommerce-input-wrapper textarea {
 
 .woocommerce-checkout-review-order-table .product-name,
 .woocommerce-table--order-details .product-name {
-  width: 70%;
   text-align: left;
 }
 
@@ -1872,9 +1869,14 @@ form.checkout .woocommerce-input-wrapper textarea {
   line-height: 1.4;
 }
 
+.woocommerce-checkout-review-order-table tbody,
+.woocommerce-table--order-details tbody {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dddddd;
+}
+
 .woocommerce-checkout-review-order-table tfoot,
 .woocommerce-table--order-details tfoot {
-  border-top: 2px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 }
 
@@ -1883,12 +1885,19 @@ form.checkout .woocommerce-input-wrapper textarea {
   padding: 5px 0;
 }
 
-.woocommerce-checkout-payment .payment_method_cod p {
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.035);
-  border-top: 1px dotted #ddd;
-  font-size: 15px;
-  line-height: 1.4;
+.woocommerce-checkout-payment-title {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.woocommerce-checkout-payment .payment_methods {
+  border-bottom: 1px solid #dddddd;
+}
+
+.woocommerce-checkout-payment .wc_payment_method p {
+  margin-bottom: 20px;
+  margin-left: 30px;
+  font-size: 13px;
 }
 
 .woocommerce-checkout-payment .place-order {
@@ -1896,7 +1905,7 @@ form.checkout .woocommerce-input-wrapper textarea {
 }
 
 .woocommerce-checkout-payment .place-order .woocommerce-privacy-policy-text {
-  margin: 15px 0;
+  margin: 15px 0 30px 0;
   font-size: 12px;
   line-height: 1.2;
   text-align: left;
@@ -1912,6 +1921,29 @@ form.checkout .woocommerce-input-wrapper textarea {
   background-color: #fed700;
   font-size: 14px;
   font-weight: 700;
+}
+
+.woocommerce-checkout-payment .place-order .button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.woocommerce-checkout-payment .checkout-review-order-table {
+  width: 100%;
+  font-size: 14px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.woocommerce-checkout-payment .checkout-review-order-table tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0;
 }
 
 /*--------------------------------------------------------------
