@@ -231,7 +231,7 @@ WooCommerce styles override
   font-size: 14px;
   font-weight: 600;
   text-align: center;
-  line-height: 2.5;
+  line-height: 2.4;
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
@@ -1467,13 +1467,6 @@ table.shop_table_responsive tr td.download-actions .button {
   margin-bottom: 50px;
 }
 
-.woocommerce-cart .entry-header .entry-title {
-  margin: 50px 0 40px;
-  text-align: center;
-  font-size: 40px;
-  line-height: 1.1;
-}
-
 .woocommerce-cart .entry-content .cart-empty {
   margin-bottom: 22.5px;
   text-align: center;
@@ -1709,23 +1702,18 @@ table.wishlist_table .actions .button {
 /*--------------------------------------------------------------
 # Checkout
 --------------------------------------------------------------*/
-.woocommerce-checkout .entry-title {
-  margin: 30px 0;
-  text-align: center;
-}
-
 .woocommerce-checkout .woocommerce-form-coupon-toggle {
   margin-bottom: 20px;
-  padding: 15px;
+  padding: 10px 15px;
+  font-size: 14px;
   background-color: #fed700;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  line-height: 24px;
 }
 
 .woocommerce-checkout .woocommerce-form-coupon-toggle a {
-  font-size: 14px;
-  font-weight: bold;
+  display: block;
+  font-weight: 700;
   color: #333e48;
 }
 
