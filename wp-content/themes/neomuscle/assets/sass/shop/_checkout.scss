@@ -94,6 +94,10 @@ form.checkout {
   border-radius: 5px;
 }
 
+.woocommerce-checkout-review-order {
+  padding-bottom: 10px;
+}
+
 .woocommerce-checkout-review-order-table,
 .woocommerce-table--order-details {
   width: 100%;
@@ -155,8 +159,7 @@ form.checkout {
   }
   .wc_payment_method {
     p {
-      margin-bottom: 20px;
-      margin-left: 30px;
+      margin-bottom: 10px;
       font-size: 13px;
     }
   }
