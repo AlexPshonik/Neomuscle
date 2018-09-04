@@ -645,63 +645,11 @@
             &-thumbnail {
               width: 25%;
               padding: 20px 30px;
+              img {
+                width: 65%;
+              }
               a {
                 padding: 5px;
-                border: 1px solid $border-color;
-              }
-            }
-            &-name {
-              width: 30%;
-              padding-right: 20px;
-            }
-            &-price,
-            &-stock-status {
-              width: 15%;
-              text-align: left;
-            }
-          }
-        }
-      }
-    }
-  }
-  .woocommerce {
-    #content table.wishlist_table.cart a.remove:hover {
-      background-color: transparent;
-      color: red;
-    }
-    table.wishlist_table {
-      thead {
-        tr {
-          display: table-row;
-        }
-        th {
-          padding: 5px 0;
-          border-top: none;
-          border-bottom: 1px solid $border-color;
-          text-align: left;
-          font-size: 14px;
-          font-weight: 400;
-          color: #747474;
-        }
-      }
-      tr {
-        td {
-          display: table-cell;
-          &.product {
-            &-remove {
-              a {
-                &:hover {
-                  background-color: transparent;
-                  color: red;
-                }
-              }
-            }
-            &-thumbnail {
-              width: 25%;
-              padding: 20px 30px;
-              a {
-                padding: 5px;
-                border: 1px solid $border-color;
               }
             }
             &-name {

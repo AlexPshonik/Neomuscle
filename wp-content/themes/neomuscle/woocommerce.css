@@ -2033,6 +2033,11 @@ form.checkout input[type="checkbox"]:checked::after {
   font-weight: 700;
 }
 
+.woocommerce table.wishlist_table tr td.product-add-to-cart .button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
