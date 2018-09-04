@@ -89,6 +89,16 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  // Homepage slider
+  $('.homepage-slider .slider').owlCarousel({
+    loop:true,
+    nav:true,
+    dots: true,
+    autoplay: true,
+    items: 1,
+    navText: ["<span class='ui-icon-right-arrow prev'></span>","<span class='ui-icon-right-arrow next'></span>"]
+  });
+
   // QTY 
   $('.quantityPlus').click(function(e){
     e.preventDefault();

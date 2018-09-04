@@ -60,7 +60,7 @@
     margin-bottom: 15px;
     font-size: 28px;
     .woocommerce-Price-currencySymbol {
-      font-size: 18px;
+      font-size: 12px;
     }
   }
   .variations {
@@ -123,8 +123,10 @@
   }
   .yith-wcwl-add-to-wishlist {
     margin-top: 0;
-    a {
+    .add_to_wishlist {
       display: flex;
+      align-items: center;
+      height: 100%;
       font-size: 24px;
       color: $accent-color;
       &:hover {

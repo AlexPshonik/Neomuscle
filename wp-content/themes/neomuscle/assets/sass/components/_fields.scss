@@ -22,3 +22,55 @@ select {
   line-height: 1;
   vertical-align: middle;
 }
+
+input[type=radio] {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  padding: 0;
+  &:checked {
+    &:before {
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      display: block;
+      width: 9px;
+      height: 9px;
+      background-color: $accent-color;
+      border-radius: 50%;
+      content: '';
+    }
+  }
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0;
+  border-radius: 2px;
+  &:checked {
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      height: 2px;
+      background-color: $accent-color;
+      content: '';
+    }
+    &::before {
+      top: 6px;
+      width: 7px;
+      transform: rotate(45deg);
+    }
+    &::after {
+      left: 4px;
+      top: 5px;
+      width: 10px;
+      transform: rotate(-55deg);
+    }
+  }
+}

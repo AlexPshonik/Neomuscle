@@ -65,7 +65,7 @@ form.checkout {
     margin-bottom: 20px;
   }
   label {
-    display: block;
+    display: inline-block;
     margin-bottom: 12px;
     font-size: 14px;
     line-height: 18px;
@@ -88,35 +88,6 @@ form.checkout {
       padding: 15px;
       border-radius: 20px;
       resize: none;
-    }
-  }
-  input[type="checkbox"] {
-    position: relative;
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-    padding: 0;
-    border-radius: 2px;
-  }
-  input[type="checkbox"]:checked {
-    &::before,
-    &::after {
-      position: absolute;
-      display: block;
-      height: 2px;
-      background-color: $accent-color;
-      content: '';
-    }
-    &::before {
-      top: 6px;
-      width: 7px;
-      transform: rotate(45deg);
-    }
-    &::after {
-      left: 4px;
-      top: 5px;
-      width: 10px;
-      transform: rotate(-55deg);
     }
   }
 }

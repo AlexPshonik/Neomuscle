@@ -168,26 +168,6 @@ table.wishlist_table {
   }
   #shipping_method {
     text-align: left;
-    input[type=radio] {
-      position: relative;
-      width: 15px;
-      height: 15px;
-      margin-right: 10px;
-      padding: 0;
-    }
-    input[type=radio]:checked {
-      &:before {
-        position: absolute;
-        left: 2px;
-        top: 2px;
-        display: block;
-        width: 9px;
-        height: 9px;
-        background-color: $accent-color;
-        border-radius: 50%;
-        content: '';
-      }
-    }
   }
   .wc-proceed-to-checkout {
     text-align: center;
