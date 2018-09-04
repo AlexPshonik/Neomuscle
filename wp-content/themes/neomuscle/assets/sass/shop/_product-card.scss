@@ -144,7 +144,11 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  min-height: 150px;
   background-color: #f5f5f5;
+  .woocommerce-info {
+    padding-left: 15px;
+  }
   .woocommerce-result-count,
   .woocommerce-ordering {
     padding: 10px 15px;
