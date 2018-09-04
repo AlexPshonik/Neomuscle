@@ -1684,27 +1684,6 @@ table.wishlist_table .actions .button {
   text-align: left;
 }
 
-.cart-collaterals #shipping_method input[type=radio] {
-  position: relative;
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-  padding: 0;
-}
-
-.cart-collaterals #shipping_method input[type=radio]:checked:before {
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  display: block;
-  width: 9px;
-  height: 9px;
-  background-color: #fed700;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  content: '';
-}
-
 .cart-collaterals .wc-proceed-to-checkout {
   text-align: center;
 }
@@ -1799,7 +1778,7 @@ form.checkout .form-row {
 }
 
 form.checkout label {
-  display: block;
+  display: inline-block;
   margin-bottom: 12px;
   font-size: 14px;
   line-height: 18px;
@@ -1828,41 +1807,6 @@ form.checkout .woocommerce-input-wrapper textarea {
   -webkit-border-radius: 20px;
           border-radius: 20px;
   resize: none;
-}
-
-form.checkout input[type="checkbox"] {
-  position: relative;
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-  padding: 0;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-}
-
-form.checkout input[type="checkbox"]:checked::before, form.checkout input[type="checkbox"]:checked::after {
-  position: absolute;
-  display: block;
-  height: 2px;
-  background-color: #fed700;
-  content: '';
-}
-
-form.checkout input[type="checkbox"]:checked::before {
-  top: 6px;
-  width: 7px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-form.checkout input[type="checkbox"]:checked::after {
-  left: 4px;
-  top: 5px;
-  width: 10px;
-  -webkit-transform: rotate(-55deg);
-      -ms-transform: rotate(-55deg);
-          transform: rotate(-55deg);
 }
 
 .order_review_wrapper {
@@ -2341,52 +2285,6 @@ p.stars.selected a:not(.active):before {
 .woocommerce-EditAccountForm input {
   width: 100%;
   padding: 8px 15px;
-}
-
-.customer_login_form input[type="checkbox"],
-.customer_registration_form input[type="checkbox"],
-.woocommerce-EditAccountForm input[type="checkbox"] {
-  position: relative;
-  top: 1px;
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-  padding: 0;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-}
-
-.customer_login_form input[type="checkbox"]:checked::before, .customer_login_form input[type="checkbox"]:checked::after,
-.customer_registration_form input[type="checkbox"]:checked::before,
-.customer_registration_form input[type="checkbox"]:checked::after,
-.woocommerce-EditAccountForm input[type="checkbox"]:checked::before,
-.woocommerce-EditAccountForm input[type="checkbox"]:checked::after {
-  position: absolute;
-  display: block;
-  height: 2px;
-  background-color: #fed700;
-  content: '';
-}
-
-.customer_login_form input[type="checkbox"]:checked::before,
-.customer_registration_form input[type="checkbox"]:checked::before,
-.woocommerce-EditAccountForm input[type="checkbox"]:checked::before {
-  top: 6px;
-  width: 7px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.customer_login_form input[type="checkbox"]:checked::after,
-.customer_registration_form input[type="checkbox"]:checked::after,
-.woocommerce-EditAccountForm input[type="checkbox"]:checked::after {
-  left: 4px;
-  top: 5px;
-  width: 10px;
-  -webkit-transform: rotate(-55deg);
-      -ms-transform: rotate(-55deg);
-          transform: rotate(-55deg);
 }
 
 .customer_login_form .woocommerce-form-row,
