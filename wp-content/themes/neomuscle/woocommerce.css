@@ -1468,11 +1468,10 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .woocommerce-cart .entry-content .cart-empty {
-  margin-bottom: 22.5px;
+  margin-bottom: 28px;
   text-align: center;
-  font-size: 30px;
-  line-height: 45px;
-  font-weight: 300;
+  font-size: 22px;
+  font-weight: 100;
 }
 
 .woocommerce-cart .entry-content .return-to-shop {
