@@ -902,6 +902,7 @@
     .product {
       flex-basis: 25%;
       margin-bottom: 0;
+      min-height: 330px;
       &:nth-child(3n){
         &::after {
           content: '';

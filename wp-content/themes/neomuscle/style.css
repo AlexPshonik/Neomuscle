@@ -5080,6 +5080,7 @@ input[type="checkbox"]:checked::after {
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     margin-bottom: 0;
+    min-height: 330px;
   }
   .products .product:nth-child(3n)::after {
     content: '';
