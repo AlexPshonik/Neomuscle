@@ -1,17 +1,13 @@
 .woocommerce-checkout {
-	.entry-title {
-    margin: 30px 0;
-    text-align: center;
-  }
   .woocommerce-form-coupon-toggle {
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 10px 15px;
+    font-size: 14px;
     background-color: $accent-color;
     border-radius: 5px;
-    line-height: 24px;
     a {
-      font-size: 14px;
-      font-weight: bold;
+      display: block;
+      font-weight: 700;
       color: $main-font-color;
     }
   }
@@ -41,11 +37,10 @@ form.checkout {
   h3 {
     width: 100%;
     position: relative;
-    padding-bottom: 10px;
+    padding: 10px 0;
     margin-bottom: 35px;
     border-bottom: 1px solid $border-color;
     font-size: 25px;
-    line-height: 40px;
     font-weight: 500;
     &::before {
       position: absolute;
@@ -70,6 +65,7 @@ form.checkout {
     font-size: 14px;
     line-height: 18px;
     font-weight: 700;
+    cursor: pointer;
   }
   .woocommerce-input-wrapper {
     display: block;
@@ -94,13 +90,17 @@ form.checkout {
 
 .order_review_wrapper {
   background-color: #f5f5f5;
-  padding: 15px;
-  padding-bottom: 15px;
-  border-radius: 10px;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+.woocommerce-checkout-review-order {
+  padding-bottom: 10px;
 }
 
 .woocommerce-checkout-review-order-table,
 .woocommerce-table--order-details {
+  width: 100%;
   margin-bottom: 10px;
   border-collapse: collapse;
   font-size: 14px;
@@ -113,8 +113,6 @@ form.checkout {
   tr {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
-    border-top: 1px solid $border-color;
     &:first-child {
       border-top: none;
     }
@@ -126,7 +124,6 @@ form.checkout {
   }
   .product {
     &-name {
-      width: 70%;
       text-align: left;
     }
     &-total {
@@ -140,8 +137,11 @@ form.checkout {
       line-height: 1.4;
     }
   }
+  tbody {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $border-color;
+  }
   tfoot {
-    border-top: 2px solid $border-color;
     border-bottom: 1px solid $border-color;
     tr {
       padding: 5px 0;
@@ -150,19 +150,23 @@ form.checkout {
 }
 
 .woocommerce-checkout-payment {
-  .payment_method_cod {
+  &-title {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .payment_methods {
+    border-bottom: 1px solid $border-color;
+  }
+  .wc_payment_method {
     p {
-      padding: 10px;
-      background: rgba(0,0,0,.035);
-      border-top: 1px dotted #ddd;
-      font-size: 15px;
-      line-height: 1.4;
+      margin-bottom: 10px;
+      font-size: 13px;
     }
   }
   .place-order {
     text-align: center;
     .woocommerce-privacy-policy-text {
-      margin: 15px 0;
+      margin: 15px 0 30px 0;
       font-size: 12px;
       line-height: 1.2;
       text-align: left;
@@ -176,6 +180,20 @@ form.checkout {
       background-color: $accent-color;
       font-size: 14px;
       font-weight: 700;
+      &:hover {
+        color: #ffffff;
+        background-color: #000000;
+      }
+    }
+  }
+  .checkout-review-order-table {
+    width: 100%;
+    font-size: 14px;
+    border-bottom: 1px solid $border-color;
+    tr {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
     }
   }
 }
