@@ -949,7 +949,7 @@
         }
       }
       .yith-wcwl-add-to-wishlist {
-        margin-right: 15px;
+        margin-right: 10px;
       }
       .ui-icon-heart,
       .ui-icon-heart-filling {
@@ -965,9 +965,6 @@
       .ui-icon-heart-filling {
         top: 2px;
         font-size: 18px;
-      }
-      .price {
-        font-size: 15px;
       }
     }
     .product-description {
@@ -1190,6 +1187,15 @@
     .variations_form,
     .cart {
       width: 50%;
+    }
+  }
+  .product {
+    &-card {
+      &-buy {
+        .price {
+          font-size: 16px;
+        }
+      }
     }
   }
   table.shop_table_responsive {

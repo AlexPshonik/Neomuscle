@@ -5127,7 +5127,7 @@ input[type="checkbox"]:checked::after {
     color: #ffffff;
   }
   .product-card-buy .yith-wcwl-add-to-wishlist {
-    margin-right: 15px;
+    margin-right: 10px;
   }
   .product-card-buy .ui-icon-heart,
   .product-card-buy .ui-icon-heart-filling {
@@ -5146,9 +5146,6 @@ input[type="checkbox"]:checked::after {
   .product-card-buy .ui-icon-heart-filling {
     top: 2px;
     font-size: 18px;
-  }
-  .product-card-buy .price {
-    font-size: 15px;
   }
   .product-card .product-description {
     display: none;
@@ -5357,6 +5354,9 @@ input[type="checkbox"]:checked::after {
   .single-product .variations_form,
   .single-product .cart {
     width: 50%;
+  }
+  .product-card-buy .price {
+    font-size: 16px;
   }
   table.shop_table_responsive tr td.product-quantity .quantity {
     width: 60%;

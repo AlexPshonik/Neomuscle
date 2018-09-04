@@ -627,6 +627,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .single-product .product .related {
+  width: 101%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -691,7 +692,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .single-product .price .woocommerce-Price-currencySymbol {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .single-product .variations {
