@@ -96,6 +96,10 @@ form.checkout {
 
 .woocommerce-checkout-review-order {
   padding-bottom: 10px;
+
+  .blockOverlay {
+    display: none !important;
+  }
 }
 
 .woocommerce-checkout-review-order-table,

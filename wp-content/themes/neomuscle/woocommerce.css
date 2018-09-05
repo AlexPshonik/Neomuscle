@@ -1820,6 +1820,10 @@ form.checkout .woocommerce-input-wrapper textarea {
   padding-bottom: 10px;
 }
 
+.woocommerce-checkout-review-order .blockOverlay {
+  display: none !important;
+}
+
 .woocommerce-checkout-review-order-table,
 .woocommerce-table--order-details {
   width: 100%;
