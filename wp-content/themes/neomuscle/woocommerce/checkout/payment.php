@@ -45,10 +45,10 @@ if ( ! is_ajax() ) {
 
 	<table class="checkout-review-order-table">
 		<tfoot>
-		<tr class="order-total">
-			<th><?php _e( 'Total', 'woocommerce' ); ?></th>
-			<td><?php wc_cart_totals_order_total_html(); ?></td>
-		</tr>			
+			<tr class="order-total">
+				<th><?php _e( 'Сумма к оплате', 'woocommerce' ); ?></th>
+				<td><?php wc_cart_totals_order_total_html(); ?></td>
+			</tr>			
 		</tfoot>
 	</table>
 

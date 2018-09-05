@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-09-03 15:00+0300\n"
+"PO-Revision-Date: 2018-09-04 22:33+0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11794,7 +11794,7 @@ msgstr "Пароль"
 
 #: includes/wc-template-functions.php:3229
 msgid "Your cart is currently empty."
-msgstr "Ваша корзина пока пуста."
+msgstr "Ваша корзина пока пуста :("
 
 #: includes/admin/importers/mappings/generic.php:25
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:438
@@ -12349,7 +12349,7 @@ msgstr "Запрос аутентификации приложения"
 
 #: templates/cart/cart-totals.php:28
 msgid "Cart totals"
-msgstr "Сумма заказов"
+msgstr "Сумма заказа"
 
 #. translators: %1$s: app name, %2$s: URL
 #: templates/auth/form-login.php:34

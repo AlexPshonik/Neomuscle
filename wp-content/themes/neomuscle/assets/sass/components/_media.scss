@@ -13,10 +13,14 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  .woocommerce-checkout .woocommerce-form-coupon-toggle a {
+    display: block;
+  }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+
 }
 
 /*==========  Mobile First  ==========*/
@@ -140,9 +144,6 @@
         width: 90%;
       }
     }
-  }
-  .woocommerce-checkout .woocommerce-form-coupon-toggle a {
-    display: initial;
   }
 }
 
