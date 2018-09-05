@@ -99,28 +99,48 @@ jQuery(document).ready(function ($) {
     navText: ["<span class='ui-icon-right-arrow prev'></span>","<span class='ui-icon-right-arrow next'></span>"]
   });
 
-  // QTY 
-  $('.quantityPlus').click(function(e){
-    e.preventDefault();
+  // QTY
+  function qtyUpdate(btn, value) {
     var qtyClass = '.qty';
-    var field = $(this).parent().children('input'+qtyClass);
+    var field = $(btn).parent().children('input'+qtyClass);
     var currentVal = parseInt(field.val());
     if (!isNaN(currentVal)) {
-      field.val(currentVal + 1);
+      if(currentVal + value <= 0) {
+        field.val(0);
+      }
+      else {
+        field.val(currentVal + value);
+      }
     } else {
       field.val(0);
     }
+  }
+
+  $('.quantityPlus').click(function(e){
+    e.preventDefault();
+    qtyUpdate($(this), 1);
   });
 
   $(".quantityMinus").click(function(e) {
     e.preventDefault();
-    var qtyClass = '.qty';
-    var field = $(this).parent().children('input'+qtyClass);
-    var currentVal = parseInt(field.val());
-    if (!isNaN(currentVal) && currentVal > 0) {
-      field.val(currentVal - 1);
-    } else {
-      field.val(0);
+    qtyUpdate($(this), -1);
+  });
+
+  var firstAjaxLoad = true;
+  $( '.woocommerce-cart-form :input[name="update_cart"]' ).prop( 'disabled', false );
+  $(document).ajaxComplete(function () {
+    if(firstAjaxLoad) {
+      $('.quantityPlus').click(function(e){
+        e.preventDefault();
+        qtyUpdate($(this), 1);
+      });
+
+      $(".quantityMinus").click(function(e) {
+        e.preventDefault();
+        qtyUpdate($(this), -1);
+      });
+      $( '.woocommerce-cart-form :input[name="update_cart"]' ).prop( 'disabled', false );
+      firstAjaxLoad = false;
     }
   });
 
@@ -222,5 +242,5 @@ jQuery(document).ready(function ($) {
     }
   });
   $('.related .products').addClass('owl-carousel');
-  
+
 });
