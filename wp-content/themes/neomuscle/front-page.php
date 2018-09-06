@@ -22,7 +22,7 @@
               <span class="feature-item-icon ui-icon-wallet"></span>
               <div class="feature-item-info">
                 <h6 class="title">Доступные цены</h6>
-                <p class="description">Постоянные скидки и акции</p>
+                <p class="description">Постоянные акции и скидки</p>
               </div>
             </div>
 
