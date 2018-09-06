@@ -5,13 +5,12 @@ use Premmerce\Brands\BrandsPlugin;
 /**
  * Premmerce WooCommerce Brands
  *
- * @package           Premmerce\Brands
  *
  * @wordpress-plugin
  * Plugin Name:       Premmerce WooCommerce Brands
  * Plugin URI:        https://premmerce.com/premmerce-woocommerce-brands-free-plugin/
  * Description:       This plugin makes it possible to create an unlimited number of brands that can be assigned to the products for better cataloging.
- * Version:           1.2
+ * Version:           1.2.3
  * Author:            premmerce
  * Author URI:        https://premmerce.com/
  * License:           GPL-2.0+
@@ -20,7 +19,7 @@ use Premmerce\Brands\BrandsPlugin;
  * Domain Path:       /languages
  *
  * WC requires at least: 3.0.0
- * WC tested up to: 3.2.5
+ * WC tested up to: 3.4
  */
 
 // If this file is called directly, abort.

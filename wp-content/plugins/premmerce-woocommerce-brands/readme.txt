@@ -2,8 +2,8 @@
 Contributors: premmerce
 Tags: woocommerce brands, brands, product brands
 Requires at least: 4.8
-Tested up to: 4.9.5
-Stable tag: 1.2
+Tested up to: 4.9.8
+Stable tag: 1.2.3
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -43,12 +43,6 @@ Plus, you can create your personal demo store and test  this plugin together wit
 * Premmerce WooCommerce Toolkit
 * WooCommerce SEO Addon
 
-= Installation =
-
-1. Unzip the downloaded zip file.
-2. Upload the plugin folder into the ‘wp-content/plugins/’ directory of your WordPress site.
-3. Activate ‘Premmerce WooCommerce Brands’ from the Plugins page
-
 == Screenshots ==
 
 1. Displaying the page of all brands in the admin panel
@@ -56,6 +50,23 @@ Plus, you can create your personal demo store and test  this plugin together wit
 3. Widget for displaying the selected brands on the site
 4. Displaying the page of a particular brand
 5. Displaying the page with all brands
+
+
+
+== Frequently Asked Questions ==
+
+= Documentation =
+
+Full documentation is available here: [Premmerce WooCommerce Brands](https://premmerce.com/premmerce-woocommerce-brands-free-plugin/)
+
+= Installation Instructions =
+Go to Plugins -> Add New section from your admin account and search for Premmerce WooCommerce Brands.
+
+You can also install this plugin manually:
+* Download the plugin’s ZIP archive and unzip it.
+* Copy the unzipped premmerce-woocommerce-product-filter folder to the /wp-content/plugins/ directory.
+* Activate the plugin through the ‘Plugins’ menu in WordPress
+
 
 == Changelog ==
 
@@ -127,14 +138,26 @@ Release Date: Apr 19, 2018
 * Updated translations
 * Removed deprecations
 
-== Translators ==
+= 1.2.1 =
 
-= Available Languages =
+Release Date: Jun 13, 2018
 
-* English (Default)
-* Russian
-* Ukrainian
+* Fixed security issues
+* Added additional hooks
+* Updated freemius sdk to 2.1.1
 
-== Documentation ==
+= 1.2.2 =
 
-Full documentation is available here: [Premmerce WooCommerce Brands](https://premmerce.com/premmerce-woocommerce-brands-free-plugin/)
+Release Date: Jul 19, 2018
+
+* Updated taxonomy prefix validation
+* Fixed admin notices
+* Updated freemius sdk to 2.1.2
+
+
+= 1.2.3 =
+
+Release Date: Aug 23, 2018
+
+* Updated freemius SDk
+* Updated premmerce SDk

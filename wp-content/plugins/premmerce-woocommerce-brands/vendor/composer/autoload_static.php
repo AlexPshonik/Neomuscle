@@ -29,22 +29,11 @@ class ComposerStaticInit504c112dc1dae0bef4677abb39cebb7f
         ),
     );
 
-    public static $classMap = array (
-        'Premmerce\\Brands\\Admin\\Admin' => __DIR__ . '/../..' . '/src/Admin/Admin.php',
-        'Premmerce\\Brands\\BrandsPlugin' => __DIR__ . '/../..' . '/src/BrandsPlugin.php',
-        'Premmerce\\Brands\\Frontend\\Frontend' => __DIR__ . '/../..' . '/src/Frontend/Frontend.php',
-        'Premmerce\\Brands\\Frontend\\Widgets\\BrandsWidget' => __DIR__ . '/../..' . '/src/Frontend/Widgets/BrandsWidget.php',
-        'Premmerce\\SDK\\V1\\FileManager\\FileManager' => __DIR__ . '/..' . '/premmerce/wordpress-sdk/src/V1/FileManager/FileManager.php',
-        'Premmerce\\SDK\\V1\\Notifications\\AdminNotifier' => __DIR__ . '/..' . '/premmerce/wordpress-sdk/src/V1/Notifications/AdminNotifier.php',
-        'Premmerce\\SDK\\V1\\Plugin\\PluginInterface' => __DIR__ . '/..' . '/premmerce/wordpress-sdk/src/V1/Plugin/PluginInterface.php',
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit504c112dc1dae0bef4677abb39cebb7f::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit504c112dc1dae0bef4677abb39cebb7f::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit504c112dc1dae0bef4677abb39cebb7f::$classMap;
 
         }, null, ClassLoader::class);
     }

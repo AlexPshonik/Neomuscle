@@ -4,204 +4,214 @@ use Premmerce\Brands\Admin\Admin;
 use Premmerce\Brands\Frontend\Frontend;
 use Premmerce\Brands\Frontend\Widgets\BrandsWidget;
 
-use Premmerce\SDK\V1\FileManager\FileManager;
-use Premmerce\SDK\V1\Notifications\AdminNotifier;
-use Premmerce\SDK\V1\Plugin\PluginInterface;
+use Premmerce\SDK\V2\FileManager\FileManager;
+use Premmerce\SDK\V2\Notifications\AdminNotifier;
+use Premmerce\SDK\V2\Plugin\PluginInterface;
 
 /**
  * Class BrandsPlugin
  * @package Premmerce\Brands
  */
-class BrandsPlugin implements PluginInterface{
-	const DOMAIN = 'premmerce-brands';
+class BrandsPlugin implements PluginInterface
+{
+    const DOMAIN = 'premmerce-brands';
 
-	/**
-	 * @var FileManager
-	 */
-	private $fileManager;
+    /**
+     * @var FileManager
+     */
+    private $fileManager;
 
-	/**
-	 * @var AdminNotifier
-	 */
-	private $notifier;
+    /**
+     * @var AdminNotifier
+     */
+    private $notifier;
 
-	/**
-	 * PremmerceBrandsPlugin constructor.
-	 *
-	 * @param string $mainFile
-	 *
-	 */
-	public function __construct($mainFile){
-		$this->fileManager = new FileManager($mainFile);
-		$this->notifier    = new AdminNotifier();
-		add_action('plugins_loaded', [$this, 'loadTextDomain']);
-		add_action('admin_init', [$this, 'checkRequirePlugins']);
-	}
+    /**
+     * PremmerceBrandsPlugin constructor.
+     *
+     * @param string $mainFile
+     *
+     */
+    public function __construct($mainFile)
+    {
+        $this->fileManager = new FileManager($mainFile, 'premmerce-woocommerce-brands');
+        $this->notifier    = new AdminNotifier();
+        add_action('plugins_loaded', array($this, 'loadTextDomain'));
+        add_action('admin_init', array($this, 'checkRequirePlugins'));
+    }
 
-	/**
-	 * Register plugin hooks
-	 */
-	private function registerHooks(){
-		add_action('init', [ $this, 'createProductsTaxonomies' ]);
-		add_action('widgets_init', [ $this, 'registerWidgets' ]);
-	}
+    /**
+     * Register plugin hooks
+     */
+    private function registerHooks()
+    {
+        add_action('init', array($this, 'createProductsTaxonomies'));
+        add_action('widgets_init', array($this, 'registerWidgets'));
+    }
 
-	/**
-	 * Configurate and register brands taxonomy
-	 */
-	public function createProductsTaxonomies(){
-		$labels = [
-			'name'              => __('Brands', 'premmerce-brands'),
-			'singular_name'     => __('Brand', 'premmerce-brands'),
-			'search_items'      => __('Search brands', 'premmerce-brands'),
-			'all_items'         => __('All brands', 'premmerce-brands'),
-			'parent_item'       => __('Parent brand', 'premmerce-brands'),
-			'parent_item_colon' => __('Parent brand:', 'premmerce-brands'),
-			'edit_item'         => __('Edit brand', 'premmerce-brands'),
-			'update_item'       => __('Update brand', 'premmerce-brands'),
-			'add_new_item'      => __('Add new brand', 'premmerce-brands'),
-			'new_item_name'     => __('New brand name', 'premmerce-brands'),
-			'menu_name'         => __('Brands', 'premmerce-brands'),
-		];
+    /**
+     * Configurate and register brands taxonomy
+     */
+    public function createProductsTaxonomies()
+    {
+        $labels = array(
+            'name'              => __('Brands', 'premmerce-brands'),
+            'singular_name'     => __('Brand', 'premmerce-brands'),
+            'search_items'      => __('Search brands', 'premmerce-brands'),
+            'all_items'         => __('All brands', 'premmerce-brands'),
+            'parent_item'       => __('Parent brand', 'premmerce-brands'),
+            'parent_item_colon' => __('Parent brand:', 'premmerce-brands'),
+            'edit_item'         => __('Edit brand', 'premmerce-brands'),
+            'update_item'       => __('Update brand', 'premmerce-brands'),
+            'add_new_item'      => __('Add new brand', 'premmerce-brands'),
+            'new_item_name'     => __('New brand name', 'premmerce-brands'),
+            'menu_name'         => __('Brands', 'premmerce-brands'),
+        );
 
-		$args = [
-			'hierarchical'       => false,
-			'labels'             => $labels,
-			'show_ui'            => true,
-			'query_var'          => true,
-			'show_admin_column'  => true,
-			'show_in_quick_edit' => false,
-			'meta_box_cb'        => [$this, 'productBrandMetaBox'],
-			'no_tagcloud' 		 => __( 'No brands found', 'premmerce-brands' ),
-			'rewrite' 			 => ['slug' => get_option( 'premmerce_brands_base', 'brands' ), 'with_front' => true ]
-		];
+        $args = array(
+            'hierarchical'       => false,
+            'labels'             => $labels,
+            'show_ui'            => true,
+            'query_var'          => true,
+            'show_admin_column'  => true,
+            'show_in_quick_edit' => false,
+            'meta_box_cb'        => array($this, 'productBrandMetaBox'),
+            'no_tagcloud'        => __('No brands found', 'premmerce-brands'),
+            'rewrite'            => array('slug'       => get_option('premmerce_brands_base', 'product_brand'),
+                                     'with_front' => true
+            )
+        );
 
-		register_taxonomy('product_brand', 'product', $args);
-		register_taxonomy_for_object_type('product_brand', 'product');
-		flush_rewrite_rules();
-	}
+        register_taxonomy('product_brand', 'product', $args);
+        register_taxonomy_for_object_type('product_brand', 'product');
+        flush_rewrite_rules();
+    }
 
-	/**
-	 * Register Wordpress widgets
-	 */
-	public function registerWidgets(){
-		$brandsWidget = new BrandsWidget($this->fileManager);
+    /**
+     * Register Wordpress widgets
+     */
+    public function registerWidgets()
+    {
+        $brandsWidget = new BrandsWidget($this->fileManager);
 
-		register_widget($brandsWidget);
-	}
+        register_widget($brandsWidget);
+    }
 
-	/**
-	 * Check required plugins and push notifications
-	 */
-	public function checkRequirePlugins(){
-		$message = __('The %s plugin requires %s plugin to be active!', 'premmerce-brands');
+    /**
+     * Check required plugins and push notifications
+     */
+    public function checkRequirePlugins()
+    {
+        $message = __('The %s plugin requires %s plugin to be active!', 'premmerce-brands');
 
-		$plugins = $this->validateRequiredPlugins();
+        $plugins = $this->validateRequiredPlugins();
 
-		if(count($plugins)){
-			foreach($plugins as $plugin){
-				$error = sprintf($message, 'Premmerce WooCommerce Brands', $plugin);
-				$this->notifier->push($error, AdminNotifier::ERROR, false);
-			}
-		}
+        if (count($plugins)) {
+            foreach ($plugins as $plugin) {
+                $error = sprintf($message, 'Premmerce WooCommerce Brands', $plugin);
+                $this->notifier->push($error, AdminNotifier::ERROR, false);
+            }
+        }
+    }
 
-	}
+    /**
+     * Validate required plugins
+     *
+     * @return array
+     */
+    private function validateRequiredPlugins()
+    {
+        $plugins = array();
 
-	/**
-	 * Validate required plugins
-	 *
-	 * @return array
-	 */
-	private function validateRequiredPlugins(){
+        /**
+         * Check if WooCommerce is active
+         **/
+        if (! in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')))) {
+            $plugins[] = '<a target="_blank" href="https://wordpress.org/plugins/woocommerce/">WooCommerce</a>';
+        }
 
-		$plugins = [];
+        return $plugins;
+    }
 
-		/**
-		 * Check if WooCommerce is active
-		 **/
-		if(!in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')))){
-			$plugins[] = '<a target="_blank" href="https://wordpress.org/plugins/woocommerce/">WooCommerce</a>';
-		}
+    /**
+     * Change brands meta box to radio
+     *
+     * @param \WP_Post $post
+     */
+    public function productBrandMetaBox(\WP_Post $post)
+    {
+        $terms = get_terms(array('hide_empty' => false, 'taxonomy' => 'product_brand'));
+        $brand = wp_get_object_terms($post->ID, 'product_brand', array('orderby' => 'term_id', 'order' => 'ASC'));
+        $name  = '';
 
-		return $plugins;
-	}
+        if (! is_wp_error($brand)) {
+            if (isset($brand[0]) && isset($brand[0]->name)) {
+                $name = $brand[0]->name;
+            }
+        }
 
-	/**
-	 * Change brands meta box to radio
-	 *
-	 * @param \WP_Post $post
-	 */
-	public function productBrandMetaBox(\WP_Post $post){
-		$terms = get_terms( ['hide_empty' => false, 'taxonomy' => 'product_brand'] );
-		$brand = wp_get_object_terms($post->ID, 'product_brand', ['orderby' => 'term_id', 'order' => 'ASC']);
-		$name  = '';
+        $this->fileManager->includeTemplate('admin/brands-select.php', array(
+            'terms' => $terms,
+            'name'  => $name,
+        ));
+    }
 
-		if(!is_wp_error($brand)){
-			if(isset($brand[0]) && isset($brand[0]->name)){
-				$name = $brand[0]->name;
-			}
-		}
+    /**
+     * Run plugin part
+     */
+    public function run()
+    {
+        $valid = count($this->validateRequiredPlugins()) === 0;
 
-		$this->fileManager->includeTemplate('admin/brands-select.php', [
-			'terms' => $terms,
-			'name'  => $name,
-		]);
-	}
+        if ($valid) {
+            $this->registerHooks();
 
-	/**
-	 * Run plugin part
-	 */
-	public function run(){
+            if (is_admin()) {
+                new Admin($this->fileManager);
+            } else {
+                new Frontend($this->fileManager);
+            }
+        }
+    }
 
-		$valid = count($this->validateRequiredPlugins()) === 0;
+    /**
+     * Fired when the plugin is activated
+     * Check unique
+     */
+    public function activate()
+    {
+        if (! get_page_by_title('Brands')) {
+            $post_data = array(
+                'post_title'   => 'Brands',
+                'post_content' => '[brands_page]',
+                'post_status'  => 'publish',
+                'post_author'  => 1,
+                'post_type'    => 'page',
+            );
 
-		if($valid){
-			$this->registerHooks();
+            wp_insert_post($post_data);
+        }
+    }
 
-			if(is_admin()){
-				new Admin($this->fileManager);
-			}else{
-				new Frontend($this->fileManager);
-			}
-		}
-	}
+    /**
+     * Fired when the plugin is deactivated
+     */
+    public function deactivate()
+    {
+        if ($page = get_page_by_title('Brands')) {
+            wp_delete_post($page->ID, true);
+        }
+    }
 
-	/**
-	 * Fired when the plugin is activated
-	 * Check unique
-	 */
-	public function activate(){
+    /**
+     * Fired when the plugin is uninstall
+     * Remove related data from database
+     */
+    public static function uninstall()
+    {
+        global $wpdb;
 
-		if(!get_page_by_title('Brands')){
-			$post_data = [
-				'post_title'   => 'Brands',
-				'post_content' => '[brands_page]',
-				'post_status'  => 'publish',
-				'post_author'  => 1,
-				'post_type'    => 'page',
-			];
-
-			wp_insert_post($post_data);
-		}
-	}
-
-	/**
-	 * Fired when the plugin is deactivated
-	 */
-	public function deactivate(){
-		if($page = get_page_by_title('Brands')){
-			wp_delete_post($page->ID, true);
-		}
-	}
-
-	/**
-	 * Fired when the plugin is uninstall
-	 * Remove related data from database
-	 */
-	public static function uninstall(){
-		global $wpdb;
-
-		$query = '
+        $query = '
 		    DELETE ' . $wpdb->terms . ', ' . $wpdb->termmeta . ', ' . $wpdb->term_taxonomy . ', ' . $wpdb->term_relationships . ' FROM ' . $wpdb->terms . '
             JOIN ' . $wpdb->term_taxonomy . ' ON ' . $wpdb->terms . '.term_id = ' . $wpdb->term_taxonomy . '.term_id
             JOIN ' . $wpdb->termmeta . ' ON ' . $wpdb->termmeta . '.term_id = ' . $wpdb->term_taxonomy . '.term_id
@@ -209,15 +219,15 @@ class BrandsPlugin implements PluginInterface{
             WHERE ' . $wpdb->term_taxonomy . '.taxonomy = "product_brand"
 		';
 
-		$wpdb->query($query);
-	}
+        $wpdb->query($query);
+    }
 
-	/**
-	 * Load plugin translations
-	 */
-	public function loadTextDomain(){
-		$name = $this->fileManager->getPluginName();
-		load_plugin_textdomain('premmerce-brands', false, $name . '/languages/');
-	}
-
+    /**
+     * Load plugin translations
+     */
+    public function loadTextDomain()
+    {
+        $name = $this->fileManager->getPluginName();
+        load_plugin_textdomain('premmerce-brands', false, $name . '/languages/');
+    }
 }
