@@ -284,4 +284,9 @@ jQuery(document).ready(function ($) {
   });
   $('.related .products').addClass('owl-carousel');
 
+  //  Billing phone mask
+  $('#billing_phone').iMask({
+    type: 'fixed',
+    mask: '+38(099)-99-99-999'
+  })
 });
