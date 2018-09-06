@@ -639,12 +639,16 @@ table.shop_table_responsive tr td.download-actions .button {
   margin-bottom: 0;
 }
 
+.single-product .related .product-card-buy .price .woocommerce-Price-currencySymbol {
+  font-size: 12px;
+}
+
 .single-product .related .product-card-buy .ui-icon-heart {
-  top: -2px;
+  top: 0;
 }
 
 .single-product .related .product-card-buy .ui-icon-heart-filling {
-  top: 4px;
+  top: 3px;
 }
 
 .single-product .product_title {
@@ -692,7 +696,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .single-product .price .woocommerce-Price-currencySymbol {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .single-product .variations {
