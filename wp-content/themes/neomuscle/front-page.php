@@ -97,7 +97,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-            <h2 class="food-purpose-title">Подберите для себя спортивное питание в три шага!</h2>
+            <h2 class="food-purpose-title">Подберите для себя спортивное питание в два шага!</h2>
             <p class="food-purpose-description">Если Вы не уверены какое спортивное питание вам лучше подходит, выберите свой пол и цель тренировок для получения дальнейших рекомендаций.</p>
             <div class="food-purpose-select">
               <select id="gender">
