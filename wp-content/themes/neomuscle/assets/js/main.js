@@ -150,7 +150,9 @@ jQuery(document).ready(function ($) {
   });
 
   // Select
-  // $('#vkus').selectize();
+  // $('#billing_nova_poshta_region').selectize({
+  //   create: true
+  // });
 
   // Fix search width
   // $('.dgwt-wcas-search-input').on('keyup', function(){
@@ -211,6 +213,9 @@ jQuery(document).ready(function ($) {
     }
   }
 
+  addWidgetsLoadMoreButton();
+  var firstAddMoreButton = 1;
+
   function toggleWidgetItems(widgetButton) {
     if($(widgetButton).hasClass('show-more')) {
       $(widgetButton).parent().find('li').not(':lt('+maxWidgetItems+')').show();
@@ -231,11 +236,15 @@ jQuery(document).ready(function ($) {
   });
 
   $(document).ajaxComplete(function () {
-    addWidgetsLoadMoreButton();
+    if(firstAddMoreButton !== 1) {
+      addWidgetsLoadMoreButton();
+    }
 
     $('.load').click(function() {
       toggleWidgetItems($(this))
     });
+
+    firstAddMoreButton++;
   });
 
   if(window.innerWidth < 768) {
