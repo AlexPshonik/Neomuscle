@@ -4488,7 +4488,7 @@ input[type="checkbox"]:checked::after {
             flex-basis: 25%;
   }
   .site-header .logo-img {
-    height: 30px;
+    height: 32px;
   }
   .site-header-search {
     -webkit-flex-basis: 50%;
