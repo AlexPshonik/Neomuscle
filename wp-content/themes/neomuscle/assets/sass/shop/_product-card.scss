@@ -67,6 +67,7 @@
       background-color: $accent-color;
       border-radius: 50%;
       font-size: 0;
+      color: $main-font-color;
       order: -1;
       &::after {
         position: absolute;
@@ -80,11 +81,6 @@
     .button {
       &::after {
         content: "\e910";
-      }
-      &.product_type_variable {
-        &::after {
-          content: '\e912';
-        }
       }
       &.added {
         display: none;
@@ -167,6 +163,7 @@
       width: 100%;
       margin-top: 10px;
       padding: 10px 25px;
+      border-radius: 5px;
     }
   }
   .columns-4 {

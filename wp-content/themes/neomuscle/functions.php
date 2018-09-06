@@ -145,6 +145,8 @@ function neomuscle_scripts() {
 
 	wp_enqueue_script( 'neomuscle-owl-carousel', get_template_directory_uri() . '/assets/libs/owlcarousel/js/owl.carousel.min.js', array('jquery'), '0.12.6', true );
 
+	wp_enqueue_script( 'neomuscle-imask', get_template_directory_uri() . '/assets/libs/imask/js/imask.min.js', array('jquery'), true );
+
 	wp_deregister_script( 'jquery-dgwt-wcas');
 	wp_register_script( 'neomuscle-ajax-search-initialize', get_template_directory_uri() . '/assets/js/ajax-search/ajax-search-initialize.min.js', array('jquery'), '1.0.0', true);
 	wp_register_script( 'neomuscle-ajax-search', get_template_directory_uri() . '/assets/js/ajax-search/jquery.dgwt-wcas.min.js', array('jquery', 'neomuscle-ajax-search-initialize'), '1.0.0', true);

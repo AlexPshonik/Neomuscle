@@ -99,28 +99,48 @@ jQuery(document).ready(function ($) {
     navText: ["<span class='ui-icon-right-arrow prev'></span>","<span class='ui-icon-right-arrow next'></span>"]
   });
 
-  // QTY 
-  $('.quantityPlus').click(function(e){
-    e.preventDefault();
+  // QTY
+  function qtyUpdate(btn, value) {
     var qtyClass = '.qty';
-    var field = $(this).parent().children('input'+qtyClass);
+    var field = $(btn).parent().children('input'+qtyClass);
     var currentVal = parseInt(field.val());
     if (!isNaN(currentVal)) {
-      field.val(currentVal + 1);
+      if(currentVal + value <= 0) {
+        field.val(0);
+      }
+      else {
+        field.val(currentVal + value);
+      }
     } else {
       field.val(0);
     }
+  }
+
+  $('.quantityPlus').click(function(e){
+    e.preventDefault();
+    qtyUpdate($(this), 1);
   });
 
   $(".quantityMinus").click(function(e) {
     e.preventDefault();
-    var qtyClass = '.qty';
-    var field = $(this).parent().children('input'+qtyClass);
-    var currentVal = parseInt(field.val());
-    if (!isNaN(currentVal) && currentVal > 0) {
-      field.val(currentVal - 1);
-    } else {
-      field.val(0);
+    qtyUpdate($(this), -1);
+  });
+
+  var firstAjaxLoad = true;
+  $( '.woocommerce-cart-form :input[name="update_cart"]' ).prop( 'disabled', false );
+  $(document).ajaxComplete(function () {
+    if(firstAjaxLoad) {
+      $('.quantityPlus').click(function(e){
+        e.preventDefault();
+        qtyUpdate($(this), 1);
+      });
+
+      $(".quantityMinus").click(function(e) {
+        e.preventDefault();
+        qtyUpdate($(this), -1);
+      });
+      $( '.woocommerce-cart-form :input[name="update_cart"]' ).prop( 'disabled', false );
+      firstAjaxLoad = false;
     }
   });
 
@@ -177,6 +197,47 @@ jQuery(document).ready(function ($) {
     $(this).next().slideToggle(400);
   });
 
+  // Sidebar read more
+  var maxWidgetItems = 5;
+
+  function addWidgetsLoadMoreButton() {
+    var widgets = $('.wcapf-layered-nav');
+    for (var i = 0; i < widgets.length; i++) {
+      var listItems = $(widgets[i]).find('li');
+      if (listItems.length > maxWidgetItems) {
+        $(listItems).not(':lt(' + maxWidgetItems + ')').hide();
+        $(widgets[i]).append('<p class="load show-more">Показать больше</p>');
+      }
+    }
+  }
+
+  function toggleWidgetItems(widgetButton) {
+    if($(widgetButton).hasClass('show-more')) {
+      $(widgetButton).parent().find('li').not(':lt('+maxWidgetItems+')').show();
+      $(widgetButton).text('Скрыть');
+      $(widgetButton).removeClass('show-more');
+      $(widgetButton).addClass('show-less');
+    }
+    else if($(widgetButton).hasClass('show-less')) {
+      $(widgetButton).parent().find('li').not(':lt(' + maxWidgetItems + ')').hide();
+      $(widgetButton).text('Показать больше');
+      $(widgetButton).removeClass('show-less');
+      $(widgetButton).addClass('show-more');
+    }
+  }
+
+  $('.load').click(function() {
+    toggleWidgetItems($(this))
+  });
+
+  $(document).ajaxComplete(function () {
+    addWidgetsLoadMoreButton();
+
+    $('.load').click(function() {
+      toggleWidgetItems($(this))
+    });
+  });
+
   if(window.innerWidth < 768) {
     $("h2.widget-title").parent().removeClass('toggled');
     $("h2.widget-title").next().slideUp(400);
@@ -222,5 +283,10 @@ jQuery(document).ready(function ($) {
     }
   });
   $('.related .products').addClass('owl-carousel');
-  
+
+  //  Billing phone mask
+  $('#billing_phone').iMask({
+    type: 'fixed',
+    mask: '(099) 99-99-999'
+  })
 });

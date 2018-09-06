@@ -20,12 +20,15 @@
       &-buy {
         .price {
           margin-bottom: 0;
+          .woocommerce-Price-currencySymbol {
+            font-size: 12px;
+          }
         }
         .ui-icon-heart {
-          top: -2px;
+          top: 0;
         }
         .ui-icon-heart-filling {
-          top: 4px;
+          top: 3px;
         }
       }
     }
@@ -60,7 +63,7 @@
     margin-bottom: 15px;
     font-size: 28px;
     .woocommerce-Price-currencySymbol {
-      font-size: 12px;
+      font-size: 18px;
     }
   }
   .variations {
@@ -445,4 +448,5 @@
       background-color: $accent-color;
     }
   }
+
 }

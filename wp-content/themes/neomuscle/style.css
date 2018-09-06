@@ -4815,6 +4815,14 @@ input[type="checkbox"]:checked::after {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  form.woocommerce-checkout .woocommerce-NoticeGroup {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
   }
   form.woocommerce-checkout .checkout_fields {
     -webkit-flex-basis: 48%;
@@ -5031,7 +5039,7 @@ input[type="checkbox"]:checked::after {
             flex-basis: 25%;
   }
   .site-header .logo-img {
-    width: 80%;
+    width: auto;
     margin: 0;
   }
   .site-header-user-nav {

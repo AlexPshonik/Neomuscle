@@ -129,6 +129,26 @@
 
 .wcapf-layered-nav {
 	margin-top: 10px;
+	.load {
+		position: relative;
+		padding-left: 24px;
+		font-size: 14px;
+		font-weight: 500;
+		cursor: pointer;
+		&::before {
+			position: absolute;
+			top: 1px;
+			left: 0;
+			display: block;
+			font-family: 'neomuscle-ui' !important;
+			content: "\e90d";
+		}
+		&.show-less {
+			&::before {
+				transform: rotate(180deg);
+			}
+		}
+	}
 }
 
 .wcapf-ajax-term-filter {

@@ -678,6 +678,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+    .woocommerce-NoticeGroup {
+      flex-basis: 100% ;
+    }
     .checkout_fields {
       flex-basis: 48%;
     }
@@ -846,7 +850,7 @@
         flex-basis: 25%;
       }
       &-img {
-        width: 80%;
+        width: auto;
         margin: 0;
       }
     }
