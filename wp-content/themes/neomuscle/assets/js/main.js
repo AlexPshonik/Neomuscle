@@ -210,7 +210,6 @@ jQuery(document).ready(function ($) {
       }
     }
   }
-  addWidgetsLoadMoreButton();
 
   function toggleWidgetItems(widgetButton) {
     if($(widgetButton).hasClass('show-more')) {
