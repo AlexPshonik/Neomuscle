@@ -149,8 +149,11 @@ jQuery(document).ready(function ($) {
     $(".description-store-text").addClass("open");
   });
 
-  // Select
-  // $('#vkus').selectize();
+  // Billing address fields
+  $('#billing_nova_poshta_region').selectize({});
+  $('#billing_nova_poshta_city').selectize({});
+  $('#billing_nova_poshta_warehouse').selectize({});
+
 
   // Fix search width
   // $('.dgwt-wcas-search-input').on('keyup', function(){
@@ -200,15 +203,17 @@ jQuery(document).ready(function ($) {
   // Sidebar read more
   var maxWidgetItems = 5;
 
-  function addWidgetsLoadMoreButton() {
-    var widgets = $('.wcapf-layered-nav');
-    for (var i = 0; i < widgets.length; i++) {
-      var listItems = $(widgets[i]).find('li');
-      if (listItems.length > maxWidgetItems) {
-        $(listItems).not(':lt(' + maxWidgetItems + ')').hide();
-        $(widgets[i]).append('<p class="load show-more">Показать больше</p>');
-      }
+  function addWidgetLoadMoreButton(widget) {
+    var listItems = $(widget).find('li');
+    if (listItems.length > maxWidgetItems) {
+      $(listItems).not(':lt(' + maxWidgetItems + ')').hide();
+      $(widget).append('<p class="load show-more">Показать больше</p>');
     }
+  }
+
+  var widgets = $('.wcapf-layered-nav');
+  for (var i = 0; i < widgets.length; i++) {
+    addWidgetLoadMoreButton(widgets[i]);
   }
 
   function toggleWidgetItems(widgetButton) {
@@ -231,11 +236,16 @@ jQuery(document).ready(function ($) {
   });
 
   $(document).ajaxComplete(function () {
-    addWidgetsLoadMoreButton();
+    $('.load').remove();
+    var widgets = $('.wcapf-layered-nav');
+    for (var i = 0; i < widgets.length; i++) {
+      addWidgetLoadMoreButton($(widgets[i]));
+    }
 
     $('.load').click(function() {
       toggleWidgetItems($(this))
     });
+
   });
 
   if(window.innerWidth < 768) {
