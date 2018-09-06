@@ -1360,10 +1360,6 @@ table.shop_table_responsive tr td.download-actions .button {
   content: "\e910";
 }
 
-.product-card-buy .button.product_type_variable::after {
-  content: '\e912';
-}
-
 .product-card-buy .button.added {
   display: none;
 }
