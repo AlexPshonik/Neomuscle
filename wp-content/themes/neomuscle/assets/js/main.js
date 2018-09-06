@@ -203,19 +203,18 @@ jQuery(document).ready(function ($) {
   // Sidebar read more
   var maxWidgetItems = 5;
 
-  function addWidgetsLoadMoreButton() {
-    var widgets = $('.wcapf-layered-nav');
-    for (var i = 0; i < widgets.length; i++) {
-      var listItems = $(widgets[i]).find('li');
-      if (listItems.length > maxWidgetItems) {
-        $(listItems).not(':lt(' + maxWidgetItems + ')').hide();
-        $(widgets[i]).append('<p class="load show-more">Показать больше</p>');
-      }
+  function addWidgetLoadMoreButton(widget) {
+    var listItems = $(widget).find('li');
+    if (listItems.length > maxWidgetItems) {
+      $(listItems).not(':lt(' + maxWidgetItems + ')').hide();
+      $(widget).append('<p class="load show-more">Показать больше</p>');
     }
   }
 
-  addWidgetsLoadMoreButton();
-  var firstAddMoreButton = 1;
+  var widgets = $('.wcapf-layered-nav');
+  for (var i = 0; i < widgets.length; i++) {
+    addWidgetLoadMoreButton(widgets[i]);
+  }
 
   function toggleWidgetItems(widgetButton) {
     if($(widgetButton).hasClass('show-more')) {
@@ -237,15 +236,16 @@ jQuery(document).ready(function ($) {
   });
 
   $(document).ajaxComplete(function () {
-    if(firstAddMoreButton !== 1) {
-      addWidgetsLoadMoreButton();
+    $('.load').remove();
+    var widgets = $('.wcapf-layered-nav');
+    for (var i = 0; i < widgets.length; i++) {
+      addWidgetLoadMoreButton($(widgets[i]));
     }
 
     $('.load').click(function() {
       toggleWidgetItems($(this))
     });
 
-    firstAddMoreButton++;
   });
 
   if(window.innerWidth < 768) {
