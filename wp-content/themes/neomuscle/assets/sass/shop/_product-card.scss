@@ -67,6 +67,7 @@
       background-color: $accent-color;
       border-radius: 50%;
       font-size: 0;
+      color: $main-font-color;
       order: -1;
       &::after {
         position: absolute;
