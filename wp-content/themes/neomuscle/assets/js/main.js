@@ -149,10 +149,11 @@ jQuery(document).ready(function ($) {
     $(".description-store-text").addClass("open");
   });
 
-  // Select
-  // $('#billing_nova_poshta_region').selectize({
-  //   create: true
-  // });
+  // Billing address fields
+  $('#billing_nova_poshta_region').selectize({});
+  $('#billing_nova_poshta_city').selectize({});
+  $('#billing_nova_poshta_warehouse').selectize({});
+
 
   // Fix search width
   // $('.dgwt-wcas-search-input').on('keyup', function(){
