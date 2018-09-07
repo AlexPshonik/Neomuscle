@@ -5292,6 +5292,9 @@ input[type="checkbox"]:checked::after {
   .product-card {
     padding: 10px 20px 20px 20px;
   }
+  .product-card .onsale {
+    left: 20px;
+  }
   .product-card-buy {
     margin-top: 10px;
   }
@@ -5555,6 +5558,9 @@ input[type="checkbox"]:checked::after {
   }
   .product-card-buy .price .woocommerce-Price-currencySymbol {
     font-size: 16px;
+  }
+  .product-card-buy .price-old .woocommerce-Price-currencySymbol {
+    font-size: 12px;
   }
   .prm-brands-list__col {
     width: 20%;

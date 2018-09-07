@@ -42,17 +42,45 @@
   .star-rating {
     display: none;
   }
+  .onsale {
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    padding: 3px 9px;
+    background-color: $accent-color;
+    border-radius: 50%;
+    font-weight: 700;
+    color: $main-font-color;
+  }
   &-buy {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     .price {
+      position: relative;
       font-size: 14px;
+      line-height: 1.2;
       font-weight: bold;
       flex-grow: 1;
       .woocommerce-Price-currencySymbol {
         font-weight: normal;
+      }
+      &-old {
+        position: absolute;
+        top: -100%;
+        font-size: 14px;
+        font-weight: 400;
+        color: #aaabae;
+        &::before {
+          position: absolute;
+          top: 9px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #aaabae;
+          content: '';
+        }
       }
     }
     .woocommerce-loop-product{
