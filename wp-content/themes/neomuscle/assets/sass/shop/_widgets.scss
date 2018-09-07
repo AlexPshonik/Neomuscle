@@ -131,9 +131,11 @@
 	margin-top: 10px;
 	.load {
 		position: relative;
+		margin-top: 5px;
 		padding-left: 24px;
-		font-size: 14px;
-		font-weight: 500;
+		font-size: 13px;
+		font-weight: 400;
+		color: $main-font-color;
 		cursor: pointer;
 		&::before {
 			position: absolute;

@@ -53,6 +53,15 @@
   max-height: 300px;
 }
 
+.selectize-dropdown .option {
+  cursor: pointer;
+}
+
+.selectize-dropdown .option:last-child {
+  -webkit-border-radius: 0 0 10px 10px;
+          border-radius: 0 0 10px 10px;
+}
+
 .selectize-control.single .selectize-input {
   -webkit-box-shadow: none;
           box-shadow: none;
