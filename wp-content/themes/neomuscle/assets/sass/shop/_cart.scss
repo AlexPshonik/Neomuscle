@@ -124,6 +124,9 @@ table.wishlist_table {
   .cart_totals {
     h2 {
       position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding-bottom: 15px;
       font-size: 25px;
       font-weight: 400;
@@ -137,6 +140,9 @@ table.wishlist_table {
         height: 2px;
         background-color: $accent-color;
         content: '';
+      }
+      strong {
+        font-size: 16px;
       }
     }
   }
