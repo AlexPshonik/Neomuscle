@@ -252,7 +252,7 @@ msgid "Search submit button text"
 msgstr "Własny tekst na przycisku wyszukiwania"
 
 #: includes/admin/settings/class-settings.php:132
-msgid "To display a loupe icon leave this field empty."
+msgid "To display a magnifier icon leave this field empty."
 msgstr "Gdy zostawisz to pole puste to zostanie wyświetlona ikona lupy."
 
 #: includes/admin/settings/class-settings.php:133

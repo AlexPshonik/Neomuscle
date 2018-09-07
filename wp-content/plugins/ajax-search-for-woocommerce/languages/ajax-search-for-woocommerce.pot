@@ -124,7 +124,7 @@ msgid "Search submit button text"
 msgstr ""
 
 #: includes/admin/settings/class-settings.php:132
-msgid "To display a loupe icon leave this field empty."
+msgid "To display a magnifier icon leave this field empty."
 msgstr ""
 
 #: includes/admin/settings/class-settings.php:133

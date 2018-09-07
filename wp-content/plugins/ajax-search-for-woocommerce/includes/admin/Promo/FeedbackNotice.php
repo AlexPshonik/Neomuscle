@@ -1,12 +1,14 @@
 <?php
 
+namespace DgoraWcas\Admin\Promo;
+
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 
-class DGWT_WCAS_FeedbackNotice {
+class FeedbackNotice {
 
 	const ACTIVATION_DATE_OPT = 'dgwt_wcas_activation_date';
 
@@ -27,11 +29,13 @@ class DGWT_WCAS_FeedbackNotice {
 
 		$this->offset = strtotime('-7 days');
 
-		add_action('admin_init', array($this, 'check_installation_date'));
+		add_action('admin_init', array($this, 'checkInstallationDate'));
 
-		add_action( 'wp_ajax_' . self::DISMISS_AJAX_ACTION, array( $this, 'dismiss_notice' ) );
+		add_action( 'wp_ajax_' . self::DISMISS_AJAX_ACTION, array( $this, 'dismissNotice' ) );
 
-		add_action('admin_footer', array($this, 'print_dismiss_js'));
+        add_action('admin_head', array($this, 'loadStyle'));
+
+		add_action('admin_footer', array($this, 'printDismissJS'));
 
 	}
 
@@ -39,7 +43,7 @@ class DGWT_WCAS_FeedbackNotice {
 	 * Check if is possible to display admin notice on the current screen
 	 * @return bool
 	 */
-	private function allow_display() {
+	private function allowDisplay() {
 		if (
 			in_array( get_current_screen()->base, array( 'dashboard', 'post', 'edit' ) )
 			|| strpos( get_current_screen()->base, DGWT_WCAS_SETTINGS_KEY ) !== false
@@ -55,11 +59,11 @@ class DGWT_WCAS_FeedbackNotice {
 	 * Display feedback notice
 	 * @return null | echo HTML
 	 */
-	public function display_notice()
+	public function displayNotice()
 	{
 	    global $current_user;
 
-		if ($this->allow_display())
+		if ($this->allowDisplay())
 		{
 			?>
 
@@ -93,7 +97,7 @@ class DGWT_WCAS_FeedbackNotice {
 	 * Check instalation date
 	 * @return null
 	 */
-	public function check_installation_date()
+	public function checkInstallationDate()
 	{
 
 		$date = get_option(self::ACTIVATION_DATE_OPT);
@@ -108,7 +112,7 @@ class DGWT_WCAS_FeedbackNotice {
 
 			if ($this->offset >= $install_date && current_user_can('install_plugins'))
 			{
-				add_action('admin_notices', array($this, 'display_notice'));
+				add_action('admin_notices', array($this, 'displayNotice'));
 			}
 		}
 
@@ -120,7 +124,7 @@ class DGWT_WCAS_FeedbackNotice {
 	 *
 	 * @return null
 	 */
-	public function dismiss_notice() {
+	public function dismissNotice() {
 
 		update_option( self::HIDE_NOTICE_OPT, true );
 
@@ -130,9 +134,9 @@ class DGWT_WCAS_FeedbackNotice {
 	/**
 	 * Print JS for close admin notice
 	 */
-	public function print_dismiss_js() {
+	public function printDismissJS() {
 
-	    if(!$this->allow_display()){
+	    if(!$this->allowDisplay()){
 	        return false;
         }
 		?>
@@ -169,6 +173,16 @@ class DGWT_WCAS_FeedbackNotice {
 		<?php
 	}
 
-}
+    /**
+     * Load the necessary CSS
+     * @return void
+     */
+    public function loadStyle()
+    {
+        if($this->allowDisplay()){
+            wp_enqueue_style('dgwt-wcas-admin-style');
+        }
 
-new DGWT_WCAS_FeedbackNotice();
+    }
+
+}
