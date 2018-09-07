@@ -150,10 +150,36 @@ jQuery(document).ready(function ($) {
   });
 
   // Billing address fields
-  $('#billing_nova_poshta_region').selectize({});
-  $('#billing_nova_poshta_city').selectize({});
-  $('#billing_nova_poshta_warehouse').selectize({});
+  var region = document.getElementById('billing_nova_poshta_region');
+  var city = document.getElementById('billing_nova_poshta_city');
+  var warehouse = document.getElementById('billing_nova_poshta_warehouse');
 
+  $(region).selectize();
+  $(city).selectize({});
+  $(warehouse).selectize({});
+
+  $(region).prop('disabled', true);
+  $(city).prop('disabled', true);
+  $(warehouse).prop('disabled', true);
+
+  $(region).change(function () {
+      $(city)[0].selectize.destroy();
+      city.options[0].text = 'Выберите опцию';
+      $(warehouse)[0].selectize.destroy();
+      warehouse.options[0].text = 'Выберите опцию';
+      setTimeout(function() {
+        $(city).selectize({});
+        $(warehouse).selectize({});
+      }, 4000);
+    });
+
+    $(city).change(function () {
+      warehouse.options[0].text = 'Выберите опцию';
+      $(warehouse)[0].selectize.destroy();
+      setTimeout(function() {
+        $(warehouse).selectize({});
+      }, 4000);
+    });
 
   // Fix search width
   // $('.dgwt-wcas-search-input').on('keyup', function(){

@@ -40,6 +40,12 @@
   &-content {
     max-height: 300px;
   }
+  .option {
+    cursor: pointer;
+    &:last-child {
+      border-radius: 0 0 10px 10px;
+    }
+  }
 }
 
 .selectize-control.single .selectize-input {
