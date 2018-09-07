@@ -30,7 +30,7 @@ class Frontend
      */
     private function registerHooks()
     {
-        add_action('woocommerce_product_meta_end', array($this, 'addProductBrand'));
+        // add_action('woocommerce_product_meta_end', array($this, 'addProductBrand'));
         add_filter('woocommerce_get_breadcrumb', array($this, 'changeBreadcrumb'));
         add_shortcode('brands_page', array($this, 'brandsPage'));
         add_action('wp_enqueue_scripts', function () {
