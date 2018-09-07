@@ -136,6 +136,15 @@
         color: $main-font-color;
       }
     }
+    .yith-wcwl-wishlistaddedbrowse.show {
+      a {
+        font-size: 21px;
+        color: $accent-color;
+        &:hover {
+          color: $main-font-color;
+        }
+      }
+    }
     .yith-wcwl-wishlistexistsbrowse.show,
     .yith-wcwl-wishlistaddedbrowse.show {
       display: block;

@@ -159,7 +159,7 @@ function neomuscle_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'neomuscle_scripts', 20 );
+add_action( 'wp_enqueue_scripts', 'neomuscle_scripts', 40 );
 
 /**
  * Implement the Custom Header feature.

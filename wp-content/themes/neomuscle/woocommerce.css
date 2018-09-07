@@ -808,6 +808,15 @@ table.shop_table_responsive tr td.download-actions .button {
   color: #333e48;
 }
 
+.single-product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse.show a {
+  font-size: 21px;
+  color: #fed700;
+}
+
+.single-product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse.show a:hover {
+  color: #333e48;
+}
+
 .single-product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse.show,
 .single-product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse.show {
   display: block;
@@ -1638,6 +1647,18 @@ table.wishlist_table .actions .button {
 
 .cart-collaterals .cart_totals h2 {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 15px;
   font-size: 25px;
   font-weight: 400;
@@ -1653,6 +1674,10 @@ table.wishlist_table .actions .button {
   height: 2px;
   background-color: #fed700;
   content: '';
+}
+
+.cart-collaterals .cart_totals h2 strong {
+  font-size: 16px;
 }
 
 .cart-collaterals table.shop_table_responsive {

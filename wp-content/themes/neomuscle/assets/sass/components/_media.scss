@@ -1083,6 +1083,11 @@
   .cart-collaterals {
     width: 40%;
   }
+  .prm-brands-list {
+    &__col {
+      width: 25%;
+    }
+  }
   .woocommerce {
     table.wishlist_table {
       tr {
@@ -1213,6 +1218,11 @@
           }
         }
       }
+    }
+  }
+  .prm-brands-list {
+    &__col {
+      width: 20%;
     }
   }
   table.shop_table_responsive {
