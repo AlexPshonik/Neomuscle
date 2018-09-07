@@ -808,6 +808,15 @@ table.shop_table_responsive tr td.download-actions .button {
   color: #333e48;
 }
 
+.single-product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse.show a {
+  font-size: 21px;
+  color: #fed700;
+}
+
+.single-product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse.show a:hover {
+  color: #333e48;
+}
+
 .single-product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse.show,
 .single-product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse.show {
   display: block;
