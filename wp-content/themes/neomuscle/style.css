@@ -3559,6 +3559,64 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# 404 page
+--------------------------------------------------------------*/
+.error-404 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 30px;
+}
+
+.error-404-image {
+  width: 100%;
+  text-align: center;
+}
+
+.error-404-image img {
+  width: 100%;
+  height: auto;
+}
+
+.error-404 h1 {
+  margin: 0 0 10px;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.error-404 h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.error-404 h3 {
+  margin: 20px 0 10px;
+  color: #888;
+  font-size: 18px;
+}
+
+.error-404 p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.error-404 .button {
+  margin: 0 auto;
+  background-color: #fed700;
+  font-weight: 600;
+}
+
+/*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
 .btn,
@@ -4427,6 +4485,9 @@ input[type="checkbox"]:checked::after {
   .products .product-card {
     margin-bottom: 0;
   }
+  .error-404-image img {
+    width: auto;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -5107,6 +5168,21 @@ input[type="checkbox"]:checked::after {
   .woocommerce-account .woocommerce-orders-table__cell-order-total .woocommerce-Price-amount {
     display: block;
   }
+  .error-404 h1 {
+    font-size: 45px;
+  }
+  .error-404 h2 {
+    font-size: 34px;
+  }
+  .error-404 h3 {
+    font-size: 24px;
+  }
+  .error-404 p {
+    font-size: 22px;
+  }
+  .error-404 .button {
+    margin: 0;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -5439,6 +5515,13 @@ input[type="checkbox"]:checked::after {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
+  }
+  .error-404 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 }
 

@@ -221,6 +221,13 @@
       }
     }
   }
+  .error-404 {
+    &-image {
+      img {
+        width: auto;
+      }
+    }
+  }
 }
 
 /* Small Devices, Tablets */
@@ -836,6 +843,23 @@
       }
     }
   }
+  .error-404 {
+    h1 {
+      font-size: 45px;
+    }
+    h2 {
+      font-size: 34px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 22px;
+    }
+    .button {
+      margin: 0;
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -1169,6 +1193,9 @@
         flex-basis: 100%;
       }
     }
+  }
+  .error-404 {
+    flex-direction: row-reverse;
   }
 }
 
