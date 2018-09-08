@@ -96,7 +96,7 @@ add_action('wp_print_styles', 'ca_slider_register_styles');
 
 
 add_theme_support( 'post-thumbnails' );
-add_image_size('ca_function', 1920, 450, true);
+add_image_size('ca_function', 1920, 420, true);
 
 
 function ca_function($type='ca_function') {

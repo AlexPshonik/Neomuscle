@@ -747,7 +747,7 @@ table.shop_table_responsive tr td.download-actions .button {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #ee5453;
+  background-color: #aaabae;
   content: '';
 }
 
@@ -1357,7 +1357,7 @@ table.shop_table_responsive tr td.download-actions .button {
   background-color: #fed700;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  font-weight: 700;
+  font-weight: 600;
   color: #333e48;
 }
 

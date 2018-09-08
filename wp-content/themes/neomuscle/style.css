@@ -3873,10 +3873,6 @@ input[type="checkbox"]:checked::after {
 /*--------------------------------------------------------------
 # Feature Section
 --------------------------------------------------------------*/
-.feature {
-  margin-top: 40px;
-}
-
 .feature-box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4140,7 +4136,7 @@ input[type="checkbox"]:checked::after {
 
 .site-footer .footer-contact .footer-call-us .call-us-number {
   display: block;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.4;
 }
 
