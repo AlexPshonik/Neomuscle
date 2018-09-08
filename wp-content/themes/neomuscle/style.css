@@ -3873,10 +3873,6 @@ input[type="checkbox"]:checked::after {
 /*--------------------------------------------------------------
 # Feature Section
 --------------------------------------------------------------*/
-.feature {
-  margin-top: 40px;
-}
-
 .feature-box {
   display: -webkit-box;
   display: -webkit-flex;
