@@ -1,11 +1,11 @@
 === Ajax Search for WooCommerce  ===
 Contributors: damian-gora
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LD2ALVRLXPZPC
-Tags: woocomerce search, ajax search, live search, product search, woocommerce
+Tags: AJAX, ajax search, autocomplete, category search, custom search, ecommerce, instant search, sive search, product search, products, search, search by sku, search highlight, search plugin, shop, woocommerce, woocommerce live search, WooCommerce Plugin, woocommerce product search, woocommerce search, wordpress search, wp ajax search, wp search, wp search plugin, wp tao
 Requires at least: 3.8
-Tested up to: 4.9.8
+Tested up to: 4.9.5
 Requires PHP: 5.5
-Stable tag: 1.2.0
+Stable tag: 1.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,7 +35,7 @@ See how it works on the [DEMO](http://damiangora.com/ajax-search-for-woocommerce
 * **Price** can be displayed for each suggestion
 * **Description** can be displayed for each suggestion
 * **SKU** can be displayed for each suggestion
-* The **'add to cart' button with a quantity field** and **extended information** displayed when you hover the mouse over the suggestion
+* The **'add to cart' button and** and **extended information** displayed when you hover the mouse over the suggestion
 * **Categories and tags** as suggestions
 * **Limit** displayed suggestions – you can set your own
 * **The minimum number of characters** required to display suggestions – you can set your own
@@ -69,30 +69,11 @@ Any suggestions or comments are welcome. Feel free to contact me using this [con
 
 == Changelog ==
 
-= 1.2.0, August 24, 2018 =
-* ADD: Backward compatibility system
-* ADD: Support of image size improvements in Woocommerce 3.3
-* ADD: Dynamic width of the search form
-* ADD: Option to set max width of the search form
-* ADD: DISABLE_NAG_NOTICES support for admin notices
-* ADD: More hooks for developers
-* ADD: Minified version of CSS and JS
-* ADD: Label for taxonomy suggestions
-* ADD: Quantity input for a add to cart button in the details box
-* FIX: Problem with covering suggestions by other HTML elements of themes.
-* FIX: Details box in RTL
-* FIX: Improvements for the IE browser
-* CHANGE: Code refactor for better future development. Composer and PSR-4 support (in part).
-* CHANGE: Better settings organization
-* CHANGE: Updated Freemius SDK
-
-
-= 1.1.7, April 22, 2017 =
-* FIX: Removed duplicate IDs
-* CHANGE: PHP requires tag set to PHP 5.5
-* CHANGE: Woocommerce requires tags
-* CHANGE: Updated Freemius SDK
-* REMOVE: Removed uninstall.php
+= 1.1.7, April 22, 2018 =
+* ADD: Freemius SDK
+* ADD: WooCommerce tags "WC requires at" and "WC tested up to".
+* FIX: Removed static product thumbnails size
+* FIX: Fixed duplicated search input ID
 
 = 1.1.6, October 01, 2017 =
 * FIX: Disappearing some categories and tags in suggestions
@@ -125,7 +106,7 @@ Any suggestions or comments are welcome. Feel free to contact me using this [con
 * FIX: Menu items repeated in a search page
 * FIX: Other minor bugs
 
-= 1.1.0, October 5, 2016 =
+= 1.1, October 5, 2016 =
 * NEW: Add WPML compatibility
 * FIX: Repeating search results for products in a admin dashboard
 * FIX: Overwrite default input element rounding for Safari browser
@@ -147,11 +128,11 @@ Any suggestions or comments are welcome. Feel free to contact me using this [con
 * FIX: Optimization JS mouseover event in a detail mode
 * FIX: Trivial things in CSS
 
-= 1.0.0, June 24, 2016 =
-* ADD: [Option] Exclude out of stock products from suggestions
-* ADD: [Option] Overwrite a suggestion container width
-* ADD: [Option] Show/hide SKU in suggestions
-* ADD: Add no results note
+= 1.0, June 24, 2016 =
+* NEW: [Option] Exclude out of stock products from suggestions 
+* NEW: [Option] Overwrite a suggestion container width
+* NEW: [Option] Show/hide SKU in suggestions
+* NEW: Add no results note
 * FIX: Search in products SKU
 * FIX: Trivial things in CSS and JS files
 
@@ -159,5 +140,5 @@ Any suggestions or comments are welcome. Feel free to contact me using this [con
 * ADD: Javascript and CSS dynamic compression
 * FIX: Incorrect dimensions of the custom preloader
 
-= 0.9.0, May 17, 2016 =
-* ADD: First public release
+= 0.9, May 17, 2016 =
+* First public release

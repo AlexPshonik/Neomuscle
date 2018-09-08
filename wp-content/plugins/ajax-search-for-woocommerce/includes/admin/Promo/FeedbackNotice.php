@@ -1,14 +1,12 @@
 <?php
 
-namespace DgoraWcas\Admin\Promo;
-
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 
-class FeedbackNotice {
+class DGWT_WCAS_FeedbackNotice {
 
 	const ACTIVATION_DATE_OPT = 'dgwt_wcas_activation_date';
 
@@ -29,13 +27,11 @@ class FeedbackNotice {
 
 		$this->offset = strtotime('-7 days');
 
-		add_action('admin_init', array($this, 'checkInstallationDate'));
+		add_action('admin_init', array($this, 'check_installation_date'));
 
-		add_action( 'wp_ajax_' . self::DISMISS_AJAX_ACTION, array( $this, 'dismissNotice' ) );
+		add_action( 'wp_ajax_' . self::DISMISS_AJAX_ACTION, array( $this, 'dismiss_notice' ) );
 
-        add_action('admin_head', array($this, 'loadStyle'));
-
-		add_action('admin_footer', array($this, 'printDismissJS'));
+		add_action('admin_footer', array($this, 'print_dismiss_js'));
 
 	}
 
@@ -43,7 +39,7 @@ class FeedbackNotice {
 	 * Check if is possible to display admin notice on the current screen
 	 * @return bool
 	 */
-	private function allowDisplay() {
+	private function allow_display() {
 		if (
 			in_array( get_current_screen()->base, array( 'dashboard', 'post', 'edit' ) )
 			|| strpos( get_current_screen()->base, DGWT_WCAS_SETTINGS_KEY ) !== false
@@ -59,11 +55,11 @@ class FeedbackNotice {
 	 * Display feedback notice
 	 * @return null | echo HTML
 	 */
-	public function displayNotice()
+	public function display_notice()
 	{
 	    global $current_user;
 
-		if ($this->allowDisplay())
+		if ($this->allow_display())
 		{
 			?>
 
@@ -97,7 +93,7 @@ class FeedbackNotice {
 	 * Check instalation date
 	 * @return null
 	 */
-	public function checkInstallationDate()
+	public function check_installation_date()
 	{
 
 		$date = get_option(self::ACTIVATION_DATE_OPT);
@@ -112,7 +108,7 @@ class FeedbackNotice {
 
 			if ($this->offset >= $install_date && current_user_can('install_plugins'))
 			{
-				add_action('admin_notices', array($this, 'displayNotice'));
+				add_action('admin_notices', array($this, 'display_notice'));
 			}
 		}
 
@@ -124,7 +120,7 @@ class FeedbackNotice {
 	 *
 	 * @return null
 	 */
-	public function dismissNotice() {
+	public function dismiss_notice() {
 
 		update_option( self::HIDE_NOTICE_OPT, true );
 
@@ -134,9 +130,9 @@ class FeedbackNotice {
 	/**
 	 * Print JS for close admin notice
 	 */
-	public function printDismissJS() {
+	public function print_dismiss_js() {
 
-	    if(!$this->allowDisplay()){
+	    if(!$this->allow_display()){
 	        return false;
         }
 		?>
@@ -173,16 +169,6 @@ class FeedbackNotice {
 		<?php
 	}
 
-    /**
-     * Load the necessary CSS
-     * @return void
-     */
-    public function loadStyle()
-    {
-        if($this->allowDisplay()){
-            wp_enqueue_style('dgwt-wcas-admin-style');
-        }
-
-    }
-
 }
+
+new DGWT_WCAS_FeedbackNotice();
