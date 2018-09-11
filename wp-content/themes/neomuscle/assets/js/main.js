@@ -220,7 +220,7 @@ jQuery(document).ready(function ($) {
   });
 
   // Sidebar accordeon
-  $(document).on("click", "h2.widget-title", function (e) {
+  $(document).on("click", ".widget-area h2.widget-title", function (e) {
     e.preventDefault();
     $(this).parent().toggleClass('toggled');
     $(this).next().slideToggle(400);
@@ -275,15 +275,15 @@ jQuery(document).ready(function ($) {
   });
 
   if(window.innerWidth < 768) {
-    $("h2.widget-title").parent().removeClass('toggled');
-    $("h2.widget-title").next().slideUp(400);
+    $(".widget-area h2.widget-title").parent().removeClass('toggled');
+    $(".widget-area h2.widget-title").next().slideUp(400);
   }
 
   // Disble mobile elements on desctop
   $(window).resize(function() {
     if(window.innerWidth < 768) {
-      $("h2.widget-title").parent().removeClass('toggled');
-      $("h2.widget-title").next().slideUp(400);
+      $(".widget-area h2.widget-title").parent().removeClass('toggled');
+      $(".widget-area h2.widget-title").next().slideUp(400);
     }
     if(window.innerWidth >= 768) { 
       if($('body').hasClass('noscroll')) {
