@@ -5415,7 +5415,6 @@ input[type="checkbox"]:checked::after {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     margin-top: -9px;
-    text-align: right;
   }
   .single-product .product-meta .specification {
     -webkit-flex-basis: 35%;
