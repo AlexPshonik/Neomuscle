@@ -14,6 +14,21 @@
       width: 101%;
       flex-direction: column;
     }
+    .cart,
+    .variations_form {
+      .yith-wcwl-wishlistaddedbrowse.show,
+      .yith-wcwl-wishlistexistsbrowse.show {
+        a {
+          position: relative;
+          top: 5px;
+          font-size: 21px;
+          color: $accent-color;
+          &:hover {
+            color: $main-font-color;
+          }
+        }
+      }
+    }
   }
   .related {
     .product-card {
@@ -159,15 +174,6 @@
       color: $accent-color;
       &:hover {
         color: $main-font-color;
-      }
-    }
-    .yith-wcwl-wishlistaddedbrowse.show {
-      a {
-        font-size: 21px;
-        color: $accent-color;
-        &:hover {
-          color: $main-font-color;
-        }
       }
     }
     .yith-wcwl-wishlistexistsbrowse.show,

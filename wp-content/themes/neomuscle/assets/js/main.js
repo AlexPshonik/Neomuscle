@@ -323,6 +323,6 @@ jQuery(document).ready(function ($) {
   //  Billing phone mask
   $('#billing_phone').iMask({
     type: 'fixed',
-    mask: '(099) 99-99-999'
+    mask: '099-999-99-99'
   })
 });
