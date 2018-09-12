@@ -11,6 +11,21 @@
 show_admin_bar(false);
 
 /**
+ * Load Others Template
+ */
+add_filter('template_include', 'other_template');
+function other_template( $template ) {
+  global $post;
+
+	if( is_page('contacts') ){ 
+		if ( $new_template = locate_template( array( '/template-parts/contacts.php' ) ) )
+			return $new_template ;
+	}
+
+	return $template;
+}
+
+/**
  * Change WooCommerce Symbol.
  */
 add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2);

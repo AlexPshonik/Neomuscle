@@ -23,7 +23,7 @@
               </div>
               <div class="media-body">
                 <span class="call-us-text">Есть вопросы? Позвоните нам :)</span>
-                <span class="call-us-number">(068) 208-17-17, <br> (073) 208-17-17, <br> (095) 238-17-17</span>
+                <span class="call-us-number">(068) 208-17-17<br> (073) 208-17-17<br> (095) 238-17-17</span>
               </div>
             </div>
             <div class="footer-work">
