@@ -37,7 +37,6 @@ wp-config.php
 wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
-wp-content/w3tc-config/
 wp-content/wp-cache-config.php
 
 # ignore generate bootstrap directories
