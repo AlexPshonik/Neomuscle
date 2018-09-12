@@ -3676,6 +3676,16 @@ input[type=submit] {
   transition: all 0.3s ease 0s;
 }
 
+.btn:hover,
+.button:hover,
+button:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+  background-color: #333e48;
+  color: #ffffff;
+}
+
 .btn-primary {
   background-color: #fed700;
 }
@@ -5415,7 +5425,6 @@ input[type="checkbox"]:checked::after {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     margin-top: -9px;
-    text-align: right;
   }
   .single-product .product-meta .specification {
     -webkit-flex-basis: 35%;
