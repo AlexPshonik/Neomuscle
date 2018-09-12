@@ -15,6 +15,10 @@ input[type=submit] {
   background-color: #efecec;
   border-color: #efecec;
   transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: $main-font-color;
+    color: #ffffff;
+  }
 }
 
 .btn-primary {
