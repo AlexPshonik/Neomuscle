@@ -3652,6 +3652,41 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Payments and deliveries page
+--------------------------------------------------------------*/
+.payments-and-deliveries h2 {
+  position: relative;
+  margin: 20px 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+  font-weight: 700;
+}
+
+.payments-and-deliveries h2::before {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #fed700;
+  content: '';
+}
+
+.payments-and-deliveries h2:first-child {
+  margin-top: 0;
+}
+
+.payments-and-deliveries p {
+  margin-bottom: 10px;
+}
+
+.payments-and-deliveries ul {
+  margin: 0 0 10px 20px;
+  list-style: disc;
+}
+
+/*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
 .btn,
