@@ -234,14 +234,7 @@
         width: 35px;
         height: 35px;
         padding: 5px 0;
-        color: $main-font-color;
-        background: $accent-color;
-        border-radius: 50%;
         text-align: center;
-        &:hover {
-          background-color: $main-font-color;
-          color: #ffffff;
-        }
       }
     }
     .product-packaging {
@@ -323,7 +316,6 @@
   }
   .button {
     flex-basis: 45%;
-    background-color: $accent-color;
   }
   .yith-wcwl-add-to-wishlist {
     display: flex;

@@ -3612,8 +3612,6 @@ h6 {
 
 .error-404 .button {
   margin: 0 auto;
-  background-color: #fed700;
-  font-weight: 600;
 }
 
 /*--------------------------------------------------------------
@@ -3730,11 +3728,6 @@ h6 {
   resize: none;
 }
 
-.contacts input[type=submit] {
-  background-color: #fed700;
-  color: #333e48;
-}
-
 .contacts .phones,
 .contacts .email {
   margin-bottom: 20px;
@@ -3774,7 +3767,7 @@ input[type=button],
 input[type=reset],
 input[type=submit] {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   -webkit-border-radius: 50px;
           border-radius: 50px;
   padding: 13px 35px;
@@ -3782,8 +3775,8 @@ input[type=submit] {
   display: inline-block;
   color: #333e48;
   cursor: pointer;
-  background-color: #efecec;
-  border-color: #efecec;
+  background-color: #fed700;
+  border-color: #fed700;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -3805,6 +3798,7 @@ input[type=submit]:hover {
 
 .btn-primary:hover {
   background-color: #eac600;
+  color: #333e48;
 }
 
 .btn-add-to-cart {
@@ -4868,17 +4862,6 @@ input[type="checkbox"]:checked::after {
   .woocommerce-breadcrumb a {
     margin-bottom: 0;
   }
-  .comment-form-attachment label,
-  .comment-form .form-submit input {
-    -webkit-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  .comment-form-attachment label:hover,
-  .comment-form .form-submit input:hover {
-    background-color: #eac600;
-  }
   .description-store-text ol {
     padding-left: 30px;
   }
@@ -4907,15 +4890,6 @@ input[type="checkbox"]:checked::after {
     border-left: 1px solid #e7c400;
     margin-top: 0;
     padding-left: 15px;
-  }
-  .woocommerce-cart .return-to-shop .button {
-    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-    -o-transition: background-color 0.3s ease, color 0.3s ease;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  .woocommerce-cart .return-to-shop .button:hover {
-    background-color: #333e48;
-    color: #ffffff;
   }
   table.shop_table_responsive thead th {
     padding: 0 10px 10px;
@@ -5244,17 +5218,6 @@ input[type="checkbox"]:checked::after {
     width: 48%;
     margin-bottom: 0;
   }
-  .customer_login .customer_login_form .button,
-  .customer_login .customer_registration_form .button {
-    -webkit-transition: color 0.3s ease, background-color 0.3s ease;
-    -o-transition: color 0.3s ease, background-color 0.3s ease;
-    transition: color 0.3s ease, background-color 0.3s ease;
-  }
-  .customer_login .customer_login_form .button:hover,
-  .customer_login .customer_registration_form .button:hover {
-    background-color: #333e48;
-    color: #ffffff;
-  }
   .customer_login .customer_login_form {
     padding-right: 40px;
   }
@@ -5286,15 +5249,6 @@ input[type="checkbox"]:checked::after {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     content: '';
-  }
-  .woocommerce-ResetPassword .button {
-    -webkit-transition: color 0.3s ease, background-color 0.3s ease;
-    -o-transition: color 0.3s ease, background-color 0.3s ease;
-    transition: color 0.3s ease, background-color 0.3s ease;
-  }
-  .woocommerce-ResetPassword .button:hover {
-    background-color: #333e48;
-    color: #ffffff;
   }
   .woocommerce-account .woocommerce::after {
     display: block;

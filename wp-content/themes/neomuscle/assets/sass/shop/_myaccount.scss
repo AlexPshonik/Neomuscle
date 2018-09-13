@@ -51,11 +51,6 @@
       margin-bottom: 0;
     }
   }
-  .button {
-    background-color: $accent-color;
-    font-size: 14px;
-    font-weight: 700;
-  }
   .lost_password {
     a {
       color: $main-font-color;
@@ -89,10 +84,6 @@
   }
   input {
     padding: 8px 15px;
-  }
-  .button {
-    background-color: $accent-color;
-    font-weight: 700;
   }
 }
 
@@ -143,12 +134,6 @@
           }
           span {
             margin-right: 3px;
-          }
-          .button {
-            background-color: $accent-color;
-            font-size: 14px;
-            font-weight: 700;
-            text-decoration: none;
           }
         }
       }

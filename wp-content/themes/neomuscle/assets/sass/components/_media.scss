@@ -450,14 +450,6 @@
       margin-bottom: 0;
     }
   }
-  .comment-form-attachment label,
-  .comment-form .form-submit input {
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-      &:hover {
-        background-color: $accent-color-hover;
-      }
-    }
   .description-store {
     &-text {
       ol {
@@ -479,17 +471,6 @@
       border-left: 1px solid #e7c400;
       margin-top: 0;
       padding-left: 15px;
-    }
-  }
-  .woocommerce-cart {
-    .return-to-shop {
-      .button {
-        transition: background-color 0.3s ease, color 0.3s ease;
-        &:hover {
-          background-color: $main-font-color;
-          color: #ffffff;
-        }
-      }
     }
   }
   table.shop_table_responsive {
@@ -764,13 +745,6 @@
     .customer_registration_form {
       width: 48%;
       margin-bottom: 0;
-      .button {
-        transition: color 0.3s ease, background-color 0.3s ease;
-        &:hover {
-          background-color: $main-font-color;
-          color: #ffffff;
-        }
-      }
     }
     .customer_login_form {
       padding-right: 40px;
@@ -798,15 +772,6 @@
       background-color: $border-color;
       transform: translateX(-50%);
       content: '';
-    }
-  }
-  .woocommerce-ResetPassword {
-    .button {
-      transition: color 0.3s ease, background-color 0.3s ease;
-      &:hover {
-        background-color: $main-font-color;
-        color: #ffffff;
-      }
     }
   }
   .woocommerce-account {
