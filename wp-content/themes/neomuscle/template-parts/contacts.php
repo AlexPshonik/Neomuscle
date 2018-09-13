@@ -10,7 +10,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-xl-7">
 					<h2>Оставте нам сообщение</h2>
-					<?php echo do_shortcode('[contact-form-7 id="519" title="Contact form"]'); ?>
+					<?php echo do_shortcode('[contact-form-7 id="538" title="Contact form"]'); ?>
 				</div>
 				<div class="col-12 col-md-6 col-xl-5">
 					<h2>Наш магазин</h2>
