@@ -3707,7 +3707,8 @@ h6 {
   content: '';
 }
 
-.contacts h5 {
+.contacts .subtitle {
+  margin-bottom: 15px;
   font-weight: 700;
 }
 
@@ -3734,12 +3735,33 @@ h6 {
   color: #333e48;
 }
 
+.contacts .phones,
+.contacts .email {
+  margin-bottom: 20px;
+}
+
+.contacts .email-item {
+  font-weight: 600;
+}
+
+.contacts .phones-list-item,
 .contacts .work-time-list-item {
   margin-bottom: 5px;
 }
 
+.contacts .phones-list-item:last-child,
 .contacts .work-time-list-item:last-child {
   margin-bottom: 0;
+}
+
+.contacts .phones-list-item span,
+.contacts .work-time-list-item span {
+  font-weight: 600;
+}
+
+.contacts .phones-list-item a,
+.contacts .work-time-list-item a {
+  color: #333e48;
 }
 
 /*--------------------------------------------------------------
@@ -4553,6 +4575,17 @@ input[type="checkbox"]:checked::after {
   table.shop_table_responsive .actions .button {
     width: 90%;
   }
+  .contacts .phones-list-item,
+  .contacts .work-time-list-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media only screen and (min-width: 576px) {
@@ -5320,19 +5353,6 @@ input[type="checkbox"]:checked::after {
   }
   .contacts input[type=submit] {
     width: auto;
-  }
-  .contacts .work-time-list-item {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .contacts .work-time-list-item span {
-    font-weight: 600;
   }
   .error-404 h1 {
     font-size: 45px;

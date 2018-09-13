@@ -15,7 +15,8 @@
       content: '';
     }
   }
-  h5 {
+  .subtitle {
+    margin-bottom: 15px;
     font-weight: 700;
   }
   label {
@@ -36,11 +37,25 @@
     background-color: $accent-color;
     color: $main-font-color;
   }
+  .phones,
+  .email {
+    margin-bottom: 20px;
+  }
+  .email-item {
+    font-weight: 600;
+  }
+  .phones-list,
   .work-time-list {
     &-item {
       margin-bottom: 5px;
       &:last-child {
         margin-bottom: 0;
+      }
+      span {
+        font-weight: 600;
+      }
+      a {
+        color: $main-font-color;
       }
     }
   }
