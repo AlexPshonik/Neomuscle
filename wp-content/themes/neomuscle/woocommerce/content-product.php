@@ -64,7 +64,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 					<li class="item"><span class="item-title">Страна производства:</span><span><?php echo the_field('country_field'); ?></</span></li>
 					<?php if (!strripos($product->get_categories(), 'Аксессуары')) : ?>
 						<li class="item"><span class="item-title">Фасовка: </span><span><?php echo the_field('pack'); ?></span></li>
-						<li class="item"><span class="item-title">Количество порций: </span><span><?php echo the_field('amount_portions'); ?></span></li>
+						<?php if (!strripos($product->get_categories(), 'Батончики')) : ?>
+							<li class="item"><span class="item-title">Количество порций: </span><span><?php echo the_field('amount_portions'); ?></span></li>
+						<?php endif; ?>
 					<?php endif; ?>
 					<?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
 						<li class="item"><span class="item-title">Артикул:</span><span><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></li>
