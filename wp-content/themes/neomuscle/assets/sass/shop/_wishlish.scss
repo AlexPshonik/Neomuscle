@@ -37,17 +37,6 @@
           }
           &-add-to-cart {
             justify-content: center;
-            .button {
-              padding: 13px 35px;
-              background-color: $accent-color;
-              border-radius: 55px;
-              font-size: 14px;
-              font-weight: 700;
-              &:hover {
-                color: #ffffff;
-                background-color: #000000;
-              }
-            }
           }
         }
       }

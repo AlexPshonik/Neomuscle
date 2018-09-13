@@ -472,17 +472,6 @@ WooCommerce styles override
   font-size: 16px;
 }
 
-.comment-form .form-submit {
-  -webkit-box-ordinal-group: 4;
-  -webkit-order: 3;
-      -ms-flex-order: 3;
-          order: 3;
-}
-
-.comment-form .form-submit input {
-  background-color: #fed700;
-}
-
 /**
  * Imports
  */
@@ -947,16 +936,7 @@ table.shop_table_responsive tr td.download-actions .button {
   width: 35px;
   height: 35px;
   padding: 5px 0;
-  color: #333e48;
-  background: #fed700;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
   text-align: center;
-}
-
-.single-product .product-meta .product-packaging .buy-button:hover {
-  background-color: #333e48;
-  color: #ffffff;
 }
 
 .single-product .product-meta .product-packaging {
@@ -1078,7 +1058,6 @@ table.shop_table_responsive tr td.download-actions .button {
   -webkit-flex-basis: 45%;
       -ms-flex-preferred-size: 45%;
           flex-basis: 45%;
-  background-color: #fed700;
 }
 
 .single_variation_wrap .yith-wcwl-add-to-wishlist {
@@ -1422,11 +1401,7 @@ table.shop_table_responsive tr td.download-actions .button {
 .product-card-buy .button {
   position: relative;
   padding: 15px;
-  background-color: #fed700;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
   font-size: 0;
-  color: #333e48;
   -webkit-box-ordinal-group: 0;
   -webkit-order: -1;
       -ms-flex-order: -1;
@@ -1439,6 +1414,7 @@ table.shop_table_responsive tr td.download-actions .button {
   top: 50%;
   left: 50%;
   font-size: 12px;
+  font-weight: 400;
   font-family: 'neomuscle-ui' !important;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1576,10 +1552,6 @@ table.shop_table_responsive tr td.download-actions .button {
   text-align: center;
 }
 
-.woocommerce-cart .entry-content .return-to-shop .button {
-  background-color: #fed700;
-}
-
 table.shop_table_responsive,
 table.wishlist_table {
   width: 100%;
@@ -1706,9 +1678,6 @@ table.wishlist_table .actions .coupon input {
 table.shop_table_responsive .actions .coupon .button,
 table.wishlist_table .actions .coupon .button {
   width: 100%;
-  padding: 14px 35px;
-  font-size: 14px;
-  font-weight: 600;
   color: #ffffff;
   opacity: 1;
   background-color: #333e48;
@@ -1722,9 +1691,6 @@ table.wishlist_table .actions .coupon .button:hover {
 table.shop_table_responsive .actions .button,
 table.wishlist_table .actions .button {
   width: 100%;
-  font-size: 14px;
-  opacity: .65;
-  background-color: #efecec;
 }
 
 .cart-collaterals .cart_totals h2 {
@@ -1802,14 +1768,7 @@ table.wishlist_table .actions .button {
 
 .cart-collaterals .wc-proceed-to-checkout .button {
   width: 100%;
-  background-color: #fed700;
-  font-size: 14px;
   font-weight: 700;
-}
-
-.cart-collaterals .wc-proceed-to-checkout .button:hover {
-  color: #ffffff;
-  background-color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -1845,12 +1804,6 @@ table.wishlist_table .actions .button {
   width: 100%;
   margin-bottom: 15px;
   padding: 10px 35px;
-}
-
-.checkout_coupon.woocommerce-form-coupon p.form-row .button {
-  background-color: #333e48;
-  font-size: 14px;
-  color: #ffffff;
 }
 
 form.checkout h3 {
@@ -2037,15 +1990,7 @@ form.checkout .woocommerce-input-wrapper textarea {
 
 .woocommerce-checkout-payment .place-order .button {
   width: 100%;
-  height: 50px;
-  background-color: #fed700;
-  font-size: 14px;
   font-weight: 700;
-}
-
-.woocommerce-checkout-payment .place-order .button:hover {
-  color: #ffffff;
-  background-color: #000000;
 }
 
 .woocommerce-checkout-payment .checkout-review-order-table {
@@ -2112,20 +2057,6 @@ form.checkout .woocommerce-input-wrapper textarea {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.woocommerce table.wishlist_table tr td.product-add-to-cart .button {
-  padding: 13px 35px;
-  background-color: #fed700;
-  -webkit-border-radius: 55px;
-          border-radius: 55px;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.woocommerce table.wishlist_table tr td.product-add-to-cart .button:hover {
-  color: #ffffff;
-  background-color: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -2475,14 +2406,6 @@ p.stars.selected a:not(.active):before {
   margin-bottom: 0;
 }
 
-.customer_login_form .button,
-.customer_registration_form .button,
-.woocommerce-EditAccountForm .button {
-  background-color: #fed700;
-  font-size: 14px;
-  font-weight: 700;
-}
-
 .customer_login_form .lost_password a,
 .customer_registration_form .lost_password a,
 .woocommerce-EditAccountForm .lost_password a {
@@ -2519,11 +2442,6 @@ p.stars.selected a:not(.active):before {
 
 .woocommerce-ResetPassword input {
   padding: 8px 15px;
-}
-
-.woocommerce-ResetPassword .button {
-  background-color: #fed700;
-  font-weight: 700;
 }
 
 .woocommerce-account .entry-title {
@@ -2581,14 +2499,6 @@ p.stars.selected a:not(.active):before {
 .woocommerce-MyAccount-content table.shop_table_responsive tr td span,
 .woocommerce-MyAccount-content table.wishlist_table tr td span {
   margin-right: 3px;
-}
-
-.woocommerce-MyAccount-content table.shop_table_responsive tr td .button,
-.woocommerce-MyAccount-content table.wishlist_table tr td .button {
-  background-color: #fed700;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
 }
 
 .woocommerce-MyAccount-content mark {

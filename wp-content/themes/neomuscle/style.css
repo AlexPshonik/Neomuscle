@@ -3612,8 +3612,6 @@ h6 {
 
 .error-404 .button {
   margin: 0 auto;
-  background-color: #fed700;
-  font-weight: 600;
 }
 
 /*--------------------------------------------------------------
@@ -3652,6 +3650,114 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Payments and deliveries page
+--------------------------------------------------------------*/
+.payments-and-deliveries h2 {
+  position: relative;
+  margin: 20px 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+  font-weight: 700;
+}
+
+.payments-and-deliveries h2::before {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #fed700;
+  content: '';
+}
+
+.payments-and-deliveries h2:first-child {
+  margin-top: 0;
+}
+
+.payments-and-deliveries p {
+  margin-bottom: 10px;
+}
+
+.payments-and-deliveries ul {
+  margin: 0 0 10px 20px;
+  list-style: disc;
+}
+
+/*--------------------------------------------------------------
+# Contacts page
+--------------------------------------------------------------*/
+.contacts h2 {
+  position: relative;
+  margin: 20px 0 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.contacts h2::before {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #fed700;
+  content: '';
+}
+
+.contacts .subtitle {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.contacts label {
+  font-weight: 600;
+}
+
+.contacts input {
+  width: 100%;
+  margin: 5px 0 15px;
+  padding: 13px 15px;
+}
+
+.contacts textarea {
+  width: 100%;
+  margin: 5px 0 15px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  resize: none;
+}
+
+.contacts .phones,
+.contacts .email {
+  margin-bottom: 20px;
+}
+
+.contacts .email-item {
+  font-weight: 600;
+}
+
+.contacts .phones-list-item,
+.contacts .work-time-list-item {
+  margin-bottom: 5px;
+}
+
+.contacts .phones-list-item:last-child,
+.contacts .work-time-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts .phones-list-item span,
+.contacts .work-time-list-item span {
+  font-weight: 600;
+}
+
+.contacts .phones-list-item a,
+.contacts .work-time-list-item a {
+  color: #333e48;
+}
+
+/*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
 .btn,
@@ -3661,7 +3767,7 @@ input[type=button],
 input[type=reset],
 input[type=submit] {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   -webkit-border-radius: 50px;
           border-radius: 50px;
   padding: 13px 35px;
@@ -3669,8 +3775,8 @@ input[type=submit] {
   display: inline-block;
   color: #333e48;
   cursor: pointer;
-  background-color: #efecec;
-  border-color: #efecec;
+  background-color: #fed700;
+  border-color: #fed700;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -3692,6 +3798,7 @@ input[type=submit]:hover {
 
 .btn-primary:hover {
   background-color: #eac600;
+  color: #333e48;
 }
 
 .btn-add-to-cart {
@@ -4462,6 +4569,17 @@ input[type="checkbox"]:checked::after {
   table.shop_table_responsive .actions .button {
     width: 90%;
   }
+  .contacts .phones-list-item,
+  .contacts .work-time-list-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media only screen and (min-width: 576px) {
@@ -4744,17 +4862,6 @@ input[type="checkbox"]:checked::after {
   .woocommerce-breadcrumb a {
     margin-bottom: 0;
   }
-  .comment-form-attachment label,
-  .comment-form .form-submit input {
-    -webkit-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  .comment-form-attachment label:hover,
-  .comment-form .form-submit input:hover {
-    background-color: #eac600;
-  }
   .description-store-text ol {
     padding-left: 30px;
   }
@@ -4783,15 +4890,6 @@ input[type="checkbox"]:checked::after {
     border-left: 1px solid #e7c400;
     margin-top: 0;
     padding-left: 15px;
-  }
-  .woocommerce-cart .return-to-shop .button {
-    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-    -o-transition: background-color 0.3s ease, color 0.3s ease;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  .woocommerce-cart .return-to-shop .button:hover {
-    background-color: #333e48;
-    color: #ffffff;
   }
   table.shop_table_responsive thead th {
     padding: 0 10px 10px;
@@ -5120,17 +5218,6 @@ input[type="checkbox"]:checked::after {
     width: 48%;
     margin-bottom: 0;
   }
-  .customer_login .customer_login_form .button,
-  .customer_login .customer_registration_form .button {
-    -webkit-transition: color 0.3s ease, background-color 0.3s ease;
-    -o-transition: color 0.3s ease, background-color 0.3s ease;
-    transition: color 0.3s ease, background-color 0.3s ease;
-  }
-  .customer_login .customer_login_form .button:hover,
-  .customer_login .customer_registration_form .button:hover {
-    background-color: #333e48;
-    color: #ffffff;
-  }
   .customer_login .customer_login_form {
     padding-right: 40px;
   }
@@ -5162,15 +5249,6 @@ input[type="checkbox"]:checked::after {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     content: '';
-  }
-  .woocommerce-ResetPassword .button {
-    -webkit-transition: color 0.3s ease, background-color 0.3s ease;
-    -o-transition: color 0.3s ease, background-color 0.3s ease;
-    transition: color 0.3s ease, background-color 0.3s ease;
-  }
-  .woocommerce-ResetPassword .button:hover {
-    background-color: #333e48;
-    color: #ffffff;
   }
   .woocommerce-account .woocommerce::after {
     display: block;
@@ -5205,6 +5283,30 @@ input[type="checkbox"]:checked::after {
   }
   .woocommerce-account .woocommerce-orders-table__cell-order-total .woocommerce-Price-amount {
     display: block;
+  }
+  .contacts .wpcf7-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .contacts .wpcf7-form .name,
+  .contacts .wpcf7-form .email {
+    width: 48%;
+  }
+  .contacts .wpcf7-form .subject,
+  .contacts .wpcf7-form .message {
+    width: 100%;
+  }
+  .contacts input[type=submit] {
+    width: auto;
   }
   .error-404 h1 {
     font-size: 45px;
