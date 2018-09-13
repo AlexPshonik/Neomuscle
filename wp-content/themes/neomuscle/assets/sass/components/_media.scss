@@ -840,6 +840,33 @@
       }
     }
   }
+  .contacts {
+    .wpcf7-form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .name,
+      .email {
+        width: 48%;
+      }
+      .subject,
+      .message {
+        width: 100%;
+      }
+    }
+    input[type=submit] {
+      width: auto;
+    }
+    .work-time-list {
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
   .error-404 {
     h1 {
       font-size: 45px;
