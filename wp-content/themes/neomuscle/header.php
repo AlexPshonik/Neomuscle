@@ -51,7 +51,7 @@
                   <a href="#" class="menu-link">Наша команда</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link">Контакты</a>
+                  <a href="<?php echo site_url("/contacts/"); ?>" class="menu-link">Контакты</a>
                 </li>
               </ul>  
             </div>
