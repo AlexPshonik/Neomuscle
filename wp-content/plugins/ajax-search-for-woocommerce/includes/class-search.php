@@ -171,7 +171,7 @@ class DGWT_WCAS_Search {
 		if ( empty( $results ) ) {
 
 			$results[] = array(
-				'value' => __( 'No results', 'ajax-search-for-woocommerce' ),
+				'value' => __( 'Ничего не найдено, попробуйте изменить запрос', 'ajax-search-for-woocommerce' ),
 			);
 		}
 
