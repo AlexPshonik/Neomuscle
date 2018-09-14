@@ -3578,36 +3578,38 @@ h6 {
   padding-top: 30px;
 }
 
+.error-404-content {
+  text-align: center;
+}
+
 .error-404-image {
+  display: none;
   width: 100%;
   text-align: center;
 }
 
 .error-404-image img {
   width: 100%;
+  max-width: 320px;
   height: auto;
 }
 
 .error-404 h1 {
   margin: 0 0 10px;
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .error-404 h2 {
   margin: 0;
-  font-size: 22px;
-}
-
-.error-404 h3 {
-  margin: 20px 0 10px;
-  color: #888;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .error-404 p {
-  margin: 20px 0;
-  font-size: 18px;
+  margin: 10px 0 40px 0;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .error-404 .button {
@@ -4644,9 +4646,6 @@ input[type="checkbox"]:checked::after {
   .products .product-card {
     margin-bottom: 0;
   }
-  .error-404-image img {
-    width: auto;
-  }
 }
 
 /* Small Devices, Tablets */
@@ -5314,11 +5313,8 @@ input[type="checkbox"]:checked::after {
   .error-404 h2 {
     font-size: 34px;
   }
-  .error-404 h3 {
-    font-size: 24px;
-  }
   .error-404 p {
-    font-size: 22px;
+    font-size: 20px;
   }
   .error-404 .button {
     margin: 0;
@@ -5660,10 +5656,24 @@ input[type="checkbox"]:checked::after {
   }
   .error-404 {
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .error-404-content {
+    text-align: left;
+    -webkit-flex-basis: 58%;
+        -ms-flex-preferred-size: 58%;
+            flex-basis: 58%;
+    padding: 50px 0;
+  }
+  .error-404-image {
+    display: block;
+    -webkit-flex-basis: 42%;
+        -ms-flex-preferred-size: 42%;
+            flex-basis: 42%;
+    text-align: right;
   }
 }
 

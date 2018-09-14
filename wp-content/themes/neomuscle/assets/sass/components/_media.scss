@@ -230,13 +230,6 @@
       }
     }
   }
-  .error-404 {
-    &-image {
-      img {
-        width: auto;
-      }
-    }
-  }
 }
 
 /* Small Devices, Tablets */
@@ -839,11 +832,8 @@
     h2 {
       font-size: 34px;
     }
-    h3 {
-      font-size: 24px;
-    }
     p {
-      font-size: 22px;
+      font-size: 20px;
     }
     .button {
       margin: 0;
@@ -1186,7 +1176,17 @@
     }
   }
   .error-404 {
-    flex-direction: row-reverse;
+    flex-direction: row;
+    &-content {
+      text-align: left;
+      flex-basis: 58%;
+      padding: 50px 0;
+    }
+    &-image {
+      display: block;
+      flex-basis: 42%;
+      text-align: right;
+    }
   }
 }
 
