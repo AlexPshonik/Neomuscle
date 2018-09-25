@@ -2463,6 +2463,10 @@ p.stars.selected a:not(.active):before {
   padding: 8px 15px;
 }
 
+.woocommerce-password-strength {
+  padding-top: 20px;
+}
+
 .woocommerce-account .entry-title {
   margin: 30px 0 50px;
   text-align: center;
