@@ -107,6 +107,13 @@ table.wishlist_table {
     }
     .button {
       width: 100%;
+      background-color: #efecec;
+      font-size: 14px;
+      opacity: .65;
+      &:hover {
+        background-color: #efecec;
+        color: $main-font-color;
+      }
     }
   }
 }

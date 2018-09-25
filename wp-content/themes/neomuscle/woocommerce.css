@@ -1691,6 +1691,15 @@ table.wishlist_table .actions .coupon .button:hover {
 table.shop_table_responsive .actions .button,
 table.wishlist_table .actions .button {
   width: 100%;
+  background-color: #efecec;
+  font-size: 14px;
+  opacity: .65;
+}
+
+table.shop_table_responsive .actions .button:hover,
+table.wishlist_table .actions .button:hover {
+  background-color: #efecec;
+  color: #333e48;
 }
 
 .cart-collaterals .cart_totals h2 {
@@ -2185,6 +2194,10 @@ p.stars.selected a:not(.active):before {
   padding: 5px;
   font-size: 14px;
   font-weight: 700;
+}
+
+.woocommerce-message .button:hover {
+  background-color: transparent;
 }
 
 .woocommerce-message .button::after {

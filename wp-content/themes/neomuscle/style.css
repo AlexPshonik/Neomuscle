@@ -3764,6 +3764,8 @@ h6 {
 --------------------------------------------------------------*/
 .btn,
 .button,
+.buy-button,
+.added_to_cart,
 button,
 input[type=button],
 input[type=reset],
@@ -3786,6 +3788,8 @@ input[type=submit] {
 
 .btn:hover,
 .button:hover,
+.buy-button:hover,
+.added_to_cart:hover,
 button:hover,
 input[type=button]:hover,
 input[type=reset]:hover,
