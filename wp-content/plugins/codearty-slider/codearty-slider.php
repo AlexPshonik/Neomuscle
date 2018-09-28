@@ -115,13 +115,27 @@ function ca_function($type='ca_function') {
     $loop = new WP_Query($args);
     while ($loop->have_posts()) {
         $loop->the_post();
- 
+
         $slide_url = get_post_meta($post->ID, "ca-slider-meta-box-url", true);
         $image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), $type);
-
+        $image_landscape = get_field('landscape_slider');
+        $image_mobile = get_field('mobile_slider');
+        
         $result .= '<div id="item">';
         $result .= '<a href="'.get_site_url() .'/'. $slide_url . '">';
+        $result .= '<div class="desktop-version">';
         $result .= '<img title="'.get_the_title().'" src="' . $image_url[0] . '"  alt="'.get_the_title().'"/>';
+        $result .= '</div>';
+        $result .= '<div class="mobile-version">';
+        $result .= '<div class="landscape">';
+        $result .= '<img title="'.$image_landscape[title].'" src="'.$image_landscape[url].'" alt="'.$image_landscape[alt].'"/>';
+        $result .= '</div>';
+        $result .= '<div class="mobile">';
+        $result .= '<img title="'.$image_mobile[title].'" src="'.$image_mobile[url].'" alt="'.$image_mobile[alt].'"/>';
+        $result .= '</div>';
+        $result .= '</div>';
+        
+
         $result .= '</a>';
         $result .= '</div>';
     }

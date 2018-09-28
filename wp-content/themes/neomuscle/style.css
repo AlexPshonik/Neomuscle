@@ -3490,6 +3490,14 @@ h6 {
   position: relative;
 }
 
+.homepage-slider .desktop-version {
+  display: none;
+}
+
+.homepage-slider .mobile-version {
+  display: none;
+}
+
 .homepage-slider .owl-theme .owl-dots {
   position: absolute;
   left: 50%;
@@ -3500,9 +3508,16 @@ h6 {
 }
 
 .homepage-slider .owl-theme .owl-dots .owl-dot span {
+  height: 8px;
+  width: 8px;
+  color: #dddddd;
   -webkit-transition: background 0.3s ease;
   -o-transition: background 0.3s ease;
   transition: background 0.3s ease;
+}
+
+.homepage-slider .owl-theme .owl-dots .owl-dot.active span {
+  width: 30px;
 }
 
 .homepage-slider .owl-theme .owl-dots .owl-dot.active span, .homepage-slider .owl-theme .owl-dots .owl-dot:hover span {
@@ -3531,7 +3546,7 @@ h6 {
 .homepage-slider .owl-theme .owl-nav .owl-prev .ui-icon-right-arrow,
 .homepage-slider .owl-theme .owl-nav .owl-next .ui-icon-right-arrow {
   font-size: 36px;
-  color: #333e48;
+  color: #dddddd;
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
@@ -3539,7 +3554,7 @@ h6 {
 
 .homepage-slider .owl-theme .owl-nav .owl-prev:hover,
 .homepage-slider .owl-theme .owl-nav .owl-next:hover {
-  background-color: rgba(134, 151, 145, 0.3);
+  background: transparent;
 }
 
 .homepage-slider .owl-theme .owl-nav .owl-prev:hover .ui-icon-right-arrow,
@@ -4453,6 +4468,12 @@ input[type="checkbox"]:checked::after {
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .homepage-slider .mobile-version {
+    display: block;
+  }
+}
+
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -5371,6 +5392,9 @@ input[type="checkbox"]:checked::after {
     -webkit-border-radius: 0 0 10px 10px;
             border-radius: 0 0 10px 10px;
   }
+  .homepage-slider .desktop-version {
+    display: block;
+  }
   .feature-item {
     width: 25%;
     border-right: 1px solid #dddddd;
@@ -5726,5 +5750,19 @@ input[type="checkbox"]:checked::after {
   }
   .woocommerce-checkout-payment .wc_payment_method p {
     margin-left: 25px;
+  }
+}
+
+/* Landscape Screens*/
+@media screen and (orientation: landscape) {
+  .homepage-slider .mobile-version .mobile {
+    display: none;
+  }
+}
+
+/* Portrait Screens*/
+@media screen and (orientation: portrait) {
+  .homepage-slider .mobile-version .landscape {
+    display: none;
   }
 }

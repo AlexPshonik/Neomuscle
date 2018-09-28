@@ -94,9 +94,17 @@ jQuery(document).ready(function ($) {
     loop:true,
     nav:true,
     dots: true,
-    autoplay: true,
     items: 1,
-    navText: ["<span class='ui-icon-right-arrow prev'></span>","<span class='ui-icon-right-arrow next'></span>"]
+    autoplay: true,
+    navText: ["<span class='ui-icon-right-arrow prev'></span>","<span class='ui-icon-right-arrow next'></span>"],
+    responsive:{
+      0:{
+        nav: false
+      },
+      992:{
+        nav: true
+      }
+    }
   });
 
   // QTY

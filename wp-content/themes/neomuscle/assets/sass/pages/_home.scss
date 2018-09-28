@@ -64,6 +64,12 @@
 
 .homepage-slider {
   position: relative;
+  .desktop-version {
+    display: none;
+  }
+  .mobile-version {
+    display: none;
+  }
   .owl-theme {
     .owl-dots {
       position: absolute;
@@ -72,7 +78,15 @@
       transform: translateX(-50%);
       .owl-dot {
         span {
+          height: 8px;
+          width: 8px;
+          color: $border-color;
           transition: background 0.3s ease;
+        }
+        &.active {
+          span {
+            width: 30px;
+          }
         }
         &.active,
         &:hover {
@@ -96,11 +110,11 @@
         transition: background-color 0.3s ease;
         .ui-icon-right-arrow {
           font-size: 36px;
-          color: $main-font-color;
+          color: $border-color;
           transition: color 0.3s ease;
         }
         &:hover {
-          background-color: rgba(134, 151, 145, 0.3);
+          background: transparent;
           .ui-icon-right-arrow {
             color: $accent-color;
           }
