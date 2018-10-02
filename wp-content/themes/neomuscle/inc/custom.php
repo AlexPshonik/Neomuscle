@@ -229,8 +229,29 @@ function neomuscle_cart_totals_shipping_method_label_nofree( $label, $method ) {
   return $label;
 }
 
-	add_filter('woocommerce_format_sale_price', 'ss_format_sale_price', 100, 3);
-	function ss_format_sale_price( $price, $regular_price, $sale_price ) {
-		$output_ss_price = '<span class="price-old">' . ( is_numeric( $regular_price ) ? wc_price( $regular_price ) : $regular_price ) . '</span> <span class="price-new">' . ( is_numeric( $sale_price ) ? wc_price( $sale_price ) : $sale_price ) . '</span>';
-		return $output_ss_price;
-	}
+add_filter('woocommerce_format_sale_price', 'ss_format_sale_price', 100, 3);
+function ss_format_sale_price( $price, $regular_price, $sale_price ) {
+  $output_ss_price = '<span class="price-old">' . ( is_numeric( $regular_price ) ? wc_price( $regular_price ) : $regular_price ) . '</span> <span class="price-new">' . ( is_numeric( $sale_price ) ? wc_price( $sale_price ) : $sale_price ) . '</span>';
+  return $output_ss_price;
+}
+  
+
+function aelia_get_product_categories($product, $return_raw_categories = false) {
+  $result = array();
+  $categories = wp_get_post_terms($product->id, 'product_cat');
+
+  if(is_array($categories) && !$return_raw_categories) {
+    $parent_categories = array();
+    // Retrieve the parent categories of each category to which
+    // the product is assigned directly
+    foreach($categories as $category) {
+      // Using array_merge(), we keep a list of parent categories
+      // that doesn't include duplicates
+      $parent_categories = array_merge($parent_categories, aelia_get_parent_categories($category->term_id));
+    }
+    // When we have the full list of parent categories, we can merge it with
+    // the list of the product's direct categories, producing a single list
+    $categories = array_merge($parent_categories, wp_list_pluck($categories, 'name', 'slug'));
+  }
+  return $categories;
+}

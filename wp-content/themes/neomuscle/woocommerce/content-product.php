@@ -14,10 +14,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 			<div class="product-card">
 				<div class="product-card-categories">
 					<?php $category = wp_get_post_terms( $post->ID, 'product_cat' );
-						foreach( $category as $cat ):
-							if( 0 == $cat->parent )
-								echo '<span class="loop">' . '<a href="'. get_site_url() . '/' . $cat->slug . '/' .'">' . $cat->name . '</a>' . '</span>';
-						endforeach;
+						$category_display = $category[0];
+						echo '<span class="loop">' . '<a href="'. get_site_url() . '/' . $category_display->slug . '/' .'">' . $category_display->name . '</a>' . '</span>';
 					?>
 				</div>
 				<?php
