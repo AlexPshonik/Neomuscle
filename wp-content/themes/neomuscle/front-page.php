@@ -48,36 +48,6 @@
 </section>
 <!-- End Feature Section -->
 
-<!-- <section class="featured-products section-padding">
-    <div class="container">
-        <div class="row">
-            <h2 class="section-title">Новинки</h2>
-            <div class="product-carousel owl-carousel">
-                <?php
-                    $args = array(
-                        'post_type' => 'product',
-                        'stock' => 1,
-                        'posts_per_page' => 7,
-                        'orderby' =>'date',
-                        'order' => 'DESC' 
-                    );
-                    $loop = new WP_Query( $args );
-                    while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-                        <div class="item">
-                            <a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                            <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; ?>
-                            <h3><?php the_title(); ?></h3>
-                            <span class="price"><?php echo $product->get_price_html(); ?></span>
-                            </a>
-                            <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
-                        </div>    
-                    <?php endwhile; ?>
-                <?php wp_reset_query(); ?>
-            </div>
-        </div>
-    </div>
-</section> -->
-
 <!-- Instagram Section -->
 <section class="instagram section-padding-sm">
   <div class="container">
@@ -122,7 +92,7 @@
         <div class="description-store-text">
           <h2>Интернет-магазин спортивного питания Neomuscle</h2>
           <p>Спортивное питание стало важным аспектом в жизни каждого спортсмена. Сумасшедший ритм жизни, регулярные тренировки до изнеможения. Все это не должно мешать результату: <strong>интернет-магазин Neomuscle</strong> – это большой выбор аминокислот, протеина и других типов спортивного питания с доставкой по Украине.</p>
-          <p>Теперь не нужно тратить время для того, чтобы купить спортивное питание в магазинах Киева, Харькова, Одессы, Днепропетровска или других городов: все самое лучшее мы уже собрали в нашем интернет-магазине!</p>
+          <p>Теперь не нужно тратить время для того, чтобы купить спортивное питание в магазинах Киева, Харькова, Одессы, Днепра или других городов: все самое лучшее мы уже собрали в нашем интернет-магазине!</p>
           <strong class="title">Ваши спортивные результаты стали ближе</strong>
           <p>Почему каждый спортсмен понимает, что купить спортивное питание – это просто необходимость? Дело в том, что специальные добавки ускорят рост мышц, помогут быстрее восстановиться после тренировки, придадут сил во время занятий.</p>
           <p>Не следует пренебрегать протеином, аминокислотами, жиросжигателями – так вы получите рельефное и красивое тело еще быстрее.</p>
