@@ -56,6 +56,15 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ui-icon-package:before {
+  content: "\e913";
+}
+.ui-icon-truck:before {
+  content: "\e914";
+}
+.ui-icon-pay:before {
+  content: "\e915";
+}
 .ui-icon-check:before {
   content: "\e900";
 }

@@ -3,18 +3,8 @@
     position: relative;
     margin: 20px 0 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid $border-color;
-    font-weight: 700;
-    &::before {
-      position: absolute;
-      left: 0;
-      bottom: -1px;
-      display: block;
-      width: 50px;
-      height: 2px;
-      background-color: $accent-color;
-      content: '';
-    }
+    font-size: 20px;
+    font-weight: 600;
     &:first-child {
       margin-top: 0;
     }
@@ -25,5 +15,44 @@
   ul {
     margin: 0 0 10px 20px;
     list-style: disc;
+  }
+  .service {
+    display: flex;
+    padding: 40px 0;
+    margin: 0;
+    list-style: none;
+    border-bottom: 1px solid $border-color;
+    &:last-child {
+      border: 0;
+    }
+    &-box{
+      width: 300px;
+      margin-left: 100px;
+    }
+    &-meta {
+      display: flex;
+      flex-basis: 280px;    
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      &-alert {
+        font-size: 14px;
+        color: red;
+      }
+    }
+    &-icon {
+      font-size: 50px;
+      display: block;
+      color: $accent-color;
+    }
+    &-title {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    &-description {
+      font-size: 12px;
+    }
   }
 }
