@@ -459,9 +459,10 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 .page .entry-header .entry-title {
-  margin: 50px 0 40px;
+  margin: 0 0 40px;
+  font-size: 30px;
+  font-weight: 600;
   text-align: center;
-  font-size: 34px;
 }
 
 .disableScroll {

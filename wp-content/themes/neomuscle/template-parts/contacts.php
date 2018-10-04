@@ -4,6 +4,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
+					<?php
+						if ( function_exists('yoast_breadcrumb') ) {
+							yoast_breadcrumb( '<nav class="breadcrumb">','</nav>' );
+						}
+					?>
 					<header class="entry-header">
 						<h1 class="entry-title">Контакты</h1>
 					</header>
