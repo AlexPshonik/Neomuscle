@@ -844,6 +844,18 @@
       margin: 0;
     }
   }
+  .payments-and-deliveries {
+    .service {
+      flex-direction: row;
+      &-box {
+        width: 28%;
+        margin-left: 8%;
+      }
+      &-meta {
+        width: 28%;
+      }
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
