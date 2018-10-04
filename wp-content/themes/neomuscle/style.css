@@ -3765,12 +3765,27 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# About Us Page
+--------------------------------------------------------------*/
+.about-us ul {
+  margin-bottom: 10px;
+  padding-left: 35px;
+  list-style: square;
+  padding-top: 10px;
+}
+
+.about-us ul li {
+  padding-bottom: 5px;
+}
+
+/*--------------------------------------------------------------
 # Contacts page
 --------------------------------------------------------------*/
 .contacts h2 {
   position: relative;
   margin: 20px 0 30px;
   padding-bottom: 10px;
+  font-size: 22px;
   border-bottom: 1px solid #dddddd;
 }
 
@@ -5827,6 +5842,12 @@ input[type="checkbox"]:checked::after {
   }
   .woocommerce-checkout-payment .wc_payment_method p {
     margin-left: 25px;
+  }
+  .contacts-form {
+    padding-right: 50px;
+  }
+  .contacts-method {
+    padding-left: 50px;
   }
 }
 
