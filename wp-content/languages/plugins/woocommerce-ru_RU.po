@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-09-06 21:21+0300\n"
+"PO-Revision-Date: 2018-10-04 19:39+0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11240,7 +11240,7 @@ msgstr "Укажите получателей (через запятую), ко�
 #: includes/class-wc-form-handler.php:563
 #: includes/class-wc-form-handler.php:567
 msgid "%s removed."
-msgstr "%s удален."
+msgstr "%s удален"
 
 #. translators: %s: method
 #. translators: %s: method
@@ -14074,7 +14074,7 @@ msgstr "В корзину можно положить только 1 %s."
 
 #: includes/class-wc-form-handler.php:641
 msgid "Cart updated."
-msgstr "Корзина обновлена."
+msgstr "Корзина обновлена"
 
 #: includes/class-wc-form-handler.php:731
 msgid "The cart has been filled with the items from your previous order."
