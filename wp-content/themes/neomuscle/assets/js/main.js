@@ -221,7 +221,44 @@ jQuery(document).ready(function ($) {
     if (value != 'male.0') {
       if(value == 'male.1'){
         $('#intention-btn').click(function() {
-          window.location = "/test/";
+          window.location = "/intention/nabor-myshechnoj-massy/";
+        });
+      }
+      if(value == 'male.2'){
+        $('#intention-btn').click(function() {
+          window.location = "/intention/vosstanovlenie-posle-trenirovok/";
+        });
+      }
+      if(value == 'male.3'){
+        $('#intention-btn').click(function() {
+          window.location = "/intention/uvelichenie-sily-i-vynoslivosti/";
+        });
+      }
+      if(value == 'male.4'){
+        $('#intention-btn').click(function() {
+          window.location = "/intention/snizhenie-vesa/";
+        });
+      }
+      if(value == 'male.5'){
+        $('#intention-btn').click(function() {
+          window.location = "/intention/ukreplenie-zdorovja-i-immuniteta/";
+        });
+      }
+    }
+    if (value != 'female.0') {
+      if(value == 'female.1'){
+        $('#intention-btn').click(function() {
+          window.location = "/intention/vosstanovlenie-posle-trenirovok/";
+        });
+      }
+      if(value == 'female.2'){
+        $('#intention-btn').click(function() {
+          window.location = "/intention/snizhenie-vesa/";
+        });
+      }
+      if(value == 'female.3'){
+        $('#intention-btn').click(function() {
+          window.location = "/intention/ukreplenie-zdorovja-i-immuniteta/";
         });
       }
     }

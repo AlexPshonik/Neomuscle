@@ -1,0 +1,57 @@
+.intention {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &-box {
+    flex-basis: 48.5%;
+    margin-bottom: 35px;
+    a {
+      color: $main-font-color;
+    }
+    &-inner {
+      display: flex;
+      flex-basis: 50%;
+      background-color: $breadcrumbs-color;
+    }
+  }
+  &-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  &-text {
+    margin-bottom: 25px;
+    font-size: 13px;
+  }
+  &-action {
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    &-icon {
+      padding: 4px;
+      border-radius: 50%;
+      font-size: 9px;
+      margin-left: 5px;
+      background-color: $accent-color;
+    }
+  }
+  &-media {
+    display: flex;
+    &-body {
+      padding: 10px 0;
+    }
+    &-left {
+      display: inline-grid;
+      padding-right: 30px;
+      img {
+        width: 170px;
+        padding: 12px 0 0 12px;
+      }
+    }
+  }
+}
