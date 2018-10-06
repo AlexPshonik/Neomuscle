@@ -3,16 +3,18 @@
   justify-content: space-between;
   flex-wrap: wrap;
   &-box {
-    flex-basis: 48.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // flex-basis: 48.5%;
+    flex-basis: 100%;
     margin-bottom: 35px;
-    a {
-      color: $main-font-color;
-    }
-    &-inner {
-      display: flex;
-      flex-basis: 50%;
-      background-color: $breadcrumbs-color;
-    }
+    background-color: $breadcrumbs-color;
+    color: $main-font-color;
+  }
+  &-img {
+    width: 170px;
+    padding-top: 12px;
   }
   &-title {
     margin-bottom: 10px;
@@ -40,18 +42,7 @@
       background-color: $accent-color;
     }
   }
-  &-media {
-    display: flex;
-    &-body {
-      padding: 10px 0;
-    }
-    &-left {
-      display: inline-grid;
-      padding-right: 30px;
-      img {
-        width: 170px;
-        padding: 12px 0 0 12px;
-      }
-    }
+  &-content {
+    padding: 10px;
   }
 }

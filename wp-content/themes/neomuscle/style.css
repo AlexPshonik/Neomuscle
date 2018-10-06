@@ -459,7 +459,7 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 .page .entry-header .entry-title {
-  margin: 0 0 40px;
+  margin: 20px 0 40px;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -3797,25 +3797,30 @@ h6 {
 }
 
 .intention-box {
-  -webkit-flex-basis: 48.5%;
-      -ms-flex-preferred-size: 48.5%;
-          flex-basis: 48.5%;
-  margin-bottom: 35px;
-}
-
-.intention-box a {
-  color: #333e48;
-}
-
-.intention-box-inner {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-basis: 50%;
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  margin-bottom: 35px;
   background-color: #f5f5f5;
+  color: #333e48;
+}
+
+.intention-img {
+  width: 170px;
+  padding-top: 12px;
 }
 
 .intention-title {
@@ -3850,25 +3855,8 @@ h6 {
   background-color: #fed700;
 }
 
-.intention-media {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.intention-media-body {
-  padding: 10px 0;
-}
-
-.intention-media-left {
-  display: inline-grid;
-  padding-right: 30px;
-}
-
-.intention-media-left img {
-  width: 170px;
-  padding: 12px 0 0 12px;
+.intention-content {
+  padding: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -4777,6 +4765,11 @@ input[type="checkbox"]:checked::after {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .intention-box {
+    -webkit-flex-basis: 48.5%;
+        -ms-flex-preferred-size: 48.5%;
+            flex-basis: 48.5%;
   }
 }
 
@@ -5887,6 +5880,23 @@ input[type="checkbox"]:checked::after {
         -ms-flex-preferred-size: 42%;
             flex-basis: 42%;
     text-align: right;
+  }
+  .intention-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .intention-img {
+    padding: 0 0 0 12px;
+  }
+  .intention-content {
+    padding-left: 30px;
   }
 }
 

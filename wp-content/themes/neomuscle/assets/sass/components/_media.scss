@@ -159,6 +159,11 @@
       }
     }
   }
+  .intention {
+    &-box {
+      flex-basis: 48.5%;
+    }
+  }
 }
 
 @media only screen and (min-width : 576px) {
@@ -1208,6 +1213,18 @@
       display: block;
       flex-basis: 42%;
       text-align: right;
+    }
+  }
+  .intention {
+    &-box {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+    &-img {
+      padding: 0 0 0 12px;
+    }
+    &-content {
+      padding-left: 30px;
     }
   }
 }
