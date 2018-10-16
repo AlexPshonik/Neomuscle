@@ -45,10 +45,10 @@
             <div class="top-bar-right">
               <ul class="menu">
                 <li class="menu-item">
-                  <a href="<?php echo site_url("/payments-and-deliveries/"); ?>" class="menu-link">Доставка и оплата</a>
+                  <a href="<?php echo site_url("/about-us/"); ?>" class="menu-link">О нас</a>
                 </li>
                 <li class="menu-item">
-                  <a href="<?php echo site_url("/about-us/"); ?>" class="menu-link">О нас</a>
+                  <a href="<?php echo site_url("/payments-and-deliveries/"); ?>" class="menu-link">Доставка и оплата</a>
                 </li>
                 <li class="menu-item">
                   <a href="<?php echo site_url("/contacts/"); ?>" class="menu-link">Контакты</a>
