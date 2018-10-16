@@ -1301,7 +1301,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .product-card .woocommerce-loop-product__title {
-  height: 35px;
+  height: 50px;
   margin-bottom: 5px;
   font-size: 13px;
   font-weight: 700;
