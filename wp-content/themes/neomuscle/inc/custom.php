@@ -234,3 +234,11 @@ function ss_format_sale_price( $price, $regular_price, $sale_price ) {
   $output_ss_price = '<span class="price-old">' . ( is_numeric( $regular_price ) ? wc_price( $regular_price ) : $regular_price ) . '</span> <span class="price-new">' . ( is_numeric( $sale_price ) ? wc_price( $sale_price ) : $sale_price ) . '</span>';
   return $output_ss_price;
 }
+
+/**
+ * Custom shipping package name
+ */
+add_filter( 'woocommerce_shipping_package_name', 'neomuscle_custom_shipping_package_name' );
+function neomuscle_custom_shipping_package_name( $name ) {
+  return 'Доставка';
+}
