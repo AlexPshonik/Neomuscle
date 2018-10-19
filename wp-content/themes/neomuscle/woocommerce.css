@@ -982,7 +982,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .single-product .product-meta .product-packaging-img {
-  width: 15%;
+  width: 6%;
 }
 
 .single-product .product-meta .product-packaging-img img {
@@ -991,7 +991,7 @@ table.shop_table_responsive tr td.download-actions .button {
 }
 
 .single-product .product-meta .product-packaging-vals {
-  width: 43%;
+  width: 45%;
   font-size: 13px;
   font-weight: bold;
 }
