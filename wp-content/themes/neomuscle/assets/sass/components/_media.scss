@@ -121,6 +121,11 @@
         margin-bottom: 0;
       }
     }
+    .product-meta {
+      .product-packaging-vals {
+        width: 32%;
+      }
+    } 
   }
   .site-footer {
     .copyright-bar {
@@ -1067,6 +1072,10 @@
         flex-basis: 55%;
         margin-top: 0;
         margin-left: 10px;
+        &-vals {
+          width: 43%;
+          text-align: center;
+        }
       }
     }
     .variations_form,

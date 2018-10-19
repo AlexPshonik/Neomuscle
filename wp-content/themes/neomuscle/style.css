@@ -4730,6 +4730,9 @@ input[type="checkbox"]:checked::after {
   .single-product .product-info-stock {
     margin-bottom: 0;
   }
+  .single-product .product-meta .product-packaging-vals {
+    width: 32%;
+  }
   .site-footer .copyright-bar .copyright,
   .site-footer .copyright-bar .payment {
     -webkit-flex-basis: 50%;
@@ -5741,6 +5744,10 @@ input[type="checkbox"]:checked::after {
             flex-basis: 55%;
     margin-top: 0;
     margin-left: 10px;
+  }
+  .single-product .product-meta .product-packaging-vals {
+    width: 43%;
+    text-align: center;
   }
   .single-product .variations_form,
   .single-product .cart {
