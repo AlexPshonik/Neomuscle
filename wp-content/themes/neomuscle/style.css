@@ -5747,7 +5747,6 @@ input[type="checkbox"]:checked::after {
   }
   .single-product .product-meta .product-packaging-vals {
     width: 43%;
-    text-align: center;
   }
   .single-product .variations_form,
   .single-product .cart {
