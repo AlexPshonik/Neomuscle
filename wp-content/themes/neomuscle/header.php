@@ -92,7 +92,7 @@
               </ul>
               <a class="logo-link" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
                 <img class="logo-img" src="<?php echo get_template_directory_uri() ?>/assets/images/logotype.svg" alt="Логотип Neomuscle">
-                <img class="logo-img logo-img-small" src="<?php echo get_template_directory_uri() ?>/assets/images/logotype-mobile.png" alt="Логотип Neomuscle">
+                <img class="logo-img logo-img-small" src="<?php echo get_template_directory_uri() ?>/assets/images/logotype-mobile.svg" alt="Логотип Neomuscle">
               </a>
               <div class="site-header-search site-header-search-desktop">
                 <?php echo do_shortcode('[wcas-search-form]'); ?>
