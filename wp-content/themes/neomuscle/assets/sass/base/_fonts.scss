@@ -1,0 +1,65 @@
+/**
+* OpenSans Light
+*/
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/fonts/OpenSansLight/OpenSansLight.eot");
+  src: url("assets/fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+  url("assets/fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
+}
+
+/**
+* OpenSans Regular
+*/
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("assets/fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+  url("assets/fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/**
+* OpenSans SemiBold
+*/
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
+  src: url("assets/fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+  url("assets/fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+/**
+* OpenSans Bold
+*/
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/fonts/OpenSansBold/OpenSansBold.eot");
+  src: url("assets/fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+  url("assets/fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+/**
+* Neomuscle UI Icons
+*/
+@font-face {
+  font-family: 'neomuscle-ui';
+  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?98m3ah');
+  src:  url('assets/fonts/neomuscle-ui/neomuscle-ui.eot?98m3ah#iefix') format('embedded-opentype'),
+  url('assets/fonts/neomuscle-ui/neomuscle-ui.ttf?98m3ah') format('truetype'),
+  url('assets/fonts/neomuscle-ui/neomuscle-ui.woff?98m3ah') format('woff'),
+  url('assets/fonts/neomuscle-ui/neomuscle-ui.svg?98m3ah#neomuscle-ui') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

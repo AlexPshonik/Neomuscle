@@ -11,48 +11,137 @@
 
 ?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes();?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta charset="<?php bloginfo('charset');?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri() ?>/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri() ?>/assets/images/favicon/favicon-16x16.png">
 
-	<?php wp_head(); ?>
+    <meta name="theme-color" content="#ffffff">
+    <?php wp_head();?>
+    <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MTZTKVR');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'neomuscle' ); ?></a>
+<body <?php body_class();?>>
+  <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTZTKVR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$neomuscle_description = get_bloginfo( 'description', 'display' );
-			if ( $neomuscle_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $neomuscle_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+  <div id="page" class="site">
+    <div class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="top-bar-left">
+              <ul class="menu">
+                <strong class="menu-title">Call-центр:</strong>
+                <li class="menu-item">
+                  <a href="tel: +380682081717" class="menu-link">(068) 208-17-17,</a>
+                </li>
+                <li class="menu-item">
+                  <a href="tel: +380732081717" class="menu-link">(073) 208-17-17,</a>
+                </li>
+                <li class="menu-item">
+                  <a href="tel: +380952381717" class="menu-link">(095) 238-17-17</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="<?php echo site_url("/about-us/"); ?>" class="menu-link">О нас</a>
+                </li>
+                <li class="menu-item">
+                  <a href="<?php echo site_url("/payments-and-deliveries/"); ?>" class="menu-link">Доставка и оплата</a>
+                </li>
+                <li class="menu-item">
+                  <a href="<?php echo site_url("/contacts/"); ?>" class="menu-link">Контакты</a>
+                </li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'neomuscle' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+    <header id="masthead" class="site-header-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="site-header">
+              <ul class="site-header-user-nav site-header-user-nav-left">
+                <li class="js-open-mobile-menu site-header-user-nav-item site-header-menu-toggle">
+                  <span class="icon site-header-user-nav-link"></span>
+                </li>
+                <li class="site-header-user-nav-item js-open-mobile-search">
+                  <span class="icon ui-icon-search site-header-user-nav-link"></span>
+                  <span class="icon ui-icon-close site-header-user-nav-link"></span>
+                </li>
+              </ul>
+              <a class="logo-link" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                <img class="logo-img" src="<?php echo get_template_directory_uri() ?>/assets/images/logotype.svg" alt="Логотип Neomuscle">
+                <img class="logo-img logo-img-small" src="<?php echo get_template_directory_uri() ?>/assets/images/logotype-mobile.svg" alt="Логотип Neomuscle">
+              </a>
+              <div class="site-header-search site-header-search-desktop">
+                <?php echo do_shortcode('[wcas-search-form]'); ?>
+              </div>
+              <ul class="site-header-user-nav site-header-user-nav-right">
+                <li class="site-header-user-nav-item">
+                  <a href="<?php echo get_permalink(wc_get_page_id('myaccount')); ?>" class="my-account icon ui-icon-user site-header-user-nav-link"></a>
+                </li>
+                <li class="site-header-user-nav-item d-none d-md-block">
+                  <a href="<?php echo get_home_url(null, 'wishlist/', 'null'); ?>" class="wish-list ui-icon-heart site-header-user-nav-link">
+                    <span class="wish-list-count"><?php echo YITH_WCWL()->count_products(); ?></span>
+                  </a>
+                </li>
+                <li class="site-header-user-nav-item">
+                  <a href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart');?>" class="shopping-bag icon ui-icon-shopping-bag site-header-user-nav-link">
+                    <span class="shopping-bag-count">
+                      <?php echo WC()->cart->get_cart_contents_count(); ?>
+                      <strong class="d-none d-lg-inline">
+                        / <?php echo WC()->cart->get_cart_total(); ?>
+                      </strong>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-header-search site-header-search-mobile">
+        <?php echo do_shortcode('[wcas-search-form]'); ?>
+        <div class="search-placeholder"></div>
+      </div>
+      <div class="section-site-navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav id="site-navigation" class="main-navigation">
+                <?php
+                      wp_nav_menu(array(
+                        'theme_location' => 'menu-1',
+                        'menu_id' => 'primary-menu',
+                      ));
+                    ?>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-site-navigation-placeholder"></div>
+    </header>
 
-	<div id="content" class="site-content">
+    <div id="content" class="site-content">

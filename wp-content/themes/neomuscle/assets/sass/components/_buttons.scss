@@ -1,0 +1,44 @@
+.btn, 
+.button,
+.buy-button,
+.added_to_cart,
+button, 
+input[type=button], 
+input[type=reset], 
+input[type=submit] {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 13px 35px;
+  border-width: 0;
+  display: inline-block;
+  color: $main-font-color;
+  cursor: pointer;
+  background-color: $accent-color;
+  border-color: $accent-color;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: $main-font-color;
+    color: #ffffff;
+  }
+}
+
+.btn-primary {
+  background-color: $accent-color;
+  &:hover {
+    background-color: $accent-color-hover;
+    color: $main-font-color;
+  }
+}
+
+.btn-add-to-cart {
+  color: #fff;
+  background-color: $accent-color;
+  .icon {
+    margin-right: 5px;
+    font-weight: 600;
+  }
+  &:hover {
+    background-color: $main-font-color;
+  }
+}

@@ -12,25 +12,90 @@
 ?>
 
 	</div><!-- #content -->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="footer-widgets">
+      <div class="container">
+        <div class="footer-widgets-wrapp">
+          <div class="footer-contact">
+            <div class="footer-call-us">
+              <div class="media">
+                <span class="icon ui-icon-support"></span>
+              </div>
+              <div class="media-body">
+                <span class="call-us-text">Есть вопросы? Позвоните нам :)</span>
+                <span class="call-us-number">(068) 208-17-17<br> (073) 208-17-17<br> (095) 238-17-17</span>
+              </div>
+            </div>
+            <div class="footer-work">
+              <strong class="footer-work-title">График работы Call-центра:</strong>
+              <p>В будние дни с 11:00 до 18:00 <br>
+                Суббота, воскресенье с 11:00 до 17:00</p>
+            </div>
+            <div class="footer-email">
+              <strong class="footer-email-title">E-mail:</strong>
+              <a class="footer-email-link" href="mailto:info@neomuscle.com.ua">info@neomuscle.com.ua</a>
+            </div>
+            <div class="footer-social-icons">
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/Neomuscle-1642830772684279/" target="_blank"><span class="icon ui-icon-facebook"></span></a></li>
+                <li><a href="https://www.instagram.com/neomuscle_ua/" target="_blank"><span class="icon ui-icon-instagram"></span></a></li>
+                <li><a href="#" target="_blank"><span class="icon ui-icon-telegram"></span></a></li>
+                <li><a href="#" target="_blank"><span class="icon ui-icon-viber"></span></a></li>
+              </ul>
+            </div>
+          </div>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'neomuscle' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'neomuscle' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'neomuscle' ), 'neomuscle', '<a href="https://codearty.com">CodeArty</a>' );
-				?>
-		</div><!-- .site-info -->
+          <div class="footer-menu-catalog">
+            <div class="footer-menu-item">
+              <h4 class="footer-menu-title">Каталог</h4>
+              <?php wp_nav_menu( array( 'menu' => 'footer-menu-catalog') ); ?>
+            </div>
+          </div>
+          
+          <div class="footer-menu-buyer">
+            <div class="footer-menu-item">
+              <h4 class="footer-menu-title">Покупателю</h4>
+              <?php wp_nav_menu( array( 'menu' => 'footer-menu') ); ?>
+            </div>
+          </div>
+
+          <div class="footer-dev">
+            <a href="https://codearty.com/" target="_blank">
+              <img class="codearty-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/codearty-logo.png" alt="CodeArty">
+            </a>
+            <span class="develop-text">Интернет-магазин разработан и поддерживается в компании CodeArty</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright-bar">
+      <div class="container">
+        <div class="copyright-bar-wrapp">
+          <div class="copyright">&copy; <strong>Neomuscle</strong>, 2016 – <?php echo date('Y'); ?></div>
+          <div class="payment">
+            <ul class="payment-list">
+              <li class="payment-list-item"><div class="mastercard"></div></li>
+              <li class="payment-list-item"><div class="visa"></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
+<script data-skip-moving="true">
+  (function(w,d,u){
+    var s=d.createElement('script');s.async=1;s.src=u+'?'+(Date.now()/60000|0);
+    var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+  })(window,document,'https://cdn.bitrix24.ua/b8631521/crm/site_button/loader_3_0rvjm8.js');
+</script>
 </body>
 </html>
+
+
+

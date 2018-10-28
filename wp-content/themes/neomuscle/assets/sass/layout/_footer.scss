@@ -1,0 +1,158 @@
+.site-footer {
+  margin-top: 80px;
+  .footer {
+    &-widgets {
+      padding: 60px 0 30px 0;
+      background-color: $color-white-gray;
+      &-wrapp {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    &-contact {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+      .footer-call-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        .media {
+          margin-right: 20px;
+          font-size: 55px;
+          line-height: 0;
+          color: $accent-color;
+        }
+        .call-us-text {
+          display: block;
+          font-weight: 100;
+          font-size: 13px;
+          line-height: 1.4;
+        }
+        .call-us-number {
+          display: block;
+          font-size: 18px;
+          line-height: 1.4;
+        }
+      }
+      .footer-work {
+        font-size: 14px;
+        text-align: center;
+        &-title {
+          display: block;
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+      }
+      .footer-email {
+        margin: 10px 0 20px 0;
+        font-size: 14px;
+        text-align: center;
+        &-title {
+          font-weight: 600;
+        }
+        &-link {
+          color: $main-font-color;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .footer-social-icons {
+        display: flex;
+        justify-content: center;
+        .social-icons {
+          display: flex;
+          font-size: 24px;
+          .icon {
+            color: #7c7c7c;
+            padding-right: 20px;
+          }
+          .ui-icon {
+            &-facebook {
+              font-weight: 600;
+              &:hover {
+                color: #3b5998;
+              }
+            }
+            &-instagram:hover {
+              color: #f25a00;
+            }
+            &-telegram:hover {
+              color: #0088cc;
+            }
+            &-viber {
+              font-size: 22px;
+              &:hover{
+                color: #665cac;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-menu-catalog,
+    &-menu-buyer {
+      display: flex;
+      justify-content: center;
+      flex-basis: 50%;
+      margin-bottom: 20px;
+    }
+    &-menu-item {
+      padding-bottom: 5px;
+      font-size: 14px;
+      a {
+        color: $main-font-color;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &-dev {
+      flex-basis: 100%;
+      text-align: center;
+      .develop-text {
+        font-weight: 100;
+        font-size: 13px;
+        display: block;
+      }
+    }
+  }
+  .copyright-bar {
+    padding: 10px 0;
+    font-size: 14px;
+    background-color: #eaeaea;
+    &-wrapp {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .copyright {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .payment {
+      flex-basis: 100%;
+      text-align: right;
+      &-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-item {
+          padding-left: 10px;
+          .mastercard {
+            background: url('assets/images/icon-mastercard.svg') no-repeat;
+            width: 42px;
+            height: 25px;
+          }
+          .visa {
+            background: url('assets/images/icon-visa.svg') no-repeat;
+            width: 49px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+}

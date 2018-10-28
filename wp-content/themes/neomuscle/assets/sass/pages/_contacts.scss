@@ -1,0 +1,59 @@
+.contacts {
+  h2 {
+    position: relative;
+    margin: 20px 0 30px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    border-bottom: 1px solid $border-color;
+    &::before {
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: $accent-color;
+      content: '';
+    }
+  }
+  .subtitle {
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  label {
+    font-weight: 600;
+  }
+  input {
+    width: 100%;
+    margin: 5px 0 15px;
+    padding: 13px 15px;
+  }
+  textarea {
+    width: 100%;
+    margin: 5px 0 15px;
+    border-radius: 25px;
+    resize: none;
+  }
+  .phones,
+  .email {
+    margin-bottom: 20px;
+  }
+  .email-item {
+    font-weight: 600;
+  }
+  .phones-list,
+  .work-time-list {
+    &-item {
+      margin-bottom: 5px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        font-weight: 600;
+      }
+      a {
+        color: $main-font-color;
+      }
+    }
+  }
+}

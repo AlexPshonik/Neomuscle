@@ -1,0 +1,144 @@
+.woocommerce-Reviews {
+  .woocommerce-Reviews-title {
+    font-size: 18px;
+    color: $main-font-color;
+  }
+  #comments {
+    margin-top: 30px;
+  }
+  .commentlist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .comment {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #dddddd;
+    }
+  }
+  .clear {
+    display: none;
+  }
+}
+
+.comment {
+  &-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    .meta {
+      order: 1;
+    }
+    .description {
+      margin: 10px 0;
+      font-size: 16px;
+      .attachmentFile {
+        margin-top: 10px;
+      }
+      img {
+        max-height: 200px;
+        width: auto;
+      }
+    }
+  }
+  .children {
+    margin-top: 10px;
+    margin-left: 20px;
+    .comment {
+      margin-bottom: 0;
+      padding-top: 5px;
+      border-top: 1px solid #dddddd;
+      border-bottom: none;
+      .description {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.comment-respond {
+  .comment-reply-title {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: $main-font-color;
+  }
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 14px;
+  .comment-notes {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    text-align: left;
+    color: #b0b0b0;
+    order: -2;
+  }
+  .required {
+    color: red;
+  }
+  &-rating {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+    label {
+      margin-right: 10px;
+    }
+    .stars {
+      position: relative;
+      bottom: -3px;
+      display: inline-block;
+      height: 16px;
+    }
+  }
+  &-comment {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    label {
+      margin-bottom: 5px;
+    }
+    textarea {
+      width: 100%;
+      padding: 15px;
+      border-radius: 10px;
+      resize: none;
+    }
+  }
+  &-attachment {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    order: 1;
+    label {
+      padding: 9px 20px;
+      font-size: 16px;
+      background-color: #fed700;
+      border-radius: 50px;
+    }
+    small,
+    input {
+      display: none;
+    }
+  }
+  &-author,
+  &-email {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 10px;
+    order: -1;
+    input {
+      margin-bottom: 5px;
+      padding: 6px 15px;
+      font-size: 16px;
+    }
+  }
+}

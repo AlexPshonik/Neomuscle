@@ -1,0 +1,54 @@
+.payments-and-deliveries {
+  h2 {
+    position: relative;
+    margin: 20px 0 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  ul {
+    margin: 0 0 10px 20px;
+    list-style: disc;
+  }
+  .service {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    margin: 0;
+    list-style: none;
+    border-bottom: 1px solid $border-color;
+    &:last-child {
+      border: 0;
+    }
+    &-meta {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      &-alert {
+        font-size: 14px;
+        color: red;
+      }
+    }
+    &-icon {
+      font-size: 50px;
+      display: block;
+      color: $accent-color;
+    }
+    &-title {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    &-description {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.intention {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // flex-basis: 48.5%;
+    flex-basis: 100%;
+    margin-bottom: 35px;
+    background-color: $breadcrumbs-color;
+    color: $main-font-color;
+  }
+  &-img {
+    width: 170px;
+    padding-top: 12px;
+  }
+  &-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  &-text {
+    margin-bottom: 25px;
+    font-size: 13px;
+  }
+  &-action {
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    &-icon {
+      padding: 4px;
+      border-radius: 50%;
+      font-size: 9px;
+      margin-left: 5px;
+      background-color: $accent-color;
+    }
+  }
+  &-content {
+    padding: 10px;
+  }
+}

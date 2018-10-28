@@ -17,7 +17,7 @@
  */
 function neomuscle_woocommerce_setup() {
 	add_theme_support( 'woocommerce' );
-	add_theme_support( 'wc-product-gallery-zoom' );
+	// add_theme_support( 'wc-product-gallery-zoom' );
 	add_theme_support( 'wc-product-gallery-lightbox' );
 	add_theme_support( 'wc-product-gallery-slider' );
 }
@@ -31,7 +31,7 @@ add_action( 'after_setup_theme', 'neomuscle_woocommerce_setup' );
 function neomuscle_woocommerce_scripts() {
 	wp_enqueue_style( 'neomuscle-woocommerce-style', get_template_directory_uri() . '/woocommerce.css' );
 
-	$font_path   = WC()->plugin_url() . '/assets/fonts/';
+	$font_path   = get_template_directory_uri() . '/assets/fonts/star-font/';
 	$inline_font = '@font-face {
 			font-family: "star";
 			src: url("' . $font_path . 'star.eot");
@@ -96,7 +96,7 @@ add_filter( 'woocommerce_product_thumbnails_columns', 'neomuscle_woocommerce_thu
  * @return integer products per row.
  */
 function neomuscle_woocommerce_loop_columns() {
-	return 3;
+	return 4;
 }
 add_filter( 'loop_shop_columns', 'neomuscle_woocommerce_loop_columns' );
 
@@ -161,6 +161,9 @@ if ( ! function_exists( 'neomuscle_woocommerce_wrapper_before' ) ) {
 		?>
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
 			<?php
 	}
 }
@@ -175,7 +178,10 @@ if ( ! function_exists( 'neomuscle_woocommerce_wrapper_after' ) ) {
 	 * @return void
 	 */
 	function neomuscle_woocommerce_wrapper_after() {
-			?>
+      ?>
+            </div>
+          </div>
+        </div>
 			</main><!-- #main -->
 		</div><!-- #primary -->
 		<?php

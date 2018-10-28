@@ -1,0 +1,178 @@
+.woocommerce-account {
+  .entry-title {
+    margin: 30px 0 50px;
+  }
+}
+
+.customer_login {
+  h2 {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border-color;
+    &::before {
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: $accent-color;
+      content: '';
+    }
+  }
+}
+
+.customer_login_form,
+.customer_registration_form,
+.woocommerce-EditAccountForm {
+  width: 100%;
+  margin-bottom: 30px;
+  label {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+  input {
+    width: 100%;
+    padding: 8px 15px;
+  }
+  .woocommerce-form-row {
+    margin-bottom: 20px;
+  }
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    label {
+      margin-bottom: 0;
+    }
+  }
+  .lost_password {
+    a {
+      color: $main-font-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+.customer_registration_form {
+  .woocommerce-privacy-policy-text {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    a {
+      color: $main-font-color;
+      text-decoration: underline;
+    }
+  }
+  .or-text {
+    display: none;
+  }
+}
+
+.woocommerce-ResetPassword {
+  line-height: 1.4;
+  p {
+    margin-bottom: 20px;
+  }
+  label {
+    margin-right: 10px;
+  }
+  input {
+    padding: 8px 15px;
+  }
+}
+
+.woocommerce-password-strength {
+  padding-top: 20px;
+}
+
+.woocommerce-account {
+  .entry-title {
+    margin: 30px 0 50px;
+    text-align: center;
+  }
+}
+
+.woocommerce-MyAccount {
+  &-navigation {
+    margin-bottom: 30px;
+    border-top: 1px solid $border-color;
+    &-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid $border-color;
+      a {
+        font-size: 14px;
+        color: $main-font-color;
+      }
+      &.is-active {
+        a {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  &-content {
+    a {
+      color: $main-font-color;
+      text-decoration: underline;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    table.shop_table_responsive,
+    table.wishlist_table {
+      tr {
+        td {
+          &:first-child {
+            padding-top: 20px;
+          }
+          span {
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+    mark {
+      background-color: rgba(0,0,0,.15);
+      line-height: 1.6;
+    }
+    h2 {
+      position: relative;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $border-color;
+      font-size: 24px;
+      &::before {
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: $accent-color;
+        content: '';
+      }
+    }
+    .woocommerce-table--order-details {
+      width: 100%;
+      thead {
+        border-bottom: 1px solid $border-color;
+      }
+      a {
+        color: $main-font-color;
+      }
+    }
+    .woocommerce-Address {
+      margin-bottom: 30px;
+    }
+  }
+}

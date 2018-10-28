@@ -1,0 +1,22 @@
+.breadcrumb,
+.woocommerce-breadcrumb {
+  padding: 25px 0;
+  font-size: 14px;
+  a {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: $main-font-color;
+  }
+  .delimiter {
+    margin: 0 15px;
+    font-size: 10px;
+    &+a {
+      padding: 7px 12px;
+      background-color: $breadcrumbs-color;
+      border-radius: 5px;
+      &:hover {
+        background-color: $breadcrumbs-color-hover;
+      }
+    }
+  }
+}

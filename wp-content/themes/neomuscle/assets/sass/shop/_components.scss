@@ -1,0 +1,261 @@
+.star-rating {
+	position: relative;
+	width: 5.3em;
+	height: 1.518em;
+	font-size: 1em;
+	font-family: 'star';
+	font-weight: 400;
+	line-height: 1.618;
+	overflow: hidden;
+	&:before {
+		content: "\53\53\53\53\53";
+		opacity: .25;
+		float: left;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+	span {
+		overflow: hidden;
+		float: left;
+		top: 0;
+		left: 0;
+		position: absolute;
+		padding-top: 1.5em;
+	}
+	span:before {
+		content: "\53\53\53\53\53";
+		top: 0;
+		position: absolute;
+		left: 0;
+		color: #fed700;
+	}
+}
+
+p.stars {
+	a {
+		position: relative;
+		height: 1em;
+		width: 1em;
+		text-indent: -999em;
+		display: inline-block;
+		text-decoration: none;
+		margin-right: 1px;
+		font-weight: 400;
+
+		&:before {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1em;
+			height: 1em;
+			line-height: 1;
+			font-family: "star";
+			content: "\53";
+			color: #d8d8d8;
+			text-indent: 0;
+			opacity: 1;
+		}
+
+		&:hover {
+			~ a:before {
+				content: "\53";
+				color: #d8d8d8;
+				opacity: 1;
+			}
+		}
+	}
+
+	&:hover {
+		a {
+			&:before {
+				content: "\53";
+				color: #fed700;
+				opacity: 1;
+			}
+		}
+	}
+
+	&.selected {
+		a.active {
+			&:before {
+				content: "\53";
+				color: #fed700;
+				opacity: 1;
+			}
+
+			~ a:before {
+				content: "\53";
+				color: #d8d8d8;
+				opacity: 1;
+			}
+		}
+
+		a:not(.active) {
+			&:before {
+				content: "\53";
+				color: #fed700;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.woocommerce-message {
+	display: flex;
+	margin-bottom: 20px;
+	flex-direction: column-reverse;
+	background-color: #fed700;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 600;
+	.button {
+		position: relative;
+		background-color: transparent;
+		border-top: 1px solid #e7c400;
+		border-radius: 0;
+		margin-top: 10px;
+		padding: 5px;
+		font-size: 14px;
+		font-weight: 700;
+		&:hover {
+			background-color: transparent;
+		}
+		&::after {
+			position: relative;
+			top: 2px;
+			right: -5px;
+			margin-left: 5px;
+			font-family: 'neomuscle-ui' !important;  
+			content: "\e910";
+		}
+	}
+}
+
+// /**
+//  * Header cart
+//  */
+// .site-header-cart {
+// 	position: relative;
+// 	margin: 0;
+// 	padding: 0;
+// 	.cart-contents {
+// 		text-decoration: none;
+// 	}
+
+// 	.widget_shopping_cart {
+// 		display: none;
+// 	}
+
+// 	.product_list_widget {
+// 		margin: 0;
+// 		padding: 0;
+// 	}
+// }
+
+
+// /**
+//  * Password strength meter
+//  */
+// .woocommerce-password-strength {
+// 	text-align: right;
+
+// 	&.strong {
+// 		color: $woocommerce__color-success;
+// 	}
+
+// 	&.short {
+// 		color: $woocommerce__color-error;
+// 	}
+
+// 	&.bad {
+// 		color: $woocommerce__color-error;
+// 	}
+
+// 	&.good {
+// 		color: $woocommerce__color-info;
+// 	}
+// }
+
+// /**
+//  * Forms
+//  */
+// .form-row {
+// 	&.woocommerce-validated {
+// 		input.input-text {
+// 			box-shadow: inset 2px 0 0 $woocommerce__color-success;
+// 		}
+// 	}
+
+// 	&.woocommerce-invalid {
+// 		input.input-text {
+// 			box-shadow: inset 2px 0 0 $woocommerce__color-error;
+// 		}
+// 	}
+// }
+
+// .required {
+// 	color: red;
+// }
+
+// /**
+//  * Notices
+//  */
+// .woocommerce-message,
+// .woocommerce-info,
+// .woocommerce-error,
+// .woocommerce-noreviews,
+// p.no-comments {
+// 	@include clearfix;
+// 	background-color: $woocommerce__color-success;
+// 	clear: both;
+// }
+
+// .woocommerce-info,
+// .woocommerce-noreviews,
+// p.no-comments {
+// 	background-color: $woocommerce__color-info;
+// }
+
+// .woocommerce-error {
+// 	background-color: $woocommerce__color-error;
+// }
+
+// .demo_store {
+// 	position: fixed;
+// 	left: 0;
+// 	bottom: 0;
+// 	right: 0;
+// 	margin: 0;
+// 	padding: 1em;
+// 	background-color: $woocommerce__color-info;
+// 	z-index: 9999;
+// }
+
+// @media screen and (min-width: 48em) {
+// 	/**
+// 	 * Header cart
+// 	 */
+// 	.site-header-cart {
+// 		.widget_shopping_cart {
+// 			position: absolute;
+// 			top: 100%;
+// 			width: 100%;
+// 			z-index: 999999;
+// 			left: -999em;
+// 			display: block;
+// 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+// 		}
+
+// 		&:hover,
+// 		&.focus {
+// 			.widget_shopping_cart {
+// 				left: 0;
+// 				display: block;
+// 			}
+// 		}
+// 	}
+// }

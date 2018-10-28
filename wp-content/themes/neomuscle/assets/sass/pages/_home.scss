@@ -1,0 +1,132 @@
+/*--------------------------------------------------------------
+# Description store in homepage
+--------------------------------------------------------------*/
+.description-store {
+  &-text {
+    position: relative;
+    overflow: hidden;
+    max-height: 11em;
+    color: #999;
+    transition: .2s;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 4em;
+      background: linear-gradient(top, rgba(255, 255, 255, 0) 0, #fff 100%);
+    }
+    &.open {
+      max-height: 100%;
+      &::before {
+        display: none;
+      }
+      & + .description-store-more {
+        display: none;
+      }
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: normal;
+      color: $search-text-color;
+    }
+    strong.title {
+      margin-bottom: 14px;
+      font-weight: normal;
+    }
+    p {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+    ol {
+      font-size: 13px;
+      padding-left: 15px;
+      li {
+        padding-bottom: 5px;
+      }
+    }
+  }
+  &-more {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    &-link {
+      color: #9d9c9c;
+      font-size: 15px;
+      &:hover {
+        color: $main-font-color;
+      }
+    }
+  }
+}
+
+.homepage-slider {
+  position: relative;
+  .desktop-version {
+    display: none;
+  }
+  .mobile-version {
+    display: none;
+  }
+  .owl-theme {
+    .owl-dots {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      .owl-dot {
+        span {
+          height: 8px;
+          width: 8px;
+          color: $border-color;
+          transition: background 0.3s ease;
+        }
+        &.active {
+          span {
+            width: 30px;
+          }
+        }
+        &.active,
+        &:hover {
+          span {
+            background: $accent-color;
+          }
+        }
+      }
+    }
+    .owl-nav {
+      margin-top: 0;
+      .owl-prev,
+      .owl-next {
+        position: absolute;
+        top: 0;
+        width: 10%;
+        height: 100%;
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+        transition: background-color 0.3s ease;
+        .ui-icon-right-arrow {
+          font-size: 36px;
+          color: $border-color;
+          transition: color 0.3s ease;
+        }
+        &:hover {
+          background: transparent;
+          .ui-icon-right-arrow {
+            color: $accent-color;
+          }
+        }
+      }
+      .owl-prev {
+        left: 0%;
+        transform: rotate(180deg);
+      }
+      .owl-next {
+        right: 0%;
+      }
+    }
+  }
+}
