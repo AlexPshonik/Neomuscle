@@ -242,3 +242,15 @@ add_filter( 'woocommerce_shipping_package_name', 'neomuscle_custom_shipping_pack
 function neomuscle_custom_shipping_package_name( $name ) {
   return 'Доставка';
 }
+
+/**
+ * Disable out of stock variations
+ * @return Boolean
+ */
+function neomuscle_variation_is_active( $active, $variation ) {
+  if( ! $variation->is_in_stock() ) {
+  return false;
+  }
+  return $active;
+ }
+ add_filter( 'woocommerce_variation_is_active', 'neomuscle_variation_is_active', 10, 2 );
