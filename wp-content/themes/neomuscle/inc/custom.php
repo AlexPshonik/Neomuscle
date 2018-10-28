@@ -249,7 +249,7 @@ function neomuscle_custom_shipping_package_name( $name ) {
  */
 function neomuscle_variation_is_active( $active, $variation ) {
   if( ! $variation->is_in_stock() ) {
-  return false;
+    return false;
   }
   return $active;
  }
